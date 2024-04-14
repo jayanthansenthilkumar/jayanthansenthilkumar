@@ -1,3 +1,6 @@
+
+
+
 <a align="left"><img src="https://komarev.com/ghpvc/?username=wahyudesu&label=Profile%20views&color=0e75b6&style=flat" alt="wahyu-ikbal" /></a> <h1 align="center">Hii👋🏼This is Jayanthan Senthilkumar👨🏻‍💻</h1>
 ![readmebox](https://github.com/wahyudesu/wahyudesu/assets/96912274/301fe236-e965-4654-b32a-6351980d1628)
 <p align="center">Hey Guys,I'm Jayanthan SenthilKumar,Currently pursuing B.Tech Artificial Intelligence and Machine Learning. As a passionate learner, I focusing on enhancing my skills in Python with Machine Learning.I am eager to contribute my creativity skills to build efficient and user-friendly Data manipulations and other AI based applications.Connect with me to collaborate on exciting projects!!!
@@ -20,6 +23,13 @@
 <br />
 
 <table><tr><td valign="top" width="60%">
+
+<a href="https://github.com/jayanthansenthilkumar/github-readme-stats">
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=anuraghazra" />
+</a>
+<a href="https://github.com/jayanthansenthilkumar/convoychat">
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=anuraghazra&layout=compact&langs_count=8&card_width=320" />
+</a>
 
 ### 📕 Latest Blog posts
 <!-- BLOG-POST-LIST:START -->
