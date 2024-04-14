@@ -1,5 +1,9 @@
-<a align="left"><img src="https://komarev.com/ghpvc/?username=wahyudesu&label=Profile%20views&color=0e75b6&style=flat" alt="wahyu-ikbal" /></a> <h1 align="center">Hii👋🏼This is Jayanthan Senthilkumar👨🏻‍💻</h1>
+<a href="https://visitcount.itsvg.in">
+  <img src="https://visitcount.itsvg.in/api?id=jayanthansenthilkumar&label=Visitors&color=1&icon=0&pretty=true" />
+</a>
+<h1 align="center">Hii👋🏼This is Jayanthan Senthilkumar👨🏻‍💻</h1>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 ![readmebox](https://github.com/wahyudesu/wahyudesu/assets/96912274/301fe236-e965-4654-b32a-6351980d1628)
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <p align="center">Hey Guys,I'm Jayanthan SenthilKumar,Currently pursuing B.Tech Artificial Intelligence and Machine Learning. As a passionate learner, I focusing on enhancing my skills in Python with Machine Learning.I am eager to contribute my creativity skills to build efficient and user-friendly Data manipulations and other AI based applications.Connect with me to collaborate on exciting projects!!!  
