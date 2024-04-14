@@ -18,7 +18,7 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <h3 align="center">📊 GitHub Streak</h3>
 <p align = "center">
-  <img src = "https://github-readme-streak-stats.herokuapp.com?user=naruhitokaide&theme=tokyonight&hide_border=true&include_all_commits=true&line_height=27">
+  <img src = "https://github-readme-streak-stats.herokuapp.com?user=jayanthansenthilkumar&theme=tokyonight&hide_border=true&include_all_commits=true&line_height=27">
 </p>
 
 <p align="center">
