@@ -17,8 +17,19 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <h3 align="center">📊 GitHub Streak</h3>
+<p align = "center">
+  <img src = "https://github-readme-streak-stats.herokuapp.com?user=naruhitokaide&theme=tokyonight&hide_border=true&include_all_commits=true&line_height=27">
+</p>
 
-![](https://github-readme-streak-stats.herokuapp.com/?user=kishankumar1328&theme=dark&hide_border=false)
+<p align="center">
+  <a href="[https://www.linkedin.com/in/naruhitokaide](https://www.linkedin.com/in/jayanthan-s-%E3%82%B8%E3%83%A3%E3%83%A4%E3%83%B3%E3%82%BF%E3%83%B3-bba225259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/fluency/2x/linkedin.png"  width="50" /></a>
+  &nbsp;&nbsp;
+  <a href="mailto:mail2jayanthansenthilkumar@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/fluency/2x/gmail-new.png"  width="50" /></a>
+  &nbsp;&nbsp;
+  <a href="https://join.skype.com/invite/wDpwy4t21eVg" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/color/2x/instagram.png"  width="50" /></a>
+  &nbsp;&nbsp;
+  <a href="https://jayanthansenthilkumar.streamlit.app" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/nolan/2x/link.png"  width="50" /></a>
+</p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <h2 align="center">⚡Activity Graph:</h2>
 <img align="center" src="https://github-readme-activity-graph.vercel.app/graph?username=jayanthansenthilkumar&theme=synthwave-84"/>
