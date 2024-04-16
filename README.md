@@ -1,4 +1,4 @@
-<h1 align="center">Hii👋🏼This is Jayanthan Senthilkumar👨🏻‍💻</h1>
+<h1 align="center">Hey <img src="https://github.com/nixin72/nixin72/blob/master/wave.gif" height="60px">This is Jayanthan Senthilkumar👨🏻‍💻</h1>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ![readmebox](https://github.com/wahyudesu/wahyudesu/assets/96912274/301fe236-e965-4654-b32a-6351980d1628)
