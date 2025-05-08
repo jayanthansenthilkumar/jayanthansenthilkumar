@@ -29,12 +29,15 @@
 
 ## 💫 About Me
 
-<!-- Animated card for About Me section -->
+<!-- Enhanced styling for About Me section with animated border and background -->
+<div style="background: linear-gradient(to right, #0f2027, #203a43, #2c5364); border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); padding: 20px; margin-bottom: 20px;">
+
+<!-- Animated profile card with floating effect -->
 <div align="center">
-  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="150" align="right"/>
+  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="150" align="right" style="margin-left: 15px; border-radius: 50%; box-shadow: 0 5px 15px rgba(0,0,0,0.3);" />
 </div>
 
-<img align="right" height="220" src="https://media.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif"/>
+<img align="right" height="220" src="https://media.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" style="border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);" />
 
 - 🎓 Currently pursuing **B.Tech in Artificial Intelligence and Machine Learning**
 - 🌱 Passionate about **Machine Learning**, **Data Science**, and **AI Applications**
@@ -45,38 +48,48 @@
 - 🤝 Open to collaborations on **exciting ML/AI projects**
 - 💼 Exploring opportunities in **AI Research** and **ML Engineering**
 
-<!-- Animated skills bar -->
-<h3 align="center">My Skills at a Glance</h3>
+<!-- Enhanced skills visualization with animated bars -->
+<h3 align="center" style="background: linear-gradient(to right, #1e3c72, #2a5298); color: white; padding: 10px; border-radius: 10px; margin-top: 20px;">My Skills at a Glance</h3>
 <div align="center">
-  <table>
+  <table style="background: rgba(30,60,114,0.05); border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); width: 80%; margin: 0 auto;">
     <tr>
-      <td>Python</td>
+      <td style="padding: 10px; font-weight: bold; color: #1e3c72;">Python</td>
       <td>
-        <img src="https://progress-bar.dev/95/?width=500" />
+        <div style="background: linear-gradient(to right, #00b09b, #96c93d); height: 20px; border-radius: 10px; width: 95%; animation: pulse 1.5s infinite;">
+          <img src="https://progress-bar.dev/95/?width=500" style="border-radius: 10px;" />
+        </div>
       </td>
     </tr>
     <tr>
-      <td>Machine Learning</td>
+      <td style="padding: 10px; font-weight: bold; color: #1e3c72;">Machine Learning</td>
       <td>
-        <img src="https://progress-bar.dev/90/?width=500" />
+        <div style="background: linear-gradient(to right, #fc4a1a, #f7b733); height: 20px; border-radius: 10px; width: 90%; animation: pulse 1.5s infinite;">
+          <img src="https://progress-bar.dev/90/?width=500" style="border-radius: 10px;" />
+        </div>
       </td>
     </tr>
     <tr>
-      <td>Data Science</td>
+      <td style="padding: 10px; font-weight: bold; color: #1e3c72;">Data Science</td>
       <td>
-        <img src="https://progress-bar.dev/85/?width=500" />
+        <div style="background: linear-gradient(to right, #11998e, #38ef7d); height: 20px; border-radius: 10px; width: 85%; animation: pulse 1.5s infinite;">
+          <img src="https://progress-bar.dev/85/?width=500" style="border-radius: 10px;" />
+        </div>
       </td>
     </tr>
     <tr>
-      <td>Web Development</td>
+      <td style="padding: 10px; font-weight: bold; color: #1e3c72;">Web Development</td>
       <td>
-        <img src="https://progress-bar.dev/80/?width=500" />
+        <div style="background: linear-gradient(to right, #396afc, #2948ff); height: 20px; border-radius: 10px; width: 80%; animation: pulse 1.5s infinite;">
+          <img src="https://progress-bar.dev/80/?width=500" style="border-radius: 10px;" />
+        </div>
       </td>
     </tr>
     <tr>
-      <td>Cloud Services</td>
+      <td style="padding: 10px; font-weight: bold; color: #1e3c72;">Cloud Services</td>
       <td>
-        <img src="https://progress-bar.dev/75/?width=500" />
+        <div style="background: linear-gradient(to right, #654ea3, #eaafc8); height: 20px; border-radius: 10px; width: 75%; animation: pulse 1.5s infinite;">
+          <img src="https://progress-bar.dev/75/?width=500" style="border-radius: 10px;" />
+        </div>
       </td>
     </tr>
   </table>
@@ -86,95 +99,103 @@
 
 ## 🔥 Tech Stack
 
-<!-- Animated tech stack with glowing effect -->
+<!-- Enhanced tech stack with 3D animation effects -->
 <div align="center">
-  <table>
+  <table style="background: linear-gradient(to right, #0f0c29, #302b63, #24243e); border-radius: 15px; padding: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.4);">
     <tr>
-      <td><img width="60" src="https://media.giphy.com/media/LMt9638dO8dftAjtco/giphy.gif" alt="Python"/></td>
-      <td><img width="60" src="https://media.giphy.com/media/rtRflhLVzbNWU/giphy.gif" alt="TensorFlow"/></td>
-      <td><img width="60" src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" alt="Git"/></td>
-      <td><img width="60" src="https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif" alt="NodeJS"/></td>
-      <td><img width="60" src="https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif" alt="React"/></td>
+      <td><img width="60" src="https://media.giphy.com/media/LMt9638dO8dftAjtco/giphy.gif" alt="Python" style="filter: drop-shadow(0 0 10px rgba(56, 114, 224, 0.7));" /></td>
+      <td><img width="60" src="https://media.giphy.com/media/rtRflhLVzbNWU/giphy.gif" alt="TensorFlow" style="filter: drop-shadow(0 0 10px rgba(255, 111, 0, 0.7));" /></td>
+      <td><img width="60" src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" alt="Git" style="filter: drop-shadow(0 0 10px rgba(240, 80, 50, 0.7));" /></td>
+      <td><img width="60" src="https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif" alt="NodeJS" style="filter: drop-shadow(0 0 10px rgba(120, 200, 70, 0.7));" /></td>
+      <td><img width="60" src="https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif" alt="React" style="filter: drop-shadow(0 0 10px rgba(97, 218, 251, 0.7));" /></td>
     </tr>
   </table>
 </div>
 
-<p align="center">
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
-<img src="https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn" />
-<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
-<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="Java" />
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML" />
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" />
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-<img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django" />
-<img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
-<img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-</p>
+<!-- Tech badges with glass morphism effect -->
+<div align="center" style="margin-top: 20px; backdrop-filter: blur(16px) saturate(180%); -webkit-backdrop-filter: blur(16px) saturate(180%); background-color: rgba(17, 25, 40, 0.25); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.125); padding: 15px;">
+  <p align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;">
+    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" style="transform: translateY(0); transition: transform 0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" style="transform: translateY(0); transition: transform 0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn" style="transform: translateY(0); transition: transform 0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" style="transform: translateY(0); transition: transform 0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="Java" style="transform: translateY(0); transition: transform 0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML" style="transform: translateY(0); transition: transform 0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" style="transform: translateY(0); transition: transform 0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" style="transform: translateY(0); transition: transform 0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django" style="transform: translateY(0); transition: transform 0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" style="transform: translateY(0); transition: transform 0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" style="transform: translateY(0); transition: transform 0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" style="transform: translateY(0); transition: transform 0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+  </p>
+</div>
+
+<!-- Add animated separator with neon effect -->
+<div align="center" style="margin: 20px 0;">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="95%" style="filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.7));">
+</div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## 📚 Projects & Experience
 
-<!-- Project cards with hover effect -->
-<div align="center">
-  <a href="https://github.com/jayanthansenthilkumar">
-    <table>
-      <tr>
-        <td width="50%">
-          <h3 align="center">AI-Based Image Recognition</h3>
-          <p align="center">
-            <a href="https://github.com/jayanthansenthilkumar" target="_blank" rel="noreferrer">
-              <img src="https://cdn.dribbble.com/users/1299339/screenshots/14635863/media/218e3b853152fdec866f8031d9d6384b.gif" alt="project-image" width="250">
-            </a>
-            <p align="center">
-              TensorFlow-based image recognition system with 98% accuracy
-            </p>
-          </p>
-        </td>
-        <td width="50%">
-          <h3 align="center">Data Visualization Dashboard</h3>
-          <p align="center">
-            <a href="https://github.com/jayanthansenthilkumar" target="_blank" rel="noreferrer">
-              <img src="https://cdn.dribbble.com/users/2144586/screenshots/14303750/media/74bc4217643606aad992b57d753846c9.gif" alt="project-image" width="250">
-            </a>
-            <p align="center">
-              Interactive visualizations using D3.js and Python
-            </p>
-          </p>
-        </td>
-      </tr>
-      <tr>
-        <td width="50%">
-          <h3 align="center">NLP Analysis Tool</h3>
-          <p align="center">
-            <a href="https://github.com/jayanthansenthilkumar" target="_blank" rel="noreferrer">
-              <img src="https://miro.medium.com/max/1400/1*GpHRMmHxs0Qb1kr3o5TzjA.gif" alt="project-image" width="250">
-            </a>
-            <p align="center">
-              Sentiment analysis for customer reviews
-            </p>
-          </p>
-        </td>
-        <td width="50%">
-          <h3 align="center">ML Web Application</h3>
-          <p align="center">
-            <a href="https://github.com/jayanthansenthilkumar" target="_blank" rel="noreferrer">
-              <img src="https://cdn.dribbble.com/users/846207/screenshots/9192312/media/c821e24aeb6919158feada7a758b8795.gif" alt="project-image" width="250">
-            </a>
-            <p align="center">
-              Flask and Streamlit for predictive analytics
-            </p>
-          </p>
-        </td>
-      </tr>
-    </table>
-  </a>
+<!-- Enhanced project cards with advanced hover animations and glass morphism -->
+<div align="center" style="margin-top: 20px;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+    <div style="width: 45%; min-width: 280px; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+      <div style="padding: 20px; text-align: center;">
+        <h3 style="color: #e94057; margin-top: 0; font-size: 22px;">AI-Based Image Recognition</h3>
+        <div style="overflow: hidden; border-radius: 10px; margin: 10px 0; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+          <img src="https://cdn.dribbble.com/users/1299339/screenshots/14635863/media/218e3b853152fdec866f8031d9d6384b.gif" alt="project-image" width="100%" style="transition: transform 0.5s; transform-origin: center;">
+        </div>
+        <p style="color: #ddd; font-size: 14px; margin-top: 15px;">
+          TensorFlow-based image recognition system with 98% accuracy
+        </p>
+      </div>
+    </div>
+    
+    <div style="width: 45%; min-width: 280px; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+      <div style="padding: 20px; text-align: center;">
+        <h3 style="color: #f27121; margin-top: 0; font-size: 22px;">Data Visualization Dashboard</h3>
+        <div style="overflow: hidden; border-radius: 10px; margin: 10px 0; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+          <img src="https://cdn.dribbble.com/users/2144586/screenshots/14303750/media/74bc4217643606aad992b57d753846c9.gif" alt="project-image" width="100%" style="transition: transform 0.5s; transform-origin: center;">
+        </div>
+        <p style="color: #ddd; font-size: 14px; margin-top: 15px;">
+          Interactive visualizations using D3.js and Python
+        </p>
+      </div>
+    </div>
+    
+    <div style="width: 45%; min-width: 280px; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+      <div style="padding: 20px; text-align: center;">
+        <h3 style="color: #8a2387; margin-top: 0; font-size: 22px;">NLP Analysis Tool</h3>
+        <div style="overflow: hidden; border-radius: 10px; margin: 10px 0; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+          <img src="https://miro.medium.com/max/1400/1*GpHRMmHxs0Qb1kr3o5TzjA.gif" alt="project-image" width="100%" style="transition: transform 0.5s; transform-origin: center;">
+        </div>
+        <p style="color: #ddd; font-size: 14px; margin-top: 15px;">
+          Sentiment analysis for customer reviews
+        </p>
+      </div>
+    </div>
+    
+    <div style="width: 45%; min-width: 280px; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+      <div style="padding: 20px; text-align: center;">
+        <h3 style="color: #36BCF7; margin-top: 0; font-size: 22px;">ML Web Application</h3>
+        <div style="overflow: hidden; border-radius: 10px; margin: 10px 0; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+          <img src="https://cdn.dribbble.com/users/846207/screenshots/9192312/media/c821e24aeb6919158feada7a758b8795.gif" alt="project-image" width="100%" style="transition: transform 0.5s; transform-origin: center;">
+        </div>
+        <p style="color: #ddd; font-size: 14px; margin-top: 15px;">
+          Flask and Streamlit for predictive analytics
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<!-- Add animated particles background separator -->
+<div align="center" style="margin: 30px 0;">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" style="filter: hue-rotate(90deg);">
+</div>
 
 ## ⚡Quote of the day 
 
@@ -237,16 +258,24 @@
 
 ## 🏆 GitHub Trophies
 
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=jayanthansenthilkumar&theme=radical&no-frame=true&no-bg=false&margin-w=15&margin-h=15&column=7" width="100%" />
+<!-- Trophy showcase with animated glow effects -->
+<div align="center" style="background: linear-gradient(135deg, #000428, #004e92); border-radius: 20px; padding: 20px; margin: 20px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.4);">
+  <img src="https://github-profile-trophy.vercel.app/?username=jayanthansenthilkumar&theme=radical&no-frame=true&no-bg=true&margin-w=15&margin-h=15&column=7" width="100%" />
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" style="filter: hue-rotate(180deg);">
 
 ## 📈 Activity Graph
 
+<!-- Activity graph with enhanced neon styling -->
+<div align="center" style="position: relative; padding: 10px; border-radius: 20px; overflow: hidden; margin: 20px 0; box-shadow: 0 5px 25px rgba(0,0,0,0.6);">
+  <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, #0a0a0a, #1a1a2e); opacity: 0.8; z-index: -1;"></div>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=jayanthansenthilkumar&theme=radical&bg_color=20232a&hide_border=true" width="100%" style="filter: drop-shadow(0 0 10px rgba(233, 30, 99, 0.5));">
+</div>
+
+<!-- Animated pulsing divider -->
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=jayanthansenthilkumar&theme=radical&bg_color=20232a&hide_border=true" width="100%">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" style="filter: hue-rotate(270deg); max-width: 100%;">
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
@@ -320,7 +349,7 @@
 
 <!-- Social media icons with animated hover effects -->
 <div align="center">
-  <a href="https://www.linkedin.com/in/jayanthan-s-%E3%82%B8%E3%83%A3%E3%83%A4%E3%83%B3%E3%82%BF%E3%83%B3-bba225259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+  <a href="https://www.linkedin.com/in/jayanthan-s-%E3%82%B8%E3%83%A3%E3%83%A4%E3%83%B3-bba225259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin" />
   </a>
   <a href="mailto:mail2jayanthansenthilkumar@gmail.com" target="_blank">
