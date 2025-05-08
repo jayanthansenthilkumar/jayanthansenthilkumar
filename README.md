@@ -153,7 +153,6 @@
         </p>
       </div>
     </div>
-    
     <div style="width: 45%; min-width: 280px; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
       <div style="padding: 20px; text-align: center;">
         <h3 style="color: #f27121; margin-top: 0; font-size: 22px;">Data Visualization Dashboard</h3>
@@ -165,7 +164,6 @@
         </p>
       </div>
     </div>
-    
     <div style="width: 45%; min-width: 280px; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
       <div style="padding: 20px; text-align: center;">
         <h3 style="color: #8a2387; margin-top: 0; font-size: 22px;">NLP Analysis Tool</h3>
@@ -177,7 +175,6 @@
         </p>
       </div>
     </div>
-    
     <div style="width: 45%; min-width: 280px; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
       <div style="padding: 20px; text-align: center;">
         <h3 style="color: #36BCF7; margin-top: 0; font-size: 22px;">ML Web Application</h3>
