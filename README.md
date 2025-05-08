@@ -194,13 +194,13 @@
 <br>
 
 <div align="center">
-  <a href="https://www.linkedin.com/in/jayanthan-s-%E3%82%B8%E3%83%A3%E3%83%A4%E3%83%B3%E3%82%BF%E3%83%B3-bba225259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/fluency/2x/linkedin.png"  width="50" /></a>
+  <a href="https://www.linkedin.com/in/jayanthan18" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/fluency/2x/linkedin.png"  width="50" /></a>
   &nbsp;&nbsp;
-  <a href="mailto:mail2jayanthansenthilkumar@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/fluency/2x/gmail-new.png"  width="50" /></a>
+  <a href="mailto:jayanthansenthilkumar18@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/fluency/2x/gmail-new.png"  width="50" /></a>
   &nbsp;&nbsp;
-  <a href="https://join.skype.com/invite/wDpwy4t21eVg" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/color/2x/instagram.png"  width="50" /></a>
+  <a href="https://instagram.com/jayanthansenthilkumar" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/color/2x/instagram.png"  width="50" /></a>
   &nbsp;&nbsp;
-  <a href="https://jayanthansenthilkumar.streamlit.app" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/nolan/2x/link.png"  width="50" /></a>
+  <a href="https://jayanthan.prisoltech.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/nolan/2x/link.png"  width="50" /></a>
 </div>
 
 <div align="center">
