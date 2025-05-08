@@ -11,17 +11,7 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 <div align="center">
-  <img src="https://miro.medium.com/max/1400/1*c_fiB-YgbnMl6nntYGBMHQ.jpeg" width="800" alt="Machine Learning Concept Image">
-</div>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-## 🔥 GitHub Streak & ML Journey
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=jayanthansenthilkumar&theme=radical&hide_border=true&include_all_commits=true&line_height=27">
-  <br><br>
-  <img src="https://i.giphy.com/media/l46Coblu8EE8Z8QiA/giphy.webp" width="800" alt="Machine Learning Neural Network Animation">
+  <img src="https://github.com/wahyudesu/wahyudesu/assets/96912274/301fe236-e965-4654-b32a-6351980d1628" width="800">
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
@@ -220,5 +210,3 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Thanks%20for%20visiting-Star%20if%20useful-brightgreen.svg" alt="Thanks for visiting!" />
 </p>
-
-
