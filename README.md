@@ -16,6 +16,16 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
+## 🔥 GitHub Streak & ML Journey
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=jayanthansenthilkumar&theme=radical&hide_border=true&include_all_commits=true&line_height=27">
+  <br><br>
+  <img src="https://i.giphy.com/media/l46Coblu8EE8Z8QiA/giphy.webp" width="800" alt="Machine Learning Neural Network Animation">
+</div>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 ## 💫 About Me
 
 <img align="right" height="220" src="https://media.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif"/>
