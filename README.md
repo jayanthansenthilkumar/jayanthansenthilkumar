@@ -71,15 +71,15 @@
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=jayanthansenthilkumar&theme=radical" width="100%" alt="Profile Details">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=jayanthansenthilkumar&theme=tokyonight" width="100%" alt="Profile Details">
 </div>
 
 <div align="center">
   <a href="https://github.com/jayanthansenthilkumar/github-readme-stats">
-    <img height="200" align="center" src="https://github-readme-stats.vercel.app/api?username=jayanthansenthilkumar&show_icons=true&theme=radical&include_all_commits=true&count_private=true" />
+    <img height="200" align="center" src="https://github-readme-stats.vercel.app/api?username=jayanthansenthilkumar&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" />
   </a>
   <a href="https://github.com/jayanthansenthilkumar/convoychat">
-    <img height="200" align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=jayanthansenthilkumar&layout=compact&langs_count=8&card_width=300&theme=radical" />
+    <img height="200" align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=jayanthansenthilkumar&layout=compact&langs_count=8&card_width=300&theme=tokyonight" />
   </a>
 </div>
 
@@ -88,7 +88,7 @@
 ## 🔥 GitHub Streak
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=jayanthansenthilkumar&theme=radical&hide_border=true&include_all_commits=true&line_height=27">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=jayanthansenthilkumar&theme=tokyonight&hide_border=true&include_all_commits=true&line_height=27">
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
@@ -104,7 +104,7 @@
 ## 📈 Activity Graph
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=jayanthansenthilkumar&theme=radical&bg_color=20232a&hide_border=true" width="100%">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=jayanthansenthilkumar&theme=tokyo-night&bg_color=20232a&hide_border=true" width="100%">
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
