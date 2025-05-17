@@ -54,8 +54,8 @@
     <img src="https://img.icons8.com/fluent/48/000000/domain.png" width="40" height="40" />
   </a>
   &nbsp;
-  <a href="https://github.com/jayanthansenthilkumar" target="_blank">
-    <img src="https://img.icons8.com/fluent/48/000000/instagram.png" width="40" height="40" />
+  <a href="https://instagram.com/jayanthan_senthilkumar" target="_blank">
+    <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" width="40" height="40" />
   </a>
 </div>
 
