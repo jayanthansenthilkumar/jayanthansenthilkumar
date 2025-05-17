@@ -55,21 +55,7 @@
   </a>
   &nbsp;
   <a href="https://github.com/jayanthansenthilkumar" target="_blank">
-    <img src="https://img.icons8.com/fluent/48/000000/github.png" width="40" height="40" />
-  </a>
-</div>
-
-<div align="center">
-  <a href="https://www.linkedin.com/in/jayanthan18" target="_blank">
-    <img src="https://img.shields.io/badge/Connect_on-LinkedIn-0077B5?style=flat-square&logo=linkedin" />
-  </a>
-  &nbsp;
-  <a href="mailto:jayanthansenthilkumar18@gmail.com">
-    <img src="https://img.shields.io/badge/Email_Me-Gmail-D14836?style=flat-square&logo=gmail" />
-  </a>
-  &nbsp;
-  <a href="https://ceo.prisoltech.com" target="_blank">
-    <img src="https://img.shields.io/badge/Visit-Portfolio-00A0DC?style=flat-square&logo=safari" />
+    <img src="https://img.icons8.com/fluent/48/000000/instagram.png" width="40" height="40" />
   </a>
 </div>
 
