@@ -39,16 +39,6 @@
   <img height="280" width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=jayanthansenthilkumar&custom_title=Contribution%20Graph&bg_color=ffffff&color=000000&line=36BCF7&point=006AFF&area=true&area_color=36BCF7&hide_border=false&border_color=36BCF7" />
 </div>
 
-## 🚀 Featured Projects
-
-<div align="center">
-  <a href="https://github.com/jayanthansenthilkumar/project1">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=jayanthansenthilkumar&repo=project1&theme=light&border_color=36BCF7" />
-  </a>
-  <a href="https://github.com/jayanthansenthilkumar/DisciplineCommittee">
-  </a>
-</div>
-
 ## 📚 Currently Learning
 
 - 🔧 **DevOps** & Cloud Architecture
@@ -60,27 +50,6 @@
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jayanthansenthilkumar&layout=compact&theme=light&border_color=36BCF7" />
-</div>
-
-## 🎯 Quick Facts
-
-- 🌱 Building **[Your Current Project]**
-- 📝 Writing tech articles on **[Your Blog/Medium]**
-- 💬 Ask me about **PHP**, **React**, **Python** & **AI/ML**
-- ⚡ Fun fact: **[Something Interesting About You]**
-
-## 🔤 Programming Languages
-
-<div align="center">
-
-| Language | Level |
-|:--------:|:-----:|
-| PHP | ⭐⭐⭐⭐ |
-| Python | ⭐⭐⭐⭐ |
-| JavaScript | ⭐⭐⭐⭐ |
-| Java | ⭐⭐⭐ |
-| C++ | ⭐⭐⭐ |
-
 </div>
 
 ## 🤝 Connect With Me
