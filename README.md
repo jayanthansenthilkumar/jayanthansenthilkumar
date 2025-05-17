@@ -45,10 +45,10 @@
     <td width="50%" align="center" valign="top" style="padding: 20px;">
       <h2>📚 Currently Learning</h2>
       <ul style="list-style: none; padding: 0;">
-        <li align="center">🔧 <b>DevOps</b> & Cloud Architecture</li>
-        <li align="center">🤖 <b>LLMs</b> & Transformers</li>
-        <li align="center">🎯 <b>System Design</b> & Scalability</li>
-        <li align="center">📊 <b>Data Engineering</b> Pipeline</li>
+        <li>🔧 <b>DevOps</b> & Cloud Architecture</li>
+        <li>🤖 <b>LLMs</b> & Transformers</li>
+        <li>🎯 <b>System Design</b> & Scalability</li>
+        <li>📊 <b>Data Engineering</b> Pipeline</li>
       </ul>
     </td>
     <td width="50%" align="center" valign="top" style="padding: 20px;">
