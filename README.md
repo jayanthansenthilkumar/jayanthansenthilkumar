@@ -6,27 +6,13 @@
 
 ## 💫 About Me
 
-<div style="display: flex; justify-content: space-between; align-items: flex-start;">
-  <div style="flex: 1;">
-    <h3>🌐 Full Stack Development</h3>
-    
-    - 💻 **MERN Stack Developer**
-    - 🔧 Building **Scalable Web Applications**
-    - ⚡ Expertise in **React** & **Node.js**
-    - 📱 Creating **Responsive UI/UX**
-    - 🛢️ Database: **MongoDB**, **MySQL**
-  </div>
-
-  <div style="flex: 1;">
-    <h3>🤖 AI Engineering</h3>
-    
-    - 🎓 **B.Tech in AI & ML**
-    - 🧠 Deep Learning with **TensorFlow**
-    - 📊 **Data Engineering** & Analysis
-    - 🔍 **ML Model Development**
-    - 🚀 **AI Solution Architecture**
-  </div>
-</div>
+| 🌐 Full Stack Development | 🤖 AI Engineering |
+|--------------------------|-------------------|
+| 💻 **MERN Stack Developer** | 🎓 **B.Tech in AI & ML** |
+| 🔧 **Scalable Web Applications** | 🧠 **Deep Learning with TensorFlow** |
+| ⚡ **React** & **Node.js** Expert | 📊 **Data Engineering** & Analysis |
+| 📱 **Responsive UI/UX** Design | 🔍 **ML Model Development** |
+| 🛢️ **MongoDB**, **MySQL** | 🚀 **AI Solution Architecture** |
 
 ## 🛠️ Tech Stack
 
