@@ -42,7 +42,7 @@
 <div align="center">
 <table width="100%">
   <tr>
-    <td width="50%" align="center" valign="top" style="padding: 20px;">
+    <td width="50%" valign="top" style="padding: 20px;">
       <h2>📚 Currently Learning</h2>
       <ul style="list-style: none; padding: 0;">
         <li>🔧 <b>DevOps</b> & Cloud Architecture</li>
