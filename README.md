@@ -8,11 +8,11 @@
 
 | 🌐 Full Stack Development | 🤖 AI Engineering |
 |--------------------------|-------------------|
-| 💻 **MERN Stack Developer** | 🎓 **B.Tech in AI & ML** |
+| 💻 **PHP & MERN Stack Developer** | 🎓 **B.Tech in AI & ML** |
 | 🔧 **Scalable Web Applications** | 🧠 **Deep Learning with TensorFlow** |
-| ⚡ **React** & **Node.js** Expert | 📊 **Data Engineering** & Analysis |
-| 📱 **Responsive UI/UX** Design | 🔍 **ML Model Development** |
-| 🛢️ **MongoDB**, **MySQL** | 🚀 **AI Solution Architecture** |
+| ⚡ **PHP** & **Node.js** Intermediate Level | 📊 **Data Engineering** & Analysis |
+| 📱 **Responsive UI** Design | 🔍 **ML Model Development** |
+| 🛢️ **MongoDB**, **MySQL**, **Supabase** | 🚀 **AI Solution Architecture** |
 
 ## 🛠️ Tech Stack
 
