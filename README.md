@@ -45,8 +45,7 @@
   <a href="https://github.com/jayanthansenthilkumar/project1">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=jayanthansenthilkumar&repo=project1&theme=light&border_color=36BCF7" />
   </a>
-  <a href="https://github.com/jayanthansenthilkumar/project2">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=jayanthansenthilkumar&repo=project2&theme=light&border_color=36BCF7" />
+  <a href="https://github.com/jayanthansenthilkumar/DisciplineCommittee">
   </a>
 </div>
 
