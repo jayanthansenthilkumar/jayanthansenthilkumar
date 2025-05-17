@@ -39,31 +39,38 @@
   <img height="280" width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=jayanthansenthilkumar&custom_title=Contribution%20Graph&bg_color=ffffff&color=000000&line=36BCF7&point=006AFF&area=true&area_color=36BCF7&hide_border=false&border_color=36BCF7" />
 </div>
 
-## 📚 Currently Learning
-
-- 🔧 **DevOps** & Cloud Architecture
-- 🤖 **LLMs** & Transformers
-- 🎯 **System Design** & Scalability
-- 📊 **Data Engineering** Pipeline Development
-
-## 🤝 Connect With Me
-
 <div align="center">
-  <a href="https://www.linkedin.com/in/jayanthan18" target="_blank">
-    <img src="https://img.icons8.com/fluent/48/000000/linkedin.png" width="40" height="40" />
-  </a>
-  &nbsp;
-  <a href="mailto:jayanthansenthilkumar18@gmail.com">
-    <img src="https://img.icons8.com/fluent/48/000000/gmail.png" width="40" height="40" />
-  </a>
-  &nbsp;
-  <a href="https://ceo.prisoltech.com" target="_blank">
-    <img src="https://img.icons8.com/fluent/48/000000/domain.png" width="40" height="40" />
-  </a>
-  &nbsp;
-  <a href="https://instagram.com/jayanthansenthilkumar" target="_blank">
-    <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" width="40" height="40" />
-  </a>
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <h2>📚 Currently Learning</h2>
+      <ul align="left">
+        <li>🔧 <b>DevOps</b> & Cloud Architecture</li>
+        <li>🤖 <b>LLMs</b> & Transformers</li>
+        <li>🎯 <b>System Design</b> & Scalability</li>
+        <li>📊 <b>Data Engineering</b> Pipeline</li>
+      </ul>
+    </td>
+    <td width="50%" align="center">
+      <h2>🤝 Connect With Me</h2>
+      <a href="https://www.linkedin.com/in/jayanthan18" target="_blank">
+        <img src="https://img.icons8.com/fluent/48/000000/linkedin.png" width="40" height="40" />
+      </a>
+      &nbsp;
+      <a href="mailto:jayanthansenthilkumar18@gmail.com">
+        <img src="https://img.icons8.com/fluent/48/000000/gmail.png" width="40" height="40" />
+      </a>
+      &nbsp;
+      <a href="https://ceo.prisoltech.com" target="_blank">
+        <img src="https://img.icons8.com/fluent/48/000000/domain.png" width="40" height="40" />
+      </a>
+      &nbsp;
+      <a href="https://instagram.com/jayanthansenthilkumar" target="_blank">
+        <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" width="40" height="40" />
+      </a>
+    </td>
+  </tr>
+</table>
 </div>
 
 <div align="center">
