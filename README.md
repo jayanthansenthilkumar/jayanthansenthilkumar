@@ -6,12 +6,15 @@
 
 ## 💫 About Me
 
-
 - 🎓 B.Tech in **AI & Machine Learning**
-- 🌱 Passionate about **ML**, **Data Science**, and **AI**
-- 💻 Building with **Python**, **TensorFlow**, **scikit-learn**
-- 🚀 Creating **user-friendly AI applications**
-- 🤝 Open to collaborate on **ML/AI projects**
+- 💻 **Full Stack Developer** & **AI Engineer**
+- 🌱 Specialized in **MERN Stack** and **AI/ML Solutions**
+- 🔧 Building scalable web apps with **React**, **Node.js**, **MongoDB**
+- 🤖 Developing **AI Solutions** using **TensorFlow** & **PyTorch**
+- 📊 Experience in **Data Engineering** & **ML Model Deployment**
+- 🚀 Creating end-to-end **AI-Powered Web Applications**
+- 🌐 Passionate about integrating **AI** with **Web Technologies**
+- 🤝 Open to collaborate on **Full Stack** & **AI Projects**
 
 ## 🛠️ Tech Stack
 
