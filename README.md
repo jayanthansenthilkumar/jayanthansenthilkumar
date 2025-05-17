@@ -86,7 +86,7 @@
 ## 🔥 GitHub Streak
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=jayanthansenthilkumar&background=ffffff&ring=36BCF7&fire=36BCF7&currStreakNum=000000&sideNums=000000&currStreakLabel=006AFF&sideLabels=006AFF&dates=666666&border=36BCF7" width="100%">
+  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com?user=jayanthansenthilkumar&theme=monokai&background=ffffff&border=36BCF7&stroke=36BCF7&ring=FFA500&fire=FFA500&currStreakNum=000000&sideNums=000000&currStreakLabel=006AFF&sideLabels=006AFF&dates=666666" />
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
