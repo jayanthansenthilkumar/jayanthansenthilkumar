@@ -70,9 +70,6 @@
 
 ## 📊 GitHub Stats
 
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=jayanthansenthilkumar&theme=github&border_color=36BCF7" width="100%" alt="Profile Details">
-</div>
 
 <div align="center">
   <a href="https://github.com/jayanthansenthilkumar/github-readme-stats">
