@@ -39,40 +39,35 @@
   <img height="280" width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=jayanthansenthilkumar&custom_title=Contribution%20Graph&bg_color=ffffff&color=000000&line=36BCF7&point=006AFF&area=true&area_color=36BCF7&hide_border=false&border_color=36BCF7" />
 </div>
 
-<div align="center" style="background: #f8f9fa; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-<table width="100%" style="border-collapse: separate; border-spacing: 15px;">
+<div align="center">
+<table width="100%">
   <tr>
-    <td width="50%" style="background: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(54, 188, 247, 0.1);">
-      <h2 align="center">📚 Currently Learning</h2>
-      <ul style="list-style: none; padding: 0; margin: 0;">
-        <li style="margin: 10px 0; padding: 8px; border-radius: 5px; background: #f8f9fa; transition: transform 0.2s;">
-          🔧 <b>DevOps</b> & Cloud Architecture
-        </li>
-        <li style="margin: 10px 0; padding: 8px; border-radius: 5px; background: #f8f9fa; transition: transform 0.2s;">
-          🤖 <b>LLMs</b> & Transformers
-        </li>
-        <li style="margin: 10px 0; padding: 8px; border-radius: 5px; background: #f8f9fa; transition: transform 0.2s;">
-          🎯 <b>System Design</b> & Scalability
-        </li>
-        <li style="margin: 10px 0; padding: 8px; border-radius: 5px; background: #f8f9fa; transition: transform 0.2s;">
-          📊 <b>Data Engineering</b> Pipeline
-        </li>
+    <td width="50%" valign="top" style="padding: 20px;">
+      <h2>📚 Currently Learning</h2>
+      <ul style="list-style: none; padding: 0;">
+        <li>🔧 <b>DevOps</b> & Cloud Architecture</li>
+        <li>🤖 <b>LLMs</b> & Transformers</li>
+        <li>🎯 <b>System Design</b> & Scalability</li>
+        <li>📊 <b>Data Engineering</b> Pipeline</li>
       </ul>
     </td>
-    <td width="50%" style="background: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(54, 188, 247, 0.1);">
-      <h2 align="center">🤝 Connect With Me</h2>
-      <div style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
-        <a href="https://www.linkedin.com/in/jayanthan18" target="_blank" style="transition: transform 0.2s;">
-          <img src="https://img.icons8.com/fluent/48/000000/linkedin.png" width="45" height="45" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));" />
+    <td width="50%" align="center" valign="top" style="padding: 20px;">
+      <h2>🤝 Connect With Me</h2>
+      <div style="margin: 20px 0;">
+        <a href="https://www.linkedin.com/in/jayanthan18" target="_blank">
+          <img src="https://img.icons8.com/fluent/48/000000/linkedin.png" width="45" height="45" />
         </a>
-        <a href="mailto:jayanthansenthilkumar18@gmail.com" style="transition: transform 0.2s;">
-          <img src="https://img.icons8.com/fluent/48/000000/gmail.png" width="45" height="45" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));" />
+        &nbsp;&nbsp;
+        <a href="mailto:jayanthansenthilkumar18@gmail.com">
+          <img src="https://img.icons8.com/fluent/48/000000/gmail.png" width="45" height="45" />
         </a>
-        <a href="https://ceo.prisoltech.com" target="_blank" style="transition: transform 0.2s;">
-          <img src="https://img.icons8.com/fluent/48/000000/domain.png" width="45" height="45" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));" />
+        &nbsp;&nbsp;
+        <a href="https://ceo.prisoltech.com" target="_blank">
+          <img src="https://img.icons8.com/fluent/48/000000/domain.png" width="45" height="45" />
         </a>
-        <a href="https://instagram.com/jayanthansenthilkumar" target="_blank" style="transition: transform 0.2s;">
-          <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" width="45" height="45" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));" />
+        &nbsp;&nbsp;
+        <a href="https://instagram.com/jayanthansenthilkumar" target="_blank">
+          <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" width="45" height="45" />
         </a>
       </div>
     </td>
@@ -81,7 +76,7 @@
 </div>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer&text=Thanks%20for%20visiting!&fontSize=24&fontColor=000000"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer"/>
 </div>
 
 <p align="center">
