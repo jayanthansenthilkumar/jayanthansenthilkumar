@@ -40,34 +40,36 @@
 </div>
 
 <div align="center">
-<table>
+<table width="100%">
   <tr>
-    <td width="50%" align="center">
+    <td width="50%" align="center" valign="top" style="padding: 20px;">
       <h2>📚 Currently Learning</h2>
-      <ul align="left">
-        <li>🔧 <b>DevOps</b> & Cloud Architecture</li>
-        <li>🤖 <b>LLMs</b> & Transformers</li>
-        <li>🎯 <b>System Design</b> & Scalability</li>
-        <li>📊 <b>Data Engineering</b> Pipeline</li>
+      <ul style="list-style: none; padding: 0;">
+        <li align="center">🔧 <b>DevOps</b> & Cloud Architecture</li>
+        <li align="center">🤖 <b>LLMs</b> & Transformers</li>
+        <li align="center">🎯 <b>System Design</b> & Scalability</li>
+        <li align="center">📊 <b>Data Engineering</b> Pipeline</li>
       </ul>
     </td>
-    <td width="50%" align="center">
+    <td width="50%" align="center" valign="top" style="padding: 20px;">
       <h2>🤝 Connect With Me</h2>
-      <a href="https://www.linkedin.com/in/jayanthan18" target="_blank">
-        <img src="https://img.icons8.com/fluent/48/000000/linkedin.png" width="40" height="40" />
-      </a>
-      &nbsp;
-      <a href="mailto:jayanthansenthilkumar18@gmail.com">
-        <img src="https://img.icons8.com/fluent/48/000000/gmail.png" width="40" height="40" />
-      </a>
-      &nbsp;
-      <a href="https://ceo.prisoltech.com" target="_blank">
-        <img src="https://img.icons8.com/fluent/48/000000/domain.png" width="40" height="40" />
-      </a>
-      &nbsp;
-      <a href="https://instagram.com/jayanthansenthilkumar" target="_blank">
-        <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" width="40" height="40" />
-      </a>
+      <div style="margin: 20px 0;">
+        <a href="https://www.linkedin.com/in/jayanthan18" target="_blank">
+          <img src="https://img.icons8.com/fluent/48/000000/linkedin.png" width="45" height="45" />
+        </a>
+        &nbsp;&nbsp;
+        <a href="mailto:jayanthansenthilkumar18@gmail.com">
+          <img src="https://img.icons8.com/fluent/48/000000/gmail.png" width="45" height="45" />
+        </a>
+        &nbsp;&nbsp;
+        <a href="https://ceo.prisoltech.com" target="_blank">
+          <img src="https://img.icons8.com/fluent/48/000000/domain.png" width="45" height="45" />
+        </a>
+        &nbsp;&nbsp;
+        <a href="https://instagram.com/jayanthansenthilkumar" target="_blank">
+          <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" width="45" height="45" />
+        </a>
+      </div>
     </td>
   </tr>
 </table>
