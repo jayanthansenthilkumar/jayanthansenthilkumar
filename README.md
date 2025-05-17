@@ -1,5 +1,3 @@
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=jayanthansenthilkumar&label=Views%20on%20Me&color=0e75b6&style=flat" alt="jayanthansenthilkumar" /> </p>
-
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Montserrat&weight=600&size=35&pause=1000&color=36BCF7FF&center=true&vCenter=true&random=false&width=500&height=70&lines=Hey+There!+%F0%9F%91%8B;I'm+Jayanthan+Senthilkumar;AI+%26+ML+Engineer" alt="Typing SVG" />
   
