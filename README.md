@@ -6,15 +6,27 @@
 
 ## 💫 About Me
 
-- 🎓 B.Tech in **AI & Machine Learning**
-- 💻 **Full Stack Developer** & **AI Engineer**
-- 🌱 Specialized in **MERN Stack** and **AI/ML Solutions**
-- 🔧 Building scalable web apps with **React**, **Node.js**, **MongoDB**
-- 🤖 Developing **AI Solutions** using **TensorFlow** & **PyTorch**
-- 📊 Experience in **Data Engineering** & **ML Model Deployment**
-- 🚀 Creating end-to-end **AI-Powered Web Applications**
-- 🌐 Passionate about integrating **AI** with **Web Technologies**
-- 🤝 Open to collaborate on **Full Stack** & **AI Projects**
+<div style="display: flex; justify-content: space-between; align-items: flex-start;">
+  <div style="flex: 1;">
+    <h3>🌐 Full Stack Development</h3>
+    
+    - 💻 **MERN Stack Developer**
+    - 🔧 Building **Scalable Web Applications**
+    - ⚡ Expertise in **React** & **Node.js**
+    - 📱 Creating **Responsive UI/UX**
+    - 🛢️ Database: **MongoDB**, **MySQL**
+  </div>
+
+  <div style="flex: 1;">
+    <h3>🤖 AI Engineering</h3>
+    
+    - 🎓 **B.Tech in AI & ML**
+    - 🧠 Deep Learning with **TensorFlow**
+    - 📊 **Data Engineering** & Analysis
+    - 🔍 **ML Model Development**
+    - 🚀 **AI Solution Architecture**
+  </div>
+</div>
 
 ## 🛠️ Tech Stack
 
