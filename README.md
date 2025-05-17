@@ -1,13 +1,9 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=jayanthansenthilkumar&label=Views%20on%20Me&color=0e75b6&style=flat" alt="jayanthansenthilkumar" /> </p>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&pause=1000&color=36BCF7FF&center=true&vCenter=true&random=false&width=500&height=70&lines=Hey+There!+%F0%9F%91%8B;I'm+Jayanthan+Senthilkumar;AI+%26+ML+Engineer" alt="Typing SVG" />
-</div>
-
-<div align="center">
-  <a href="https://github.com/jayanthansenthilkumar">
-    <img src="https://komarev.com/ghpvc/?username=jayanthansenthilkumar&color=36BCF7&style=for-the-badge" alt="Profile Views" />
-  </a>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Montserrat&weight=600&size=35&pause=1000&color=36BCF7FF&center=true&vCenter=true&random=false&width=500&height=70&lines=Hey+There!+%F0%9F%91%8B;I'm+Jayanthan+Senthilkumar;AI+%26+ML+Engineer" alt="Typing SVG" />
+  
+  [![](https://komarev.com/ghpvc/?username=jayanthansenthilkumar&color=36BCF7&style=for-the-badge&label=Profile+Views)](https://github.com/jayanthansenthilkumar)
 </div>
 
 ## 💫 About Me
@@ -40,9 +36,9 @@
 ## 🤝 Connect With Me
 
 <div align="center">
-  <a href="https://www.linkedin.com/in/jayanthan18"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/jayanthan18" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="mailto:jayanthansenthilkumar18@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://jayanthansenthilkumar.streamlit.app"><img src="https://img.shields.io/badge/Portfolio-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" /></a>
+  <a href="https://ceo.prisoltech.com" target="_blank"><img src="https://img.shields.io/badge/Portfolio-00A0DC?style=for-the-badge&logo=safari&logoColor=white" /></a>
 </div>
 
 <div align="center">
