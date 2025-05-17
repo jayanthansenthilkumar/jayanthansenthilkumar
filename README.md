@@ -46,12 +46,6 @@
 - 🎯 **System Design** & Scalability
 - 📊 **Data Engineering** Pipeline Development
 
-## 💻 Coding Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jayanthansenthilkumar&layout=compact&theme=light&border_color=36BCF7" />
-</div>
-
 ## 🤝 Connect With Me
 
 <div align="center">
