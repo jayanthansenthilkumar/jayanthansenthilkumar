@@ -70,13 +70,14 @@
 
 ## 📊 GitHub Stats
 
-
 <div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=jayanthansenthilkumar&theme=transparent&bg_color=ffffff&border_color=36BCF7" width="100%" alt="Profile Details">
+
   <a href="https://github.com/jayanthansenthilkumar/github-readme-stats">
-    <img height="200" align="center" src="https://github-readme-stats.vercel.app/api?username=jayanthansenthilkumar&show_icons=true&theme=default&border_color=36BCF7&include_all_commits=true&count_private=true" />
+    <img height="200" align="center" src="https://github-readme-stats.vercel.app/api?username=jayanthansenthilkumar&show_icons=true&bg_color=ffffff&title_color=006AFF&text_color=000000&icon_color=36BCF7&border_color=36BCF7&ring_color=36BCF7&include_all_commits=true&count_private=true" />
   </a>
   <a href="https://github.com/jayanthansenthilkumar/convoychat">
-    <img height="200" align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=jayanthansenthilkumar&layout=compact&langs_count=8&card_width=300&theme=default&border_color=36BCF7" />
+    <img height="200" align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=jayanthansenthilkumar&layout=compact&langs_count=8&card_width=300&bg_color=ffffff&title_color=006AFF&text_color=000000&border_color=36BCF7" />
   </a>
 </div>
 
@@ -85,7 +86,7 @@
 ## 🔥 GitHub Streak
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=jayanthansenthilkumar&theme=default&border=36BCF7&hide_border=false&include_all_commits=true&line_height=27">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=jayanthansenthilkumar&background=ffffff&ring=36BCF7&fire=36BCF7&currStreakNum=000000&sideNums=000000&currStreakLabel=006AFF&sideLabels=006AFF&dates=666666&border=36BCF7" width="100%">
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
@@ -101,7 +102,7 @@
 ## 📈 Activity Graph
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=jayanthansenthilkumar&theme=minimal&bg_color=ffffff&color=000000&line=36BCF7&point=36BCF7&area_color=36BCF7&border_color=36BCF7&hide_border=false" width="100%">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=jayanthansenthilkumar&custom_title=Contribution%20Graph&bg_color=ffffff&color=000000&line=36BCF7&point=006AFF&area=true&area_color=36BCF7&hide_border=false&border_color=36BCF7" width="100%">
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
