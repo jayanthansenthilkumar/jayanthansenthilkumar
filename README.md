@@ -21,7 +21,7 @@
 ## 🛠️ Tech Stack
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,tensorflow,pytorch,django,flask,react,mongodb,mysql,aws,docker&theme=light" />
+  <img src="https://skillicons.dev/icons?i=html,css,javascript,php,python,tensorflow,flask,react,mongodb,mysql,docker&theme=light" />
 </div>
 
 ## 📊 GitHub Stats
