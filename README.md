@@ -8,10 +8,93 @@
   }
   .social-icons img { margin:0 10px; transition:transform 0.3s; }
   .social-icons img:hover { transform:scale(1.2); }
-  .card { background:#f9f9fa; border-radius:10px; padding:20px; margin:24px 0; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
-  .section-title { font-size:1.6rem; color:#006AFF; margin-bottom:12px; }
-  .flex-container { display:flex; flex-wrap:wrap; justify-content:center; gap:16px; }
-  .flex-item { flex:1 1 250px; text-align:center; }
+  .card {
+    background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+    border-left: 4px solid #36BCF7;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 30px 0;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(54,188,247,0.15);
+  }
+  
+  .section-title {
+    font-size: 1.7rem;
+    background: linear-gradient(90deg, #006AFF, #36BCF7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  /* Animated skill bars */
+  .skill-bar {
+    height: 10px;
+    background: #e9ecef;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    display: inline-block;
+  }
+  
+  .skill-bar .skill-level {
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #006AFF, #36BCF7);
+    position: relative;
+    animation: fillBar 1.5s ease-in-out forwards;
+    transform-origin: left;
+    transform: scaleX(0);
+  }
+  
+  @keyframes fillBar {
+    to { transform: scaleX(1); }
+  }
+  
+  .skill-name {
+    position: absolute;
+    left: 15px;
+    top: -20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .skill-percent {
+    position: absolute;
+    right: 15px;
+    top: -20px;
+    font-weight: bold;
+    color: #006AFF;
+  }
+  
+  /* Modern flag badges */
+  .language-badge {
+    display: inline-flex;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 5px 15px;
+    border-radius: 50px;
+    margin: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: all 0.2s;
+    font-weight: bold;
+  }
+  
+  .language-badge:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(54,188,247,0.2);
+  }
+  
+  .language-badge img {
+    margin-right: 10px;
+  }
 </style>
 
 <div align="center">
@@ -126,27 +209,64 @@
   </details>
 </div>
 
-<!-- wrap Skills -->
+<!-- Skills Section with animated bars -->
 <div class="card">
   <h2 class="section-title">🔧 Skills</h2>
-  <p align="center">
-    <img src="https://img.shields.io/badge/HTML-95%25-orange?style=flat-square" />
-    <img src="https://img.shields.io/badge/CSS-90%25-blue?style=flat-square" />
-    <img src="https://img.shields.io/badge/JavaScript-85%25-yellow?style=flat-square" />
-    <img src="https://img.shields.io/badge/PHP-80%25-purple?style=flat-square" />
-    <img src="https://img.shields.io/badge/React-75%25-cyan?style=flat-square" />
-    <img src="https://img.shields.io/badge/Python-70%25-green?style=flat-square" />
-  </p>
+  <div align="center">
+    <div class="skill-bar">
+      <span class="skill-name">HTML</span>
+      <span class="skill-percent">95%</span>
+      <div class="skill-level" style="width: 95%"></div>
+    </div>
+    
+    <div class="skill-bar">
+      <span class="skill-name">CSS</span>
+      <span class="skill-percent">90%</span>
+      <div class="skill-level" style="width: 90%"></div>
+    </div>
+    
+    <div class="skill-bar">
+      <span class="skill-name">JavaScript</span>
+      <span class="skill-percent">85%</span>
+      <div class="skill-level" style="width: 85%"></div>
+    </div>
+    
+    <div class="skill-bar">
+      <span class="skill-name">PHP</span>
+      <span class="skill-percent">80%</span>
+      <div class="skill-level" style="width: 80%"></div>
+    </div>
+    
+    <div class="skill-bar">
+      <span class="skill-name">React</span>
+      <span class="skill-percent">75%</span>
+      <div class="skill-level" style="width: 75%"></div>
+    </div>
+    
+    <div class="skill-bar">
+      <span class="skill-name">Python</span>
+      <span class="skill-percent">70%</span>
+      <div class="skill-level" style="width: 70%"></div>
+    </div>
+  </div>
 </div>
 
-<!-- wrap Languages & Footer -->
+<!-- Languages with modern badges -->
 <div class="card">
   <h2 class="section-title">🗣️ Languages</h2>
   <div align="center">
-    <!-- add horizontal spacing to each flag -->
-    <img src="https://github.com/madebybowtie/flagpack/raw/main/flags/us.svg" width="40" style="margin:0 10px;" />
-    <img src="https://github.com/madebybowtie/flagpack/raw/main/flags/in.svg" width="40" style="margin:0 10px;" />
-    <img src="https://github.com/madebybowtie/flagpack/raw/main/flags/es.svg" width="40" style="margin:0 10px;" />
+    <span class="language-badge">
+      <img src="https://github.com/madebybowtie/flagpack/raw/main/flags/us.svg" width="20" />
+      English (Native)
+    </span>
+    <span class="language-badge">
+      <img src="https://github.com/madebybowtie/flagpack/raw/main/flags/in.svg" width="20" />
+      Hindi (Fluent)
+    </span>
+    <span class="language-badge">
+      <img src="https://github.com/madebybowtie/flagpack/raw/main/flags/es.svg" width="20" />
+      Spanish (Basic)
+    </span>
   </div>
 
   <div align="center">
