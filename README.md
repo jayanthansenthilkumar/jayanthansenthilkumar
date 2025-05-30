@@ -1,18 +1,20 @@
+<!-- move style to top of file -->
+<style>
+  .profile-avatar { border-radius:50%; border:5px solid #36BCF7; animation:pulse 2s infinite; }
+  @keyframes pulse {
+    0%{box-shadow:0 0 0 0 rgba(54,188,247,0.7);}
+    70%{box-shadow:0 0 0 20px rgba(54,188,247,0);}
+    100%{box-shadow:0 0 0 0 rgba(54,188,247,0);}
+  }
+  .social-icons img { margin:0 10px; transition:transform 0.3s; }
+  .social-icons img:hover { transform:scale(1.2); }
+  .card { background:#f9f9fa; border-radius:10px; padding:20px; margin:24px 0; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
+  .section-title { font-size:1.6rem; color:#006AFF; margin-bottom:12px; }
+  .flex-container { display:flex; flex-wrap:wrap; justify-content:center; gap:16px; }
+  .flex-item { flex:1 1 250px; text-align:center; }
+</style>
+
 <div align="center">
-  <style>
-    .profile-avatar { border-radius:50%; border:5px solid #36BCF7; animation:pulse 2s infinite; }
-    @keyframes pulse {
-      0%{box-shadow:0 0 0 0 rgba(54,188,247,0.7);}
-      70%{box-shadow:0 0 0 20px rgba(54,188,247,0);}
-      100%{box-shadow:0 0 0 0 rgba(54,188,247,0);}
-    }
-    .social-icons img { margin:0 10px; transition:transform 0.3s; }
-    .social-icons img:hover { transform:scale(1.2); }
-    .card { background: #f9f9fa; border-radius: 10px; padding: 20px; margin: 24px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-    .section-title { font-size: 1.6rem; color: #006AFF; margin-bottom: 12px; }
-    .flex-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
-    .flex-item { flex: 1 1 250px; text-align: center; }
-  </style>
 
   <!-- animated avatar -->
   <img class="profile-avatar" src="https://readme-typing-svg.herokuapp.com?font=Montserrat&weight=600&size=35&pause=500&color=36BCF7FF&center=true&vCenter=true&random=false&width=500&height=70&lines=Hey+There!+%F0%9F%91%8B;I'm+Jayanthan+Senthilkumar;Fullstack+Developer;AI+%26+ML+Engineer" alt="Typing SVG" />
@@ -117,11 +119,11 @@
 <div class="card">
   <h2 class="section-title">✨ Fun Facts</h2>
   <details>
-<summary>Click to expand</summary>
-- 🚀 Wrote over 10k lines of code in 2023  
-- ☕︎ Drank 250+ cups of coffee  
-- 🐶 Own a Golden Retriever named Charlie  
-</details>
+    <summary>Click to expand</summary>
+    - 🚀 Wrote over 10k lines of code in 2023  
+    - ☕︎ Drank 250+ cups of coffee  
+    - 🐶 Own a Golden Retriever named Charlie  
+  </details>
 </div>
 
 <!-- wrap Skills -->
