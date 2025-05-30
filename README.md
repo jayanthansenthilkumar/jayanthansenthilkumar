@@ -113,15 +113,15 @@
 
 ## 🗣️ Languages
 <div align="center">
-  <img src="https://github.com/madebybowtie/flagpack/raw/main/flags/us.svg" width="40" />  
-  <img src="https://github.com/madebybowtie/flagpack/raw/main/flags/in.svg" width="40" />  
-  <img src="https://github.com/madebybowtie/flagpack/raw/main/flags/es.svg" width="40" />  
+  <!-- add horizontal spacing to each flag -->
+  <img src="https://github.com/madebybowtie/flagpack/raw/main/flags/us.svg" width="40" style="margin:0 10px;" />
+  <img src="https://github.com/madebybowtie/flagpack/raw/main/flags/in.svg" width="40" style="margin:0 10px;" />
+  <img src="https://github.com/madebybowtie/flagpack/raw/main/flags/es.svg" width="40" style="margin:0 10px;" />
 </div>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer"/>
-</div>
-
-<p align="center">
+  <!-- footer capsule and badge in one centered block -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" alt="footer capsule" />
+  <br/>
   <img src="https://img.shields.io/badge/Thanks%20for%20visiting-Star%20if%20useful-brightgreen.svg" alt="Thanks for visiting!" />
-</p>
+</div>
