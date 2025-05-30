@@ -37,32 +37,68 @@ me.say_hi()
 <table>
   <tr>
     <td width="50%">
-      <h3 align="center">AI Project Title</h3>
-      <p align="center">
+      <h3 align="center">📊 AI-Powered Analytics Platform</h3>
+      <div align="center">
         <a href="https://github.com/your-repo-link" target="_blank">
-          <img src="https://via.placeholder.com/300x180?text=AI+Project+Demo" width="100%" alt="AI Project"/>
+          <img src="https://cdn.dribbble.com/userupload/6987738/file/original-bdc6bb4e918cd69a35716a3b0773f381.gif" width="100%" alt="AI Analytics Dashboard"/>
         </a>
-        <p align="center">
-          Built with: <strong>TensorFlow, Python, Flask</strong>
+        <p>
+          <a href="https://github.com/your-repo-link" target="_blank">
+            <img src="https://img.shields.io/badge/Code-View%20Repository-36BCF7?style=for-the-badge&logo=github" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="https://img.shields.io/badge/Demo-Live%20Preview-FF6B00?style=for-the-badge&logo=vercel" />
+          </a>
         </p>
-        <p align="center">
-          A machine learning solution for [brief description]
-        </p>
-      </p>
+        <p><strong>TensorFlow, Python, Flask, React</strong> - An intelligent dashboard that processes large datasets to generate predictive insights and visualizations using machine learning algorithms and neural networks.</p>
+      </div>
     </td>
     <td width="50%">
-      <h3 align="center">Web Project Title</h3>
-      <p align="center">
+      <h3 align="center">🌐 E-Commerce Microservices Platform</h3>
+      <div align="center">
         <a href="https://github.com/your-repo-link" target="_blank">
-          <img src="https://via.placeholder.com/300x180?text=Web+Project+Demo" width="100%" alt="Web Project"/>
+          <img src="https://cdn.dribbble.com/users/1138814/screenshots/15164962/media/5ccd58591d6b56545d61ce912398216b.gif" width="100%" alt="E-commerce Platform"/>
         </a>
-        <p align="center">
-          Built with: <strong>MERN Stack, PHP</strong>
+        <p>
+          <a href="https://github.com/your-repo-link" target="_blank">
+            <img src="https://img.shields.io/badge/Code-View%20Repository-36BCF7?style=for-the-badge&logo=github" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="https://img.shields.io/badge/Demo-Live%20Preview-FF6B00?style=for-the-badge&logo=vercel" />
+          </a>
         </p>
-        <p align="center">
-          Full-stack application featuring [key features]
+        <p><strong>MERN Stack, PHP, Docker</strong> - A scalable e-commerce solution with microservices architecture featuring real-time inventory management, payment processing, and personalized recommendations.</p>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3 align="center">🤖 Conversational AI Assistant</h3>
+      <div align="center">
+        <a href="https://github.com/your-repo-link" target="_blank">
+          <img src="https://cdn.dribbble.com/users/721278/screenshots/17151315/media/b491cb050265bc4ef02877b715ca658e.png" width="100%" alt="Chatbot UI"/>
+        </a>
+        <p>
+          <a href="https://github.com/your-repo-link" target="_blank">
+            <img src="https://img.shields.io/badge/Code-View%20Repository-36BCF7?style=for-the-badge&logo=github" />
+          </a>
         </p>
-      </p>
+        <p><strong>NLP, TensorFlow, Python</strong> - A sophisticated chatbot leveraging transformer models to provide human-like conversational experiences with context awareness and sentiment analysis.</p>
+      </div>
+    </td>
+    <td width="50%">
+      <h3 align="center">📱 Cross-Platform Mobile App</h3>
+      <div align="center">
+        <a href="https://github.com/your-repo-link" target="_blank">
+          <img src="https://cdn.dribbble.com/users/1998175/screenshots/15459384/media/48ac2b43ebe81ba0866afea1383cc939.png" width="100%" alt="Mobile App"/>
+        </a>
+        <p>
+          <a href="https://github.com/your-repo-link" target="_blank">
+            <img src="https://img.shields.io/badge/Code-View%20Repository-36BCF7?style=for-the-badge&logo=github" />
+          </a>
+        </p>
+        <p><strong>React Native, Node.js, Firebase</strong> - A feature-rich lifestyle application with offline capabilities, push notifications, and seamless synchronization across devices.</p>
+      </div>
     </td>
   </tr>
 </table>
@@ -71,23 +107,172 @@ me.say_hi()
 ## 🛠️ Tech Stack
 
 <div align="center">
-  <h3>Languages</h3>
-  <p>
-    <img src="https://skillicons.dev/icons?i=html,css,js,php,python&theme=light" />
-  </p>
+  <h3>💻 Languages</h3>
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://skillicons.dev/icons?i=html" width="48" height="48" alt="HTML5" />
+        <br>HTML5
+        <br>
+        <img src="https://progress-bar.dev/90/" width="80">
+      </td>
+      <td align="center">
+        <img src="https://skillicons.dev/icons?i=css" width="48" height="48" alt="CSS" />
+        <br>CSS3
+        <br>
+        <img src="https://progress-bar.dev/85/" width="80">
+      </td>
+      <td align="center">
+        <img src="https://skillicons.dev/icons?i=js" width="48" height="48" alt="JavaScript" />
+        <br>JavaScript
+        <br>
+        <img src="https://progress-bar.dev/85/" width="80">
+      </td>
+      <td align="center">
+        <img src="https://skillicons.dev/icons?i=php" width="48" height="48" alt="PHP" />
+        <br>PHP
+        <br>
+        <img src="https://progress-bar.dev/80/" width="80">
+      </td>
+      <td align="center">
+        <img src="https://skillicons.dev/icons?i=python" width="48" height="48" alt="Python" />
+        <br>Python
+        <br>
+        <img src="https://progress-bar.dev/90/" width="80">
+      </td>
+    </tr>
+  </table>
   
-  <h3>Frameworks & Libraries</h3>
-  <p>
-    <img src="https://skillicons.dev/icons?i=react,nodejs,express,flask,tensorflow&theme=light" />
-  </p>
+  <h3>🚀 Frameworks & Libraries</h3>
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://skillicons.dev/icons?i=react" width="48" height="48" alt="React" />
+        <br>React
+        <br>
+        <img src="https://progress-bar.dev/85/" width="80">
+      </td>
+      <td align="center">
+        <img src="https://skillicons.dev/icons?i=nodejs" width="48" height="48" alt="Node.js" />
+        <br>Node.js
+        <br>
+        <img src="https://progress-bar.dev/80/" width="80">
+      </td>
+      <td align="center">
+        <img src="https://skillicons.dev/icons?i=express" width="48" height="48" alt="Express" />
+        <br>Express
+        <br>
+        <img src="https://progress-bar.dev/75/" width="80">
+      </td>
+      <td align="center">
+        <img src="https://skillicons.dev/icons?i=flask" width="48" height="48" alt="Flask" />
+        <br>Flask
+        <br>
+        <img src="https://progress-bar.dev/85/" width="80">
+      </td>
+      <td align="center">
+        <img src="https://skillicons.dev/icons?i=tensorflow" width="48" height="48" alt="TensorFlow" />
+        <br>TensorFlow
+        <br>
+        <img src="https://progress-bar.dev/80/" width="80">
+      </td>
+    </tr>
+  </table>
 
-  <h3>Databases & Tools</h3>
-  <p>
-    <img src="https://skillicons.dev/icons?i=mongodb,mysql,docker,vscode,git&theme=light" />
-  </p>
+  <h3>🗄️ Databases & Tools</h3>
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://skillicons.dev/icons?i=mongodb" width="48" height="48" alt="MongoDB" />
+        <br>MongoDB
+        <br>
+        <img src="https://progress-bar.dev/85/" width="80">
+      </td>
+      <td align="center">
+        <img src="https://skillicons.dev/icons?i=mysql" width="48" height="48" alt="MySQL" />
+        <br>MySQL
+        <br>
+        <img src="https://progress-bar.dev/90/" width="80">
+      </td>
+      <td align="center">
+        <img src="https://skillicons.dev/icons?i=docker" width="48" height="48" alt="Docker" />
+        <br>Docker
+        <br>
+        <img src="https://progress-bar.dev/70/" width="80">
+      </td>
+      <td align="center">
+        <img src="https://skillicons.dev/icons?i=git" width="48" height="48" alt="Git" />
+        <br>Git
+        <br>
+        <img src="https://progress-bar.dev/85/" width="80">
+      </td>
+      <td align="center">
+        <img src="https://skillicons.dev/icons?i=aws" width="48" height="48" alt="AWS" />
+        <br>AWS
+        <br>
+        <img src="https://progress-bar.dev/65/" width="80">
+      </td>
+    </tr>
+  </table>
 </div>
 
-## 📈 GitHub Activity
+## 👨‍💻 Work Experience
+
+<div align="center">
+  <table>
+    <tr>
+      <td width="76"><img src="https://img.icons8.com/color/96/000000/professional.png" width="76" /></td>
+      <td>
+        <h3>Senior Software Engineer</h3>
+        <p>PrisolTech • Full-time • 2022 - Present</p>
+        <ul>
+          <li>Led the development of AI-powered analytics solutions for enterprise clients</li>
+          <li>Architected and implemented scalable microservices using PHP and Node.js</li>
+          <li>Mentored junior developers and conducted technical code reviews</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td width="76"><img src="https://img.icons8.com/color/96/000000/laptop-coding.png" width="76" /></td>
+      <td>
+        <h3>Machine Learning Engineer</h3>
+        <p>TechInnovate • Full-time • 2020 - 2022</p>
+        <ul>
+          <li>Developed and deployed machine learning models for predictive analytics</li>
+          <li>Created data pipelines for efficient processing of large datasets</li>
+          <li>Collaborated with cross-functional teams to integrate ML solutions</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</div>
+
+## 🏆 Certifications & Achievements
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://img.icons8.com/color/96/000000/certificate.png" width="48" />
+        <p>AWS Certified<br>Solutions Architect</p>
+      </td>
+      <td align="center">
+        <img src="https://img.icons8.com/color/96/000000/diploma.png" width="48" />
+        <p>TensorFlow<br>Developer Certificate</p>
+      </td>
+      <td align="center">
+        <img src="https://img.icons8.com/color/96/000000/prize.png" width="48" />
+        <p>Hackathon<br>Winner 2022</p>
+      </td>
+      <td align="center">
+        <img src="https://img.icons8.com/color/96/000000/conference.png" width="48" />
+        <p>Speaker at<br>DevCon 2023</p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+## 📊 GitHub Activity
 
 <div align="center">
   <img height="150" src="https://github-readme-stats.vercel.app/api?username=jayanthansenthilkumar&show_icons=true&bg_color=ffffff&title_color=006AFF&text_color=000000&icon_color=36BCF7&border_color=36BCF7&ring_color=36BCF7&include_all_commits=true&count_private=true&hide_border=false" />
@@ -112,18 +297,37 @@ me.say_hi()
   <table border="0">
     <tr>
       <td width="50%" valign="top">
-        <ul style="list-style-type:none;">
-          <li>🔧 <b>DevOps</b> - CI/CD, Docker, Kubernetes</li>
-          <li>🤖 <b>LLMs & Transformers</b> - Building NLP solutions</li>
-          <li>🎯 <b>System Design</b> - Scalable architectures</li>
-          <li>📊 <b>Data Engineering</b> - ETL pipelines, data lakes</li>
-        </ul>
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXcydGkzaWppOGt6eXV6czNlNjQ1bjg2dGg0aWthZnJjMW1sNmViayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RbDKaczqWovIugyJmW/giphy.gif" width="100%">
       </td>
       <td width="50%" valign="top">
-        <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=light" width="100%" alt="Quote" />
+        <h3>🔍 Current Focus Areas</h3>
+        <ul>
+          <li>🔧 <b>DevOps & CI/CD</b> - Building automated deployment pipelines with GitHub Actions and Jenkins</li>
+          <li>🤖 <b>LLMs & Transformers</b> - Exploring fine-tuning techniques for domain-specific applications</li>
+          <li>🎯 <b>System Design</b> - Creating scalable architectures for high-traffic applications</li>
+          <li>📊 <b>Data Engineering</b> - Implementing efficient ETL processes with Apache Airflow</li>
+          <li>🔐 <b>Cybersecurity</b> - Integrating security best practices in application development</li>
+        </ul>
       </td>
     </tr>
   </table>
+</div>
+
+## 🎯 Future Goals
+
+<div align="center">
+  <img src="https://i.imgur.com/KnbkTYc.png" width="100%" />
+</div>
+
+<div align="center">
+  <h3>📚 Knowledge Sharing</h3>
+  <p>Check out some of my latest technical articles and tutorials:</p>
+  <a href="#" target="_blank">
+    <img src="https://img.shields.io/badge/Medium-Building%20Scalable%20Microservices-12100E?style=for-the-badge&logo=medium&logoColor=white" />
+  </a>
+  <a href="#" target="_blank">
+    <img src="https://img.shields.io/badge/Dev.to-Machine%20Learning%20Pipeline%20Tutorial-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white" />
+  </a>
 </div>
 
 ## 🤝 Connect With Me
