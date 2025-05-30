@@ -1,6 +1,4 @@
 <div align="center">
-  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXcydGkzaWppOGt6eXV6czNlNjQ1bjg2dGg0aWthZnJjMW1sNmViayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RbDKaczqWovIugyJmW/giphy.gif" width="45%" />
-  
   <img src="https://readme-typing-svg.herokuapp.com?font=Montserrat&weight=600&size=35&pause=500&color=36BCF7FF&center=true&vCenter=true&random=false&width=500&height=70&lines=Hey+There!+%F0%9F%91%8B;I'm+Jayanthan+Senthilkumar;Fullstack+Developer;AI+%26+ML+Engineer" alt="Typing SVG" />
   
   [![](https://komarev.com/ghpvc/?username=jayanthansenthilkumar&color=36BCF7&style=for-the-badge&label=Profile+Views)](https://github.com/jayanthansenthilkumar)
@@ -42,19 +40,20 @@
 </div>
 
 <div align="center">
-<table width="100%" style="border: none;">
+<table width="100%">
   <tr>
-    <td width="50%" valign="top" align="center" style="padding: 20px; border: 1px solid #36BCF7; border-radius: 10px; background-color: #f8f9fa;">
-      <h2 style="border-bottom: 2px solid #36BCF7; padding-bottom: 10px; color: #006AFF;">📚 Currently Learning</h2>
-      <ul style="list-style: none; padding: 0; text-align: left; margin-top: 15px;">
-        <li style="margin-bottom: 8px;">🔧 <b>DevOps</b> & Cloud Architecture</li>
-        <li style="margin-bottom: 8px;">🤖 <b>LLMs</b> & Transformers</li>
-        <li style="margin-bottom: 8px;">🎯 <b>System Design</b> & Scalability</li>
-        <li style="margin-bottom: 8px;">📊 <b>Data Engineering</b> Pipeline</li>
+    <td width="50%" valign="top" style="padding: 20px;">
+      <h2>📚 Currently Learning</h2>
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXcydGkzaWppOGt6eXV6czNlNjQ1bjg2dGg0aWthZnJjMW1sNmViayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RbDKaczqWovIugyJmW/giphy.gif" width="100%">
+      <ul style="list-style: none; padding: 0;">
+        <li>🔧 <b>DevOps</b> & Cloud Architecture</li>
+        <li>🤖 <b>LLMs</b> & Transformers</li>
+        <li>🎯 <b>System Design</b> & Scalability</li>
+        <li>📊 <b>Data Engineering</b> Pipeline</li>
       </ul>
     </td>
-    <td width="50%" align="center" valign="top" style="padding: 20px; border: 1px solid #36BCF7; border-radius: 10px; background-color: #f8f9fa;">
-      <h2 style="border-bottom: 2px solid #36BCF7; padding-bottom: 10px; color: #006AFF;">🤝 Connect With Me</h2>
+    <td width="50%" align="center" valign="top" style="padding: 20px;">
+      <h2>🤝 Connect With Me</h2>
       <div style="margin: 20px 0;">
         <a href="https://www.linkedin.com/in/jayanthan18" target="_blank">
           <img src="https://img.icons8.com/fluent/48/000000/linkedin.png" width="45" height="45" />
