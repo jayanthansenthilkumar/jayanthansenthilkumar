@@ -297,7 +297,7 @@ me.say_hi()
   <table border="0">
     <tr>
       <td width="50%" valign="top">
-        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXcydGkzaWppOGt6eXV6czNlNjQ1bjg2dGg0aWthZnJjMW1sNmViayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RbDKaczqWovIugyJmW/giphy.gif" width="100%">
+        d
       </td>
       <td width="50%" valign="top">
         <h3>🔍 Current Focus Areas</h3>

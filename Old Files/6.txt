@@ -44,6 +44,7 @@
   <tr>
     <td width="50%" valign="top" style="padding: 20px;">
       <h2>📚 Currently Learning</h2>
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXcydGkzaWppOGt6eXV6czNlNjQ1bjg2dGg0aWthZnJjMW1sNmViayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RbDKaczqWovIugyJmW/giphy.gif" width="100%">
       <ul style="list-style: none; padding: 0;">
         <li>🔧 <b>DevOps</b> & Cloud Architecture</li>
         <li>🤖 <b>LLMs</b> & Transformers</li>
