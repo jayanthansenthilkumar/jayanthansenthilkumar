@@ -1,278 +1,100 @@
-<!-- move style to top of file -->
-<style>
-  .profile-avatar { border-radius:50%; border:5px solid #36BCF7; animation:pulse 2s infinite; }
-  @keyframes pulse {
-    0%{box-shadow:0 0 0 0 rgba(54,188,247,0.7);}
-    70%{box-shadow:0 0 0 20px rgba(54,188,247,0);}
-    100%{box-shadow:0 0 0 0 rgba(54,188,247,0);}
-  }
-  .social-icons img { margin:0 10px; transition:transform 0.3s; }
-  .social-icons img:hover { transform:scale(1.2); }
-  .card {
-    background: linear-gradient(145deg, #f8f9fa, #e9ecef);
-    border-left: 4px solid #36BCF7;
-    border-radius: 8px;
-    padding: 25px;
-    margin: 30px 0;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(54,188,247,0.15);
-  }
-  
-  .section-title {
-    font-size: 1.7rem;
-    background: linear-gradient(90deg, #006AFF, #36BCF7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
-    margin-bottom: 20px;
-  }
-  
-  /* Animated skill bars */
-  .skill-bar {
-    height: 10px;
-    background: #e9ecef;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    position: relative;
-    width: 100%;
-    max-width: 500px;
-    display: inline-block;
-  }
-  
-  .skill-bar .skill-level {
-    height: 100%;
-    border-radius: 5px;
-    background: linear-gradient(90deg, #006AFF, #36BCF7);
-    position: relative;
-    animation: fillBar 1.5s ease-in-out forwards;
-    transform-origin: left;
-    transform: scaleX(0);
-  }
-  
-  @keyframes fillBar {
-    to { transform: scaleX(1); }
-  }
-  
-  .skill-name {
-    position: absolute;
-    left: 15px;
-    top: -20px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .skill-percent {
-    position: absolute;
-    right: 15px;
-    top: -20px;
-    font-weight: bold;
-    color: #006AFF;
-  }
-  
-  /* Modern flag badges */
-  .language-badge {
-    display: inline-flex;
-    align-items: center;
-    background: #f8f9fa;
-    padding: 5px 15px;
-    border-radius: 50px;
-    margin: 5px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-    transition: all 0.2s;
-    font-weight: bold;
-  }
-  
-  .language-badge:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 10px rgba(54,188,247,0.2);
-  }
-  
-  .language-badge img {
-    margin-right: 10px;
-  }
-</style>
+# Jayanthan Senthilkumar
+
+## 👨‍💻 Fullstack Developer
+
+![Profile Views](https://komarev.com/ghpvc/?username=your-github-username&color=blue)
+
+### 🚀 About Me
+
+I'm a passionate Fullstack Developer with expertise in building responsive web applications. My focus is on creating efficient, scalable, and user-friendly solutions using modern technologies.
+
+---
+
+### 💻 Tech Stack
+
+#### Frontend
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+
+#### Backend
+![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+
+#### Tools & Others
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
+![VS Code](https://img.shields.io/badge/-VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
+
+---
+
+### 📊 GitHub Stats
 
 <div align="center">
-
-  <!-- animated avatar -->
-  <img class="profile-avatar" src="https://readme-typing-svg.herokuapp.com?font=Montserrat&weight=600&size=35&pause=500&color=36BCF7FF&center=true&vCenter=true&random=false&width=500&height=70&lines=Hey+There!+%F0%9F%91%8B;I'm+Jayanthan+Senthilkumar;Fullstack+Developer;AI+%26+ML+Engineer" alt="Typing SVG" />
-
-  <!-- gradient WELCOME badge -->
-  <p>
-    <img src="https://img.shields.io/badge/👋-WELCOME-ff69b4?style=for-the-badge&logo=github" alt="WELCOME"/>
-  </p>
-
-  <!-- profile views badge -->
-  [![](https://komarev.com/ghpvc/?username=jayanthansenthilkumar&color=36BCF7&style=for-the-badge&label=Profile+Views)](https://github.com/jayanthansenthilkumar)
+  <img src="https://github-readme-stats.vercel.app/api?username=your-github-username&show_icons=true&theme=radical" alt="GitHub Stats" />
 </div>
 
-<!-- wrap About Me -->
-<div class="card">
-  <h2 class="section-title">💫 About Me</h2>
-  <div align="center">
-
-  | 🌐 Full Stack Development | 🤖 AI Engineering |
-  |:------------------------:|:-----------------:|
-  | 💻 **PHP & MERN Stack Developer** | 🎓 **B.Tech in AI & ML** |
-  | 🔧 **Scalable Web Applications** | 🧠 **Deep Learning with TensorFlow** |
-  | ⚡ **PHP** & **Node.js** Intermediate Level | 📊 **Data Engineering** & Analysis |
-  | 📱 **Responsive UI** Design | 🔍 **ML Model Development** |
-  | 🛢️ **MongoDB**, **MySQL**, **Supabase** | 🚀 **AI Solution Architecture** |
-
-  </div>
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=your-github-username&theme=dark" alt="GitHub Streak" />
 </div>
 
-<!-- wrap Tech Stack -->
-<div class="card">
-  <h2 class="section-title">🛠️ Tech Stack</h2>
-  <div class="flex-container">
-    <div class="flex-item">
-      <img src="https://skillicons.dev/icons?i=html,css,javascript,php,python,tensorflow,flask,react,mongodb,mysql,docker&theme=light" />
-    </div>
-  </div>
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=your-github-username&layout=compact&theme=radical" alt="Top Languages" />
 </div>
 
-<!-- wrap GitHub Stats -->
-<div class="card">
-  <h2 class="section-title">📊 GitHub Stats</h2>
-  <div class="flex-container">
-    <div class="flex-item">
-      <img height="150" src="https://github-readme-stats.vercel.app/api?username=jayanthansenthilkumar&show_icons=true&bg_color=ffffff&title_color=006AFF&text_color=000000&icon_color=36BCF7&border_color=36BCF7&ring_color=36BCF7&include_all_commits=true&count_private=true" />
-    </div>
-    <div class="flex-item">
-      <img height="150" src="https://github-readme-streak-stats.herokuapp.com?user=jayanthansenthilkumar&background=ffffff&border=36BCF7&stroke=36BCF7&ring=36BCF7&fire=FF6B00&currStreakNum=000000&currStreakLabel=006AFF&dates=666666" />
-    </div>
-  </div>
-</div>
+---
 
-<!-- wrap Contribution Graph & Trophy -->
-<div class="card">
-  <h2 class="section-title">🏆 Achievements & Activity</h2>
-  <div class="flex-container">
-    <div class="flex-item">
-      <img width="95%" src="https://github-profile-trophy.vercel.app/?username=jayanthansenthilkumar&theme=flat&column=8&margin-w=5&margin-h=5&no-bg=true&no-frame=false&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C" />
-    </div>
-    <div class="flex-item">
-      <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=jayanthansenthilkumar&custom_title=Contribution%20Graph&bg_color=ffffff&color=000000&line=36BCF7&point=006AFF&area=true&area_color=36BCF7&hide_border=false&border_color=36BCF7" />
-    </div>
-  </div>
-</div>
+### 🔥 Recent Activity
 
-<!-- wrap Currently Learning & Connect -->
-<div class="card">
-  <div class="flex-container">
-    <div class="flex-item">
-      <h2 class="section-title">📚 Currently Learning</h2>
-      <ul style="list-style: none; padding: 0;">
-        <li>🔧 <b>DevOps</b> & Cloud Architecture</li>
-        <li>🤖 <b>LLMs</b> & Transformers</li>
-        <li>🎯 <b>System Design</b> & Scalability</li>
-        <li>📊 <b>Data Engineering</b> Pipeline</li>
-      </ul>
-    </div>
-    <div class="flex-item">
-      <h2 class="section-title">🤝 Connect With Me</h2>
-      <div style="margin: 20px 0;" class="social-icons">
-        <a href="https://www.linkedin.com/in/jayanthan18" target="_blank">
-          <img src="https://img.icons8.com/fluent/48/000000/linkedin.png" width="45" height="45" />
-        </a>
-        &nbsp;&nbsp;
-        <a href="mailto:jayanthansenthilkumar18@gmail.com">
-          <img src="https://img.icons8.com/fluent/48/000000/gmail.png" width="45" height="45" />
-        </a>
-        &nbsp;&nbsp;
-        <a href="https://ceo.prisoltech.com" target="_blank">
-          <img src="https://img.icons8.com/fluent/48/000000/domain.png" width="45" height="45" />
-        </a>
-        &nbsp;&nbsp;
-        <a href="https://instagram.com/jayanthansenthilkumar" target="_blank">
-          <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" width="45" height="45" />
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+<!--START_SECTION:activity-->
+1. 🎉 Merged PR [#123](https://github.com/username/repo/pull/123) in [username/repo](https://github.com/username/repo)
+2. 💪 Opened PR [#456](https://github.com/username/repo/pull/456) in [username/repo](https://github.com/username/repo)
+3. 🔍 Reviewed PR [#789](https://github.com/username/repo/pull/789) in [username/repo](https://github.com/username/repo)
+<!--END_SECTION:activity-->
 
-<!-- wrap Fun Facts -->
-<div class="card">
-  <h2 class="section-title">✨ Fun Facts</h2>
-  <details>
-    <summary>Click to expand</summary>
-    - 🚀 Wrote over 10k lines of code in 2023  
-    - ☕︎ Drank 250+ cups of coffee  
-    - 🐶 Own a Golden Retriever named Charlie  
-  </details>
-</div>
+---
 
-<!-- Skills Section with animated bars -->
-<div class="card">
-  <h2 class="section-title">🔧 Skills</h2>
-  <div align="center">
-    <div class="skill-bar">
-      <span class="skill-name">HTML</span>
-      <span class="skill-percent">95%</span>
-      <div class="skill-level" style="width: 95%"></div>
-    </div>
-    
-    <div class="skill-bar">
-      <span class="skill-name">CSS</span>
-      <span class="skill-percent">90%</span>
-      <div class="skill-level" style="width: 90%"></div>
-    </div>
-    
-    <div class="skill-bar">
-      <span class="skill-name">JavaScript</span>
-      <span class="skill-percent">85%</span>
-      <div class="skill-level" style="width: 85%"></div>
-    </div>
-    
-    <div class="skill-bar">
-      <span class="skill-name">PHP</span>
-      <span class="skill-percent">80%</span>
-      <div class="skill-level" style="width: 80%"></div>
-    </div>
-    
-    <div class="skill-bar">
-      <span class="skill-name">React</span>
-      <span class="skill-percent">75%</span>
-      <div class="skill-level" style="width: 75%"></div>
-    </div>
-    
-    <div class="skill-bar">
-      <span class="skill-name">Python</span>
-      <span class="skill-percent">70%</span>
-      <div class="skill-level" style="width: 70%"></div>
-    </div>
-  </div>
-</div>
+### 🌟 Featured Projects
 
-<!-- Languages with modern badges -->
-<div class="card">
-  <h2 class="section-title">🗣️ Languages</h2>
-  <div align="center">
-    <span class="language-badge">
-      <img src="https://github.com/madebybowtie/flagpack/raw/main/flags/us.svg" width="20" />
-      English (Native)
-    </span>
-    <span class="language-badge">
-      <img src="https://github.com/madebybowtie/flagpack/raw/main/flags/in.svg" width="20" />
-      Hindi (Fluent)
-    </span>
-    <span class="language-badge">
-      <img src="https://github.com/madebybowtie/flagpack/raw/main/flags/es.svg" width="20" />
-      Spanish (Basic)
-    </span>
-  </div>
+#### Project Name 1
+[![Project Card](https://github-readme-stats.vercel.app/api/pin/?username=your-github-username&repo=project-repo-1&theme=radical)](https://github.com/your-github-username/project-repo-1)
+- Description of this amazing project
+- Technologies used: React, Node.js, MongoDB
 
-  <div align="center">
-    <!-- footer capsule and badge in one centered block -->
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" alt="footer capsule" />
-    <br/>
-    <img src="https://img.shields.io/badge/Thanks%20for%20visiting-Star%20if%20useful-brightgreen.svg" alt="Thanks for visiting!" />
-  </div>
+#### Project Name 2
+[![Project Card](https://github-readme-stats.vercel.app/api/pin/?username=your-github-username&repo=project-repo-2&theme=radical)](https://github.com/your-github-username/project-repo-2)
+- Description of this excellent project
+- Technologies used: TypeScript, Express, PostgreSQL
+
+---
+
+### 📫 Connect With Me
+
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-linkedin)
+[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/your-twitter)
+[![Portfolio](https://img.shields.io/badge/-Portfolio-000000?style=for-the-badge&logo=react&logoColor=white)](https://your-portfolio-site.com)
+[![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
+
+---
+
+### 📊 Weekly Development Breakdown
+
+<!--START_SECTION:waka-->
+```text
+JavaScript   10 hrs 41 mins  ███████████▓░░░░░░░░░░░░░   46.45 %
+TypeScript   5 hrs 26 mins   ██████░░░░░░░░░░░░░░░░░░░   23.69 %
+CSS          4 hrs 33 mins   █████░░░░░░░░░░░░░░░░░░░░   19.83 %
+HTML         2 hrs 19 mins   ██▓░░░░░░░░░░░░░░░░░░░░░░   10.03 %
+```
+<!--END_SECTION:waka-->
+
+---
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=your-github-username&theme=nord&column=7" alt="GitHub Trophies" />
 </div>
