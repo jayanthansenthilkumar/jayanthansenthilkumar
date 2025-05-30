@@ -1,4 +1,6 @@
 <div align="center">
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXcydGkzaWppOGt6eXV6czNlNjQ1bjg2dGg0aWthZnJjMW1sNmViayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RbDKaczqWovIugyJmW/giphy.gif" width="45%" />
+  
   <img src="https://readme-typing-svg.herokuapp.com?font=Montserrat&weight=600&size=35&pause=500&color=36BCF7FF&center=true&vCenter=true&random=false&width=500&height=70&lines=Hey+There!+%F0%9F%91%8B;I'm+Jayanthan+Senthilkumar;Fullstack+Developer;AI+%26+ML+Engineer" alt="Typing SVG" />
   
   [![](https://komarev.com/ghpvc/?username=jayanthansenthilkumar&color=36BCF7&style=for-the-badge&label=Profile+Views)](https://github.com/jayanthansenthilkumar)
@@ -44,7 +46,6 @@
   <tr>
     <td width="50%" valign="top" style="padding: 20px;">
       <h2>📚 Currently Learning</h2>
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXcydGkzaWppOGt6eXV6czNlNjQ1bjg2dGg0aWthZnJjMW1sNmViayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RbDKaczqWovIugyJmW/giphy.gif" width="100%">
       <ul style="list-style: none; padding: 0;">
         <li>🔧 <b>DevOps</b> & Cloud Architecture</li>
         <li>🤖 <b>LLMs</b> & Transformers</li>
