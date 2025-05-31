@@ -1,51 +1,20 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=300&section=header&text=Welcome%20to%20my%20digital%20universe&fontSize=40&fontColor=fff&animation=fadeIn&fontAlignY=40" width="100%" />
+  <img src="https://raw.githubusercontent.com/BrunnerLivio/brunnerlivio/master/images/welcome.png" style="max-width: 100%;" alt="Welcome to my GitHub" />
+
+  <h1>Hi, I'm Jayanthan Senthilkumar 👨‍💻</h1>
   
-  <div style="background: #000; padding: 20px; border-radius: 10px; margin: -80px 10px 0 10px; position: relative;">
-    <img src="https://i.imgur.com/1ZvVkDc.gif" width="200" height="200" style="border-radius: 50%; border: 5px solid #36BCF7; padding: 5px;" />
-    
-    <h1 style="margin-top: 15px; font-size: 2.5rem;">
-      <span style="background: linear-gradient(to right, #00C9FF, #92FE9D); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-        Jayanthan Senthilkumar
-      </span>
-      <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35">
-    </h1>
-    
-    <div style="margin: 20px 0;">
-      <a href="https://www.linkedin.com/in/jayanthan18" target="_blank">
-        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&style=plastic" height="25" alt="LinkedIn" />
-      </a>
-      <a href="mailto:jayanthansenthilkumar18@gmail.com">
-        <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&style=plastic" height="25" alt="Gmail" />
-      </a>
-      <a href="https://ceo.prisoltech.com" target="_blank">
-        <img src="https://img.shields.io/badge/Website-3423A6?style=for-the-badge&logo=Google-Chrome&logoColor=white&style=plastic" height="25" alt="Website" />
-      </a>
-      <a href="https://instagram.com/jayanthansenthilkumar" target="_blank">
-        <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&style=plastic" height="25" alt="Instagram" />
-      </a>
-    </div>
-  </div>
+  <p>
+    <a href="https://www.linkedin.com/in/jayanthan18"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+    <a href="mailto:jayanthansenthilkumar18@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" /></a>
+    <a href="https://ceo.prisoltech.com"><img src="https://img.shields.io/badge/Website-3423A6?style=for-the-badge&logo=Google-Chrome&logoColor=white" alt="Website" /></a>
+    <a href="https://instagram.com/jayanthansenthilkumar"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
+  </p>
   
-  <div style="margin-top: 30px;">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=36BCF7&center=true&vCenter=true&random=false&width=600&height=70&lines=Fullstack+Developer+%F0%9F%92%BB;AI+%26+ML+Engineer+%F0%9F%A4%96;Problem+Solver+%F0%9F%94%8D;Continuous+Learner+%F0%9F%93%9A" alt="Typing SVG" />
-    
-    <div style="display: flex; justify-content: center; margin: 20px 0;">
-      <img src="https://komarev.com/ghpvc/?username=jayanthansenthilkumar&style=for-the-badge&color=blueviolet" alt="Profile Views" />
-      <a href="https://github.com/jayanthansenthilkumar?tab=followers">
-        <img src="https://img.shields.io/github/followers/jayanthansenthilkumar?label=Followers&style=for-the-badge&color=blue" alt="GitHub Followers" />
-      </a>
-      <img src="https://img.shields.io/badge/Coding_Since-2017-brightgreen?style=for-the-badge" alt="Coding Since" />
-    </div>
-  </div>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&pause=1000&color=36BCF7&center=true&vCenter=true&random=false&width=600&height=70&lines=Fullstack+Developer;AI+%26+ML+Engineer;Problem+Solver;Continuous+Learner" alt="Typing SVG" />
   
-  <div style="background: linear-gradient(to right, rgba(0,201,255,0.1), rgba(146,254,157,0.1)); padding: 15px; border-radius: 10px; margin-top: 20px;">
-    <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
-    <p style="font-size: 1.1rem; font-weight: bold;">
-      "Crafting elegant solutions at the intersection of code and innovation"
-    </p>
-    <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
-  </div>
+  <p>
+    <img src="https://komarev.com/ghpvc/?username=jayanthansenthilkumar&color=36BCF7&style=for-the-badge&label=Profile+Views" alt="Profile Views" />
+  </p>
 </div>
 
 ## 🚀 About Me
