@@ -1,14 +1,154 @@
 <div align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmF1eWRmazR2YjBxemIzNDJvcmYxZGZidjJucXNkbnNtc2t6OWV5NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT8qBhrlNooHBYR9f2/giphy.gif" width="100%" style="border-radius: 10px; margin-bottom: 15px;" />
-  
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=700&size=35&pause=500&color=9D71FFFF&background=1D0E3000&center=true&vCenter=true&random=false&width=500&height=70&lines=Hey+There!+%F0%9F%91%8B;I'm+Jayanthan+Senthilkumar;Fullstack+Developer;AI+%26+ML+Engineer" alt="Typing SVG" />
-  
-  [![](https://komarev.com/ghpvc/?username=jayanthansenthilkumar&color=9D71FF&style=for-the-badge&label=COSMIC+VISITORS)](https://github.com/jayanthansenthilkumar)
+  <div style="background: linear-gradient(45deg, #120424, #20033a, #3b0764, #120424); border-radius: 10px; padding: 20px; position: relative; overflow: hidden; margin-bottom: 20px;">
+    <style>
+      @keyframes stars {
+        0% { opacity: 0.1; }
+        50% { opacity: 1; }
+        100% { opacity: 0.1; }
+      }
+      
+      @keyframes nebula {
+        0% { transform: rotate(0deg) scale(1); }
+        50% { transform: rotate(180deg) scale(1.1); }
+        100% { transform: rotate(360deg) scale(1); }
+      }
+      
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      
+      @keyframes blink {
+        from, to { border-color: transparent }
+        50% { border-color: #9D71FF; }
+      }
+      
+      .star {
+        position: absolute;
+        background: white;
+        border-radius: 50%;
+        animation: stars 3s infinite ease-in-out;
+      }
+      
+      .nebula {
+        position: absolute;
+        background: radial-gradient(ellipse at center, rgba(157, 113, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
+        border-radius: 50%;
+        animation: nebula 15s infinite linear;
+        pointer-events: none;
+      }
+      
+      .typing-text {
+        font-family: 'Courier New', monospace;
+        border-right: .15em solid #9D71FF;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .15em;
+        animation: 
+          typing 3.5s steps(30, end),
+          blink .5s step-end infinite alternate;
+        overflow: hidden;
+      }
+      
+      .cosmic-badge {
+        background: linear-gradient(45deg, #9D71FF, #738CFF);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-weight: bold;
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        margin-top: 15px;
+      }
+      
+      .cosmic-badge::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(
+          transparent, 
+          rgba(255, 255, 255, 0.3), 
+          transparent
+        );
+        transform: rotate(30deg);
+        animation: shine 3s infinite linear;
+      }
+      
+      @keyframes shine {
+        from { transform: translateX(-100%) rotate(30deg); }
+        to { transform: translateX(100%) rotate(30deg); }
+      }
+    </style>
+    
+    <!-- Stars creation with pure CSS -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const container = document.querySelector('.cosmic-container');
+        for (let i = 0; i < 100; i++) {
+          const star = document.createElement('div');
+          star.className = 'star';
+          star.style.width = `${Math.random() * 3}px`;
+          star.style.height = star.style.width;
+          star.style.top = `${Math.random() * 100}%`;
+          star.style.left = `${Math.random() * 100}%`;
+          star.style.animationDelay = `${Math.random() * 5}s`;
+          container.appendChild(star);
+        }
+        
+        for (let i = 0; i < 5; i++) {
+          const nebula = document.createElement('div');
+          nebula.className = 'nebula';
+          nebula.style.width = `${Math.random() * 200 + 100}px`;
+          nebula.style.height = nebula.style.width;
+          nebula.style.top = `${Math.random() * 80}%`;
+          nebula.style.left = `${Math.random() * 80}%`;
+          nebula.style.animationDelay = `${Math.random() * 5}s`;
+          container.appendChild(nebula);
+        }
+      });
+    </script>
+    
+    <div class="cosmic-container" style="min-height: 250px; position: relative;">
+      <h1 style="font-size: 3em; color: #FFFFFF; text-shadow: 0 0 10px #9D71FF, 0 0 20px #9D71FF; margin: 0; padding-top: 30px; font-family: 'Orbitron', sans-serif;">JAYANTHAN SENTHILKUMAR</h1>
+      
+      <div style="margin: 20px 0;">
+        <div class="typing-text" style="color: #FFFFFF; font-size: 1.5em;">
+          Fullstack Developer | AI & ML Engineer
+        </div>
+      </div>
+      
+      <div class="cosmic-badge">
+        COSMIC VISITOR #<span id="visitor-count">1337</span>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/gist/Vedant-cll/86aeaf559b4720af094151f60437e860/raw/9c6c4aa1afd23656b4e23f994afa671270d0ce4b/wave.svg" width="100%">
+<div style="text-align: center; margin: 30px 0; color: #9D71FF; overflow: hidden; position: relative;">
+  <div style="display: flex; overflow: hidden;">
+    <div style="white-space: nowrap; animation: marquee 20s linear infinite;">
+      ✧･ﾟ: *✧･ﾟ:* COSMIC EXPLORER *:･ﾟ✧*:･ﾟ✧ ✧･ﾟ: *✧･ﾟ:* COSMIC EXPLORER *:･ﾟ✧*:･ﾟ✧ ✧･ﾟ: *✧･ﾟ:* COSMIC EXPLORER *:･ﾟ✧*:･ﾟ✧
+    </div>
+    <div style="white-space: nowrap; animation: marquee2 20s linear infinite;">
+      ✧･ﾟ: *✧･ﾟ:* COSMIC EXPLORER *:･ﾟ✧*:･ﾟ✧ ✧･ﾟ: *✧･ﾟ:* COSMIC EXPLORER *:･ﾟ✧*:･ﾟ✧ ✧･ﾟ: *✧･ﾟ:* COSMIC EXPLORER *:･ﾟ✧*:･ﾟ✧
+    </div>
+  </div>
 </div>
+
+<style>
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  @keyframes marquee2 {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+  }
+</style>
 
 ## 💫 About Me
 
