@@ -1,63 +1,92 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=200&section=header&text=Jayanthan%20Senthilkumar&fontSize=42&fontColor=fff&animation=fadeIn&fontAlignY=40" width="100%" />
-  
-  <a href="#"><img width="180" height="180" src="https://avatars.githubusercontent.com/u/74038190?v=4" alt="Profile Avatar" style="border-radius:50%; border: 3px solid #00d8fe;"/></a>
-  
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=24&duration=3000&pause=500&color=00D8FE&center=true&vCenter=true&random=false&width=435&lines=Full+Stack+Developer;AI+%26+ML+Engineer;Innovative+Problem+Solver)](https://git.io/typing-svg)
-  
-  <div>
-    <a href="https://www.linkedin.com/in/jayanthan18"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-    <a href="mailto:jayanthansenthilkumar18@gmail.com"><img src="https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
-    <a href="https://ceo.prisoltech.com"><img src="https://img.shields.io/badge/-Website-3423A6?style=flat-square&logo=Google-Chrome&logoColor=white" alt="Website" /></a>
-    <a href="https://github.com/jayanthansenthilkumar?tab=followers"><img src="https://img.shields.io/github/followers/jayanthansenthilkumar?style=flat-square&color=blue" alt="Followers" /></a>
-    <img src="https://komarev.com/ghpvc/?username=jayanthansenthilkumar&style=flat-square&color=blueviolet" alt="Profile Views" />
-  </div>
-  
-  <div align="center">
-    <img src="https://github-stats-alpha.vercel.app/api?username=jayanthansenthilkumar&cc=22272e&tc=37BCF6&ic=fff&bc=0000" alt="Stats Card">
-  </div>
-  
-  <p>
-    <b>CEO @ Prisol Tech | AI Engineer | Full Stack Developer</b><br>
-    <i>"Where code meets intelligence - crafting tomorrow's solutions today"</i>
-  </p>
-</div>
-
-## 🚀 Tech Stack
-
-![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3)
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/-React-20232A?style=for-the-badge&logo=react)
-![PHP](https://img.shields.io/badge/-PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![Node.js](https://img.shields.io/badge/-Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![MongoDB](https://img.shields.io/badge/-MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/-MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
-![Docker](https://img.shields.io/badge/-Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
-
-## 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=jayanthansenthilkumar&theme=tokyonight&hide_border=true&border_radius=10" alt="GitHub Streak Stats" />
-</div>
-
-## 💼 Experience & Focus
-
-- 🏢 **CEO** at Prisol Technologies
-- 🧠 AI & ML solutions for enterprise clients
-- 💻 Scalable full-stack web applications
-- 📚 Currently exploring: DevOps, LLMs, System Design
-
-## 📬 Let's Connect
-
 <p align="center">
-  <a href="https://github.com/jayanthansenthilkumar">
-    <img src="https://img.shields.io/badge/Let's%20collaborate-blue?style=for-the-badge" alt="Let's Collaborate" />
-  </a>
+  <img src="https://capsule-render.vercel.app/api?type=slice&color=gradient&customColorList=12&height=200&section=header&text=Jayanthan%20Senthilkumar&fontSize=50&fontColor=ffffff&fontAlign=70&fontAlignY=20&rotate=13&desc=Full%20Stack%20Developer%20|%20AI%20Engineer&descAlign=70&descAlignY=44" width="100%" />
 </p>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=100&section=footer" width="100%" />
+  <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" height="30px"> 
+  <strong>Welcome to my tech universe!</strong>
+  <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30">
+
+  <div align="center">
+    <a href="https://www.linkedin.com/in/jayanthan18" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+    <a href="mailto:jayanthansenthilkumar18@gmail.com"><img src="https://img.shields.io/badge/Gmail-%23D14836.svg?&style=flat-square&logo=gmail&logoColor=white" alt="Gmail"></a>
+    <a href="https://ceo.prisoltech.com"><img src="https://img.shields.io/badge/Website-%233781da.svg?&style=flat-square&logo=safari&logoColor=white" alt="Website"></a>
+    <img src="https://komarev.com/ghpvc/?username=jayanthansenthilkumar&style=flat-square&color=blue" alt="Profile Views">
+  </div>
 </div>
+
+<hr>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=jayanthansenthilkumar&show_icons=true&hide=issues&icon_color=C9D1D9&hide_border=true&title_color=ff6e96&text_color=9f9f9f&bg_color=00000000&theme=radical" alt="GitHub Stats" width="48%">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jayanthansenthilkumar&layout=compact&hide_border=true&title_color=ff6e96&text_color=9f9f9f&bg_color=00000000" alt="Most Used Languages" width="41%">
+</div>
+
+<div align="center">
+  <img src="https://streak-stats.demolab.com?user=jayanthansenthilkumar&theme=radical&hide_border=true&background=00000000" alt="GitHub Streak" width="58%">
+</div>
+
+## 👨‍💻 About Me
+
+<img align="right" alt="GIF" src="https://raw.githubusercontent.com/rahul-jha98/rahul-jha98/main/techstack.gif" width="340px"/>
+
+```yaml
+name: Jayanthan Senthilkumar
+role: CEO @ Prisol Technologies
+education: 
+  - B.Tech in AI & ML
+fields_of_interests:
+  - Web Development
+  - Machine Learning
+  - Deep Learning
+  - UI/UX Design
+currently_learning: 
+  - DevOps
+  - Large Language Models
+hobbies: [Coding, Innovation, Problem-Solving]
+```
+
+<br>
+
+## 🛠️ Technologies & Tools
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,php,nodejs,python,tensorflow,mongodb,mysql,docker" />
+</div>
+
+<br>
+
+## 🚀 Featured Projects
+
+<div align="center">
+  <a href="https://github.com/jayanthansenthilkumar/project1">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=jayanthansenthilkumar&repo=project1&title_color=ff6e96&text_color=9f9f9f&icon_color=79dafa&bg_color=00000000&hide_border=true" />
+  </a>
+  <a href="https://github.com/jayanthansenthilkumar/project2">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=jayanthansenthilkumar&repo=project2&title_color=ff6e96&text_color=9f9f9f&icon_color=79dafa&bg_color=00000000&hide_border=true" />
+  </a>
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" width="70%"/>
+</div>
+
+<br>
+
+<div align="center">
+  <a href="https://github.com/jayanthansenthilkumar">
+    <img src="https://img.shields.io/badge/Check%20Out%20My%20Other%20Projects-0078D7?style=for-the-badge&logo=github&logoColor=white" alt="Check Out My Other Projects">
+  </a>
+</div>
+
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=14&pause=1000&color=bd93f9&center=true&vCenter=true&width=500&height=30&lines=Thanks+for+visiting!+Let's+build+something+amazing+together." alt="Typing SVG" />
+  </a>
+</div>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=90&section=footer" width="100%" />
+</p>
