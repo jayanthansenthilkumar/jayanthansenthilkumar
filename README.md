@@ -1,86 +1,142 @@
 <div align="center">
-  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXcydGkzaWppOGt6eXV6czNlNjQ1bjg2dGg0aWthZnJjMW1sNmViayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RbDKaczqWovIugyJmW/giphy.gif" width="60%" style="border-radius: 10px; margin-bottom: 15px;" />
+  <img src="https://raw.githubusercontent.com/BrunnerLivio/brunnerlivio/master/images/welcome.png" style="max-width: 100%;" alt="Welcome to my GitHub" />
+
+  <h1>Hi, I'm Jayanthan Senthilkumar 👨‍💻</h1>
   
-  <img src="https://readme-typing-svg.herokuapp.com?font=Montserrat&weight=600&size=35&pause=500&color=36BCF7FF&center=true&vCenter=true&random=false&width=500&height=70&lines=Hey+There!+%F0%9F%91%8B;I'm+Jayanthan+Senthilkumar;Fullstack+Developer;AI+%26+ML+Engineer" alt="Typing SVG" />
+  <p>
+    <a href="https://www.linkedin.com/in/jayanthan18"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+    <a href="mailto:jayanthansenthilkumar18@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" /></a>
+    <a href="https://ceo.prisoltech.com"><img src="https://img.shields.io/badge/Website-3423A6?style=for-the-badge&logo=Google-Chrome&logoColor=white" alt="Website" /></a>
+    <a href="https://instagram.com/jayanthansenthilkumar"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
+  </p>
   
-  [![](https://komarev.com/ghpvc/?username=jayanthansenthilkumar&color=36BCF7&style=for-the-badge&label=Profile+Views)](https://github.com/jayanthansenthilkumar)
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&pause=1000&color=36BCF7&center=true&vCenter=true&random=false&width=600&height=70&lines=Fullstack+Developer;AI+%26+ML+Engineer;Problem+Solver;Continuous+Learner" alt="Typing SVG" />
+  
+  <p>
+    <img src="https://komarev.com/ghpvc/?username=jayanthansenthilkumar&color=36BCF7&style=for-the-badge&label=Profile+Views" alt="Profile Views" />
+  </p>
 </div>
 
-## 💫 About Me
+## 🚀 About Me
 
-<div align="center">
+> Passionate Fullstack Developer and AI Engineer with a B.Tech in AI & ML. I build scalable web applications while exploring the frontiers of artificial intelligence. My goal is to create technology that bridges the gap between innovative AI solutions and user-friendly applications.
 
-| 🌐 Full Stack Development | 🤖 AI Engineering |
-|:------------------------:|:-----------------:|
-| 💻 **PHP & MERN Stack Developer** | 🎓 **B.Tech in AI & ML** |
-| 🔧 **Scalable Web Applications** | 🧠 **Deep Learning with TensorFlow** |
-| ⚡ **PHP** & **Node.js** Intermediate Level | 📊 **Data Engineering** & Analysis |
-| 📱 **Responsive UI** Design | 🔍 **ML Model Development** |
-| 🛢️ **MongoDB**, **MySQL**, **Supabase** | 🚀 **AI Solution Architecture** |
+- 🔭 **Working on:** Advanced web applications with AI integration
+- 🌱 **Learning:** DevOps, LLMs, and System Design
+- 👯 **Looking to collaborate on:** Open source ML projects
+- 💬 **Ask me about:** MERN Stack, PHP, TensorFlow, or Data Engineering
 
-</div>
+## 🛠️ Skills & Technologies
 
-## 🛠️ Tech Stack
-
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,javascript,php,python,tensorflow,flask,react,mongodb,mysql,docker&theme=light" />
-</div>
-
-## 📊 GitHub Stats
-
-<div align="center">
-  <img height="150" src="https://github-readme-stats.vercel.app/api?username=jayanthansenthilkumar&show_icons=true&bg_color=ffffff&title_color=006AFF&text_color=000000&icon_color=36BCF7&border_color=36BCF7&ring_color=36BCF7&include_all_commits=true&count_private=true" />
-  <img height="150" src="https://github-readme-streak-stats.herokuapp.com?user=jayanthansenthilkumar&background=ffffff&border=36BCF7&stroke=36BCF7&ring=36BCF7&fire=FF6B00&currStreakNum=000000&currStreakLabel=006AFF&dates=666666" />
-</div>
-
-<div align="center">
-  <img height="150" width="95%" src="https://github-profile-trophy.vercel.app/?username=jayanthansenthilkumar&theme=flat&column=8&margin-w=5&margin-h=5&no-bg=true&no-frame=false&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C" />
-</div>
-
-<div align="center">
-  <img height="280" width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=jayanthansenthilkumar&custom_title=Contribution%20Graph&bg_color=ffffff&color=000000&line=36BCF7&point=006AFF&area=true&area_color=36BCF7&hide_border=false&border_color=36BCF7" />
-</div>
-
-<div align="center">
-<table width="100%">
+<table>
   <tr>
-    <td width="50%" valign="top" style="padding: 20px;">
-      <h2>📚 Currently Learning</h2>
-      <ul style="list-style: none; padding: 0;">
-        <li>🔧 <b>DevOps</b> & Cloud Architecture</li>
-        <li>🤖 <b>LLMs</b> & Transformers</li>
-        <li>🎯 <b>System Design</b> & Scalability</li>
-        <li>📊 <b>Data Engineering</b> Pipeline</li>
-      </ul>
+    <td valign="top" width="33%">
+      <h3>Frontend</h3>
+      <div align="center">
+        <a href="https://reactjs.org/" target="_blank"><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /></a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" /></a>
+        <a href="https://www.w3.org/html/" target="_blank"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" /></a>
+        <a href="https://www.w3schools.com/css/" target="_blank"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" /></a>
+        <a href="https://tailwindcss.com/" target="_blank"><img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" /></a>
+      </div>
     </td>
-    <td width="50%" align="center" valign="top" style="padding: 20px;">
-      <h2>🤝 Connect With Me</h2>
-      <div style="margin: 20px 0;">
-        <a href="https://www.linkedin.com/in/jayanthan18" target="_blank">
-          <img src="https://img.icons8.com/fluent/48/000000/linkedin.png" width="45" height="45" />
-        </a>
-        &nbsp;&nbsp;
-        <a href="mailto:jayanthansenthilkumar18@gmail.com">
-          <img src="https://img.icons8.com/fluent/48/000000/gmail.png" width="45" height="45" />
-        </a>
-        &nbsp;&nbsp;
-        <a href="https://ceo.prisoltech.com" target="_blank">
-          <img src="https://img.icons8.com/fluent/48/000000/domain.png" width="45" height="45" />
-        </a>
-        &nbsp;&nbsp;
-        <a href="https://instagram.com/jayanthansenthilkumar" target="_blank">
-          <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" width="45" height="45" />
-        </a>
+    <td valign="top" width="33%">
+      <h3>Backend</h3>
+      <div align="center">
+        <a href="https://www.php.net" target="_blank"><img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" /></a>
+        <a href="https://nodejs.org" target="_blank"><img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="NodeJS" /></a>
+        <a href="https://expressjs.com" target="_blank"><img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" alt="ExpressJS" /></a>
+        <a href="https://flask.palletsprojects.com/" target="_blank"><img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" /></a>
+        <a href="https://www.python.org" target="_blank"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" /></a>
+      </div>
+    </td>
+    <td valign="top" width="33%">
+      <h3>AI & Data</h3>
+      <div align="center">
+        <a href="https://www.tensorflow.org" target="_blank"><img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" /></a>
+        <a href="https://scikit-learn.org/" target="_blank"><img src="https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn" /></a>
+        <a href="https://pandas.pydata.org/" target="_blank"><img src="https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" /></a>
+        <a href="https://numpy.org/" target="_blank"><img src="https://img.shields.io/badge/Numpy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="Numpy" /></a>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" width="33%">
+      <h3>Database</h3>
+      <div align="center">
+        <a href="https://www.mongodb.com/" target="_blank"><img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" /></a>
+        <a href="https://www.mysql.com/" target="_blank"><img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" /></a>
+        <a href="https://supabase.com/" target="_blank"><img src="https://img.shields.io/badge/Supabase-181818?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" /></a>
+      </div>
+    </td>
+    <td valign="top" width="33%">
+      <h3>DevOps & Tools</h3>
+      <div align="center">
+        <a href="https://www.docker.com/" target="_blank"><img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" /></a>
+        <a href="https://git-scm.com/" target="_blank"><img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" /></a>
+        <a href="https://github.com/" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+        <a href="https://code.visualstudio.com/" target="_blank"><img src="https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="VS Code" /></a>
+      </div>
+    </td>
+    <td valign="top" width="33%">
+      <h3>Currently Learning</h3>
+      <div align="center">
+        <img src="https://img.shields.io/badge/DevOps-2496ED?style=for-the-badge&logoColor=white" alt="DevOps" />
+        <img src="https://img.shields.io/badge/LLMs-FFA500?style=for-the-badge&logoColor=white" alt="LLMs" />
+        <img src="https://img.shields.io/badge/System_Design-6DB33F?style=for-the-badge&logoColor=white" alt="System Design" />
+        <img src="https://img.shields.io/badge/Data_Engineering-4285F4?style=for-the-badge&logoColor=white" alt="Data Engineering" />
       </div>
     </td>
   </tr>
 </table>
+
+## 📊 GitHub Analytics
+
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=jayanthansenthilkumar&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jayanthansenthilkumar&layout=compact&theme=tokyonight&hide_border=true" />
 </div>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer"/>
+  <img width="95%" src="https://github-readme-streak-stats.herokuapp.com?user=jayanthansenthilkumar&theme=tokyonight&hide_border=true" />
 </div>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Thanks%20for%20visiting-Star%20if%20useful-brightgreen.svg" alt="Thanks for visiting!" />
-</p>
+## 🏆 Featured Projects
+
+<div align="center">
+  <a href="https://github.com/jayanthansenthilkumar/project1">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=jayanthansenthilkumar&repo=project1&theme=tokyonight&hide_border=true" />
+  </a>
+  <a href="https://github.com/jayanthansenthilkumar/project2">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=jayanthansenthilkumar&repo=project2&theme=tokyonight&hide_border=true" />
+  </a>
+</div>
+
+## 🌟 Professional Experience
+
+- **CEO** at **Prisol Technologies** - Leading tech innovation and solution delivery
+- **AI Solution Architect** - Designing and implementing ML workflows for enterprise solutions
+- **Web Development Lead** - Building responsive and scalable web applications
+
+## 📚 Education & Certifications
+
+- **B.Tech in AI & ML** - Engineering College
+- **Full Stack Development** - Self-taught and professional experience
+- **Various Tech Certifications** - Google, AWS, and more
+
+<div align="center">
+  <h2>💡 My Development Philosophy</h2>
+  <blockquote>
+    "Code is like humor. When you have to explain it, it's bad." — Cory House
+  </blockquote>
+</div>
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,3,30&height=120&section=footer" width="100%" />
+  
+  <p>Thank you for visiting my profile! Feel free to reach out for collaborations or just to say hi! 👋</p>
+  
+  <p>
+    <img src="https://img.shields.io/badge/Thanks_for_visiting-Leave_a_⭐_if_you_like_my_projects-36BCF7.svg" alt="Thanks for visiting!" />
+  </p>
+</div>
