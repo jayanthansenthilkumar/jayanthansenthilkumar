@@ -22,9 +22,6 @@
 
 ## 🛠️ Tech Stack
 
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,javascript,php,python,tensorflow,flask,react,mongodb,mysql,docker&theme=light" />
-</div>
 
 ## 📊 GitHub Stats
 
