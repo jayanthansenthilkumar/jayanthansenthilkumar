@@ -1,11 +1,6 @@
 <div align="center">
   <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXcydGkzaWppOGt6eXV6czNlNjQ1bjg2dGg0aWthZnJjMW1sNmViayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9
 | 💻 **PHP & MERN Stack Developer** | 🎓 **B.Tech in AI & ML** |
-| 🔧 **Scalable Web Applications** | 🧠 **Deep Learning with TensorFlow** |
-| ⚡ **PHP** & **Node.js** Intermediate Level | 📊 **Data Engineering** & Analysis |
-| 📱 **Responsive UI** Design | 🔍 **ML Model Development** |
-| 🛢️ **MongoDB**, **MySQL**, **Supabase** | 🚀 **AI Solution Architecture** |
-
 ## 🛠️ Tech Stack
 
 <div align="center">
