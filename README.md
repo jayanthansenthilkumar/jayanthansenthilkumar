@@ -3,9 +3,6 @@
 </div>
 
 ## 💫 About Me
-
-<div align="center">
-
 | 🌐 Full Stack Development | 🤖 AI Engineering |
 |:------------------------:|:-----------------:|
 | 💻 **PHP & MERN Stack Developer** | 🎓 **B.Tech in AI & ML** |
