@@ -2,11 +2,7 @@
   <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXcydGkzaWppOGt6eXV6czNlNjQ1bjg2dGg0aWthZnJjMW1sNmViayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9
 | 💻 **PHP & MERN Stack Developer** | 🎓 **B.Tech in AI & ML** |
 ## 🛠️ Tech Stack
-
-## 📊 GitHub 
-
-<div align="center">
-  <img height="150" src="https://github-readme-stats.vercel.app/api?username=jayanthansenthilkumar&show_icons=true&bg_color=ffffff&title_color=006AFF&text_color=000000&icon_color=36BCF7&border_color=36BCF7&ring_color=36BCF7&include_all_commits=true&count_private=true" />
+con_color=36BCF7&border_color=36BCF7&ring_color=36BCF7&include_all_commits=true&count_private=true" />
   <img height="150" src="https://github-readme-streak-stats.herokuapp.com?user=jayanthansenthilkumar&background=ffffff&border=36BCF7&stroke=36BCF7&ring=36BCF7&fire=FF6B00&currStreakNum=000000&currStreakLabel=006AFF&dates=666666" />
 </div>
 
