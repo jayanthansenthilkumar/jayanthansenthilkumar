@@ -6,8 +6,6 @@
 | 📱 **Responsive UI** Design | 🔍 **ML Model Development** |
 | 🛢️ **MongoDB**, **MySQL**, **Supabase** | 🚀 **AI Solution Architecture** |
 
-</div>
-
 ## 🛠️ Tech Stack
 
 <div align="center">
