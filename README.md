@@ -4,8 +4,6 @@
 ## 🛠️ Tech Stack
 con_color=36BCF7&border_color=36BCF7&ring_color=36BCF7&include_all_commits=true&count_private=true" />
   <img height="150" src="https://github-readme-streak-stats.herokuapp.com?
-<table width="100%">
-  <tr>
     <td width="50%" valign="top" style="padding: 20px;">
       <h2>📚 Currently Learning</h2>
       <ul style="list-style: none; padding: 0;">
