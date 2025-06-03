@@ -3,8 +3,6 @@
 | 💻 **PHP & MERN Stack Developer** | 🎓 **B.Tech in AI & ML** |
 ## 🛠️ Tech Stack
 
-<div align="center">
-
 ## 📊 GitHub Stats
 
 <div align="center">
