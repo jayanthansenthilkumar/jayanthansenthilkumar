@@ -3,7 +3,7 @@
 | 💻 **PHP & MERN Stack Developer** | 🎓 **B.Tech in AI & ML** |
 ## 🛠️ Tech Stack
 
-## 📊 GitHub Stats
+## 📊 GitHub 
 
 <div align="center">
   <img height="150" src="https://github-readme-stats.vercel.app/api?username=jayanthansenthilkumar&show_icons=true&bg_color=ffffff&title_color=006AFF&text_color=000000&icon_color=36BCF7&border_color=36BCF7&ring_color=36BCF7&include_all_commits=true&count_private=true" />
