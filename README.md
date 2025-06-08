@@ -29,10 +29,6 @@
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img height="150" src="https://github-readme-stats.vercel.app/api?username=jayanthansenthilkumar&show_icons=true&bg_color=ffffff&title_color=006AFF&text_color=000000&icon_color=36BCF7&border_color=36BCF7&ring_color=36BCF7&include_all_commits=true&count_private=true" />
-</div>
-
-<div align="center">
   <img height="150" width="95%" src="https://github-profile-trophy.vercel.app/?username=jayanthansenthilkumar&theme=flat&column=8&margin-w=5&margin-h=5&no-bg=true&no-frame=false&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C" />
 </div>
 
