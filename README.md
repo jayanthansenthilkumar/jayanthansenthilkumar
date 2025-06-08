@@ -33,10 +33,6 @@
 </div>
 
 <div align="center">
-  <img height="280" width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=jayanthansenthilkumar&custom_title=Contribution%20Graph&bg_color=ffffff&color=000000&line=36BCF7&point=006AFF&area=true&area_color=36BCF7&hide_border=false&border_color=36BCF7" />
-</div>
-
-<div align="center">
 <table width="100%">
   <tr>
     <td width="50%" valign="top" style="padding: 20px;">
