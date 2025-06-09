@@ -6,7 +6,6 @@
 <div align="center">
 
 | 🌐 Full Stack Development | 🤖 AI Engineering |
-|:------------------------:|:-----------------:|
 | 💻 **PHP & MERN Stack Developer** | 🎓 **B.Tech in AI & ML** |
 | 🔧 **Scalable Web Applications** | 🧠 **Deep Learning with TensorFlow** |
 | ⚡ **PHP** & **Node.js** Intermediate Level | 📊 **Data Engineering** & Analysis |
