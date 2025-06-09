@@ -1,9 +1,4 @@
-<div align="center">
-  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXcydGkzaWppOGt6eXV6czNlNjQ1bjg2dGg0aWthZnJjMW1sNmViayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RbDKaczqWovIugyJmW/giphy.gif" width="60%" style="border-radius: 10px; margin-bottom: 15px;" />
-  
-  <img src="https://readme-typing-svg.herokuapp.com?ht=70&lines=Hey+There!+%F0%9F%91%8B;I'm+Jayanthan+Senthilkumar;Fullstack+Developer;AI+%26+ML+Engineer" alt="Typing SVG" />
-  
-<div align="center">
+
 
 | 🌐 Full Stack Development | 🤖 AI Engineering |
 | 💻 **PHP & MERN Stack Developer** | 🎓 **B.Tech in AI & ML** |
