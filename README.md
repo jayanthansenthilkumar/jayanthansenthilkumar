@@ -5,8 +5,6 @@
   
 </div>
 
-## 💫 About Me
-
 <div align="center">
 
 | 🌐 Full Stack Development | 🤖 AI Engineering |
