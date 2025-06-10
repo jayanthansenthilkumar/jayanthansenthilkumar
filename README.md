@@ -1,8 +1,6 @@
 <div align="center">
   <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXcydGkzaWppOGt6eXV6czNlNjQ1bjg2dGg0aWthZnJjMW1sNmViayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RbDKaczqWovIugyJmW/giphy.gif" width="60%" style="border-radius: 10px; margin-bottom: 15px;" />
 
-## 💫 About Me
-
 <div align="center">
 
 | 🌐 Full Stack Development | 🤖 AI Engineering |
