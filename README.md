@@ -66,10 +66,6 @@
     </td>
   </tr>
 </table>
-  
-# GitHub Contribution.
-
-![svg](https://raw.githubusercontent.com/jayanthansenthilkumar/github-profile-3d-contrib/main/docs/demo/profile-gitblock.svg)
 </div>
 
 <div align="center">
