@@ -26,11 +26,25 @@
   <img src="https://skillicons.dev/icons?i=html,css,javascript,php,python,tensorflow,flask,react,mongodb,mysql,docker&theme=light" />
 </div>
 
-## 📊 GitHub Stats
+<!-- <div align="center">
+  <img height="150" width="95%" src="https://github-profile-trophy.vercel.app/?username=jayanthansenthilkumar&theme=flat&column=8&margin-w=5&margin-h=5&no-bg=true&no-frame=false&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C" />
+</div> -->
+
+## 📈 Activity & Contribution Analytics
 
 <div align="center">
-  <img height="150" width="95%" src="https://github-profile-trophy.vercel.app/?username=jayanthansenthilkumar&theme=flat&column=8&margin-w=5&margin-h=5&no-bg=true&no-frame=false&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C" />
+
+  <!-- GitHub Profile Stats -->
+  <img src="https://github-readme-stats.vercel.app/api?username=jayanthansenthilkumar&show_icons=true&theme=tokyonight&hide_border=true&border_radius=10" height="180" />
+
+  <!-- Streaks -->
+  <img src="https://streak-stats.demolab.com?user=jayanthansenthilkumar&theme=tokyonight&hide_border=true&border_radius=10" height="180" />
+
+  <!-- Top Languages -->
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=jayanthansenthilkumar&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&border_radius=10" height="180" />
+
 </div>
+
 
 <div align="center">
 <table width="100%">
