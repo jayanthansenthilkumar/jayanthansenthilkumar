@@ -1,0 +1,260 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Adjust to accommodate fixed header */
+    overflow-x: hidden;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  * {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  body {
+    @apply bg-portfolio-light font-sans text-portfolio-dark;
+    background-image: linear-gradient(to bottom, rgba(248, 250, 255, 0.8), rgba(248, 250, 255, 1));
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-8 text-portfolio-navy relative inline-block;
+  }
+  
+  .section-title::after {
+    content: '';
+    @apply block h-1 w-3/4 bg-portfolio-teal mt-2 rounded-full;
+  }
+
+  .nav-link {
+    @apply relative px-3 py-2 transition-all duration-300 hover:text-portfolio-teal;
+  }
+  
+  .nav-link::after {
+    content: '';
+    @apply absolute left-0 bottom-0 w-0 h-0.5 bg-portfolio-teal transition-all duration-300;
+  }
+  
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    @apply w-full;
+  }
+
+  .badge {
+    @apply px-3 py-1 text-sm font-medium rounded-full bg-portfolio-teal/10 text-portfolio-teal inline-block mr-2 mb-2 transition-all hover:bg-portfolio-teal/20;
+  }
+
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-lg shadow-lg rounded-xl border border-white/40 hover:shadow-xl transition-all duration-300;
+  }
+  
+  .feature-card {
+    @apply bg-white/90 backdrop-blur-sm rounded-xl shadow-md p-6 border border-portfolio-subtle hover:shadow-lg transition-all duration-300 hover:-translate-y-1;
+  }
+
+  .section-container {
+    @apply py-20 container mx-auto px-6;
+  }
+  
+  .button-primary {
+    @apply px-6 py-3 bg-portfolio-teal text-white font-medium rounded-md hover:bg-portfolio-navy transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1;
+  }
+  
+  .button-secondary {
+    @apply px-6 py-3 bg-white/80 backdrop-blur-sm text-portfolio-navy border border-portfolio-navy/20 font-medium rounded-md hover:bg-portfolio-subtle transition-all duration-300 shadow-sm hover:shadow-md;
+  }
+  
+  .section-divider {
+    @apply w-full h-px bg-gradient-to-r from-transparent via-portfolio-teal/30 to-transparent my-6;
+  }
+  
+  .social-icon {
+    @apply p-3 rounded-full transition-all duration-300 text-portfolio-navy hover:text-portfolio-teal hover:bg-portfolio-teal/10;
+  }
+}
+
+/* Animation classes */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-on-scroll.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-delay-1 {
+  transition-delay: 0.2s;
+}
+
+.animate-delay-2 {
+  transition-delay: 0.4s;
+}
+
+.animate-delay-3 {
+  transition-delay: 0.6s;
+}
+
+.animate-delay-4 {
+  transition-delay: 0.8s;
+}
+
+.animate-delay-5 {
+  transition-delay: 1s;
+}
+
+/* Added new animation */
+.pulse-soft {
+  animation: pulse-soft 3s infinite;
+}
+
+@keyframes pulse-soft {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+/* Floating effect */
+.float {
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Reveal animation */
+.reveal {
+  position: relative;
+  overflow: hidden;
+}
+
+.reveal::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3B82F6;
+  transform: translateX(-100%);
+  animation: reveal 1.5s ease forwards;
+}
+
+@keyframes reveal {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply font-bold;
+  background: linear-gradient(90deg, #2A3B57, #3B82F6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Glass effect styles */
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.glass-dark {
+  background: rgba(42, 59, 87, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card-hover {
+  transition: all 0.3s ease;
+}
+
+.glass-card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
