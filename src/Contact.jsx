@@ -1,7 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import SEO from './components/SEO';
-import { X, ChevronDown, Plus, Trash2, Split, MoreHorizontal } from 'lucide-react';
+import { X, ChevronDown, Plus, Trash2, Split, MoreHorizontal, Download, ExternalLink } from 'lucide-react';
+import emailjs from '@emailjs/browser';
+import CodeLineNumbers from './CodeLineNumbers';
+
+// EmailJS Configuration - Replace these with your actual IDs from https://www.emailjs.com/
+const EMAILJS_SERVICE_ID = 'service_88va89j';  // e.g., 'service_xxxxxxx'
+const EMAILJS_TEMPLATE_ID = 'template_fiizzos'; // e.g., 'template_xxxxxxx'
+const EMAILJS_PUBLIC_KEY = 'FMfTLaoYiQ5bY8_NF';   // e.g., 'xxxxxxxxxxxxxxx'
 
 const validateEmail = (email) => {
     return String(email)
@@ -16,8 +23,14 @@ const Contact = () => {
     const [form, setForm] = useState({ name: '', email: '', message: '' });
     const [history, setHistory] = useState([]);
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [showResumeModal, setShowResumeModal] = useState(false);
     const inputRef = useRef(null);
     const bottomRef = useRef(null);
+
+    // Initialize EmailJS
+    useEffect(() => {
+        emailjs.init(EMAILJS_PUBLIC_KEY);
+    }, []);
 
     useEffect(() => {
         if (inputRef.current) {
@@ -50,21 +63,62 @@ const Contact = () => {
                 setHistory(prev => [...prev, { type: 'input', label: 'Email', value }]);
                 setStep(2);
             } else if (step === 2) {
-                setForm(prev => ({ ...prev, message: value }));
+                const updatedForm = { ...form, message: value };
+                setForm(updatedForm);
                 setHistory(prev => [...prev, { type: 'input', label: 'Message', value }]);
                 setStep(3);
-                handleSubmit();
+                handleSubmit(updatedForm);
             }
             e.target.value = '';
         }
     };
 
-    const handleSubmit = async () => {
+    const handleSubmit = async (formData) => {
         setIsSubmitting(true);
-        await new Promise(resolve => setTimeout(resolve, 1500));
-        setHistory(prev => [...prev, { type: 'output', value: 'Message sent successfully! I will get back to you soon.' }]);
-        setIsSubmitting(false);
-        setStep(4);
+        setHistory(prev => [...prev, { type: 'status', value: 'Connecting to SMTP server...' }]);
+        
+        try {
+            // Prepare template parameters - must match EmailJS template variables exactly
+            const templateParams = {
+                name: formData.name,
+                email: formData.email,
+                message: formData.message,
+                time: new Date().toLocaleString(),
+            };
+
+            // Send email using EmailJS
+            const response = await emailjs.send(
+                EMAILJS_SERVICE_ID,
+                EMAILJS_TEMPLATE_ID,
+                templateParams
+            );
+
+            if (response.status === 200) {
+                setHistory(prev => [
+                    ...prev.filter(item => item.type !== 'status'),
+                    { type: 'success', value: 'Connection established!' },
+                    { type: 'success', value: 'Email packet sent successfully!' },
+                    { type: 'output', value: 'Message delivered to Jayanthan Senthilkumar' },
+                    { type: 'output', value: 'Thank you for reaching out! I will get back to you soon.' }
+                ]);
+            }
+        } catch (error) {
+            console.error('EmailJS Error:', error);
+            setHistory(prev => [
+                ...prev.filter(item => item.type !== 'status'),
+                { type: 'error', value: `SMTP Error: ${error.text || 'Failed to send message'}` },
+                { type: 'error', value: 'Please try again or contact directly via email.' }
+            ]);
+        } finally {
+            setIsSubmitting(false);
+            setStep(4);
+        }
+    };
+
+    const resetForm = () => {
+        setStep(0);
+        setForm({ name: '', email: '', message: '' });
+        setHistory([]);
     };
 
     const container = {
@@ -82,47 +136,62 @@ const Contact = () => {
             />
             <div className="flex flex-col h-full font-mono text-sm" onClick={() => inputRef.current?.focus()}>
                 {/* Editor Area - Social Links */}
-                <div className="flex-1 overflow-y-auto custom-scrollbar p-4 md:p-6">
+                <div className="flex-1 flex overflow-y-auto custom-scrollbar">
+                    <div className="hidden md:block pt-4">
+                        <CodeLineNumbers lines={15} />
+                    </div>
                     <motion.div
                         variants={container}
                         initial="hidden"
                         animate="show"
-                        className="text-gruvbox-fg"
+                        className="text-gruvbox-fg flex-1 pt-4 pr-4 md:pr-6"
                     >
-                        <p className="text-gruvbox-gray mb-4"># Contact Information</p>
-                        <p className="text-gruvbox-gray mb-6"># Feel free to reach out through any of the following channels:</p>
-                        
-                        <div className="space-y-3">
+                        <div className="space-y-1">
+                            <p className="text-gruvbox-gray"># Contact Information</p>
+                            <p className="text-gruvbox-gray"># Feel free to reach out through any of the following channels:</p>
+                            <p>&nbsp;</p>
+                            <p className="flex flex-wrap items-center gap-2">
+                                <span className="text-gruvbox-purple">const</span> <span className="text-gruvbox-yellow">medium</span> <span className="text-gruvbox-fg">=</span>
+                                <a href="https://medium.com/@jayanthansenthilkumar" target="_blank" rel="noopener noreferrer" className="text-gruvbox-green hover:text-gruvbox-aqua transition-colors">
+                                    "@jayanthansenthilkumar"
+                                </a><span className="text-gruvbox-fg">;</span>
+                            </p>
                             <p className="flex flex-wrap items-center gap-2">
                                 <span className="text-gruvbox-purple">const</span> <span className="text-gruvbox-yellow">github</span> <span className="text-gruvbox-fg">=</span>
-                                <a href="https://github.com/Unknowns-007" target="_blank" rel="noopener noreferrer" className="text-gruvbox-green hover:underline hover:text-gruvbox-aqua transition-colors">
-                                    "https://github.com/Unknowns-007"
+                                <a href="https://github.com/jayanthansenthilkumar" target="_blank" rel="noopener noreferrer" className="text-gruvbox-green hover:text-gruvbox-aqua transition-colors">
+                                    "jayanthansenthilkumar"
                                 </a><span className="text-gruvbox-fg">;</span>
                             </p>
                             <p className="flex flex-wrap items-center gap-2">
                                 <span className="text-gruvbox-purple">const</span> <span className="text-gruvbox-yellow">linkedin</span> <span className="text-gruvbox-fg">=</span>
-                                <a href="https://www.linkedin.com/in/vignesh-r-7727582b7" target="_blank" rel="noopener noreferrer" className="text-gruvbox-green hover:underline hover:text-gruvbox-aqua transition-colors">
-                                    "https://linkedin.com/in/vignesh-r"
+                                <a href="https://www.linkedin.com/in/jayanthan18" target="_blank" rel="noopener noreferrer" className="text-gruvbox-green hover:text-gruvbox-aqua transition-colors">
+                                    "jayanthan18"
                                 </a><span className="text-gruvbox-fg">;</span>
                             </p>
                             <p className="flex flex-wrap items-center gap-2">
                                 <span className="text-gruvbox-purple">const</span> <span className="text-gruvbox-yellow">email</span> <span className="text-gruvbox-fg">=</span>
-                                <a href="mailto:vignesh2262006@gmail.com" className="text-gruvbox-green hover:underline hover:text-gruvbox-aqua transition-colors">
-                                    "vignesh2262006@gmail.com"
+                                <a href="mailto:jayanthansenthilkumar18@gmail.com" className="text-gruvbox-green hover:text-gruvbox-aqua transition-colors">
+                                    "jayanthansenthilkumar18@gmail.com"
                                 </a><span className="text-gruvbox-fg">;</span>
                             </p>
                             <p className="flex flex-wrap items-center gap-2">
                                 <span className="text-gruvbox-purple">const</span> <span className="text-gruvbox-yellow">phone</span> <span className="text-gruvbox-fg">=</span>
-                                <a href="tel:+916382774587" className="text-gruvbox-green hover:underline hover:text-gruvbox-aqua transition-colors">
-                                    "+91 6382774587"
+                                <a href="tel:+918825756388" className="text-gruvbox-green hover:text-gruvbox-aqua transition-colors">
+                                    "+91 8825756388"
                                 </a><span className="text-gruvbox-fg">;</span>
                             </p>
                             <p className="flex flex-wrap items-center gap-2">
                                 <span className="text-gruvbox-purple">const</span> <span className="text-gruvbox-yellow">resume</span> <span className="text-gruvbox-fg">=</span>
-                                <a href="/resume.pdf" download="Resume.pdf" target="_blank" rel="noopener noreferrer" className="text-gruvbox-green hover:underline hover:text-gruvbox-aqua transition-colors">
-                                    "Download Resume"
-                                </a><span className="text-gruvbox-fg">;</span>
+                                <button 
+                                    onClick={() => setShowResumeModal(true)}
+                                    className="text-gruvbox-green hover:text-gruvbox-aqua transition-colors cursor-pointer"
+                                >
+                                    "View My Resume"
+                                </button><span className="text-gruvbox-fg">;</span>
                             </p>
+                            <p>&nbsp;</p>
+                            <p className="text-gruvbox-gray"># Use the terminal below to send me a message</p>
+                            <p className="text-gruvbox-purple">export default <span className="text-gruvbox-yellow">contactInfo</span><span className="text-gruvbox-fg">;</span></p>
                         </div>
                     </motion.div>
                 </div>
@@ -181,7 +250,7 @@ const Contact = () => {
                             <span className="text-gruvbox-yellow ml-2">./send-message.ps1</span>
                         </div>
                         <div className="text-gruvbox-aqua mb-3">
-                            Initializing contact form...
+                            Initializing EmailJS SMTP connection...
                         </div>
 
                         {/* History */}
@@ -197,9 +266,23 @@ const Contact = () => {
                                         <div className="text-gruvbox-red">
                                             ✗ {item.value}
                                         </div>
-                                    ) : (
+                                    ) : item.type === 'success' ? (
                                         <div className="text-gruvbox-green">
                                             ✓ {item.value}
+                                        </div>
+                                    ) : item.type === 'status' ? (
+                                        <div className="text-gruvbox-orange flex items-center gap-2">
+                                            <motion.span
+                                                animate={{ rotate: 360 }}
+                                                transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+                                            >
+                                                ⟳
+                                            </motion.span>
+                                            {item.value}
+                                        </div>
+                                    ) : (
+                                        <div className="text-gruvbox-aqua">
+                                            → {item.value}
                                         </div>
                                     )}
                                 </div>
@@ -235,18 +318,27 @@ const Contact = () => {
                                     >
                                         ⟳
                                     </motion.span>
-                                    Sending message...
+                                    Sending email via SMTP...
                                 </div>
                             )}
 
                             {/* Completion State */}
                             {step === 4 && !isSubmitting && (
-                                <div className="mt-2">
-                                    <span className="text-gruvbox-green">PS C:\portfolio&gt;</span>
+                                <div className="mt-2 space-y-2">
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-gruvbox-green">PS C:\portfolio&gt;</span>
+                                        <button 
+                                            onClick={resetForm}
+                                            className="text-gruvbox-yellow hover:text-gruvbox-orange transition-colors underline"
+                                        >
+                                            ./send-message.ps1
+                                        </button>
+                                        <span className="text-gruvbox-gray text-xs">(click to send another)</span>
+                                    </div>
                                     <motion.span
                                         animate={{ opacity: [1, 0] }}
                                         transition={{ duration: 0.8, repeat: Infinity }}
-                                        className="w-2 h-4 bg-gruvbox-fg ml-2 inline-block"
+                                        className="w-2 h-4 bg-gruvbox-fg inline-block"
                                     />
                                 </div>
                             )}
@@ -256,6 +348,69 @@ const Contact = () => {
                     </div>
                 </motion.div>
             </div>
+
+            {/* Resume Modal */}
+            <AnimatePresence>
+                {showResumeModal && (
+                    <motion.div
+                        className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        onClick={() => setShowResumeModal(false)}
+                    >
+                        <motion.div
+                            className="relative w-full max-w-4xl h-[85vh] bg-gruvbox-bg border border-gruvbox-bgHard rounded-lg shadow-2xl overflow-hidden"
+                            initial={{ scale: 0.9, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            exit={{ scale: 0.9, opacity: 0 }}
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            {/* Modal Header */}
+                            <div className="flex items-center justify-between bg-gruvbox-bgSoft px-4 py-3 border-b border-gruvbox-bgHard">
+                                <div className="flex items-center gap-3">
+                                    <span className="text-gruvbox-yellow font-mono text-sm">resume.pdf</span>
+                                    <span className="text-gruvbox-gray text-xs">— Jayanthan Senthilkumar</span>
+                                </div>
+                                <div className="flex items-center gap-2">
+                                    <a
+                                        href="/resume.pdf"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-2 px-3 py-1.5 bg-gruvbox-bgHard hover:bg-gruvbox-bg text-gruvbox-fg text-xs rounded transition-colors"
+                                    >
+                                        <ExternalLink size={14} />
+                                        Open in New Tab
+                                    </a>
+                                    <a
+                                        href="/resume.pdf"
+                                        download="Jayanthan_Senthilkumar_Resume.pdf"
+                                        className="flex items-center gap-2 px-3 py-1.5 bg-gruvbox-blue hover:bg-gruvbox-aqua text-gruvbox-bg text-xs rounded transition-colors font-medium"
+                                    >
+                                        <Download size={14} />
+                                        Download
+                                    </a>
+                                    <button
+                                        onClick={() => setShowResumeModal(false)}
+                                        className="p-1.5 hover:bg-gruvbox-bgHard rounded text-gruvbox-gray hover:text-gruvbox-fg transition-colors"
+                                    >
+                                        <X size={18} />
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            {/* PDF Viewer */}
+                            <div className="h-[calc(85vh-56px)] bg-gruvbox-bgHard">
+                                <iframe
+                                    src="/resume.pdf"
+                                    className="w-full h-full"
+                                    title="Resume - Jayanthan Senthilkumar"
+                                />
+                            </div>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </>
     );
 };
