@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Hash, FileCode, Cpu, FileText, Terminal, Download } from 'lucide-react';
 import { motion } from 'framer-motion';
 import SEO from './components/SEO';
+import CodeLineNumbers from './CodeLineNumbers';
 
 const Home = ({ navigateToFile }) => {
     const [text, setText] = useState('');
-    const fullText = 'Vignesh R';
+    const fullText = 'Jayanthan Senthilkumar';
 
     useEffect(() => {
         let currentIndex = 0;
@@ -33,17 +34,21 @@ const Home = ({ navigateToFile }) => {
     return (
         <>
             <SEO
-                title="Vignesh R | Portfolio - Developer & Quick Learner"
-                description="Welcome to Vignesh R's portfolio. Developer and Quick Learner specializing in Web Development with expertise in React, JavaScript, and modern web technologies."
-                keywords="Vignesh R, Portfolio, Developer, Web Development, React, JavaScript, Full Stack Developer"
+                title="Jayanthan Senthilkumar | Portfolio - Developer & Quick Learner"
+                description="Welcome to Jayanthan Senthilkumar's portfolio. Developer and Quick Learner specializing in Web Development with expertise in React, JavaScript, and modern web technologies."
+                keywords="Jayanthan Senthilkumar, Portfolio, Developer, Web Development, React, JavaScript, Full Stack Developer"
                 url="https://vigneshr.me/"
             />
-            <motion.div
-                className="h-full w-full p-4 md:p-8 overflow-y-auto custom-scrollbar font-mono text-gruvbox-fg"
-                initial="hidden"
-                animate="visible"
-                variants={containerVariants}
-            >
+            <div className="flex h-full overflow-y-auto custom-scrollbar font-mono text-sm md:text-base">
+                <div className="hidden md:block">
+                    <CodeLineNumbers lines={35} />
+                </div>
+                <motion.div
+                    className="flex-1 p-4 md:p-8 text-gruvbox-fg"
+                    initial="hidden"
+                    animate="visible"
+                    variants={containerVariants}
+                >
                 {/* Header */}
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-12">
                     <motion.div
@@ -55,7 +60,7 @@ const Home = ({ navigateToFile }) => {
                             <source srcSet="/assets/avatar-200.webp 200w, /assets/avatar-400.webp 400w" sizes="(max-width: 600px) 100vw, 400px" type="image/webp" />
                             <img
                                 src="/assets/avatar-400.jpg"
-                                alt="Vignesh R"
+                                alt="Jayanthan Senthilkumar"
                                 width={400}
                                 height={400}
                                 loading="lazy"
@@ -166,6 +171,7 @@ const Home = ({ navigateToFile }) => {
                     </motion.div>
                 </div>
             </motion.div>
+            </div>
         </>
     );
 };
