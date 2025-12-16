@@ -50,7 +50,7 @@ const Home = ({ navigateToFile }) => {
                     variants={containerVariants}
                 >
                 {/* Header */}
-                <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-12">
+                <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-6">
                     <motion.div
                         className="w-32 h-32 rounded-full bg-gruvbox-bgSoft border-2 border-gruvbox-blue flex items-center justify-center overflow-hidden"
                         variants={itemVariants}
@@ -80,18 +80,20 @@ const Home = ({ navigateToFile }) => {
                         <motion.p className="text-xl text-gruvbox-blue mb-4" variants={itemVariants}>
                             Developer • Quick Learner
                         </motion.p>
-                        <motion.div className="hidden md:block text-xs text-gruvbox-gray whitespace-pre" variants={itemVariants}>
-                            {`
- __        __   _                            _          __  __        __        __         _     _ 
- \\ \\      / /__| | ___ ___  _ __ ___   ___  | |_ ___   |  \\/  |_   _  \\ \\      / /__  _ __| | __| |
-  \\ \\ /\\ / / _ \\ |/ __/ _ \\| '_ \` _ \\ / _ \\ | __/ _ \\  | |\\/| | | | |  \\ \\ /\\ / / _ \\| '__| |/ _\` |
-   \\ V  V /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | |_| |   \\ V  V / (_) | |  | | (_| |
-    \\_/\\_/ \\___|_|\\___\\___/|_| |_| |_|\\___|  \\__\\___/  |_|  |_|\\__, |    \\_/\\_/ \\___/|_|  |_|\\__,_|
-                                                               |___/                               
-`}
-                        </motion.div>
                     </div>
                 </div>
+
+                {/* ASCII Art Banner */}
+                <motion.div className="hidden md:block text-xs text-gruvbox-gray whitespace-pre mb-12" variants={itemVariants}>
+                    {`
+ __        __   _                            ____             _      _        __  __        __        __         _     _    ____                       _ _ _ 
+ \\ \\      / /__| | ___ ___  _ __ ___   ___  | __ )  __ _  ___| | __ | |_ ___  |  \\/  |_   _  \\ \\      / /__  _ __| | __| |  / ___|_   _ _   _ ___   | | | |
+  \\ \\ /\\ / / _ \\ |/ __/ _ \\| '_ \` _ \\ / _ \\ |  _ \\ / _\` |/ __| |/ / | __/ _ \\ | |\\/| | | | |  \\ \\ /\\ / / _ \\| '__| |/ _\` | | |  _| | | | | | / __|  | | | |
+   \\ V  V /  __/ | (_| (_) | | | | | |  __/ | |_) | (_| | (__|   <  | || (_) || |  | | |_| |   \\ V  V / (_) | |  | | (_| | | |_| | |_| | |_| \\__ \\  |_|_|_|
+    \\_/\\_/ \\___|_|\\___\\___/|_| |_| |_|\\___| |____/ \\__,_|\\___|_|\\_\\  \\__\\___/ |_|  |_|\\__, |    \\_/\\_/ \\___/|_|  |_|\\__,_|  \\____|\\__,_|\\__, |___/  (_|_|_)
+                                                                                      |___/                                            |___/               
+`}
+                </motion.div>
 
                 {/* Quick Access */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
