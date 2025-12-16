@@ -57,9 +57,9 @@ const Home = ({ navigateToFile }) => {
                         whileHover={{ scale: 1.05, borderColor: '#fabd2f' }}
                     >
                         <picture className="w-full h-full block">
-                            <source srcSet="/assets/avatar-200.webp 200w, /assets/avatar-400.webp 400w" sizes="(max-width: 600px) 100vw, 400px" type="image/webp" />
+                            <source srcSet="/assets/jayanthan.jpg" sizes="(max-width: 600px) 100vw, 400px" type="image/webp" />
                             <img
-                                src="/assets/avatar-400.jpg"
+                                src="/assets/jayanthan.jpg"
                                 alt="Jayanthan Senthilkumar"
                                 width={400}
                                 height={400}
@@ -97,7 +97,7 @@ const Home = ({ navigateToFile }) => {
 
                 {/* Quick Access */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <motion.div className="bg-gruvbox-bgSoft p-6 rounded-lg border border-gruvbox-bgHard" variants={itemVariants}>
+                    {/* <motion.div className="bg-gruvbox-bgSoft p-6 rounded-lg border border-gruvbox-bgHard" variants={itemVariants}>
                         <h2 className="text-xl font-bold text-gruvbox-orange mb-4 flex items-center gap-2">
                             <Hash size={20} /> Quick Access
                         </h2>
@@ -147,10 +147,10 @@ const Home = ({ navigateToFile }) => {
                             </button>
 
                         </div>
-                    </motion.div>
+                    </motion.div> */}
 
                     {/* Certifications */}
-                    <motion.div className="bg-gruvbox-bgSoft p-6 rounded-lg border border-gruvbox-bgHard" variants={itemVariants}>
+                    {/* <motion.div className="bg-gruvbox-bgSoft p-6 rounded-lg border border-gruvbox-bgHard" variants={itemVariants}>
                         <h2 className="text-xl font-bold text-gruvbox-aqua mb-4 flex items-center gap-2">
                             <FileText size={20} /> Certifications
                         </h2>
@@ -172,7 +172,7 @@ const Home = ({ navigateToFile }) => {
                                 <span>Keyboard Player (Grade 2 Certified)</span>
                             </li>
                         </ul>
-                    </motion.div>
+                    </motion.div> */}
                 </div>
             </motion.div>
             </div>
