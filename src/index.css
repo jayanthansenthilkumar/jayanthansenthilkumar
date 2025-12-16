@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gruvbox-bg: #1e1e1e;
+  --color-gruvbox-fg: #d4d4d4;
+  --color-gruvbox-red: #f14c4c;
+  --color-gruvbox-green: #6a9955;
+  --color-gruvbox-yellow: #dcdcaa;
+  --color-gruvbox-blue: #569cd6;
+  --color-gruvbox-purple: #c586c0;
+  --color-gruvbox-aqua: #4ec9b0;
+  --color-gruvbox-orange: #ce9178;
+  --color-gruvbox-gray: #858585;
+  --color-gruvbox-bgHard: #181818;
+  --color-gruvbox-bgSoft: #252526;
+
+  --font-mono: monospace, ui-monospace, SFMono-Regular;
+}
+
+@layer base {
+
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--color-gruvbox-bg);
+    color: var(--color-gruvbox-fg);
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #1e1e1e;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #424242;
+    border-radius: 4px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #5a5a5a;
+  }
+}
