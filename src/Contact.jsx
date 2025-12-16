@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import CodeLineNumbers from './CodeLineNumbers';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import SEO from './components/SEO';
+import { X, ChevronDown, Plus, Trash2, Split, MoreHorizontal } from 'lucide-react';
 
 const validateEmail = (email) => {
     return String(email)
@@ -21,13 +21,11 @@ const Contact = () => {
 
     useEffect(() => {
         if (inputRef.current) {
-            // Small delay to allow keyboard to open/layout to adjust
             setTimeout(() => {
                 inputRef.current.focus();
             }, 50);
         }
         if (bottomRef.current) {
-            // Use 'nearest' to avoid unnecessary scrolling if already in view
             bottomRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
     }, [step, history]);
@@ -63,11 +61,10 @@ const Contact = () => {
 
     const handleSubmit = async () => {
         setIsSubmitting(true);
-        // Simulate network request
         await new Promise(resolve => setTimeout(resolve, 1500));
         setHistory(prev => [...prev, { type: 'output', value: 'Message sent successfully! I will get back to you soon.' }]);
         setIsSubmitting(false);
-        setStep(4); // End state
+        setStep(4);
     };
 
     const container = {
@@ -78,108 +75,184 @@ const Contact = () => {
     return (
         <>
             <SEO
-                title="Contact | Vignesh R - Get in Touch"
-                description="Get in touch with Vignesh R. Connect via email, LinkedIn, GitHub, or phone. Available for web development opportunities and collaborations."
-                keywords="Vignesh R, Contact, Email, LinkedIn, GitHub, Web Developer, Hire Developer"
+                title="Contact | Jayanthan - Get in Touch"
+                description="Get in touch with Jayanthan. Connect via email, LinkedIn, GitHub, or phone. Available for web development opportunities and collaborations."
+                keywords="Jayanthan, Contact, Email, LinkedIn, GitHub, Web Developer, Hire Developer"
                 url="https://vigneshr.me/#contact"
             />
-            <div className="flex h-full overflow-y-auto custom-scrollbar font-mono text-sm md:text-base" onClick={() => inputRef.current?.focus()}>
-                <div className="hidden md:block">
-                    <CodeLineNumbers lines={50} />
+            <div className="flex flex-col h-full font-mono text-sm" onClick={() => inputRef.current?.focus()}>
+                {/* Editor Area - Social Links */}
+                <div className="flex-1 overflow-y-auto custom-scrollbar p-4 md:p-6">
+                    <motion.div
+                        variants={container}
+                        initial="hidden"
+                        animate="show"
+                        className="text-gruvbox-fg"
+                    >
+                        <p className="text-gruvbox-gray mb-4"># Contact Information</p>
+                        <p className="text-gruvbox-gray mb-6"># Feel free to reach out through any of the following channels:</p>
+                        
+                        <div className="space-y-3">
+                            <p className="flex flex-wrap items-center gap-2">
+                                <span className="text-gruvbox-purple">const</span> <span className="text-gruvbox-yellow">github</span> <span className="text-gruvbox-fg">=</span>
+                                <a href="https://github.com/Unknowns-007" target="_blank" rel="noopener noreferrer" className="text-gruvbox-green hover:underline hover:text-gruvbox-aqua transition-colors">
+                                    "https://github.com/Unknowns-007"
+                                </a><span className="text-gruvbox-fg">;</span>
+                            </p>
+                            <p className="flex flex-wrap items-center gap-2">
+                                <span className="text-gruvbox-purple">const</span> <span className="text-gruvbox-yellow">linkedin</span> <span className="text-gruvbox-fg">=</span>
+                                <a href="https://www.linkedin.com/in/vignesh-r-7727582b7" target="_blank" rel="noopener noreferrer" className="text-gruvbox-green hover:underline hover:text-gruvbox-aqua transition-colors">
+                                    "https://linkedin.com/in/vignesh-r"
+                                </a><span className="text-gruvbox-fg">;</span>
+                            </p>
+                            <p className="flex flex-wrap items-center gap-2">
+                                <span className="text-gruvbox-purple">const</span> <span className="text-gruvbox-yellow">email</span> <span className="text-gruvbox-fg">=</span>
+                                <a href="mailto:vignesh2262006@gmail.com" className="text-gruvbox-green hover:underline hover:text-gruvbox-aqua transition-colors">
+                                    "vignesh2262006@gmail.com"
+                                </a><span className="text-gruvbox-fg">;</span>
+                            </p>
+                            <p className="flex flex-wrap items-center gap-2">
+                                <span className="text-gruvbox-purple">const</span> <span className="text-gruvbox-yellow">phone</span> <span className="text-gruvbox-fg">=</span>
+                                <a href="tel:+916382774587" className="text-gruvbox-green hover:underline hover:text-gruvbox-aqua transition-colors">
+                                    "+91 6382774587"
+                                </a><span className="text-gruvbox-fg">;</span>
+                            </p>
+                            <p className="flex flex-wrap items-center gap-2">
+                                <span className="text-gruvbox-purple">const</span> <span className="text-gruvbox-yellow">resume</span> <span className="text-gruvbox-fg">=</span>
+                                <a href="/resume.pdf" download="Resume.pdf" target="_blank" rel="noopener noreferrer" className="text-gruvbox-green hover:underline hover:text-gruvbox-aqua transition-colors">
+                                    "Download Resume"
+                                </a><span className="text-gruvbox-fg">;</span>
+                            </p>
+                        </div>
+                    </motion.div>
                 </div>
-                <motion.div
-                    className="p-4 pt-0 md:pt-0 pb-20 text-gruvbox-fg w-full"
-                    variants={container}
-                    initial="hidden"
-                    animate="show"
+
+                {/* Terminal Panel - VS Code Style */}
+                <motion.div 
+                    className="border-t border-gruvbox-bgHard bg-gruvbox-bg"
+                    initial={{ y: 100, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.3, duration: 0.4 }}
                 >
-                    <div className="mb-6">
-                        <p className="text-gruvbox-gray">#!/bin/bash</p>
-                        <p className="mt-2"><span className="text-gruvbox-purple">echo</span> <span className="text-gruvbox-green">"Initializing communication protocol..."</span></p>
+                    {/* Terminal Header */}
+                    <div className="flex items-center justify-between bg-gruvbox-bgSoft border-b border-gruvbox-bgHard px-2 py-1">
+                        <div className="flex items-center gap-4">
+                            <span className="text-gruvbox-gray text-xs uppercase tracking-wide">Problems</span>
+                            <span className="text-gruvbox-gray text-xs uppercase tracking-wide">Output</span>
+                            <span className="text-gruvbox-gray text-xs uppercase tracking-wide">Debug Console</span>
+                            <span className="text-gruvbox-fg text-xs uppercase tracking-wide border-b-2 border-gruvbox-blue pb-1">Terminal</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                            <button className="p-1 hover:bg-gruvbox-bgHard rounded text-gruvbox-gray hover:text-gruvbox-fg">
+                                <Plus size={14} />
+                            </button>
+                            <button className="p-1 hover:bg-gruvbox-bgHard rounded text-gruvbox-gray hover:text-gruvbox-fg">
+                                <Split size={14} />
+                            </button>
+                            <button className="p-1 hover:bg-gruvbox-bgHard rounded text-gruvbox-gray hover:text-gruvbox-fg">
+                                <Trash2 size={14} />
+                            </button>
+                            <button className="p-1 hover:bg-gruvbox-bgHard rounded text-gruvbox-gray hover:text-gruvbox-fg">
+                                <MoreHorizontal size={14} />
+                            </button>
+                            <button className="p-1 hover:bg-gruvbox-bgHard rounded text-gruvbox-gray hover:text-gruvbox-fg">
+                                <ChevronDown size={14} />
+                            </button>
+                            <button className="p-1 hover:bg-gruvbox-bgHard rounded text-gruvbox-gray hover:text-gruvbox-fg">
+                                <X size={14} />
+                            </button>
+                        </div>
                     </div>
 
-                    <div className="space-y-2">
-                        {history.map((item, index) => (
-                            <div key={index} className="flex flex-col">
-                                {item.type === 'input' ? (
-                                    <div className="flex flex-wrap items-center gap-2">
-                                        <span className="text-gruvbox-yellow">read</span>
-                                        <span className="text-gruvbox-fg">-p</span>
-                                        <span className="text-gruvbox-green whitespace-nowrap">"{item.label}: "</span>
-                                        <span className="text-gruvbox-fg break-all">{item.value}</span>
-                                    </div>
-                                ) : item.type === 'error' ? (
-                                    <div className="text-gruvbox-red mt-2 mb-4">
-                                        {item.value}
-                                    </div>
-                                ) : (
-                                    <div className="text-gruvbox-aqua mt-2 mb-4">
-                                        &gt; {item.value}
-                                    </div>
-                                )}
-                            </div>
-                        ))}
+                    {/* Terminal Dropdown */}
+                    <div className="flex items-center gap-2 bg-gruvbox-bgSoft px-2 py-1 border-b border-gruvbox-bgHard">
+                        <div className="flex items-center gap-1 bg-gruvbox-bgHard px-2 py-0.5 rounded text-xs">
+                            <span className="text-gruvbox-fg">pwsh</span>
+                            <ChevronDown size={12} className="text-gruvbox-gray" />
+                        </div>
+                        <span className="text-gruvbox-gray text-xs">contact-form</span>
+                    </div>
 
-                        {step < 3 && (
-                            <div className="flex flex-wrap items-center gap-2">
-                                <span className="text-gruvbox-yellow">read</span>
-                                <span className="text-gruvbox-fg">-p</span>
-                                <span className="text-gruvbox-green whitespace-nowrap">
-                                    "{step === 0 ? 'Name' : step === 1 ? 'Email' : 'Message'}: "
-                                </span>
-                                <div className="flex-1 min-w-[150px] relative">
+                    {/* Terminal Content */}
+                    <div className="h-48 md:h-56 overflow-y-auto custom-scrollbar p-3 text-gruvbox-fg">
+                        {/* Initial prompt */}
+                        <div className="mb-2">
+                            <span className="text-gruvbox-green">PS C:\portfolio&gt;</span>
+                            <span className="text-gruvbox-yellow ml-2">./send-message.ps1</span>
+                        </div>
+                        <div className="text-gruvbox-aqua mb-3">
+                            Initializing contact form...
+                        </div>
+
+                        {/* History */}
+                        <div className="space-y-2">
+                            {history.map((item, index) => (
+                                <div key={index}>
+                                    {item.type === 'input' ? (
+                                        <div>
+                                            <span className="text-gruvbox-gray">{item.label}:</span>
+                                            <span className="text-gruvbox-fg ml-2">{item.value}</span>
+                                        </div>
+                                    ) : item.type === 'error' ? (
+                                        <div className="text-gruvbox-red">
+                                            ✗ {item.value}
+                                        </div>
+                                    ) : (
+                                        <div className="text-gruvbox-green">
+                                            ✓ {item.value}
+                                        </div>
+                                    )}
+                                </div>
+                            ))}
+
+                            {/* Current Input */}
+                            {step < 3 && (
+                                <div className="flex items-center">
+                                    <span className="text-gruvbox-yellow">
+                                        {step === 0 ? 'Enter your name' : step === 1 ? 'Enter your email' : 'Enter your message'}:
+                                    </span>
                                     <input
                                         ref={inputRef}
                                         type="text"
-                                        className="bg-transparent border-none outline-none text-gruvbox-fg w-full caret-gruvbox-fg"
+                                        className="bg-transparent border-none outline-none text-gruvbox-fg ml-2 flex-1 caret-gruvbox-fg"
                                         autoComplete="off"
                                         onKeyDown={handleKeyDown}
                                     />
+                                    <motion.span
+                                        animate={{ opacity: [1, 0] }}
+                                        transition={{ duration: 0.8, repeat: Infinity }}
+                                        className="w-2 h-4 bg-gruvbox-fg"
+                                    />
                                 </div>
-                            </div>
-                        )}
+                            )}
 
-                        {isSubmitting && (
-                            <div className="text-gruvbox-orange animate-pulse mt-2">
-                                Sending packet...
-                            </div>
-                        )}
+                            {/* Submitting State */}
+                            {isSubmitting && (
+                                <div className="text-gruvbox-orange flex items-center gap-2">
+                                    <motion.span
+                                        animate={{ rotate: 360 }}
+                                        transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+                                    >
+                                        ⟳
+                                    </motion.span>
+                                    Sending message...
+                                </div>
+                            )}
 
-                        <div ref={bottomRef} />
-                    </div>
+                            {/* Completion State */}
+                            {step === 4 && !isSubmitting && (
+                                <div className="mt-2">
+                                    <span className="text-gruvbox-green">PS C:\portfolio&gt;</span>
+                                    <motion.span
+                                        animate={{ opacity: [1, 0] }}
+                                        transition={{ duration: 0.8, repeat: Infinity }}
+                                        className="w-2 h-4 bg-gruvbox-fg ml-2 inline-block"
+                                    />
+                                </div>
+                            )}
 
-                    <div className="mt-12 space-y-2 border-t border-gruvbox-bgSoft pt-6">
-                        <p className="text-gruvbox-gray"># Social Links (contact through mail)</p>
-                        <p className="flex flex-wrap items-center gap-2">
-                            <span className="text-gruvbox-blue">export</span> <span className="text-gruvbox-yellow">GITHUB</span>=
-                            <a href="https://github.com/Unknowns-007" target="_blank" rel="noopener noreferrer" className="text-gruvbox-green hover:underline hover:text-gruvbox-aqua transition-colors break-all">
-                                "Unknowns-007"
-                            </a>
-                        </p>
-                        <p className="flex flex-wrap items-center gap-2">
-                            <span className="text-gruvbox-blue">export</span> <span className="text-gruvbox-yellow">LINKEDIN</span>=
-                            <a href="https://www.linkedin.com/in/vignesh-r-7727582b7?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" className="text-gruvbox-green hover:underline hover:text-gruvbox-aqua transition-colors break-all">
-                                "vignesh-r"
-                            </a>
-                        </p>
-                        <p className="flex flex-nowrap items-center gap-2">
-                            <span className="text-gruvbox-blue">export</span> <span className="text-gruvbox-yellow">EMAIL</span>=
-                            <a href="mailto:vignesh2262006@gmail.com" className="text-gruvbox-green hover:underline hover:text-gruvbox-aqua transition-colors break-all">
-                                "vignesh2262006@gmail.com"
-                            </a>
-                        </p>
-                        <p className="flex flex-wrap items-center gap-2">
-                            <span className="text-gruvbox-blue">export</span> <span className="text-gruvbox-yellow">PHONE</span>=
-                            <a href="tel:+919876543210" className="text-gruvbox-green hover:underline hover:text-gruvbox-aqua transition-colors break-all">
-                                "+91 6382774587"
-                            </a>
-                        </p>
-                        <p className="flex flex-wrap items-center gap-2">
-                            <span className="text-gruvbox-blue">export</span> <span className="text-gruvbox-yellow">RESUME</span>=
-                            <a href="/resume.pdf" download="Vignesh_R_Resume.pdf" target="_blank" rel="noopener noreferrer" className="text-gruvbox-green hover:underline hover:text-gruvbox-aqua transition-colors break-all">
-                                "View Resume (PDF)"
-                            </a>
-                        </p>
+                            <div ref={bottomRef} />
+                        </div>
                     </div>
                 </motion.div>
             </div>
