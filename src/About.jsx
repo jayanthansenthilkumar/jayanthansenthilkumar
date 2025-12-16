@@ -5,15 +5,15 @@ import SEO from './components/SEO';
 const CodeRow = ({ line, content, delay }) => {
     return (
         <motion.div
-            className="flex hover:bg-gruvbox-bgSoft group py-1" // Added py-1 for spacing
+            className="flex hover:bg-gruvbox-bgSoft group"
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay }}
         >
-            <div className="hidden md:block w-12 text-right pr-4 text-gruvbox-gray select-none group-hover:text-gruvbox-fg transition-colors leading-relaxed">
+            <div className="hidden md:block w-12 text-right pr-4 text-gruvbox-gray select-none group-hover:text-gruvbox-fg transition-colors">
                 {line}
             </div>
-            <div className="flex-1 font-mono whitespace-pre-wrap break-words leading-relaxed">
+            <div className="flex-1 font-mono whitespace-pre-wrap break-words">
                 {content}
             </div>
         </motion.div>
@@ -48,7 +48,7 @@ const About = () => {
             line: 2,
             content: (
                 <span className="pl-4">
-                    <Syntax color="#458588">name</Syntax><Syntax color="#928374">:</Syntax> <Syntax color="#98971a">"Vignesh R"</Syntax>,
+                    <Syntax color="#458588">name</Syntax><Syntax color="#928374">:</Syntax> <Syntax color="#98971a">"Jayanthan Senthilkumar"</Syntax>,
                 </span>
             )
         },
@@ -112,6 +112,7 @@ const About = () => {
             line: 10,
             content: <span className="text-gruvbox-fg">{`};`}</span>
         },
+        { line: 11, content: <br /> },
         {
             line: 12,
             content: (
@@ -207,9 +208,9 @@ const About = () => {
     return (
         <>
             <SEO
-                title="About | Vignesh R - Full Stack Developer"
-                description="Learn more about Vignesh R, a Full Stack Developer specializing in React.js, Node.js, and modern web technologies. Based in Chennai, India."
-                keywords="Vignesh R, About, Full Stack Developer, React, Node.js, JavaScript, Skills, Education"
+                title="About | Jayanthan Senthilkumar - Full Stack Developer"
+                description="Learn more about Jayanthan Senthilkumar, a Full Stack Developer specializing in React.js, Node.js, and modern web technologies. Based in Chennai, India."
+                keywords="Jayanthan Senthilkumar, About, Full Stack Developer, React, Node.js, JavaScript, Skills, Education"
                 url="https://vigneshr.me/#about"
             />
             <div className="flex h-full overflow-y-auto custom-scrollbar font-mono text-sm md:text-base">
