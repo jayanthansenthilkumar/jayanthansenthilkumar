@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Folder, FileCode, Hash, Cpu, FileText, Terminal, X, Menu, GitBranch, BookOpen, Search, Settings, ChevronRight, ChevronDown, Files, GitFork, Blocks, User, Bell } from 'lucide-react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
+import { Folder, FileCode, Hash, Cpu, FileText, Terminal, X, Menu, GitBranch, BookOpen, Search, Settings, ChevronRight, ChevronDown, Files, GitFork, Blocks, User, Bell, GitCommit, Clock, RefreshCw, Palette, Monitor, Moon, Sun, ExternalLink, LogOut, Check, MessageCircle, Send, Sparkles, Bot } from 'lucide-react';
 import Home from './Home';
 import About from './About';
 import Projects from './Projects';
@@ -22,8 +22,85 @@ function App() {
   const [activeActivity, setActiveActivity] = useState('explorer');
   const [isExplorerExpanded, setIsExplorerExpanded] = useState(true);
   const [openTabs, setOpenTabs] = useState(['home']);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [showSettingsMenu, setShowSettingsMenu] = useState(false);
+  const [showChatPanel, setShowChatPanel] = useState(false);
+  const [chatMessages, setChatMessages] = useState([
+    { role: 'assistant', content: "Hey there! 👋 I'm Supri, Jayanthan's  assistant. How can I help you today?" }
+  ]);
+  const [chatInput, setChatInput] = useState('');
+  const [isTyping, setIsTyping] = useState(false);
+  const chatMessagesRef = useRef(null);
+
+  // Auto-scroll chat to bottom when new messages arrive
+  useEffect(() => {
+    if (chatMessagesRef.current) {
+      chatMessagesRef.current.scrollTop = chatMessagesRef.current.scrollHeight;
+    }
+  }, [chatMessages, isTyping]);
+
+  const [theme, setTheme] = useState(() => {
+    // Load theme from localStorage on initial render
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('portfolio-theme') || 'gruvbox';
+    }
+    return 'gruvbox';
+  });
 
   const { showToast } = useVimNavigation(setActiveFile);
+
+  // Apply theme to document
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('portfolio-theme', theme);
+  }, [theme]);
+
+  // Available themes with accent colors for status bar
+  const themes = [
+    { id: 'gruvbox', name: 'Gruvbox Dark', color: '#282828', accent: '#458588', statusBg: '#1d2021' },
+    { id: 'dracula', name: 'Dracula', color: '#282a36', accent: '#bd93f9', statusBg: '#21222c' },
+    { id: 'monokai', name: 'Monokai', color: '#272822', accent: '#66d9ef', statusBg: '#1e1f1a' },
+    { id: 'nord', name: 'Nord', color: '#2e3440', accent: '#88c0d0', statusBg: '#242933' },
+    { id: 'onedark', name: 'One Dark', color: '#282c34', accent: '#61afef', statusBg: '#21252b' },
+    { id: 'github', name: 'GitHub Dark', color: '#0d1117', accent: '#238636', statusBg: '#010409' },
+  ];
+
+  // Git commits data (simulated)
+  const gitCommits = [
+    { hash: 'a1b2c3d', message: 'feat: Add Journey Book page', author: 'Jayanthan', time: '2 hours ago', branch: 'main' },
+    { hash: 'e4f5g6h', message: 'fix: Status bar styling update', author: 'Jayanthan', time: '3 hours ago', branch: 'main' },
+    { hash: 'i7j8k9l', message: 'feat: VS Code style sidebar', author: 'Jayanthan', time: '5 hours ago', branch: 'main' },
+    { hash: 'm0n1o2p', message: 'refactor: Activity bar icons', author: 'Jayanthan', time: '1 day ago', branch: 'main' },
+    { hash: 'q3r4s5t', message: 'feat: Add Contact terminal', author: 'Jayanthan', time: '2 days ago', branch: 'main' },
+    { hash: 'u6v7w8x', message: 'style: Gruvbox theme update', author: 'Jayanthan', time: '3 days ago', branch: 'main' },
+    { hash: 'y9z0a1b', message: 'feat: Projects page carousel', author: 'Jayanthan', time: '4 days ago', branch: 'main' },
+    { hash: 'c2d3e4f', message: 'init: Portfolio setup', author: 'Jayanthan', time: '1 week ago', branch: 'main' },
+  ];
+
+  // Search content data
+  const searchableContent = [
+    { file: 'README.md', id: 'home', content: 'Welcome Home Portfolio Developer Full Stack React JavaScript' },
+    { file: 'about.lua', id: 'about', content: 'About Developer Skills Experience Education Background' },
+    { file: 'projects.rs', id: 'projects', content: 'Projects Portfolio Applications Web Development GitHub' },
+    { file: 'experience.log', id: 'experience', content: 'Experience Work Internship Company Role Developer' },
+    { file: 'journey.json', id: 'journey', content: 'Journey Events Volunteering Achievements Timeline' },
+    { file: 'contact.sh', id: 'contact', content: 'Contact Email Message Form Terminal PowerShell' },
+  ];
+
+  // Filter search results
+  const searchResults = useMemo(() => {
+    if (!searchQuery.trim()) return [];
+    const query = searchQuery.toLowerCase();
+    return searchableContent.filter(item => 
+      item.file.toLowerCase().includes(query) || 
+      item.content.toLowerCase().includes(query)
+    );
+  }, [searchQuery]);
+
+  // Get current theme data
+  const currentTheme = useMemo(() => {
+    return themes.find(t => t.id === theme) || themes[0];
+  }, [theme]);
 
   // Handle window resize
   useEffect(() => {
@@ -50,9 +127,8 @@ function App() {
 
   const activityBarItems = [
     { id: 'explorer', icon: Files, label: 'Explorer' },
-    // { id: 'search', icon: Search, label: 'Search' },
+    { id: 'search', icon: Search, label: 'Search' },
     { id: 'source', icon: GitFork, label: 'Source Control' },
-    // { id: 'extensions', icon: Blocks, label: 'Extensions' },
   ];
 
   // Handle file selection and tab management
@@ -95,6 +171,45 @@ function App() {
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
+
+  // SupriAI Chat Handler
+  const handleSendMessage = async () => {
+    if (!chatInput.trim()) return;
+    
+    const userMessage = chatInput.trim();
+    setChatMessages(prev => [...prev, { role: 'user', content: userMessage }]);
+    setChatInput('');
+    setIsTyping(true);
+
+    // Simulate AI response with contextual replies
+    setTimeout(() => {
+      let response = '';
+      const lowerMsg = userMessage.toLowerCase();
+      
+      if (lowerMsg.includes('project') || lowerMsg.includes('work')) {
+        response = "Jayanthan has worked on some amazing projects! Check out the projects.rs file to see his portfolio including web apps, AI projects, and more. Would you like me to navigate you there? 🚀";
+      } else if (lowerMsg.includes('contact') || lowerMsg.includes('hire') || lowerMsg.includes('email')) {
+        response = "You can reach Jayanthan at hii@itsmejayanthan.me or check out the contact.sh page for more ways to connect! He's always open to exciting opportunities. 📧";
+      } else if (lowerMsg.includes('skill') || lowerMsg.includes('tech') || lowerMsg.includes('stack')) {
+        response = "Jayanthan is skilled in React, TypeScript, Node.js, Python, and more! He's a full-stack developer with a passion for clean code and great UX. Check the about.lua file for the full tech stack! 💻";
+      } else if (lowerMsg.includes('experience') || lowerMsg.includes('job') || lowerMsg.includes('intern')) {
+        response = "Check out experience.log to see Jayanthan's professional journey! He's gained valuable experience through internships and projects. 📋";
+      } else if (lowerMsg.includes('hello') || lowerMsg.includes('hi') || lowerMsg.includes('hey')) {
+        response = "Hello! 👋 Great to meet you! I'm SupriAI, here to help you explore Jayanthan's portfolio. Ask me about his projects, skills, or experience!";
+      } else if (lowerMsg.includes('who') || lowerMsg.includes('about') || lowerMsg.includes('jayanthan')) {
+        response = "Jayanthan is a passionate Full-Stack Developer who loves building creative solutions. He's currently focused on web development and AI. Check out about.lua for more! ✨";
+      } else if (lowerMsg.includes('theme') || lowerMsg.includes('color')) {
+        response = "Love customization? Click the ⚙️ Settings gear at the bottom to switch between 6 beautiful themes including Gruvbox, Dracula, Nord, and GitHub Dark! 🎨";
+      } else if (lowerMsg.includes('thank')) {
+        response = "You're welcome! 😊 Feel free to ask if you need anything else. Happy exploring!";
+      } else {
+        response = "That's interesting! Feel free to explore the portfolio using the sidebar, or ask me about Jayanthan's projects, skills, experience, or how to contact him! 🌟";
+      }
+      
+      setChatMessages(prev => [...prev, { role: 'assistant', content: response }]);
+      setIsTyping(false);
+    }, 1000 + Math.random() * 500);
+  };
 
   const activeFileData = files.find(f => f.id === activeFile);
 
@@ -162,7 +277,7 @@ function App() {
                     key={item.id}
                     onClick={() => {
                       setActiveActivity(item.id);
-                      if (item.id === 'explorer') setIsTreeOpen(true);
+                      setIsTreeOpen(true);
                     }}
                     className={`w-12 h-12 flex items-center justify-center cursor-pointer relative group transition-colors ${
                       isActive ? 'text-gruvbox-fg' : 'text-gruvbox-gray hover:text-gruvbox-fg'
@@ -181,18 +296,229 @@ function App() {
                 );
               })}
               <div className="flex-1" />
-              <button
-                className="w-12 h-12 flex items-center justify-center cursor-pointer text-gruvbox-gray hover:text-gruvbox-fg transition-colors"
-                title="Account"
-              >
-                <User size={24} />
-              </button>
-              <button
-                className="w-12 h-12 flex items-center justify-center cursor-pointer text-gruvbox-gray hover:text-gruvbox-fg transition-colors"
-                title="Settings"
-              >
-                <Settings size={24} />
-              </button>
+              
+              {/* SupriAI Chat Button */}
+              <div className="relative">
+                <button
+                  onClick={() => setShowChatPanel(!showChatPanel)}
+                  className={`w-12 h-12 flex items-center justify-center cursor-pointer transition-colors relative group ${showChatPanel ? 'text-gruvbox-fg' : 'text-gruvbox-gray hover:text-gruvbox-fg'}`}
+                  title="SupriAI Chat"
+                >
+                  <MessageCircle size={24} />
+                  {/* Notification dot */}
+                  <div className="absolute top-2 right-2 w-2 h-2 bg-gruvbox-green rounded-full animate-pulse" />
+                  {/* Tooltip */}
+                  <div className="absolute left-14 bg-gruvbox-bgHard text-gruvbox-fg px-2 py-1 rounded text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity border border-gruvbox-bgSoft z-50">
+                    SupriAI Chat
+                  </div>
+                </button>
+
+                {/* Chat Panel */}
+                <AnimatePresence>
+                  {showChatPanel && (
+                    <>
+                      <div 
+                        className="fixed inset-0 z-40" 
+                        onClick={() => {
+                          setShowChatPanel(false);
+                          setChatMessages([{ role: 'assistant', content: "Hey there! 👋 I'm Supri, Jayanthan's assistant. How can I help you today?" }]);
+                          setChatInput('');
+                        }}
+                      />
+                      <motion.div
+                        initial={{ opacity: 0, x: -20, scale: 0.95 }}
+                        animate={{ opacity: 1, x: 0, scale: 1 }}
+                        exit={{ opacity: 0, x: -20, scale: 0.95 }}
+                        transition={{ duration: 0.2 }}
+                        className="absolute bottom-0 left-14 w-80 h-[450px] bg-gruvbox-bgHard border border-gruvbox-bgSoft rounded-lg shadow-2xl z-50 flex flex-col overflow-hidden"
+                      >
+                        {/* Chat Header */}
+                        <div className="p-3 border-b border-gruvbox-bgSoft bg-gradient-to-r from-gruvbox-purple/20 to-gruvbox-blue/20">
+                          <div className="flex items-center justify-between">
+                            <div className="flex items-center gap-2">
+                              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-gruvbox-purple to-gruvbox-blue flex items-center justify-center">
+                                <Sparkles size={16} className="text-white" />
+                              </div>
+                              <div>
+                                <div className="text-[13px] font-semibold text-gruvbox-fg flex items-center gap-1">
+                                  SupriAI
+                                  <Bot size={12} className="text-gruvbox-purple" />
+                                </div>
+                                <div className="text-[10px] text-gruvbox-green flex items-center gap-1">
+                                  <div className="w-1.5 h-1.5 bg-gruvbox-green rounded-full animate-pulse" />
+                                  Online
+                                </div>
+                              </div>
+                            </div>
+                            <button 
+                              onClick={() => {
+                                setShowChatPanel(false);
+                                setChatMessages([{ role: 'assistant', content: "Hey there! 👋 I'm Supri, Jayanthan's assistant. How can I help you today?" }]);
+                                setChatInput('');
+                              }}
+                              className="text-gruvbox-gray hover:text-gruvbox-fg transition-colors"
+                            >
+                              <X size={16} />
+                            </button>
+                          </div>
+                        </div>
+
+                        {/* Chat Messages */}
+                        <div ref={chatMessagesRef} className="flex-1 overflow-y-auto p-3 space-y-3 custom-scrollbar">
+                          {chatMessages.map((msg, index) => (
+                            <motion.div
+                              key={index}
+                              initial={{ opacity: 0, y: 10 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
+                            >
+                              <div className={`max-w-[85%] px-3 py-2 rounded-lg text-[13px] ${
+                                msg.role === 'user' 
+                                  ? 'bg-gruvbox-blue text-white rounded-br-none' 
+                                  : 'bg-gruvbox-bgSoft text-gruvbox-fg rounded-bl-none'
+                              }`}>
+                                {msg.content}
+                              </div>
+                            </motion.div>
+                          ))}
+                          {isTyping && (
+                            <motion.div
+                              initial={{ opacity: 0 }}
+                              animate={{ opacity: 1 }}
+                              className="flex justify-start"
+                            >
+                              <div className="bg-gruvbox-bgSoft px-3 py-2 rounded-lg rounded-bl-none">
+                                <div className="flex gap-1">
+                                  <div className="w-2 h-2 bg-gruvbox-gray rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
+                                  <div className="w-2 h-2 bg-gruvbox-gray rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
+                                  <div className="w-2 h-2 bg-gruvbox-gray rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
+                                </div>
+                              </div>
+                            </motion.div>
+                          )}
+                        </div>
+
+                        {/* Chat Input */}
+                        <div className="p-3 border-t border-gruvbox-bgSoft">
+                          <div className="flex gap-2">
+                            <input
+                              type="text"
+                              value={chatInput}
+                              onChange={(e) => setChatInput(e.target.value)}
+                              onKeyDown={(e) => e.key === 'Enter' && handleSendMessage()}
+                              placeholder="Ask SupriAI anything..."
+                              className="flex-1 bg-gruvbox-bg border border-gruvbox-bgSoft rounded-lg px-3 py-2 text-[13px] text-gruvbox-fg placeholder:text-gruvbox-gray focus:outline-none focus:border-gruvbox-blue"
+                            />
+                            <button
+                              onClick={handleSendMessage}
+                              disabled={!chatInput.trim()}
+                              className="p-2 bg-gruvbox-blue text-white rounded-lg hover:bg-gruvbox-blue/80 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                            >
+                              <Send size={16} />
+                            </button>
+                          </div>
+                          <div className="mt-2 text-[10px] text-gruvbox-gray text-center">
+                            Powered by Supriya • Ask about projects, skills & more
+                          </div>
+                        </div>
+                      </motion.div>
+                    </>
+                  )}
+                </AnimatePresence>
+              </div>
+
+              <div className="relative">
+                <button
+                  onClick={() => setShowSettingsMenu(!showSettingsMenu)}
+                  className={`w-12 h-12 flex items-center justify-center cursor-pointer transition-colors ${showSettingsMenu ? 'text-gruvbox-fg' : 'text-gruvbox-gray hover:text-gruvbox-fg'}`}
+                  title="Settings"
+                >
+                  <Settings size={24} className={showSettingsMenu ? 'animate-spin-slow' : ''} />
+                </button>
+                
+                {/* Settings Dropdown */}
+                <AnimatePresence>
+                  {showSettingsMenu && (
+                    <>
+                      {/* Backdrop */}
+                      <div 
+                        className="fixed inset-0 z-40" 
+                        onClick={() => setShowSettingsMenu(false)}
+                      />
+                      <motion.div
+                        initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                        transition={{ duration: 0.15 }}
+                        className="absolute bottom-full left-12 mb-2 w-64 bg-gruvbox-bgHard border border-gruvbox-bgSoft rounded-lg shadow-2xl z-50 overflow-hidden"
+                      >
+                        {/* Profile Section */}
+                        <div className="p-3 border-b border-gruvbox-bgSoft">
+                          <div className="flex items-center gap-3">
+                            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-gruvbox-blue to-gruvbox-purple flex items-center justify-center text-white font-bold">
+                              J
+                            </div>
+                            <div>
+                              <div className="text-[13px] text-gruvbox-fg font-semibold">Jayanthan Senthilkumar</div>
+                              <div className="text-[11px] text-gruvbox-gray">hii@itsmejayanthan.me</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Theme Section */}
+                        <div className="p-2 border-b border-gruvbox-bgSoft">
+                          <div className="px-2 py-1 text-[11px] text-gruvbox-gray uppercase tracking-wider flex items-center gap-2">
+                            <Palette size={12} />
+                            Color Theme
+                          </div>
+                          <div className="mt-1 space-y-0.5">
+                            {themes.map((t) => (
+                              <button
+                                key={t.id}
+                                onClick={() => setTheme(t.id)}
+                                className={`w-full flex items-center gap-2 px-2 py-1.5 rounded text-[13px] transition-colors ${
+                                  theme === t.id 
+                                    ? 'bg-gruvbox-bgSoft text-gruvbox-fg' 
+                                    : 'text-gruvbox-gray hover:bg-gruvbox-bgSoft hover:text-gruvbox-fg'
+                                }`}
+                              >
+                                <div 
+                                  className="w-4 h-4 rounded border border-gruvbox-bgSoft"
+                                  style={{ backgroundColor: t.color }}
+                                />
+                                <span className="flex-1 text-left">{t.name}</span>
+                                {theme === t.id && <Check size={14} className="text-gruvbox-green" />}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+
+                        {/* Quick Actions */}
+                        <div className="p-2">
+                          <button className="w-full flex items-center gap-2 px-2 py-1.5 rounded text-[13px] text-gruvbox-gray hover:bg-gruvbox-bgSoft hover:text-gruvbox-fg transition-colors">
+                            <Monitor size={14} />
+                            <span>Keyboard Shortcuts</span>
+                            <span className="ml-auto text-[11px] text-gruvbox-gray">Ctrl+K</span>
+                          </button>
+                          <a 
+                            href="https://github.com/jayanthansenthilkumar" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full flex items-center gap-2 px-2 py-1.5 rounded text-[13px] text-gruvbox-gray hover:bg-gruvbox-bgSoft hover:text-gruvbox-fg transition-colors"
+                          >
+                            <ExternalLink size={14} />
+                            <span>GitHub Profile</span>
+                          </a>
+                          <button className="w-full flex items-center gap-2 px-2 py-1.5 rounded text-[13px] text-gruvbox-gray hover:bg-gruvbox-bgSoft hover:text-gruvbox-fg transition-colors">
+                            <Settings size={14} />
+                            <span>Settings</span>
+                          </button>
+                        </div>
+                      </motion.div>
+                    </>
+                  )}
+                </AnimatePresence>
+              </div>
             </div>
           )}
 
@@ -220,59 +546,173 @@ function App() {
                 `}
               >
                 <div className="w-60 h-full flex flex-col">
-                  {/* Explorer Header */}
-                  <div className="px-4 py-2 text-[11px] text-gruvbox-gray uppercase tracking-wider font-semibold">
-                    Explorer
-                  </div>
                   
-                  {/* Project Section */}
-                  <div className="flex-1 overflow-y-auto custom-scrollbar">
-                    {/* Portfolio Folder */}
-                    <button
-                      onClick={() => setIsExplorerExpanded(!isExplorerExpanded)}
-                      className="flex items-center w-full px-2 py-1 hover:bg-gruvbox-bgSoft cursor-pointer text-[13px] font-semibold text-gruvbox-fg"
-                    >
-                      {isExplorerExpanded ? (
-                        <ChevronDown size={16} className="mr-1 text-gruvbox-gray" />
-                      ) : (
-                        <ChevronRight size={16} className="mr-1 text-gruvbox-gray" />
-                      )}
-                      <span className="uppercase text-[11px] tracking-wider">portfolio</span>
-                    </button>
+                  {/* Explorer View */}
+                  {activeActivity === 'explorer' && (
+                    <>
+                      <div className="px-4 py-2 text-[11px] text-gruvbox-gray uppercase tracking-wider font-semibold">
+                        Explorer
+                      </div>
+                      <div className="flex-1 overflow-y-auto custom-scrollbar">
+                        <button
+                          onClick={() => setIsExplorerExpanded(!isExplorerExpanded)}
+                          className="flex items-center w-full px-2 py-1 hover:bg-gruvbox-bgSoft cursor-pointer text-[13px] font-semibold text-gruvbox-fg"
+                        >
+                          {isExplorerExpanded ? (
+                            <ChevronDown size={16} className="mr-1 text-gruvbox-gray" />
+                          ) : (
+                            <ChevronRight size={16} className="mr-1 text-gruvbox-gray" />
+                          )}
+                          <span className="uppercase text-[11px] tracking-wider">portfolio</span>
+                        </button>
 
-                    {isExplorerExpanded && (
-                      <div className="ml-4">
-                        {/* src folder */}
-                        <div className="flex items-center px-2 py-1 text-[13px] text-gruvbox-gray">
-                          <ChevronDown size={14} className="mr-1" />
-                          <Folder size={14} className="mr-2 text-gruvbox-yellow" />
-                          <span>src</span>
-                        </div>
-                        
-                        {/* Files */}
-                        <div className="ml-5">
-                          {files.map(file => {
-                            const FileIcon = file.icon;
-                            const isActive = activeFile === file.id;
-                            return (
-                              <button
-                                key={file.id}
-                                onClick={() => handleFileSelect(file.id)}
-                                className={`flex items-center w-full px-2 py-0.5 text-[13px] cursor-pointer transition-colors ${
-                                  isActive 
-                                    ? 'bg-gruvbox-bgSoft text-gruvbox-fg' 
-                                    : 'text-gruvbox-gray hover:bg-gruvbox-bgSoft hover:text-gruvbox-fg'
-                                }`}
-                              >
-                                <FileIcon size={14} className={`mr-2 ${file.color}`} />
-                                <span>{file.name}</span>
-                              </button>
-                            );
-                          })}
+                        {isExplorerExpanded && (
+                          <div className="ml-4">
+                            <div className="flex items-center px-2 py-1 text-[13px] text-gruvbox-gray">
+                              <ChevronDown size={14} className="mr-1" />
+                              <Folder size={14} className="mr-2 text-gruvbox-yellow" />
+                              <span>src</span>
+                            </div>
+                            <div className="ml-5">
+                              {files.map(file => {
+                                const FileIcon = file.icon;
+                                const isActive = activeFile === file.id;
+                                return (
+                                  <button
+                                    key={file.id}
+                                    onClick={() => handleFileSelect(file.id)}
+                                    className={`flex items-center w-full px-2 py-0.5 text-[13px] cursor-pointer transition-colors ${
+                                      isActive 
+                                        ? 'bg-gruvbox-bgSoft text-gruvbox-fg' 
+                                        : 'text-gruvbox-gray hover:bg-gruvbox-bgSoft hover:text-gruvbox-fg'
+                                    }`}
+                                  >
+                                    <FileIcon size={14} className={`mr-2 ${file.color}`} />
+                                    <span>{file.name}</span>
+                                  </button>
+                                );
+                              })}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    </>
+                  )}
+
+                  {/* Search View */}
+                  {activeActivity === 'search' && (
+                    <>
+                      <div className="px-4 py-2 text-[11px] text-gruvbox-gray uppercase tracking-wider font-semibold">
+                        Search
+                      </div>
+                      <div className="px-2 pb-2">
+                        <div className="relative">
+                          <Search size={14} className="absolute left-2 top-1/2 -translate-y-1/2 text-gruvbox-gray" />
+                          <input
+                            type="text"
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                            placeholder="Search files..."
+                            className="w-full bg-gruvbox-bg border border-gruvbox-bgSoft rounded px-7 py-1.5 text-[13px] text-gruvbox-fg placeholder:text-gruvbox-gray focus:outline-none focus:border-gruvbox-blue"
+                            autoFocus
+                          />
+                          {searchQuery && (
+                            <button
+                              onClick={() => setSearchQuery('')}
+                              className="absolute right-2 top-1/2 -translate-y-1/2 text-gruvbox-gray hover:text-gruvbox-fg"
+                            >
+                              <X size={14} />
+                            </button>
+                          )}
                         </div>
                       </div>
-                    )}
-                  </div>
+                      <div className="flex-1 overflow-y-auto custom-scrollbar">
+                        {searchQuery && searchResults.length === 0 && (
+                          <div className="px-4 py-8 text-center text-gruvbox-gray text-[13px]">
+                            No results found for "{searchQuery}"
+                          </div>
+                        )}
+                        {searchResults.map((result, index) => {
+                          const file = files.find(f => f.id === result.id);
+                          const FileIcon = file?.icon || FileText;
+                          return (
+                            <button
+                              key={index}
+                              onClick={() => {
+                                handleFileSelect(result.id);
+                                setSearchQuery('');
+                              }}
+                              className="flex items-center w-full px-3 py-2 hover:bg-gruvbox-bgSoft cursor-pointer text-[13px] text-gruvbox-fg border-b border-gruvbox-bgSoft"
+                            >
+                              <FileIcon size={14} className={`mr-2 ${file?.color || 'text-gruvbox-gray'}`} />
+                              <div className="text-left">
+                                <div className="text-gruvbox-fg">{result.file}</div>
+                                <div className="text-[11px] text-gruvbox-gray truncate max-w-[180px]">
+                                  {result.content.split(' ').slice(0, 5).join(' ')}...
+                                </div>
+                              </div>
+                            </button>
+                          );
+                        })}
+                        {!searchQuery && (
+                          <div className="px-4 py-8 text-center text-gruvbox-gray text-[13px]">
+                            <Search size={32} className="mx-auto mb-2 opacity-50" />
+                            <p>Type to search in files</p>
+                            <p className="text-[11px] mt-1">Press Ctrl+K for command palette</p>
+                          </div>
+                        )}
+                      </div>
+                    </>
+                  )}
+
+                  {/* Source Control View */}
+                  {activeActivity === 'source' && (
+                    <>
+                      <div className="px-4 py-2 text-[11px] text-gruvbox-gray uppercase tracking-wider font-semibold flex items-center justify-between">
+                        <span>Source Control</span>
+                        <button className="hover:text-gruvbox-fg transition-colors" title="Refresh">
+                          <RefreshCw size={14} />
+                        </button>
+                      </div>
+                      <div className="px-3 py-2 border-b border-gruvbox-bgSoft">
+                        <div className="flex items-center gap-2 text-[13px] text-gruvbox-fg">
+                          <GitBranch size={14} className="text-gruvbox-green" />
+                          <span>main</span>
+                          <span className="text-gruvbox-gray text-[11px]">• synced</span>
+                        </div>
+                      </div>
+                      <div className="flex-1 overflow-y-auto custom-scrollbar">
+                        <div className="px-3 py-2 text-[11px] text-gruvbox-gray uppercase tracking-wider">
+                          Commits ({gitCommits.length})
+                        </div>
+                        {gitCommits.map((commit, index) => (
+                          <div
+                            key={index}
+                            className="px-3 py-2 hover:bg-gruvbox-bgSoft cursor-pointer border-b border-gruvbox-bgSoft group"
+                          >
+                            <div className="flex items-start gap-2">
+                              <GitCommit size={14} className="text-gruvbox-orange mt-0.5 flex-shrink-0" />
+                              <div className="flex-1 min-w-0">
+                                <div className="text-[13px] text-gruvbox-fg truncate group-hover:text-gruvbox-yellow transition-colors">
+                                  {commit.message}
+                                </div>
+                                <div className="flex items-center gap-2 mt-1 text-[11px] text-gruvbox-gray">
+                                  <span className="text-gruvbox-aqua font-mono">{commit.hash}</span>
+                                  <span>•</span>
+                                  <Clock size={10} />
+                                  <span>{commit.time}</span>
+                                </div>
+                                <div className="text-[11px] text-gruvbox-gray mt-0.5">
+                                  by {commit.author}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </>
+                  )}
+
                 </div>
               </motion.div>
             )}
@@ -344,32 +784,41 @@ function App() {
         </div>
 
         {/* Status Bar - VS Code Style */}
-        <div className="bg-[#1f1f1f] h-6 text-[12px] flex justify-between items-center select-none relative z-10 border-t border-[#2d2d2d]">
+        <div 
+          className="h-6 text-[12px] flex justify-between items-center select-none relative z-10 border-t transition-colors duration-300"
+          style={{ 
+            backgroundColor: currentTheme.statusBg,
+            borderColor: currentTheme.color 
+          }}
+        >
           <div className="flex items-center h-full">
-            <div className="px-2 h-full flex items-center bg-[#2d2d2d] hover:bg-[#3d3d3d] cursor-pointer text-[#cccccc]">
+            <div 
+              className="px-2 h-full flex items-center cursor-pointer text-white transition-colors"
+              style={{ backgroundColor: currentTheme.accent }}
+            >
               <GitBranch size={14} className="mr-1" />
               <span className="hidden sm:inline">main</span>
             </div>
-            <div className="px-2 h-full flex items-center hover:bg-[#3d3d3d] cursor-pointer text-[#cccccc]">
+            <div className="px-2 h-full flex items-center hover:bg-gruvbox-bgSoft cursor-pointer text-gruvbox-fg">
               <span>0 ⚠️</span>
               <span className="ml-2">0 ✕</span>
             </div>
           </div>
 
-          <div className="flex items-center h-full text-[#cccccc]">
-            <div className="px-2 h-full flex items-center hover:bg-[#3d3d3d] cursor-pointer">
+          <div className="flex items-center h-full text-gruvbox-fg">
+            <div className="px-2 h-full flex items-center hover:bg-gruvbox-bgSoft cursor-pointer">
               <span>Ln 1, Col 1</span>
             </div>
-            <div className="px-2 h-full flex items-center hover:bg-[#3d3d3d] cursor-pointer hidden sm:flex">
+            <div className="px-2 h-full flex items-center hover:bg-gruvbox-bgSoft cursor-pointer hidden sm:flex">
               <span>Spaces: 2</span>
             </div>
-            <div className="px-2 h-full flex items-center hover:bg-[#3d3d3d] cursor-pointer hidden sm:flex">
+            <div className="px-2 h-full flex items-center hover:bg-gruvbox-bgSoft cursor-pointer hidden sm:flex">
               <span>UTF-8</span>
             </div>
-            <div className="px-2 h-full flex items-center hover:bg-[#3d3d3d] cursor-pointer hidden md:flex">
+            <div className="px-2 h-full flex items-center hover:bg-gruvbox-bgSoft cursor-pointer hidden md:flex">
               <span>{activeFileData?.name.split('.').pop()?.toUpperCase()}</span>
             </div>
-            <div className="px-2 h-full flex items-center hover:bg-[#3d3d3d] cursor-pointer">
+            <div className="px-2 h-full flex items-center hover:bg-gruvbox-bgSoft cursor-pointer">
               <span>🔔</span>
             </div>
           </div>

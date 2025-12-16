@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+  /* Base theme colors - will be overridden by data-theme */
   --color-gruvbox-bg: #1e1e1e;
   --color-gruvbox-fg: #d4d4d4;
   --color-gruvbox-red: #f14c4c;
@@ -17,6 +18,102 @@
   --font-mono: monospace, ui-monospace, SFMono-Regular;
 }
 
+/* Gruvbox Dark Theme (Default) */
+[data-theme="gruvbox"] {
+  --color-gruvbox-bg: #282828;
+  --color-gruvbox-fg: #ebdbb2;
+  --color-gruvbox-red: #fb4934;
+  --color-gruvbox-green: #b8bb26;
+  --color-gruvbox-yellow: #fabd2f;
+  --color-gruvbox-blue: #83a598;
+  --color-gruvbox-purple: #d3869b;
+  --color-gruvbox-aqua: #8ec07c;
+  --color-gruvbox-orange: #fe8019;
+  --color-gruvbox-gray: #928374;
+  --color-gruvbox-bgHard: #1d2021;
+  --color-gruvbox-bgSoft: #32302f;
+}
+
+/* Dracula Theme */
+[data-theme="dracula"] {
+  --color-gruvbox-bg: #282a36;
+  --color-gruvbox-fg: #f8f8f2;
+  --color-gruvbox-red: #ff5555;
+  --color-gruvbox-green: #50fa7b;
+  --color-gruvbox-yellow: #f1fa8c;
+  --color-gruvbox-blue: #6272a4;
+  --color-gruvbox-purple: #bd93f9;
+  --color-gruvbox-aqua: #8be9fd;
+  --color-gruvbox-orange: #ffb86c;
+  --color-gruvbox-gray: #6272a4;
+  --color-gruvbox-bgHard: #21222c;
+  --color-gruvbox-bgSoft: #44475a;
+}
+
+/* Monokai Theme */
+[data-theme="monokai"] {
+  --color-gruvbox-bg: #272822;
+  --color-gruvbox-fg: #f8f8f2;
+  --color-gruvbox-red: #f92672;
+  --color-gruvbox-green: #a6e22e;
+  --color-gruvbox-yellow: #e6db74;
+  --color-gruvbox-blue: #66d9ef;
+  --color-gruvbox-purple: #ae81ff;
+  --color-gruvbox-aqua: #66d9ef;
+  --color-gruvbox-orange: #fd971f;
+  --color-gruvbox-gray: #75715e;
+  --color-gruvbox-bgHard: #1e1f1a;
+  --color-gruvbox-bgSoft: #3e3d32;
+}
+
+/* Nord Theme */
+[data-theme="nord"] {
+  --color-gruvbox-bg: #2e3440;
+  --color-gruvbox-fg: #eceff4;
+  --color-gruvbox-red: #bf616a;
+  --color-gruvbox-green: #a3be8c;
+  --color-gruvbox-yellow: #ebcb8b;
+  --color-gruvbox-blue: #81a1c1;
+  --color-gruvbox-purple: #b48ead;
+  --color-gruvbox-aqua: #88c0d0;
+  --color-gruvbox-orange: #d08770;
+  --color-gruvbox-gray: #4c566a;
+  --color-gruvbox-bgHard: #242933;
+  --color-gruvbox-bgSoft: #3b4252;
+}
+
+/* One Dark Theme */
+[data-theme="onedark"] {
+  --color-gruvbox-bg: #282c34;
+  --color-gruvbox-fg: #abb2bf;
+  --color-gruvbox-red: #e06c75;
+  --color-gruvbox-green: #98c379;
+  --color-gruvbox-yellow: #e5c07b;
+  --color-gruvbox-blue: #61afef;
+  --color-gruvbox-purple: #c678dd;
+  --color-gruvbox-aqua: #56b6c2;
+  --color-gruvbox-orange: #d19a66;
+  --color-gruvbox-gray: #5c6370;
+  --color-gruvbox-bgHard: #21252b;
+  --color-gruvbox-bgSoft: #3e4451;
+}
+
+/* GitHub Dark Theme */
+[data-theme="github"] {
+  --color-gruvbox-bg: #0d1117;
+  --color-gruvbox-fg: #c9d1d9;
+  --color-gruvbox-red: #f85149;
+  --color-gruvbox-green: #238636;
+  --color-gruvbox-yellow: #e3b341;
+  --color-gruvbox-blue: #58a6ff;
+  --color-gruvbox-purple: #bc8cff;
+  --color-gruvbox-aqua: #39c5cf;
+  --color-gruvbox-orange: #d29922;
+  --color-gruvbox-gray: #8b949e;
+  --color-gruvbox-bgHard: #010409;
+  --color-gruvbox-bgSoft: #161b22;
+}
+
 @layer base {
 
   html,
@@ -25,6 +122,14 @@
     overflow: hidden;
     background-color: var(--color-gruvbox-bg);
     color: var(--color-gruvbox-fg);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Smooth theme transitions for all elements */
+  *,
+  *::before,
+  *::after {
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.15s ease;
   }
 }
 
@@ -44,15 +149,29 @@
   }
 
   .custom-scrollbar::-webkit-scrollbar-track {
-    background: #1e1e1e;
+    background: var(--color-gruvbox-bg);
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #424242;
+    background: var(--color-gruvbox-bgSoft);
     border-radius: 4px;
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #5a5a5a;
+    background: var(--color-gruvbox-gray);
+  }
+
+  /* Spin animation for settings gear */
+  .animate-spin-slow {
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 }
