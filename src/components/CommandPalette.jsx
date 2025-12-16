@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, Home, User, Briefcase, Folder, Mail } from 'lucide-react';
+import { Search, Home, User, Briefcase, Folder, Mail, BookOpen } from 'lucide-react';
 
 const CommandPalette = ({ onNavigate }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -31,6 +31,12 @@ const CommandPalette = ({ onNavigate }) => {
             label: 'Go to Projects',
             icon: Folder,
             action: () => onNavigate('projects')
+        },
+        {
+            id: 'journey',
+            label: 'Go to Journey Book',
+            icon: BookOpen,
+            action: () => onNavigate('journey')
         },
         {
             id: 'contact',

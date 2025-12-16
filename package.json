@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@remixicon/react": "^4.7.0",
     "@tailwindcss/vite": "^4.1.17",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.9.1",

@@ -33,6 +33,10 @@ const useVimNavigation = (onNavigate) => {
             onNavigate('projects');
             triggerToast('Go to Projects');
             break;
+          case 'j':
+            onNavigate('journey');
+            triggerToast('Go to Journey');
+            break;
           case 'c':
             onNavigate('contact');
             triggerToast('Go to Contact');
