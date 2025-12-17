@@ -6,9 +6,9 @@ import SEO from './components/SEO';
 const Experience = () => {
     const experiences = [
         {
-            company: "Spark Tech",
-            role: "Web Developer Intern",
-            period: "June 2025 - Oct 2025",
+            company: "Technology Innovation Hub",
+            role: "Software Developer Trainee",
+            period: "April 2024 - July 2025",
             status: "INFO",
             achievements: [
                 "Developed client site 'adsof.in' and managed the company's website.",

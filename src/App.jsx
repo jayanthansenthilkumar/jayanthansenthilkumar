@@ -42,9 +42,9 @@ function App() {
   const [theme, setTheme] = useState(() => {
     // Load theme from localStorage on initial render
     if (typeof window !== 'undefined') {
-      return localStorage.getItem('portfolio-theme') || 'gruvbox';
+      return localStorage.getItem('portfolio-theme') || 'github-dark';
     }
-    return 'gruvbox';
+    return 'github-dark';
   });
 
   const { showToast } = useVimNavigation(setActiveFile);

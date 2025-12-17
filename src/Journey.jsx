@@ -11,7 +11,7 @@ const Journey = () => {
     const [activeTab, setActiveTab] = useState('events');
 
     const tabs = [
-        { id: 'events', name: 'Events', icon: RiCalendarEventLine, count: 3 },
+        { id: 'events', name: 'Events', icon: RiCalendarEventLine, count: 2 },
         { id: 'volunteering', name: 'Volunteering', icon: RiTeamLine, count: 2 },
         { id: 'achievements', name: 'Achievements', icon: RiTrophyLine, count: 4 },
     ];
@@ -19,31 +19,22 @@ const Journey = () => {
     const journeyData = {
         events: [
             {
-                title: "Hackathon Winner",
-                subtitle: "TechFest 2024",
-                institution: "Tech University",
-                period: "March 2024",
-                description: "Won first place in 24-hour hackathon with an AI-powered solution for healthcare.",
-                tags: ["Hackathon", "AI", "Team Project"],
-                image: "🏆"
-            },
-            {
-                title: "Tech Talk Speaker",
-                subtitle: "DevCon 2024",
-                institution: "Developer Conference",
-                period: "January 2024",
-                description: "Presented on modern React patterns and performance optimization techniques.",
-                tags: ["Speaking", "React", "Performance"],
+                title: "Trenz'25",
+                subtitle: "Tech Fest",
+                institution: "M. Kumarasamy College of Engineering",
+                period: "April 2025",
+                // description: "Presented on modern React patterns and performance optimization techniques.",
+                tags: ["Organizer", "TechFest"],
                 image: "🎤"
             },
             {
-                title: "Workshop Conductor",
-                subtitle: "Web Development Bootcamp",
-                institution: "College Tech Club",
-                period: "November 2023",
-                description: "Conducted a 3-day workshop on full-stack web development for 50+ students.",
-                tags: ["Workshop", "Teaching", "Full Stack"],
-                image: "👨‍🏫"
+                title: "Orlia'25",
+                subtitle: "Cultural Fest",
+                institution: "M. Kumarasamy College of Engineering",
+                period: "April 2025",
+                // description: "Won first place in 24-hour hackathon with an AI-powered solution for healthcare.",
+                tags: ["Fun", "Cultural", "Leadership"],
+                image: "🏆"
             }
         ],
         volunteering: [
