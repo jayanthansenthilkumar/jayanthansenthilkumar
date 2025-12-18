@@ -2,12 +2,12 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 const SEO = ({
-    title = 'Vignesh R | Portfolio',
-    description = 'Portfolio of Vignesh R, a Developer and Quick Learner specializing in Web Development.',
-    keywords = 'Vignesh R, Portfolio, Developer, Web Development, React, JavaScript',
-    author = 'Vignesh R',
-    url = 'https://vigneshr.me/',
-    image = 'https://vigneshr.me/og-image.jpg',
+    title = 'Jayanthan Senthilkumar | Portfolio',
+    description = 'Portfolio of Jayanthan Senthilkumar, a Developer and Quick Learner specializing in Web Development.',
+    keywords = 'Jayanthan Senthilkumar, Portfolio, Developer, Web Development, React, JavaScript',
+    author = 'Jayanthan Senthilkumar',
+    url = 'https://itsjayanthan.me/',
+    image = 'https://itsjayanthan.me/og-image.jpg',
     type = 'website'
 }) => {
     return (

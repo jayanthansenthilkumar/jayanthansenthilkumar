@@ -64,7 +64,7 @@ const About = () => {
             line: 4,
             content: (
                 <span className="pl-4">
-                    <Syntax color="#458588">education</Syntax><Syntax color="#928374">:</Syntax> <Syntax color="#98971a">"B.Tech CSBS @ Panimalar Engineering College"</Syntax>,
+                    <Syntax color="#458588">education</Syntax><Syntax color="#928374">:</Syntax> <Syntax color="#98971a">"B.Tech AIML @ M.Kumarasamy College of Engineering"</Syntax>,
                 </span>
             )
         },
@@ -72,15 +72,16 @@ const About = () => {
             line: 5,
             content: (
                 <span className="pl-4">
-                    <Syntax color="#458588">location</Syntax><Syntax color="#928374">:</Syntax> <Syntax color="#98971a">"Chennai, India"</Syntax>,
+                    <Syntax color="#458588">location</Syntax><Syntax color="#928374">:</Syntax> <Syntax color="#98971a">"Karur, India"</Syntax>,
                 </span>
             )
-        },
-        {
+        }, {
             line: 6,
             content: (
                 <span className="pl-4">
-                    <Syntax color="#458588">bio</Syntax><Syntax color="#928374">:</Syntax> <Syntax color="#98971a">"Full Stack Developer building scalable web applications with modern technologies.</Syntax>
+                    <Syntax color="#458588">bio</Syntax><Syntax color="#928374">:</Syntax> <Syntax color="#98971a">
+                        "Full Stack Developer focused on building reliable, scalable web applications with real-world impact.
+                    </Syntax>
                 </span>
             )
         },
@@ -88,7 +89,7 @@ const About = () => {
             line: 7,
             content: (
                 <span className="pl-8 text-gruvbox-green">
-                    Specialized in the React ecosystem, Node.js.
+                    Experienced in React, Tailwind CSS, Firebase CRUD, and Node.js through academic and industry projects.
                 </span>
             )
         },
@@ -96,7 +97,7 @@ const About = () => {
             line: 8,
             content: (
                 <span className="pl-8 text-gruvbox-green">
-                    Focused on writing clean, maintainable code and solving complex engineering problems.
+                    Contributed to production systems like KRConnect, working on discipline management and grievance workflows.
                 </span>
             )
         },
@@ -104,7 +105,7 @@ const About = () => {
             line: 9,
             content: (
                 <span className="pl-8 text-gruvbox-green">
-                    Active contributor to the developer community, mentoring peers and organizing tech events."
+                    Driven by clean code, practical problem-solving, and continuous learning through hands-on development."
                 </span>
             )
         },
@@ -112,6 +113,7 @@ const About = () => {
             line: 10,
             content: <span className="text-gruvbox-fg">{`};`}</span>
         },
+
         { line: 11, content: <br /> },
         {
             line: 12,
@@ -130,7 +132,7 @@ const About = () => {
             content: (
                 <span className="pl-4">
                     <Syntax color="#458588">languages</Syntax><Syntax color="#928374">:</Syntax> <span className="text-gruvbox-fg">[</span>
-                    <Syntax color="#98971a">"JavaScript"</Syntax>, <Syntax color="#98971a">"Java"</Syntax>, <Syntax color="#98971a">"Python"</Syntax>, <Syntax color="#98971a">"C"</Syntax>, <Syntax color="#98971a">"C++"</Syntax>
+                    <Syntax color="#98971a">"Python"</Syntax>, <Syntax color="#98971a">"JavaScript"</Syntax>
                     <span className="text-gruvbox-fg">]</span>,
                 </span>
             )
@@ -150,11 +152,11 @@ const About = () => {
         },
         {
             line: 18,
-            content: <span className="pl-8"><Syntax color="#98971a">"React.js"</Syntax>, <Syntax color="#98971a">"TailwindCSS"</Syntax>,</span>
+            content: <span className="pl-8"><Syntax color="#98971a">"HTML5"</Syntax>, <Syntax color="#98971a">"Core CSS"</Syntax>,</span>
         },
         {
             line: 19,
-            content: <span className="pl-8"><Syntax color="#98971a">"Electron.js"</Syntax>, <Syntax color="#98971a">"HTML5"</Syntax></span>
+            content: <span className="pl-8"><Syntax color="#98971a">"Laravel"</Syntax>, <Syntax color="#98971a">"TailwindCSS"</Syntax></span>
         },
         {
             line: 20,
@@ -170,7 +172,7 @@ const About = () => {
             content: (
                 <span className="pl-4">
                     <Syntax color="#458588">backend</Syntax><Syntax color="#928374">:</Syntax> <span className="text-gruvbox-fg">[</span>
-                    <Syntax color="#98971a">"Node.js"</Syntax>, <Syntax color="#98971a">"Firebase"</Syntax>
+                    <Syntax color="#98971a">"PHP"</Syntax>, <Syntax color="#98971a">"Flask"</Syntax>, <Syntax color="#98971a">"Node.js"</Syntax>
                     <span className="text-gruvbox-fg">]</span>,
                 </span>
             )
@@ -185,7 +187,7 @@ const About = () => {
             content: (
                 <span className="pl-4">
                     <Syntax color="#458588">tools</Syntax><Syntax color="#928374">:</Syntax> <span className="text-gruvbox-fg">[</span>
-                    <Syntax color="#98971a">"Git"</Syntax>, <Syntax color="#98971a">"VS Code"</Syntax>
+                    <Syntax color="#98971a">"GitHub"</Syntax>, <Syntax color="#98971a">"Git"</Syntax>, <Syntax color="#98971a">"VS Code"</Syntax>, <Syntax color="#98971a">"REST API"</Syntax>, <Syntax color="#98971a">"MySQL"</Syntax>
                     <span className="text-gruvbox-fg">]</span>
                 </span>
             )

@@ -114,6 +114,38 @@
   --color-gruvbox-bgSoft: #161b22;
 }
 
+/* VS Code Light Theme */
+[data-theme="vscode-light"] {
+  --color-gruvbox-bg: #ffffff;
+  --color-gruvbox-fg: #24292f;
+  --color-gruvbox-red: #d73a49;
+  --color-gruvbox-green: #22863a;
+  --color-gruvbox-yellow: #b08800;
+  --color-gruvbox-blue: #005cc5;
+  --color-gruvbox-purple: #6f42c1;
+  --color-gruvbox-aqua: #0086b3;
+  --color-gruvbox-orange: #e36209;
+  --color-gruvbox-gray: #6a737d;
+  --color-gruvbox-bgHard: #f3f3f3;
+  --color-gruvbox-bgSoft: #e8e8e8;
+}
+
+/* GitHub Light Theme */
+[data-theme="github-light"] {
+  --color-gruvbox-bg: #ffffff;
+  --color-gruvbox-fg: #24292f;
+  --color-gruvbox-red: #cf222e;
+  --color-gruvbox-green: #116329;
+  --color-gruvbox-yellow: #4d2d00;
+  --color-gruvbox-blue: #0969da;
+  --color-gruvbox-purple: #8250df;
+  --color-gruvbox-aqua: #1b7c83;
+  --color-gruvbox-orange: #bc4c00;
+  --color-gruvbox-gray: #57606a;
+  --color-gruvbox-bgHard: #f6f8fa;
+  --color-gruvbox-bgSoft: #eaeef2;
+}
+
 @layer base {
 
   html,

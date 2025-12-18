@@ -5,25 +5,25 @@ const StructuredData = () => {
     const personSchema = {
         "@context": "https://schema.org",
         "@type": "Person",
-        "name": "Vignesh R",
-        "url": "https://vigneshr.me",
+        "name": "Jayanthan Senthilkumar",
+        "url": "https://itsjayanthan.me",
         "jobTitle": "Developer",
         "description": "Developer and Quick Learner specializing in Web Development",
         "sameAs": [
-            "https://github.com/Unknowns-007",
-            "https://linkedin.com/in/vignesh-r"
+            "https://github.com/jayanthansenthilkumar",
+            "https://linkedin.com/in/jayanthan18"
         ]
     };
 
     const websiteSchema = {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "Vignesh R Portfolio",
-        "url": "https://vigneshr.me",
-        "description": "Portfolio of Vignesh R, a Developer and Quick Learner specializing in Web Development",
+        "name": "Jayanthan Senthilkumar Portfolio",
+        "url": "https://itsjayanthan.me",
+        "description": "Portfolio of Jayanthan Senthilkumar, a Developer and Quick Learner specializing in Web Development",
         "author": {
             "@type": "Person",
-            "name": "Vignesh R"
+            "name": "Jayanthan Senthilkumar"
         }
     };
 
@@ -35,31 +35,31 @@ const StructuredData = () => {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://vigneshr.me/"
+                "item": "https://itsjayanthan.me/"
             },
             {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "About",
-                "item": "https://vigneshr.me/#about"
+                "item": "https://itsjayanthan.me/#about"
             },
             {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "Projects",
-                "item": "https://vigneshr.me/#projects"
+                "item": "https://itsjayanthan.me/#projects"
             },
             {
                 "@type": "ListItem",
                 "position": 4,
                 "name": "Experience",
-                "item": "https://vigneshr.me/#experience"
+                "item": "https://itsjayanthan.me/#experience"
             },
             {
                 "@type": "ListItem",
                 "position": 5,
                 "name": "Contact",
-                "item": "https://vigneshr.me/#contact"
+                "item": "https://itsjayanthan.me/#contact"
             }
         ]
     };

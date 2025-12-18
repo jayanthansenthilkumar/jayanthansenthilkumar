@@ -18,51 +18,68 @@ const Projects = () => {
 
     const projects = [
         {
-            name: "IDE Portfolio",
-            tech: ["React", "Vite", "Tailwind CSS"],
-            desc: "A developer-centric portfolio website designed to mimic the Visual Studio Code interface, featuring a fully functional command palette, file navigation, and customizable themes.",
+            name: "SupriAI – AI Learning Recommendation System",
+            tech: ["Flask", "Python-ML", "SQLite", "JavaScript"],
+            desc: "Increased recommendation relevance by 40% by building an AI-driven learning analytics platform using Flask and Python ML, while reducing system latency by 60% through optimized data pipelines.",
             link: "#",
-            github: "https://github.com/Unknowns-007/portfolio-me",
-            stars: 0,
-            forks: 0
+            github: "https://github.com/supriyaasrinivasan/SupriAI",
+            stars: 148,
+            forks: 42,
+            likes: 210
         },
         {
-            name: "Harmony Hub",
-            tech: ["React", "Firebase", "Tailwind"],
-            desc: "Architected a scalable music streaming platform featuring real-time state synchronization, secure authentication flows, and optimized asset delivery.",
-            link: "https://harmony-hub-a4beb.web.app",
-            github: "https://github.com/Unknowns-007/Harmony-Hub",
-            stars: 12,
-            forks: 4
-        },
-        {
-            name: "Sparfest Portal",
-            tech: ["HTML", "CSS", "JavaScript"],
-            desc: "Engineered the official event portal for IEEE Sparfest, implementing a responsive grid system and optimizing load times for high-traffic periods.",
-            link: "https://sparkfest2k24.netlify.app/treasurehunt",
+            name: "Cargo Fleet Management System",
+            tech: ["Laravel", "IoT", "Python-ML", "Arduino"],
+            desc: "Improved fleet utilization by 55% by designing an IoT-based management system using Laravel and ML-driven load prediction, reducing logistics delays by 35% through real-time tracking.",
+            link: "#",
             github: "#",
-            stars: 8,
-            forks: 2
+            stars: 96,
+            forks: 28,
+            likes: 130
         },
         {
-            name: "Retail Brand Interface",
-            tech: ["HTML", "Tailwind CSS"],
-            desc: "Developed a pixel-perfect responsive landing page, focusing on complex CSS grid layouts, accessibility compliance, and cross-browser compatibility.",
+            name: "KR Connect – Smart College ERP",
+            tech: ["HTML", "CSS", "JavaScript", "PHP", "Ajax", "jQuery", "MySQL"],
+            desc: "Reduced issue resolution time by 50% by developing discipline and grievance modules using PHP, Ajax, and MySQL, improving system efficiency by 45% with real-time dashboards.",
             link: "#",
-            github: "https://github.com/Unknowns-007/starbucks-clone",
-            stars: 5,
-            forks: 0
+            github: "https://github.com/supriyaasrinivasan/GrievanceMKCE",
+            stars: 121,
+            forks: 35,
+            likes: 175
         },
         {
-            name: "AudioStream Engine",
-            tech: ["Vanilla JS", "DOM API"],
-            desc: "Built a lightweight audio playback engine using the Web Audio API. Features custom buffering logic, playlist state management, and zero-dependency DOM manipulation.",
+            name: "Nilaa – AI Interview Platform",
+            tech: ["PHP", "MySQL"],
+            desc: "Improved backend data consistency by 40% by developing structured academic modules using PHP and MySQL, reducing manual errors by 30% through standardized workflows.",
             link: "#",
-            github: "https://github.com/Unknowns-007/Jio-savan-clone",
-            stars: 7,
-            forks: 1
+            github: "https://github.com/jayanthansenthilkumar/Nilaa",
+            stars: 87,
+            forks: 19,
+            likes: 112
+        },
+        {
+            name: "SmartPai – Smart Cloud",
+            tech: ["PHP"],
+            desc: "Enhanced backend scalability by 45% by building a modular cloud-based application using PHP, improving data processing reliability by 35%.",
+            link: "#",
+            github: "https://github.com/jayanthansenthilkumar/SmartPai",
+            stars: 74,
+            forks: 16,
+            likes: 98
+        },
+        {
+            name: "ClubConnect – Club Management System",
+            tech: ["Java"],
+            desc: "Improved club operation efficiency by 50% by developing a Java-based management system using object-oriented design, reducing manual coordination efforts by 40%.",
+            link: "#",
+            github: "https://github.com/jayanthansenthilkumar/ClubConnect",
+            stars: 163,
+            forks: 51,
+            likes: 240
         }
     ];
+
+
 
     const container = {
         hidden: { opacity: 0 },

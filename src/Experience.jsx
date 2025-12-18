@@ -11,22 +11,22 @@ const Experience = () => {
             period: "April 2024 - July 2025",
             status: "INFO",
             achievements: [
-                "Developed client site 'adsof.in' and managed the company's website.",
-                "Collaborated with the design team to implement responsive UI components using React and Tailwind CSS.",
-                "Integrated third-party analytics tools to track user engagement and conversion rates."
+                "Worked on KRConnect’s Discipline Management and Grievance Redressal modules as part of the core development team.",
+                "Developed and maintained the client website adsof.in and the company’s official web platform.",
+                "Built responsive UI using React and Tailwind CSS and gained hands-on full-stack development experience."
             ]
         },
         {
-            company: "TEK Pyramid",
-            role: "Web Developer Intern",
-            period: "Feb 2025 - Apr 2025",
+            company: "IWOOD Technologies",
+            role: "React Developer Trainee",
+            period: "December 2024",
             status: "WARN",
             achievements: [
-                "Developed a music application using React for the frontend and Firebase for the backend.",
-                "Assisted in debugging and resolving cross-browser compatibility issues for legacy applications.",
-                "Participated in code reviews and implemented best practices for state management."
+                "Developed a React-based music application with Firebase CRUD operations.",
+                "Learned React fundamentals, state management practices, and basic cross-browser debugging."
             ]
         }
+
     ];
 
     const container = {

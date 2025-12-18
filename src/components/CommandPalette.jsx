@@ -49,7 +49,7 @@ const CommandPalette = ({ onNavigate }) => {
             label: 'Copy Email',
             icon: Mail,
             action: () => {
-                navigator.clipboard.writeText('vignesh@example.com'); // Replace with actual email
+                navigator.clipboard.writeText('hii@itsjayanthan.me'); // Replace with actual email
                 alert('Email copied to clipboard!');
             }
         },
@@ -161,7 +161,7 @@ const CommandPalette = ({ onNavigate }) => {
                                 <span><strong className="text-[#a89984]">↑↓</strong> to navigate</span>
                                 <span><strong className="text-[#a89984]">↵</strong> to select</span>
                             </div>
-                            <span>NeoVim Portfolio</span>
+                            <span>Jayanthan Senthilkumar</span>
                         </div>
                     </motion.div>
                 </div>
