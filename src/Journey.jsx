@@ -181,7 +181,7 @@ const Journey = () => {
                 title="Journey Book | Jayanthan Senthilkumar - Developer Portfolio"
                 description="Explore the journey of Jayanthan Senthilkumar through education, certifications, projects, skills, internships, events, and achievements."
                 keywords="Jayanthan Senthilkumar, Journey, Education, Certifications, Projects, Skills, Portfolio, Developer"
-                url="https://vigneshr.me/#journey"
+                url="https://itsjayanthan.me/#journey"
             />
             <div className="flex h-full overflow-y-auto custom-scrollbar font-mono text-sm md:text-base">
                 <CodeLineNumbers lines={34} />

@@ -99,10 +99,10 @@ const Projects = () => {
     return (
         <>
             <SEO
-                title="Projects | Vignesh R - Portfolio"
-                description="Explore projects by Vignesh R including IDE Portfolio, Harmony Hub, Sparfest Portal, and more. Built with React, Firebase, and modern web technologies."
-                keywords="Vignesh R, Projects, Portfolio, React Projects, Web Development, IDE Portfolio, Harmony Hub"
-                url="https://vigneshr.me/#projects"
+                title="Projects | Jayanthan Senthilkumar - Portfolio"
+                description="Explore projects by Jayanthan Senthilkumar including IDE Portfolio, Harmony Hub, Sparfest Portal, and more. Built with React, Firebase, and modern web technologies."
+                keywords="Jayanthan Senthilkumar, Projects, Portfolio, React Projects, Web Development, IDE Portfolio, Harmony Hub"
+                url="https://itsjayanthan.me/#projects"
             />
             <div className="flex h-full overflow-y-auto custom-scrollbar font-mono text-sm md:text-base relative">
                 <CodeLineNumbers lines={45} />

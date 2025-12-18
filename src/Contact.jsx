@@ -132,7 +132,7 @@ const Contact = () => {
                 title="Contact | Jayanthan - Get in Touch"
                 description="Get in touch with Jayanthan. Connect via email, LinkedIn, GitHub, or phone. Available for web development opportunities and collaborations."
                 keywords="Jayanthan, Contact, Email, LinkedIn, GitHub, Web Developer, Hire Developer"
-                url="https://vigneshr.me/#contact"
+                url="https://itsjayanthan.me/#contact"
             />
             <div className="flex flex-col h-full font-mono text-sm" onClick={() => inputRef.current?.focus()}>
                 {/* Editor Area - Social Links */}

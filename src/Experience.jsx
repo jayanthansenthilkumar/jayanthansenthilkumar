@@ -47,13 +47,13 @@ const Experience = () => {
     return (
         <>
             <SEO
-                title="Experience | Vignesh R - Web Developer"
-                description="Professional experience of Vignesh R as a Web Developer Intern at Spark Tech and TEK Pyramid. Specialized in React, Firebase, and responsive web development."
-                keywords="Vignesh R, Experience, Web Developer, Internship, Spark Tech, TEK Pyramid, React, Firebase"
-                url="https://vigneshr.me/#experience"
+                title="Experience | Jayanthan Senthilkumar - Web Developer"
+                description="Professional experience of Jayanthan Senthilkumar as a Web Developer Intern at Spark Tech and TEK Pyramid. Specialized in React, Firebase, and responsive web development."
+                keywords="Jayanthan Senthilkumar, Experience, Web Developer, Internship, Spark Tech, TEK Pyramid, React, Firebase"
+                url="https://itsjayanthan.me/#experience"
             />
             <div className="flex h-full overflow-y-auto custom-scrollbar font-mono text-sm md:text-base">
-                <CodeLineNumbers lines={45} />
+                <CodeLineNumbers lines={25} />
                 <motion.div
                     className="p-4 pt-6 md:pt-8 pb-20 text-gruvbox-fg w-full font-mono"
                     variants={container}

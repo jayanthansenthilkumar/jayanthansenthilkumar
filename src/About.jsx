@@ -213,7 +213,7 @@ const About = () => {
                 title="About | Jayanthan Senthilkumar - Full Stack Developer"
                 description="Learn more about Jayanthan Senthilkumar, a Full Stack Developer specializing in React.js, Node.js, and modern web technologies. Based in Chennai, India."
                 keywords="Jayanthan Senthilkumar, About, Full Stack Developer, React, Node.js, JavaScript, Skills, Education"
-                url="https://vigneshr.me/#about"
+                url="https://itsjayanthan.me/#about"
             />
             <div className="flex h-full overflow-y-auto custom-scrollbar font-mono text-sm md:text-base">
                 <motion.div

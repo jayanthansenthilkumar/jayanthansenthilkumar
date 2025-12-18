@@ -1,15 +1,24 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { MessageCircle, X, Send, Sparkles, Bot } from 'lucide-react';
+import { MessageCircle, X, Send, Sparkles, Bot, ArrowRight, FileCode, Cpu, FileText, Hash, Terminal, BookOpen } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 
-const SupriAI = () => {
+const SupriAI = ({ onNavigate }) => {
   const [showChatPanel, setShowChatPanel] = useState(false);
   const [chatMessages, setChatMessages] = useState([
     { role: 'assistant', content: "Hey there! 👋 I'm Supri, Jayanthan's assistant. How can I help you today?" }
   ]);
   const [chatInput, setChatInput] = useState('');
   const [isTyping, setIsTyping] = useState(false);
+  const [suggestedActions, setSuggestedActions] = useState([]);
   const chatMessagesRef = useRef(null);
+
+  // Quick action buttons
+  const quickActions = [
+    { label: 'View Projects', icon: Cpu, page: 'projects', color: 'gruvbox-orange' },
+    { label: 'About Jayanthan', icon: FileCode, page: 'about', color: 'gruvbox-blue' },
+    { label: 'Contact Info', icon: Terminal, page: 'contact', color: 'gruvbox-green' },
+    { label: 'Experience', icon: FileText, page: 'experience', color: 'gruvbox-aqua' },
+  ];
 
   // Auto-scroll chat to bottom when new messages arrive
   useEffect(() => {
@@ -18,7 +27,18 @@ const SupriAI = () => {
     }
   }, [chatMessages, isTyping]);
 
-  // SupriAI Chat Handler
+  // Navigate to page
+  const navigateToPage = (pageId, pageName) => {
+    if (onNavigate) {
+      onNavigate(pageId);
+      setChatMessages(prev => [...prev, 
+        { role: 'assistant', content: `✅ Navigated to ${pageName}! Let me know if you need anything else.` }
+      ]);
+      setSuggestedActions([]);
+    }
+  };
+
+  // SupriAI Enhanced Chat Handler
   const handleSendMessage = async () => {
     if (!chatInput.trim()) return;
     
@@ -26,41 +46,119 @@ const SupriAI = () => {
     setChatMessages(prev => [...prev, { role: 'user', content: userMessage }]);
     setChatInput('');
     setIsTyping(true);
+    setSuggestedActions([]);
 
     // Simulate AI response with contextual replies
     setTimeout(() => {
       let response = '';
+      let actions = [];
       const lowerMsg = userMessage.toLowerCase();
       
-      if (lowerMsg.includes('project') || lowerMsg.includes('work')) {
-        response = "Jayanthan has worked on some amazing projects! Check out the projects.rs file to see his portfolio including web apps, AI projects, and more. Would you like me to navigate you there? 🚀";
-      } else if (lowerMsg.includes('contact') || lowerMsg.includes('hire') || lowerMsg.includes('email')) {
-        response = "You can reach Jayanthan at hii@itsmejayanthan.me or check out the contact.sh page for more ways to connect! He's always open to exciting opportunities. 📧";
-      } else if (lowerMsg.includes('skill') || lowerMsg.includes('tech') || lowerMsg.includes('stack')) {
-        response = "Jayanthan is skilled in React, TypeScript, Node.js, Python, and more! He's a full-stack developer with a passion for clean code and great UX. Check the about.lua file for the full tech stack! 💻";
-      } else if (lowerMsg.includes('experience') || lowerMsg.includes('job') || lowerMsg.includes('intern')) {
-        response = "Check out experience.log to see Jayanthan's professional journey! He's gained valuable experience through internships and projects. 📋";
+      // Navigation keywords
+      if (lowerMsg.includes('go to') || lowerMsg.includes('navigate') || lowerMsg.includes('take me') || lowerMsg.includes('show me')) {
+        if (lowerMsg.includes('project')) {
+          navigateToPage('projects', 'Projects');
+          setIsTyping(false);
+          return;
+        } else if (lowerMsg.includes('about')) {
+          navigateToPage('about', 'About');
+          setIsTyping(false);
+          return;
+        } else if (lowerMsg.includes('contact')) {
+          navigateToPage('contact', 'Contact');
+          setIsTyping(false);
+          return;
+        } else if (lowerMsg.includes('experience')) {
+          navigateToPage('experience', 'Experience');
+          setIsTyping(false);
+          return;
+        } else if (lowerMsg.includes('journey')) {
+          navigateToPage('journey', 'Journey');
+          setIsTyping(false);
+          return;
+        } else if (lowerMsg.includes('home')) {
+          navigateToPage('home', 'Home');
+          setIsTyping(false);
+          return;
+        }
+      }
+
+      // Content-based responses with navigation suggestions
+      if (lowerMsg.includes('project') || lowerMsg.includes('work') || lowerMsg.includes('portfolio')) {
+        response = "Jayanthan has worked on some amazing projects! 🚀 From full-stack web apps to AI-powered solutions. Would you like me to show you his projects?";
+        actions = [
+          { label: 'View Projects', page: 'projects', icon: Cpu },
+          { label: 'See Experience', page: 'experience', icon: FileText }
+        ];
+      } else if (lowerMsg.includes('contact') || lowerMsg.includes('hire') || lowerMsg.includes('email') || lowerMsg.includes('reach')) {
+        response = "You can reach Jayanthan at hii@itsmejayanthan.me 📧 or connect with him on LinkedIn and GitHub. Want to see the full contact page?";
+        actions = [
+          { label: 'Open Contact Page', page: 'contact', icon: Terminal },
+          { label: 'View Resume', page: 'home', icon: Hash }
+        ];
+      } else if (lowerMsg.includes('skill') || lowerMsg.includes('tech') || lowerMsg.includes('stack') || lowerMsg.includes('know')) {
+        response = "Jayanthan is skilled in React, TypeScript, Node.js, Python, and more! 💻 He's a full-stack developer with expertise in modern web technologies, cloud platforms, and AI integration. Check out his full tech stack!";
+        actions = [
+          { label: 'View Skills', page: 'about', icon: FileCode },
+          { label: 'See Projects', page: 'projects', icon: Cpu }
+        ];
+      } else if (lowerMsg.includes('experience') || lowerMsg.includes('job') || lowerMsg.includes('intern') || lowerMsg.includes('work history')) {
+        response = "Jayanthan has valuable professional experience through internships and projects! 📋 He's worked on real-world applications and gained expertise across the full development lifecycle.";
+        actions = [
+          { label: 'View Experience', page: 'experience', icon: FileText },
+          { label: 'See Projects', page: 'projects', icon: Cpu }
+        ];
       } else if (lowerMsg.includes('hello') || lowerMsg.includes('hi') || lowerMsg.includes('hey')) {
-        response = "Hello! 👋 Great to meet you! I'm SupriAI, here to help you explore Jayanthan's portfolio. Ask me about his projects, skills, or experience!";
-      } else if (lowerMsg.includes('who') || lowerMsg.includes('about') || lowerMsg.includes('jayanthan')) {
-        response = "Jayanthan is a passionate Full-Stack Developer who loves building creative solutions. He's currently focused on web development and AI. Check out about.lua for more! ✨";
-      } else if (lowerMsg.includes('theme') || lowerMsg.includes('color')) {
-        response = "Love customization? Click the ⚙️ Settings gear at the bottom to switch between 8 beautiful themes including Gruvbox, Dracula, Nord, and GitHub Dark! 🎨";
+        response = "Hello! 👋 Great to meet you! I'm SupriAI, Jayanthan's AI assistant. I can help you explore his portfolio, answer questions about his skills, experience, and projects, or navigate to any section you'd like to see!";
+        actions = [
+          { label: 'About Jayanthan', page: 'about', icon: FileCode },
+          { label: 'View Projects', page: 'projects', icon: Cpu }
+        ];
+      } else if (lowerMsg.includes('who') || lowerMsg.includes('about jayanthan') || lowerMsg.includes('tell me about')) {
+        response = "Jayanthan Senthilkumar is a passionate Full-Stack Developer and Quick Learner who loves building creative solutions! ✨ He's currently focused on web development, cloud technologies, and AI integration. He brings together technical expertise with creative problem-solving.";
+        actions = [
+          { label: 'Learn More', page: 'about', icon: FileCode },
+          { label: 'View Journey', page: 'journey', icon: BookOpen }
+        ];
+      } else if (lowerMsg.includes('theme') || lowerMsg.includes('color') || lowerMsg.includes('appearance')) {
+        response = "Love customization? 🎨 Click the ⚙️ Settings gear at the bottom to switch between 8 beautiful themes including Gruvbox, Dracula, Nord, GitHub Dark, VS Code Light, and GitHub Light!";
+        actions = [];
+      } else if (lowerMsg.includes('journey') || lowerMsg.includes('timeline') || lowerMsg.includes('story')) {
+        response = "Want to see Jayanthan's journey? 📖 Check out the Journey page to explore his timeline, achievements, and volunteering experiences!";
+        actions = [
+          { label: 'View Journey', page: 'journey', icon: BookOpen },
+          { label: 'See Experience', page: 'experience', icon: FileText }
+        ];
+      } else if (lowerMsg.includes('resume') || lowerMsg.includes('cv')) {
+        response = "You can view and download Jayanthan's resume from the home page! 📄 It includes all his skills, experience, and achievements in a professional format.";
+        actions = [
+          { label: 'Go to Home', page: 'home', icon: Hash }
+        ];
+      } else if (lowerMsg.includes('help') || lowerMsg.includes('what can you do')) {
+        response = "I can help you with:\n\n🔹 Navigate to any section (just say 'go to projects')\n🔹 Answer questions about Jayanthan's skills\n🔹 Show you his work and experience\n🔹 Provide contact information\n🔹 Guide you through the portfolio\n\nJust ask me anything!";
+        actions = quickActions.slice(0, 2);
       } else if (lowerMsg.includes('thank')) {
-        response = "You're welcome! 😊 Feel free to ask if you need anything else. Happy exploring!";
+        response = "You're very welcome! 😊 Feel free to ask if you need anything else. I'm here to help you explore Jayanthan's portfolio!";
+        actions = [];
       } else {
-        response = "That's interesting! Feel free to explore the portfolio using the sidebar, or ask me about Jayanthan's projects, skills, experience, or how to contact him! 🌟";
+        response = "That's interesting! I'd be happy to help you explore Jayanthan's portfolio. You can ask me about his projects, skills, experience, or just tell me where you'd like to go! 🌟";
+        actions = [
+          { label: 'View Projects', page: 'projects', icon: Cpu },
+          { label: 'About', page: 'about', icon: FileCode }
+        ];
       }
       
       setChatMessages(prev => [...prev, { role: 'assistant', content: response }]);
+      setSuggestedActions(actions);
       setIsTyping(false);
-    }, 1000 + Math.random() * 500);
+    }, 800 + Math.random() * 400);
   };
 
   const handleCloseChat = () => {
     setShowChatPanel(false);
     setChatMessages([{ role: 'assistant', content: "Hey there! 👋 I'm Supri, Jayanthan's assistant. How can I help you today?" }]);
     setChatInput('');
+    setSuggestedActions([]);
   };
 
   return (
@@ -130,7 +228,7 @@ const SupriAI = () => {
                     animate={{ opacity: 1, y: 0 }}
                     className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
                   >
-                    <div className={`max-w-[85%] px-3 py-2 rounded-lg text-[13px] ${
+                    <div className={`max-w-[85%] px-3 py-2 rounded-lg text-[13px] whitespace-pre-line ${
                       msg.role === 'user' 
                         ? 'bg-gruvbox-blue text-white rounded-br-none' 
                         : 'bg-gruvbox-bgSoft text-gruvbox-fg rounded-bl-none'
@@ -139,6 +237,31 @@ const SupriAI = () => {
                     </div>
                   </motion.div>
                 ))}
+
+                {/* Suggested Action Buttons */}
+                {suggestedActions.length > 0 && !isTyping && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="flex flex-wrap gap-2 pt-2"
+                  >
+                    {suggestedActions.map((action, idx) => {
+                      const Icon = action.icon;
+                      return (
+                        <button
+                          key={idx}
+                          onClick={() => navigateToPage(action.page, action.label)}
+                          className="flex items-center gap-1.5 px-3 py-1.5 bg-gruvbox-blue/20 hover:bg-gruvbox-blue text-gruvbox-blue hover:text-white rounded-full text-[12px] transition-all border border-gruvbox-blue/30 hover:border-gruvbox-blue group"
+                        >
+                          <Icon size={12} />
+                          <span>{action.label}</span>
+                          <ArrowRight size={10} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                        </button>
+                      );
+                    })}
+                  </motion.div>
+                )}
+
                 {isTyping && (
                   <motion.div
                     initial={{ opacity: 0 }}
@@ -158,13 +281,31 @@ const SupriAI = () => {
 
               {/* Chat Input */}
               <div className="p-3 border-t border-gruvbox-bgSoft">
+                {/* Quick Actions */}
+                {chatMessages.length === 1 && (
+                  <div className="mb-3 flex flex-wrap gap-2">
+                    {quickActions.map((action, idx) => {
+                      const Icon = action.icon;
+                      return (
+                        <button
+                          key={idx}
+                          onClick={() => navigateToPage(action.page, action.label)}
+                          className="flex items-center gap-1.5 px-2 py-1 bg-gruvbox-bgSoft hover:bg-gruvbox-bg rounded text-[11px] text-gruvbox-gray hover:text-gruvbox-fg transition-colors border border-gruvbox-bgSoft"
+                        >
+                          <Icon size={12} />
+                          <span>{action.label}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
                 <div className="flex gap-2">
                   <input
                     type="text"
                     value={chatInput}
                     onChange={(e) => setChatInput(e.target.value)}
                     onKeyDown={(e) => e.key === 'Enter' && handleSendMessage()}
-                    placeholder="Ask SupriAI anything..."
+                    placeholder="Ask me anything or say 'go to projects'..."
                     className="flex-1 bg-gruvbox-bg border border-gruvbox-bgSoft rounded-lg px-3 py-2 text-[13px] text-gruvbox-fg placeholder:text-gruvbox-gray focus:outline-none focus:border-gruvbox-blue"
                   />
                   <button
@@ -176,7 +317,7 @@ const SupriAI = () => {
                   </button>
                 </div>
                 <div className="mt-2 text-[10px] text-gruvbox-gray text-center">
-                  Powered by Supriya • Ask about projects, skills & more
+                  Powered by Supriya • I can help you navigate & explore! 🚀
                 </div>
               </div>
             </motion.div>

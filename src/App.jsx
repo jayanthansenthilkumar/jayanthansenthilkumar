@@ -79,7 +79,7 @@ function App() {
     { file: 'about.lua', id: 'about', content: 'About Developer Skills Experience Education Background' },
     { file: 'projects.rs', id: 'projects', content: 'Projects Portfolio Applications Web Development GitHub' },
     { file: 'experience.log', id: 'experience', content: 'Experience Work Internship Company Role Developer' },
-    { file: 'journey.json', id: 'journey', content: 'Journey Events Volunteering Achievements Timeline' },
+    // { file: 'journey.json', id: 'journey', content: 'Journey Events Volunteering Achievements Timeline' },
     { file: 'contact.sh', id: 'contact', content: 'Contact Email Message Form Terminal PowerShell' },
   ];
 
@@ -117,7 +117,7 @@ function App() {
     { id: 'about', name: 'about.lua', icon: FileCode, color: 'text-gruvbox-blue' },
     { id: 'projects', name: 'projects.rs', icon: Cpu, color: 'text-gruvbox-orange' },
     { id: 'experience', name: 'experience.log', icon: FileText, color: 'text-gruvbox-aqua' },
-    { id: 'journey', name: 'journey.json', icon: BookOpen, color: 'text-gruvbox-purple' },
+    // { id: 'journey', name: 'journey.json', icon: BookOpen, color: 'text-gruvbox-purple' },
     { id: 'contact', name: 'contact.sh', icon: Terminal, color: 'text-gruvbox-green' },
   ];
 
@@ -176,7 +176,7 @@ function App() {
       case 'about': return <About />;
       case 'projects': return <Projects />;
       case 'experience': return <Experience />;
-      case 'journey': return <Journey />;
+      // case 'journey': return <Journey />;
       case 'contact': return <Contact />;
       default: return <Home navigateToFile={setActiveFile} />;
     }
@@ -254,7 +254,7 @@ function App() {
               <div className="flex-1" />
               
               {/* SupriAI Chat Component */}
-              <SupriAI />
+              <SupriAI onNavigate={handleFileSelect} />
 
               <div className="relative">
                 <button
