@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { MessageCircle, X, Send, Sparkles, Bot, ArrowRight, FileCode, Cpu, FileText, Hash, Terminal, BookOpen } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
+import Confetti from 'react-confetti';
 
-const SupriAI = ({ onNavigate }) => {
+const SupriAI = ({ onNavigate, currentPage }) => {
   const [showChatPanel, setShowChatPanel] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
   const [chatMessages, setChatMessages] = useState([
     { role: 'assistant', content: "Hey there! 👋 I'm Supri, Jayanthan's assistant. How can I help you today?" }
   ]);
@@ -26,6 +28,14 @@ const SupriAI = ({ onNavigate }) => {
       chatMessagesRef.current.scrollTop = chatMessagesRef.current.scrollHeight;
     }
   }, [chatMessages, isTyping]);
+
+  // Confetti on chat panel open
+  useEffect(() => {
+    if (showChatPanel) {
+      setShowConfetti(true);
+      setTimeout(() => setShowConfetti(false), 6000);
+    }
+  }, [showChatPanel]);
 
   // Navigate to page
   const navigateToPage = (pageId, pageName) => {
@@ -54,8 +64,106 @@ const SupriAI = ({ onNavigate }) => {
       let actions = [];
       const lowerMsg = userMessage.toLowerCase();
       
+      // Get page-specific context
+      const getPageContext = () => {
+        switch(currentPage) {
+          case 'home':
+            return {
+              name: 'Home',
+              context: "You're viewing Jayanthan's home page with his introduction and quick links.",
+              suggestions: "You can download his resume, or navigate to other sections."
+            };
+          case 'about':
+            return {
+              name: 'About',
+              context: "You're viewing Jayanthan's skills, tech stack, and professional background.",
+              suggestions: "Ask me about specific technologies or skills!"
+            };
+          case 'projects':
+            return {
+              name: 'Projects',
+              context: "You're viewing Jayanthan's portfolio of projects and applications.",
+              suggestions: "Ask me about specific projects, technologies used, or features!"
+            };
+          case 'experience':
+            return {
+              name: 'Experience',
+              context: "You're viewing Jayanthan's professional work experience and internships.",
+              suggestions: "Ask me about his roles, responsibilities, or achievements!"
+            };
+          case 'journey':
+            return {
+              name: 'Journey',
+              context: "You're viewing Jayanthan's timeline, achievements, and volunteering experiences.",
+              suggestions: "Ask me about his milestones, events, or community contributions!"
+            };
+          case 'contact':
+            return {
+              name: 'Contact',
+              context: "You're viewing the contact page with ways to reach Jayanthan.",
+              suggestions: "You can find his email, LinkedIn, GitHub, and other social links here!"
+            };
+          default:
+            return {
+              name: 'Portfolio',
+              context: "You're exploring Jayanthan's portfolio.",
+              suggestions: "Feel free to navigate to any section!"
+            };
+        }
+      };
+
+      const pageContext = getPageContext();
+      
+      // Page-specific responses
+      if (lowerMsg.includes('where am i') || lowerMsg.includes('current page') || lowerMsg.includes('what page')) {
+        response = `You're currently on the **${pageContext.name}** page! ${pageContext.context}\n\n${pageContext.suggestions}`;
+        actions = quickActions.filter(a => a.page !== currentPage).slice(0, 2);
+      }
+      // Context-aware responses based on current page
+      else if (currentPage === 'projects' && (lowerMsg.includes('project') || lowerMsg.includes('work') || lowerMsg.includes('tell me') || lowerMsg.includes('what'))) {
+        response = "Great! You're on the Projects page. Jayanthan has worked on:\n\n🚀 Full-stack web applications with React & Node.js\n🤖 AI-powered solutions and integrations\n💻 Modern, responsive UI/UX designs\n🔧 Real-world problem-solving applications\n\nEach project showcases his skills in different technologies. Want to know about a specific project or technology?";
+        actions = [
+          { label: 'View Experience', page: 'experience', icon: FileText },
+          { label: 'See Skills', page: 'about', icon: FileCode }
+        ];
+      }
+      else if (currentPage === 'about' && (lowerMsg.includes('skill') || lowerMsg.includes('tech') || lowerMsg.includes('know') || lowerMsg.includes('can he') || lowerMsg.includes('tell me'))) {
+        response = "Perfect! You're viewing his skills. Jayanthan's tech stack includes:\n\n**Frontend:** React, TypeScript, Tailwind CSS, Framer Motion\n**Backend:** Node.js, Express, Python\n**Database:** MongoDB, PostgreSQL\n**Tools:** Git, Docker, VS Code, Cloudflare\n**Other:** REST APIs, Cloud Deployment, AI Integration\n\nHe's always learning new technologies! Want to see these skills in action?";
+        actions = [
+          { label: 'View Projects', page: 'projects', icon: Cpu },
+          { label: 'See Experience', page: 'experience', icon: FileText }
+        ];
+      }
+      else if (currentPage === 'experience' && (lowerMsg.includes('experience') || lowerMsg.includes('work') || lowerMsg.includes('job') || lowerMsg.includes('tell me') || lowerMsg.includes('what'))) {
+        response = "You're viewing his professional experience! Jayanthan has:\n\n💼 Hands-on internship experience\n🛠️ Built production-ready applications\n👥 Collaborated with development teams\n📈 Delivered projects from concept to deployment\n🎯 Gained expertise in full-stack development\n\nHe's passionate about creating impactful solutions. Want to see what he built?";
+        actions = [
+          { label: 'View Projects', page: 'projects', icon: Cpu },
+          { label: 'View Skills', page: 'about', icon: FileCode }
+        ];
+      }
+      else if (currentPage === 'contact' && (lowerMsg.includes('contact') || lowerMsg.includes('email') || lowerMsg.includes('reach') || lowerMsg.includes('how') || lowerMsg.includes('connect'))) {
+        response = "Perfect! You're on the contact page. Here's how to reach Jayanthan:\n\n📧 **Email:** hii@itsmejayanthan.me\n💼 **LinkedIn:** Connect for professional networking\n🐙 **GitHub:** Check out his code repositories\n🐦 **Twitter:** Follow for updates\n\nHe's always open to:\n✅ Job opportunities\n✅ Collaboration on projects\n✅ Technical discussions\n✅ Freelance work\n\nFeel free to reach out!";
+        actions = [
+          { label: 'View Resume', page: 'home', icon: Hash },
+          { label: 'View Projects', page: 'projects', icon: Cpu }
+        ];
+      }
+      else if (currentPage === 'journey' && (lowerMsg.includes('journey') || lowerMsg.includes('timeline') || lowerMsg.includes('achievement') || lowerMsg.includes('tell me') || lowerMsg.includes('what'))) {
+        response = "You're viewing Jayanthan's journey! 📖 This timeline includes:\n\n🎓 Educational milestones\n🏆 Achievements and certifications\n🤝 Volunteering and community work\n💡 Key learning experiences\n🎯 Personal and professional growth\n\nEach event has shaped his journey as a developer. Anything specific you'd like to know?";
+        actions = [
+          { label: 'View Experience', page: 'experience', icon: FileText },
+          { label: 'See Projects', page: 'projects', icon: Cpu }
+        ];
+      }
+      else if (currentPage === 'home' && (lowerMsg.includes('resume') || lowerMsg.includes('cv') || lowerMsg.includes('download') || lowerMsg.includes('tell me'))) {
+        response = "You're on the home page! 🏠 From here you can:\n\n📄 **View & Download Resume** - Click the resume button to preview and download\n🚀 Quick navigation to all sections\n👤 See Jayanthan's introduction\n\nThe resume includes his complete professional profile, skills, experience, and education. Want to explore other sections?";
+        actions = [
+          { label: 'View Projects', page: 'projects', icon: Cpu },
+          { label: 'About Jayanthan', page: 'about', icon: FileCode }
+        ];
+      }
       // Navigation keywords
-      if (lowerMsg.includes('go to') || lowerMsg.includes('navigate') || lowerMsg.includes('take me') || lowerMsg.includes('show me')) {
+      else if (lowerMsg.includes('go to') || lowerMsg.includes('navigate') || lowerMsg.includes('take me') || lowerMsg.includes('show me')) {
         if (lowerMsg.includes('project')) {
           navigateToPage('projects', 'Projects');
           setIsTyping(false);
@@ -84,7 +192,7 @@ const SupriAI = ({ onNavigate }) => {
       }
 
       // Content-based responses with navigation suggestions
-      if (lowerMsg.includes('project') || lowerMsg.includes('work') || lowerMsg.includes('portfolio')) {
+      else if (lowerMsg.includes('project') || lowerMsg.includes('work') || lowerMsg.includes('portfolio')) {
         response = "Jayanthan has worked on some amazing projects! 🚀 From full-stack web apps to AI-powered solutions. Would you like me to show you his projects?";
         actions = [
           { label: 'View Projects', page: 'projects', icon: Cpu },
@@ -162,6 +270,20 @@ const SupriAI = ({ onNavigate }) => {
   };
 
   return (
+    <>
+      {/* Confetti for AI Opening */}
+      {showConfetti && (
+        <Confetti
+          width={window.innerWidth}
+          height={window.innerHeight}
+          recycle={false}
+          numberOfPieces={400}
+          gravity={0.3}
+          colors={['#fb4934', '#b8bb26', '#fabd2f', '#83a598', '#d3869b', '#8ec07c']}
+          style={{ position: 'fixed', top: 0, left: 0, zIndex: 9999, pointerEvents: 'none' }}
+        />
+      )}
+
     <div className="relative">
       <button
         onClick={() => setShowChatPanel(!showChatPanel)}
@@ -325,6 +447,7 @@ const SupriAI = ({ onNavigate }) => {
         )}
       </AnimatePresence>
     </div>
+    </>
   );
 };
 

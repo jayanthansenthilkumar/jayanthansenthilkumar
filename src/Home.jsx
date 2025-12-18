@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { Hash, FileCode, Cpu, FileText, Terminal, Download, X, ExternalLink } from 'lucide-react';
+import { Hash, FileCode, Cpu, FileText, Terminal, Download, X, ExternalLink, Github, Linkedin, Mail } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Confetti from 'react-confetti';
 import SEO from './components/SEO';
 import CodeLineNumbers from './CodeLineNumbers';
 
 const Home = ({ navigateToFile }) => {
     const [text, setText] = useState('');
     const [showResumeModal, setShowResumeModal] = useState(false);
+    const [showProfileModal, setShowProfileModal] = useState(false);
+    const [showConfetti, setShowConfetti] = useState(false);
     const fullText = 'Jayanthan Senthilkumar';
 
     useEffect(() => {
@@ -21,6 +24,19 @@ const Home = ({ navigateToFile }) => {
         }, 150);
         return () => clearInterval(interval);
     }, []);
+
+    // Confetti effect handler
+    const triggerConfetti = () => {
+        setShowConfetti(true);
+        setTimeout(() => setShowConfetti(false), 5000); // Show for 5 seconds
+    };
+
+    // Trigger confetti when modals open
+    useEffect(() => {
+        if (showResumeModal || showProfileModal) {
+            triggerConfetti();
+        }
+    }, [showResumeModal, showProfileModal]);
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -40,6 +56,17 @@ const Home = ({ navigateToFile }) => {
                 keywords="Jayanthan Senthilkumar, Portfolio, Developer, Web Development, React, JavaScript, Full Stack Developer"
                 url="https://itsjayanthan.me/"
             />
+            {showConfetti && (
+                <Confetti
+                    width={window.innerWidth}
+                    height={window.innerHeight}
+                    recycle={false}
+                    numberOfPieces={500}
+                    gravity={0.3}
+                    colors={['#fb4934', '#b8bb26', '#fabd2f', '#83a598', '#d3869b', '#8ec07c']}
+                    style={{ position: 'fixed', top: 0, left: 0, zIndex: 9999, pointerEvents: 'none' }}
+                />
+            )}
             <div className="flex h-full overflow-y-auto custom-scrollbar font-mono text-sm md:text-base">
                 <div className="hidden md:block">
                     <CodeLineNumbers lines={32} />
@@ -53,7 +80,8 @@ const Home = ({ navigateToFile }) => {
                     {/* Header */}
                     <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-6">
                         <motion.div
-                            className="w-32 h-32 rounded-full bg-gruvbox-bgSoft border-2 border-gruvbox-blue flex items-center justify-center overflow-hidden"
+                            onClick={() => setShowProfileModal(true)}
+                            className="w-32 h-32 rounded-full bg-gruvbox-bgSoft border-2 border-gruvbox-blue flex items-center justify-center overflow-hidden cursor-pointer"
                             variants={itemVariants}
                             whileHover={{ scale: 1.05, borderColor: '#fabd2f' }}
                         >
@@ -152,8 +180,6 @@ const Home = ({ navigateToFile }) => {
                                 </button>
                             </div>
                         </motion.div>
-
-
                         {/* Certifications */}
                         <motion.div
                             className="bg-gruvbox-bgSoft p-6 rounded-lg border border-gruvbox-bgHard"
@@ -268,11 +294,148 @@ const Home = ({ navigateToFile }) => {
                                 <a
                                     href="/resume.pdf"
                                     download="Jayanthan_Senthilkumar_Resume.pdf"
+                                    onClick={triggerConfetti}
                                     className="flex items-center gap-2 px-4 py-2 bg-gruvbox-blue text-white rounded hover:bg-gruvbox-blue/80 transition-colors text-sm"
                                 >
                                     <Download size={16} />
                                     Download PDF
                                 </a>
+                            </div>
+                        </motion.div>
+                    </>
+                )}
+            </AnimatePresence>
+
+            {/* Profile Picture Modal */}
+            <AnimatePresence>
+                {showProfileModal && (
+                    <>
+                        {/* Backdrop */}
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            onClick={() => setShowProfileModal(false)}
+                            className="fixed inset-0 bg-black/90 z-50 backdrop-blur-md"
+                        />
+
+                        {/* Modal */}
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            exit={{ opacity: 0, scale: 0.8 }}
+                            transition={{ duration: 0.3, type: "spring" }}
+                            className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-[95%] max-w-6xl h-[90vh] bg-gruvbox-bgHard border-2 border-gruvbox-blue rounded-lg shadow-2xl flex flex-col md:flex-row overflow-hidden"
+                        >
+                            {/* Left Sidebar - Action Buttons */}
+                            <div className="w-full md:w-72 bg-gruvbox-bg border-b md:border-b-0 md:border-r border-gruvbox-bgSoft p-4 md:p-6 flex flex-col gap-3 overflow-y-auto custom-scrollbar">
+                                <div className="mb-2">
+                                    <h3 className="text-base md:text-lg font-bold text-gruvbox-yellow mb-1">Jayanthan Senthilkumar</h3>
+                                    <p className="text-xs md:text-sm text-gruvbox-blue mb-2 md:mb-3">Developer • Quick Learner</p>
+                                    
+                                    <div className="text-[11px] md:text-xs text-gruvbox-fg leading-relaxed space-y-2">
+                                        <p className="text-gruvbox-gray">
+                                            Passionate Full-Stack Developer specializing in building modern web applications with React, TypeScript, and Node.js.
+                                        </p>
+                                        <div className="flex flex-wrap gap-1 pt-1 md:pt-2">
+                                            <span className="px-2 py-0.5 bg-gruvbox-bgSoft text-gruvbox-blue rounded text-[9px] md:text-[10px]">React</span>
+                                            <span className="px-2 py-0.5 bg-gruvbox-bgSoft text-gruvbox-orange rounded text-[9px] md:text-[10px]">TypeScript</span>
+                                            <span className="px-2 py-0.5 bg-gruvbox-bgSoft text-gruvbox-green rounded text-[9px] md:text-[10px]">Node.js</span>
+                                            <span className="px-2 py-0.5 bg-gruvbox-bgSoft text-gruvbox-purple rounded text-[9px] md:text-[10px]">Python</span>
+                                            <span className="px-2 py-0.5 bg-gruvbox-bgSoft text-gruvbox-aqua rounded text-[9px] md:text-[10px]">MongoDB</span>
+                                            <span className="px-2 py-0.5 bg-gruvbox-bgSoft text-gruvbox-yellow rounded text-[9px] md:text-[10px]">Tailwind</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="border-t border-gruvbox-bgSoft pt-3 md:pt-4">
+                                    <p className="text-[10px] md:text-[11px] text-gruvbox-gray uppercase tracking-wider mb-2 md:mb-3">Quick Links</p>
+
+                                    <button
+                                    onClick={() => {
+                                        setShowProfileModal(false);
+                                        setShowResumeModal(true);
+                                    }}
+                                    className="w-full flex items-center gap-2 md:gap-3 p-2 md:p-3 bg-gruvbox-bgSoft hover:bg-gruvbox-bgHard transition-colors rounded group"
+                                >
+                                    <FileText className="text-gruvbox-purple group-hover:text-gruvbox-fg flex-shrink-0" size={18} />
+                                    <div className="text-left flex-1 min-w-0">
+                                        <span className="block text-gruvbox-fg text-xs md:text-sm font-semibold">View Resume</span>
+                                        <span className="text-[10px] md:text-xs text-gruvbox-gray">Download PDF</span>
+                                    </div>
+                                    <ExternalLink size={12} className="text-gruvbox-gray flex-shrink-0" />
+                                </button>
+
+                                <a
+                                    href="https://github.com/jayanthansenthilkumar"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-full flex items-center gap-2 md:gap-3 p-2 md:p-3 bg-gruvbox-bgSoft hover:bg-gruvbox-bgHard transition-colors rounded group"
+                                >
+                                    <Github className="text-gruvbox-orange group-hover:text-gruvbox-fg flex-shrink-0" size={18} />
+                                    <div className="text-left flex-1 min-w-0">
+                                        <span className="block text-gruvbox-fg text-xs md:text-sm font-semibold">GitHub</span>
+                                        <span className="text-[10px] md:text-xs text-gruvbox-gray">View repositories</span>
+                                    </div>
+                                    <ExternalLink size={12} className="text-gruvbox-gray flex-shrink-0" />
+                                </a>
+
+                                <a
+                                    href="https://linkedin.com/in/jayanthan18"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-full flex items-center gap-2 md:gap-3 p-2 md:p-3 bg-gruvbox-bgSoft hover:bg-gruvbox-bgHard transition-colors rounded group"
+                                >
+                                    <Linkedin className="text-gruvbox-blue group-hover:text-gruvbox-fg flex-shrink-0" size={18} />
+                                    <div className="text-left flex-1 min-w-0">
+                                        <span className="block text-gruvbox-fg text-xs md:text-sm font-semibold">LinkedIn</span>
+                                        <span className="text-[10px] md:text-xs text-gruvbox-gray">Connect with me</span>
+                                    </div>
+                                    <ExternalLink size={12} className="text-gruvbox-gray flex-shrink-0" />
+                                </a>
+
+                                <a
+                                    href="mailto:hii@itsmejayanthan.me"
+                                    className="w-full flex items-center gap-2 md:gap-3 p-2 md:p-3 bg-gruvbox-bgSoft hover:bg-gruvbox-bgHard transition-colors rounded group"
+                                >
+                                    <Mail className="text-gruvbox-green group-hover:text-gruvbox-fg flex-shrink-0" size={18} />
+                                    <div className="text-left flex-1 min-w-0">
+                                        <span className="block text-gruvbox-fg text-xs md:text-sm font-semibold">Email Me</span>
+                                        <span className="text-[10px] md:text-xs text-gruvbox-gray">Get in touch</span>
+                                    </div>
+                                    <ExternalLink size={12} className="text-gruvbox-gray flex-shrink-0" />
+                                </a>
+
+                                <div className="hidden md:block flex-1" />
+
+                                <div className="text-[10px] md:text-xs text-gruvbox-gray text-center pt-3 md:pt-4 border-t border-gruvbox-bgSoft">
+                                    <p className="mb-1">📧 hii@itsmejayanthan.me</p>
+                                    <p className="text-[10px]">Click outside to close</p>
+                                </div>
+                                </div>
+                            </div>
+
+                            {/* Right Side - Large Image */}
+                            <div className="flex-1 flex items-center justify-center p-4 md:p-8 relative overflow-hidden">
+                                <button
+                                    onClick={() => setShowProfileModal(false)}
+                                    className="absolute top-2 right-2 md:top-4 md:right-4 p-2 bg-gruvbox-bgSoft hover:bg-gruvbox-bg rounded-full transition-colors text-gruvbox-gray hover:text-gruvbox-fg z-10"
+                                >
+                                    <X size={20} />
+                                </button>
+
+                                <motion.div
+                                    initial={{ scale: 0.8, opacity: 0 }}
+                                    animate={{ scale: 1, opacity: 1 }}
+                                    transition={{ delay: 0.2, duration: 0.3 }}
+                                    className="w-full h-full flex items-center justify-center p-2"
+                                >
+                                    <img
+                                        src="/assets/jayanthan.jpg"
+                                        alt="Jayanthan Senthilkumar - Full View"
+                                        className="max-w-full max-h-full w-auto h-auto object-contain rounded-lg shadow-2xl border-2 md:border-4 border-gruvbox-blue"
+                                    />
+                                </motion.div>
                             </div>
                         </motion.div>
                     </>

@@ -125,7 +125,7 @@ const About = () => {
         },
         {
             line: 13,
-            content: <span className="pl-4 text-gruvbox-gray">// Core Languages</span>
+            content: <span className="pl-4 text-gruvbox-gray">// Core Skills</span>
         },
         {
             line: 14,
@@ -137,13 +137,8 @@ const About = () => {
                 </span>
             )
         },
-        { line: 15, content: <br /> },
         {
-            line: 16,
-            content: <span className="pl-4 text-gruvbox-gray">// Frontend Stack</span>
-        },
-        {
-            line: 17,
+            line: 15,
             content: (
                 <span className="pl-4">
                     <Syntax color="#458588">frontend</Syntax><Syntax color="#928374">:</Syntax> <span className="text-gruvbox-fg">[</span>
@@ -151,24 +146,19 @@ const About = () => {
             )
         },
         {
-            line: 18,
+            line: 16,
             content: <span className="pl-8"><Syntax color="#98971a">"HTML5"</Syntax>, <Syntax color="#98971a">"Core CSS"</Syntax>,</span>
         },
         {
-            line: 19,
+            line: 17,
             content: <span className="pl-8"><Syntax color="#98971a">"Laravel"</Syntax>, <Syntax color="#98971a">"TailwindCSS"</Syntax></span>
         },
         {
-            line: 20,
+            line: 18,
             content: <span className="pl-4 text-gruvbox-fg">],</span>
         },
-        { line: 21, content: <br /> },
         {
-            line: 22,
-            content: <span className="pl-4 text-gruvbox-gray">// Backend Stack</span>
-        },
-        {
-            line: 23,
+            line: 19,
             content: (
                 <span className="pl-4">
                     <Syntax color="#458588">backend</Syntax><Syntax color="#928374">:</Syntax> <span className="text-gruvbox-fg">[</span>
@@ -177,13 +167,8 @@ const About = () => {
                 </span>
             )
         },
-        { line: 24, content: <br /> },
         {
-            line: 25,
-            content: <span className="pl-4 text-gruvbox-gray">// Dev Tools</span>
-        },
-        {
-            line: 26,
+            line: 20,
             content: (
                 <span className="pl-4">
                     <Syntax color="#458588">tools</Syntax><Syntax color="#928374">:</Syntax> <span className="text-gruvbox-fg">[</span>
@@ -193,12 +178,12 @@ const About = () => {
             )
         },
         {
-            line: 27,
+            line: 21,
             content: <span className="text-gruvbox-fg">{`};`}</span>
         },
-        { line: 28, content: <br /> },
+        { line: 22, content: <br /> },
         {
-            line: 29,
+            line: 23,
             content: (
                 <span>
                     <Syntax color="#b16286">export</Syntax> <Syntax color="#b16286">default</Syntax> <span className="text-gruvbox-fg">{`{`}</span> <Syntax color="#458588">developer</Syntax>, <Syntax color="#458588">skills</Syntax> <span className="text-gruvbox-fg">{`};`}</span>

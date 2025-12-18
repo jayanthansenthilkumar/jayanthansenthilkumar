@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { Folder, FileCode, Hash, Cpu, FileText, Terminal, X, Menu, GitBranch, BookOpen, Search, Settings, ChevronRight, ChevronDown, Files, GitFork, Blocks, User, Bell, GitCommit, Clock, RefreshCw, Palette, Monitor, Moon, Sun, ExternalLink, LogOut, Check } from 'lucide-react';
+import Confetti from 'react-confetti';
 import Home from './Home';
 import About from './About';
 import Projects from './Projects';
@@ -25,6 +26,7 @@ function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [showSettingsMenu, setShowSettingsMenu] = useState(false);
   const [showThemeDropdown, setShowThemeDropdown] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
 
   const [theme, setTheme] = useState(() => {
     // Load theme from localStorage on initial render
@@ -48,6 +50,12 @@ function App() {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('portfolio-theme', theme);
   }, [theme]);
+
+  // Trigger confetti on initial page load
+  useEffect(() => {
+    setShowConfetti(true);
+    setTimeout(() => setShowConfetti(false), 5000);
+  }, []); // Empty dependency array means this runs once on mount
 
   // Available themes with accent colors for status bar
   const themes = [
@@ -134,6 +142,10 @@ function App() {
       setOpenTabs([...openTabs, fileId]);
     }
     if (isMobile) setIsTreeOpen(false);
+    
+    // Trigger confetti on page navigation
+    setShowConfetti(true);
+    setTimeout(() => setShowConfetti(false), 5000);
   };
 
   // Close tab
@@ -189,6 +201,19 @@ function App() {
         <MatrixBackground />
 
         <CommandPalette onNavigate={handleFileSelect} />
+
+        {/* Confetti Effect for Navigation */}
+        {showConfetti && (
+          <Confetti
+            width={window.innerWidth}
+            height={window.innerHeight}
+            recycle={false}
+            numberOfPieces={300}
+            gravity={0.25}
+            colors={['#fb4934', '#b8bb26', '#fabd2f', '#83a598', '#d3869b', '#8ec07c']}
+            style={{ position: 'fixed', top: 0, left: 0, zIndex: 9999, pointerEvents: 'none' }}
+          />
+        )}
 
         {/* Toast Notification */}
         <AnimatePresence>
@@ -254,7 +279,7 @@ function App() {
               <div className="flex-1" />
               
               {/* SupriAI Chat Component */}
-              <SupriAI onNavigate={handleFileSelect} />
+              <SupriAI onNavigate={handleFileSelect} currentPage={activeFile} />
 
               <div className="relative">
                 <button
@@ -395,7 +420,7 @@ function App() {
                       </div>
                       <div className="flex-1 overflow-y-auto custom-scrollbar">
                         <button
-                          onClick={() => setIsExplorerExpanded(!isExplorerExpanded)}
+                          onClick={() => setIsNotExplorerExpanded(!isExplorerExpanded)}
                           className="flex items-center w-full px-2 py-1 hover:bg-gruvbox-bgSoft cursor-pointer text-[13px] font-semibold text-gruvbox-fg"
                         >
                           {isExplorerExpanded ? (
