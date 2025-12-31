@@ -1,0 +1,38 @@
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-size-200 {
+  background-size: 200% 100%;
+}
+
+.animate-gradient {
+  animation: gradient-shift 3s linear infinite;
+}
+
+/* Additional blur effect for glow */
+.glow-effect {
+  filter: drop-shadow(0 0 10px rgba(var(--primary-rgb), 0.5));
+}
+
+/* Pulse animation */
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
