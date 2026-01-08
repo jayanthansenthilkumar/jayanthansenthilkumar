@@ -66,71 +66,18 @@ I'm a passionate **Full Stack Developer** and **AI Engineer** from India, curren
 
 ---
 
-<div align="center">
+---
 
-```
- _____ ___ ___ _  _   _   ___ ___ ___ _  _   _   _    
-|_   _| __/ __| || | /_\ | _ \ __| __|  \| | /_\ | |   
-  | | | _| (__| __ |/ _ \|   /__ \ _|| .` |/ _ \| |__ 
-  |_| |___\___|_||_/_/ \_\_|_\___/___|_|\_/_/ \_\____|
-                                                       
-```
-
-```
-═══════════════════════════════════════════════════════════════════════════════════════
-                          💻  LANGUAGES & CORE TECHNOLOGIES
-═══════════════════════════════════════════════════════════════════════════════════════
-```
-
-<img src="https://skillicons.dev/icons?i=html,css,javascript,typescript,php,python,c,cpp&theme=dark" />
-
-```
-═══════════════════════════════════════════════════════════════════════════════════════
-                              🚀  FRAMEWORKS & LIBRARIES
-═══════════════════════════════════════════════════════════════════════════════════════
-```
-
-<img src="https://skillicons.dev/icons?i=react,nodejs,express,flask,tensorflow,bootstrap,tailwind&theme=dark" />
-
-```
-═══════════════════════════════════════════════════════════════════════════════════════
-                                🗄️  DATABASES & CLOUD
-═══════════════════════════════════════════════════════════════════════════════════════
-```
-
-<img src="https://skillicons.dev/icons?i=mongodb,mysql,postgresql,supabase,firebase,aws,docker&theme=dark" />
-
-```
-═══════════════════════════════════════════════════════════════════════════════════════
-                                🛠️  TOOLS & PLATFORMS
-═══════════════════════════════════════════════════════════════════════════════════════
-```
-
-<img src="https://skillicons.dev/icons?i=git,github,vscode,postman,figma,linux,vercel&theme=dark" />
-
-</div>
+## 📊 GitHub Statistics
 
 <div align="center">
 
-```
-   ____ _ _   _           _     ____  _        _       
-  / ___(_) |_| |__  _   _| |__ / ___|| |_ __ _| |_ ___ 
- | |  _| | __| '_ \| | | | '_ \\___ \| __/ _` | __/ __|
- | |_| | | |_| | | | |_| | |_) |___) | || (_| | |_\__ \
-  \____|_|\__|_| |_|\__,_|_.__/|____/ \__\__,_|\__|___/
-                                                       
-```
-
-<a href="https://github.com/jayanthansenthilkumar">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=jayanthansenthilkumar&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=667eea&icon_color=764ba2&text_color=C9D1D9&ring_color=667eea" alt="GitHub Stats"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs?username=jayanthansenthilkumar&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=667eea&text_color=C9D1D9" alt="Top Languages"/>
-</a>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=jayanthansenthilkumar&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=667eea&icon_color=764ba2&text_color=C9D1D9" alt="GitHub Stats"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs?username=jayanthansenthilkumar&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=667eea&text_color=C9D1D9" alt="Top Languages"/>
 
 <br/><br/>
 
-<a href="https://github.com/jayanthansenthilkumar">
-  <img src="https://streak-stats.demolab.com?user=jayanthansenthilkumar&theme=tokyonight&hide_border=true&background=0D1117&ring=667eea&fire=764ba2&currStreakLabel=667eea&sideLabels=C9D1D9&dates=8B949E" alt="GitHub Streak"/>
-</a>
+<img src="https://streak-stats.demolab.com?user=jayanthansenthilkumar&theme=tokyonight&hide_border=true&background=0D1117&ring=667eea&fire=764ba2&currStreakLabel=667eea&sideLabels=C9D1D9&dates=8B949E" alt="GitHub Streak"/>
 
 <br/><br/>
 
@@ -138,118 +85,80 @@ I'm a passionate **Full Stack Developer** and **AI Engineer** from India, curren
 
 </div>
 
-<div align="center">
+---
 
-```
- _____ ____   ___  ____  _   _ ___ _____ ____  
-|_   _|  _ \ / _ \|  _ \| | | |_ _| ____/ ___| 
-  | | | |_) | | | | |_) | |_| || ||  _| \___ \ 
-  | | |  _ <| |_| |  __/|  _  || || |___ ___) |
-  |_| |_| \_\\___/|_|   |_| |_|___|_____|____/ 
-                                               
-```
+## 🏆 GitHub Trophies
+
+<div align="center">
 
 <img src="https://github-profile-trophy.vercel.app/?username=jayanthansenthilkumar&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=10" width="100%" alt="GitHub Trophies"/>
 
 </div>
 
-<div align="center">
+---
 
-```
-   ____ ___  _   _ _   _ _____ ____ _____ 
-  / ___/ _ \| \ | | \ | | ____/ ___|_   _|
- | |  | | | |  \| |  \| |  _|| |     | |  
- | |__| |_| | |\  | |\  | |__| |___  | |  
-  \____\___/|_| \_|_| \_|_____\____| |_|  
-                                          
-```
+## 🎯 Current Focus
 
-</div>
-
-<table align="center" width="90%">
+<table>
 <tr>
-<td width="50%" valign="top" align="center">
+<td width="50%">
 
-```
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃                               ┃
-┃   📚 CURRENTLY EXPLORING      ┃
-┃                               ┃
-┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
-┃                               ┃
-┃   ☁️  DevOps                   ┃
-┃       • Cloud Architecture    ┃
-┃       • CI/CD Pipelines       ┃
-┃       • Kubernetes            ┃
-┃                               ┃
-┃   🤖  AI/ML                    ┃
-┃       • LLMs & Transformers   ┃
-┃       • Computer Vision       ┃
-┃       • NLP                   ┃
-┃                               ┃
-┃   🏗️  System Design            ┃
-┃       • Microservices         ┃
-┃       • Scalability           ┃
-┃       • Data Engineering      ┃
-┃                               ┃
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-```
+### 🔭 What I'm Working On
+- Building **AI-powered applications** with modern frameworks
+- Exploring **cloud architecture** and **microservices**
+- Contributing to **open-source projects**
+- Learning **advanced system design patterns**
 
 </td>
-<td width="50%" valign="top" align="center">
+<td width="50%">
 
-```
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃                               ┃
-┃   🤝 LET'S CONNECT            ┃
-┃                               ┃
-┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
-┃                               ┃
-┃   🔗 LinkedIn                 ┃
-┃   📧 Gmail                    ┃
-┃   🌐 Portfolio                ┃
-┃   📸 Instagram                ┃
-┃   💻 GitHub                   ┃
-┃                               ┃
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-```
-
-<br/>
-
-<a href="https://www.linkedin.com/in/jayanthan18" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-</a>
-<br/>
-<a href="mailto:jayanthansenthilkumar18@gmail.com">
-  <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
-</a>
-<br/>
-<a href="https://ceo.prisoltech.com" target="_blank">
-  <img src="https://img.shields.io/badge/Portfolio-667eea?style=for-the-badge&logo=Google-Chrome&logoColor=white" alt="Portfolio"/>
-</a>
-<br/>
-<a href="https://instagram.com/jayanthansenthilkumar" target="_blank">
-  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
-</a>
-<br/>
-<a href="https://github.com/jayanthansenthilkumar" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-</a>
+### 🌱 Currently Learning
+- **DevOps & Cloud Computing**
+  - CI/CD Pipelines
+  - Kubernetes & Docker
+  - AWS Infrastructure
+- **AI/ML Advanced Topics**
+  - Large Language Models (LLMs)
+  - Computer Vision
+  - Natural Language Processing
+- **System Architecture**
+  - Microservices Design
+  - Scalability Patterns
+  - Data Engineering
 
 </td>
 </tr>
 </table>
 
+---
+
+## 📫 Let's Connect
+
 <div align="center">
 
-```
-  ____  _   _    _    _  _____   _    _   _ ___ __  __    _  _____ ___ ___  _   _ 
- / ___|| \ | |  / \  | |/ / _ \ / \  | \ | |_ _|  \/  |  / \|_   _|_ _/ _ \| \ | |
- \___ \|  \| | / _ \ | ' /| __// _ \ |  \| || || |\/| | / _ \ | |  | | | | |  \| |
-  ___) | |\  |/ ___ \| . \| |__/ ___ \| |\  || || |  | |/ ___ \| |  | | |_| | |\  |
- |____/|_| \_/_/   \_\_|\_\___/_/   \_\_| \_|___|_|  |_/_/   \_\_| |___\___/|_| \_|
-                                                                                    
-```
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Jayanthan18-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jayanthan18)
+[![Gmail](https://img.shields.io/badge/Gmail-jayanthansenthilkumar18-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jayanthansenthilkumar18@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit_Now-667eea?style=for-the-badge&logo=Google-Chrome&logoColor=white)](https://ceo.prisoltech.com)
+[![Instagram](https://img.shields.io/badge/Instagram-jayanthansenthilkumar-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/jayanthansenthilkumar)
+[![GitHub](https://img.shields.io/badge/GitHub-jayanthansenthilkumar-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jayanthansenthilkumar)
+
+</div>
+
+---
+
+## 💭 Quote of the Day
+
+<div align="center">
+
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev Quote"/>
+
+</div>
+
+---
+
+## 🐍 Contribution Snake
+
+<div align="center">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg">
@@ -259,51 +168,16 @@ I'm a passionate **Full Stack Developer** and **AI Engineer** from India, curren
 
 </div>
 
-<div align="center">
-
-```
-╔═══════════════════════════════════════════════════════════════════════════════════════╗
-║                           💭  RANDOM DEV QUOTE                                        ║
-╚═══════════════════════════════════════════════════════════════════════════════════════╝
-```
-
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev Quote"/>
-
-</div>
+---
 
 <div align="center">
 
-```
- _____ _   _    _    _   _ _  ______  __   _____ ___  ____  
-|_   _| | | |  / \  | \ | | |/ / ___| \ \ / / _ \| | | | | 
-  | | | |_| | / _ \ |  \| | ' /\___ \  \ V / | | | | | | | 
-  | | |  _  |/ ___ \| |\  | . \ ___) |  | || |_| | |_| |_| 
-  |_| |_| |_/_/   \_\_| \_|_|\_\____/   |_| \___/ \___/(_) 
-                                                            
-   _____ ___  ____   __     _____ ____ ___ _____ ___ _   _  ____ 
-  |  ___/ _ \|  _ \  \ \   / /_ _/ ___|_ _|_   _|_ _| \ | |/ ___|
-  | |_ | | | | |_) |  \ \ / / | |\___ \| |  | |  | ||  \| | |  _ 
-  |  _|| |_| |  _ <    \ V /  | | ___) | |  | |  | || |\  | |_| |
-  |_|   \___/|_| \_\    \_/  |___|____/___| |_| |___|_| \_|\____|
-                                                                  
-```
+### ⭐ If you find my work helpful, consider giving it a star!
 
-<img src="https://forthebadge.com/images/badges/built-with-love.svg" />
-<img src="https://forthebadge.com/images/badges/powered-by-coffee.svg" />
-<img src="https://forthebadge.com/images/badges/open-source.svg" />
+**Made with 💜 by Jayanthan Senthilkumar**
 
-<br/><br/>
-
-```
-╔═══════════════════════════════════════════════════════════════════════════════════════╗
-║                                                                                       ║
-║      ⭐  If you find my work helpful, consider giving it a star!  ⭐                  ║
-║                                                                                       ║
-║      💜  Made with love by Jayanthan Senthilkumar  💜                                 ║
-║                                                                                       ║
-╚═══════════════════════════════════════════════════════════════════════════════════════╝
-```
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:667eea,100:764ba2&height=120&section=footer" width="100%"/>
+![Built with Love](https://forthebadge.com/images/badges/built-with-love.svg)
+![Powered by Coffee](https://forthebadge.com/images/badges/powered-by-coffee.svg)
+![Open Source](https://forthebadge.com/images/badges/open-source.svg)
 
 </div>
