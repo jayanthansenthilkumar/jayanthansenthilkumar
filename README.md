@@ -1,202 +1,70 @@
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:667eea,100:764ba2&height=120&section=header&animation=fadeIn" width="100%" />
 
-```
-╔════════════════════════════════════════════════════════════════════════════════════════════════╗
-║                                                                                                ║
-║     ██╗  ██╗███████╗██╗     ██╗      ██████╗      ██████╗ ██╗   ██╗██╗   ██╗███████╗  ██╗      ║
-║     ██║  ██║██╔════╝██║     ██║     ██╔═══██╗    ██╔════╝ ██║   ██║╚██╗ ██╔╝██╔════╝  ██║      ║
-║     ███████║█████╗  ██║     ██║     ██║   ██║    ██║  ███╗██║   ██║ ╚████╔╝ ███████╗  ██║      ║
-║     ██╔══██║██╔══╝  ██║     ██║     ██║   ██║    ██║   ██║██║   ██║  ╚██╔╝  ╚════██║  ╚═╝      ║
-║     ██║  ██║███████╗███████╗███████╗╚██████╔╝    ╚██████╔╝╚██████╔╝   ██║   ███████║  ██╗      ║
-║     ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝ ╚═════╝      ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝  ╚═╝      ║
-║                                                                                                ║
-║  ╔══════════════════════════════════════════════════════════════════════════════════════════╗  ║
-║  ║                    𝙹𝙰𝚈𝙰𝙽𝚃𝙷𝙰𝙽   𝚂𝙴𝙽𝚃𝙷𝙸𝙻𝙺𝚄𝙼𝙰𝚁                                          ║ ║
-║  ╚══════════════════════════════════════════════════════════════════════════════════════════╝ ║
-║                                                                                                ║
-╚════════════════════════════════════════════════════════════════════════════════════════════════╝
-```
+# 👋 Hello, I'm Jayanthan Senthilkumar
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=667EEA&center=true&vCenter=true&width=600&lines=Full+Stack+Developer+%F0%9F%92%BB;AI+%26+Machine+Learning+Engineer+%F0%9F%A4%96;Building+Innovative+Solutions+%F0%9F%9A%80;Open+Source+Enthusiast+%E2%9C%A8" alt="Typing SVG" />
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=667EEA&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=%F0%9F%91%8B+Welcome+to+my+Digital+Space!;%F0%9F%92%BB+Building+the+Future+with+Code;%F0%9F%A4%96+AI+Enthusiast+%7C+Problem+Solver;%F0%9F%9A%80+Turning+Ideas+into+Reality" alt="Typing SVG" />
-
-<br/>
-
-<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXcydGkzaWppOGt6eXV6czNlNjQ1bjg2dGg0aWthZnJjMW1sNmViayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RbDKaczqWovIugyJmW/giphy.gif" width="350" />
-
-<br/>
-
-<a href="https://github.com/jayanthansenthilkumar">
-  <img src="https://komarev.com/ghpvc/?username=jayanthansenthilkumar&color=667eea&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views"/>
-</a>
-<a href="https://github.com/jayanthansenthilkumar?tab=followers">
-  <img src="https://img.shields.io/github/followers/jayanthansenthilkumar?label=Followers&style=for-the-badge&color=764ba2&labelColor=1a1b27" alt="Followers"/>
-</a>
-<a href="https://github.com/jayanthansenthilkumar?tab=repositories">
-  <img src="https://img.shields.io/badge/Focus-Full%20Stack%20%26%20AI-667eea?style=for-the-badge&labelColor=1a1b27" alt="Focus"/>
-</a>
+[![Profile Views](https://komarev.com/ghpvc/?username=jayanthansenthilkumar&color=667eea&style=flat-square&label=Profile+Views)](https://github.com/jayanthansenthilkumar)
+[![Followers](https://img.shields.io/github/followers/jayanthansenthilkumar?label=Followers&style=flat-square&color=764ba2)](https://github.com/jayanthansenthilkumar?tab=followers)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/jayanthan18)
 
 </div>
 
-<br/>
+---
 
-```
-              ╔══════════════════════════════════════════════════════════════════════════════════════════════╗
-              ║                                                                                              ║
-              ║                ░█████╗░██████╗░░█████╗░██╗░░░██╗████████╗  ███╗░░░███╗███████╗               ║
-              ║                ██╔══██╗██╔══██╗██╔══██╗██║░░░██║╚══██╔══╝  ████╗░████║██╔════╝               ║
-              ║                ███████║██████╦╝██║░░██║██║░░░██║░░░██║░░░  ██╔████╔██║█████╗░░               ║
-              ║                ██╔══██║██╔══██╗██║░░██║██║░░░██║░░░██║░░░  ██║╚██╔╝██║██╔══╝░░               ║
-              ║                ██║░░██║██████╦╝╚█████╔╝╚██████╔╝░░░██║░░░  ██║░╚═╝░██║███████╗               ║
-              ║                ╚═╝░░╚═╝╚═════╝░░╚════╝░░╚═════╝░░░░╚═╝░░░  ╚═╝░░░░░╚═╝╚══════╝               ║
-              ║                                                                                              ║
-              ╚══════════════════════════════════════════════════════════════════════════════════════════════╝
-```
+## 🚀 About Me
 
-<table align="center" width="85%">
-<tr>
-<td align="center">
+I'm a passionate **Full Stack Developer** and **AI Engineer** from India, currently pursuing **B.Tech in Artificial Intelligence & Machine Learning**. I love building scalable web applications and exploring cutting-edge AI technologies.
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                                                                             │
-│                     ⚡  D E V E L O P E R   P R O F I L E                   │
-│                                                                             │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
+- 🔭 Currently working on **AI-powered web applications**
+- 🌱 Learning **Large Language Models (LLMs)** and **System Design**
+- 💼 Open to collaborating on **innovative projects**
+- 🎯 Goal: Building solutions that make a real-world impact
 
-</td>
-</tr>
-<tr>
-<td>
+---
 
-<table width="100%">
-<tr>
-<td width="33%" align="center">
+## 💻 Tech Stack
 
-```
-╔═══════════════════╗
-║   P R O F I L E   ║
-╚═══════════════════╝
-```
+### **Languages**
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 
-**Name:** Jayanthan Senthilkumar  
-**Location:** India 🇮🇳  
-**Role:** Full Stack Dev & AI Engineer
+### **Frameworks & Libraries**
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-</td>
-<td width="34%" align="center">
+### **Databases & Cloud**
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
-```
-╔═══════════════════╗
-║ E D U C A T I O N ║
-╚═══════════════════╝
-```
+### **Tools & Platforms**
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-🎓 **B.Tech in AI & ML**
-
-```
-╔═══════════════════╗
-║   H O B B I E S   ║
-╚═══════════════════╝
-```
-
-💡 Building Innovative Solutions  
-🔓 Contributing to Open Source  
-🚀 Exploring New Technologies
-
-</td>
-<td width="33%" align="center">
-
-```
-╔═══════════════════╗
-║ E X P E R T I S E ║
-╚═══════════════════╝
-```
-
-✦ Full Stack Web Development  
-✦ Artificial Intelligence & ML  
-✦ Deep Learning & Neural Networks  
-✦ Cloud Architecture & DevOps
-
-```
-╔═══════════════════╗
-║  L E A R N I N G  ║
-╚═══════════════════╝
-```
-
-⚡ Large Language Models (LLMs)  
-⚡ System Design & Scalability  
-⚡ Data Engineering Pipelines
-
-</td>
-</tr>
-</table>
-
-</td>
-</tr>
-</table>
-
-<img align="right" src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true" width="300">
-
-<br clear="both"/>
-
-<div align="center">
-
-```
-  _____ _  _ ___  ___  ___ _____ ___ ___ ___ 
- | __\ \/ /| _ \| __|/ _ \_   _|_ _/ __| __|
- | _| >  < |  _/| _|| (_) || |  | |\__ \ _| 
- |___/_/\_\|_|  |___| \___/ |_| |___|___/___|
-                                             
-```
-
-</div>
-
-<table align="center" width="90%">
-<tr>
-<td width="50%" align="center">
-
-```
-╔════════════════════════════════════╗
-║                                    ║
-║   🌐  FULL STACK DEVELOPMENT       ║
-║                                    ║
-╠════════════════════════════════════╣
-║                                    ║
-║     → PHP & MERN Stack Dev         ║
-║     → Scalable Web Apps            ║
-║     → RESTful API Design           ║
-║     → Responsive UI/UX             ║
-║     → Database Architecture        ║
-║                                    ║
-╚════════════════════════════════════╝
-```
-
-</td>
-<td width="50%" align="center">
-
-```
-╔════════════════════════════════════╗
-║                                    ║
-║   🤖  AI & MACHINE LEARNING        ║
-║                                    ║
-╠════════════════════════════════════╣
-║                                    ║
-║     → B.Tech in AI & ML            ║
-║     → Deep Learning | TensorFlow   ║
-║     → Data Engineering             ║
-║     → ML Model Development         ║
-║     → AI Solution Architecture     ║
-║                                    ║
-╚════════════════════════════════════╝
-```
-
-</td>
-</tr>
-</table>
+---
 
 <div align="center">
 
