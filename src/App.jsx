@@ -13,6 +13,7 @@ import CommandPalette from './components/CommandPalette';
 import MatrixBackground from './components/MatrixBackground';
 import StructuredData from './components/StructuredData';
 import SupriAI from './components/SupriAI';
+import CustomCursor from './components/CustomCursor';
 import useVimNavigation from './hooks/useVimNavigation';
 import { HelmetProvider } from 'react-helmet-async';
 
@@ -689,6 +690,7 @@ function App() {
           </div>
         </div>
       </div>
+      <CustomCursor />
     </HelmetProvider>
   );
 }
