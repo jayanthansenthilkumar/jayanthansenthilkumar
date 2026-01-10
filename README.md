@@ -11,9 +11,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/jayanthan18)
 
 </div>
-
 ---
-
 ## 🚀 About Me
 
 I'm a passionate **Full Stack Developer** and **AI Engineer** from India, currently pursuing **B.Tech in Artificial Intelligence & Machine Learning**. I love building scalable web applications and exploring cutting-edge AI technologies.
