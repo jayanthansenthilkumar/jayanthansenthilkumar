@@ -50,8 +50,8 @@
   <img height="35" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=plastic&logo=pytorch&logoColor=white" />
   <img height="35" src="https://img.shields.io/badge/Python-3776AB?style=plastic&logo=python&logoColor=white" />
   <img height="35" src="https://img.shields.io/badge/React-61DAFB?style=plastic&logo=react&logoColor=black" />
-  <img height="35" src="https://img.shields.io/badge/Next.js-000000?style=plastic&logo=next.js&logoColor=white" />
-  <img height="35" src="https://img.shields.io/badge/Node.js-339933?style=plastic&logo=node.js&logoColor=white" />
+  <img height="35" src="https://img.shields.io/badge/Next.js-000000?style=plastic&logo=nextdotjs&logoColor=white" />
+  <img height="35" src="https://img.shields.io/badge/Node.js-339933?style=plastic&logo=nodedotjs&logoColor=white" />
   <br/>
   <img height="35" src="https://img.shields.io/badge/TypeScript-3178C6?style=plastic&logo=typescript&logoColor=white" />
   <img height="35" src="https://img.shields.io/badge/MongoDB-47A248?style=plastic&logo=mongodb&logoColor=white" />
@@ -99,21 +99,16 @@
 <br>
 
 <div align="center">
-    <h3>Isometric Contribution Visualizer</h3>
-    <!-- The user is asked to enable github-profile-3d-contrib, or we put an elegant 2D graph fallback with a 3D drop shadow -->
-    <a href="https://github.com/jayanthansenthilkumar/github-profile-3d-contrib">
-      <img src="https://raw.githubusercontent.com/jayanthansenthilkumar/jayanthansenthilkumar/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Grid" onerror="this.src='https://github-readme-activity-graph.vercel.app/graph?username=jayanthansenthilkumar&bg_color=0D1117&color=00FFCD&line=8A2BE2&point=FFFFFF&area=true&area_color=0D1117&hide_border=true'" width="95%" style="border-radius: 10px; box-shadow: 0px 10px 30px rgba(0, 255, 205, 0.2);" />
-    </a>
-    <br/>
-    <sub>(Uses 3D Isometric Git Grid when generated; dynamically falls back to 2D Graph Interface)</sub>
+    <h3>Isomorphic Contribution Visualizer</h3>
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=jayanthansenthilkumar&bg_color=0D1117&color=00FFCD&line=8A2BE2&point=FFFFFF&area=true&area_color=0D1117&hide_border=true" width="95%" alt="Contribution Graph" style="border-radius: 10px; box-shadow: 0px 10px 30px rgba(0, 255, 205, 0.2);" />
 </div>
 
 ---
 
-<h2 align="center">🏆 Gamified Trophies & Milestones</h2>
+<h2 align="center">🔥 Gamified Streak & Milestones</h2>
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=jayanthansenthilkumar&theme=radical&row=1&column=7&margin-w=10&no-frame=true&no-bg=true" width="100%" alt="GitHub Trophies"/>
+  <img src="https://streak-stats.demolab.com?user=jayanthansenthilkumar&theme=omni&hide_border=true&background=0D1117&ring=00FFCD&fire=8A2BE2&currStreakLabel=00FFCD&sideLabels=FFFFFF&dates=8A2BE2" alt="GitHub Streak" />
 </div>
 
 ---
