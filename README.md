@@ -1,7 +1,7 @@
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=cylinder&color=0D1117&height=250&section=header&text=Jayanthan%20Senthilkumar&fontSize=55&fontAlignY=35&animation=twinkling&fontColor=00FFCD&desc=2026%20Edition%20%7C%20AI%20%26%20Engineering%20Nexus&descAlignY=55&descAlign=50" />
-    <img src="https://capsule-render.vercel.app/api?type=cylinder&color=0D1117&height=250&section=header&text=Jayanthan%20Senthilkumar&fontSize=55&fontAlignY=35&animation=twinkling&fontColor=00FFCD&desc=2026%20Edition%20%7C%20AI%20%26%20Engineering%20Nexus&descAlignY=55&descAlign=50" alt="Header Banner" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=280&section=header&text=Jayanthan%20Senthilkumar&fontSize=60&fontAlignY=35&animation=twinkling&fontColor=ffffff&desc=2026%20Edition%20%7C%20AI%20%26%20Engineering%20Nexus&descAlignY=55&descAlign=50&descSize=22" />
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=280&section=header&text=Jayanthan%20Senthilkumar&fontSize=60&fontAlignY=35&animation=twinkling&fontColor=ffffff&desc=2026%20Edition%20%7C%20AI%20%26%20Engineering%20Nexus&descAlignY=55&descAlign=50&descSize=22" alt="Header Banner" />
   </picture>
 </div>
 
