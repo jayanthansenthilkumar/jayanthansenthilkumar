@@ -1,8 +1,5 @@
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=280&section=header&text=Jayanthan%20Senthilkumar&fontSize=60&fontAlignY=35&animation=twinkling&fontColor=ffffff&desc=2026%20Edition%20%7C%20AI%20%26%20Engineering%20Nexus&descAlignY=55&descAlign=50&descSize=22" />
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=280&section=header&text=Jayanthan%20Senthilkumar&fontSize=60&fontAlignY=35&animation=twinkling&fontColor=ffffff&desc=2026%20Edition%20%7C%20AI%20%26%20Engineering%20Nexus&descAlignY=55&descAlign=50&descSize=22" alt="Header Banner" />
-  </picture>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=280&section=header&text=Jayanthan%20Senthilkumar&fontSize=60&fontAlignY=35&fontColor=ffffff&desc=2026%20Edition%20%7C%20AI%20%26%20Engineering%20Nexus&descAlignY=55&descAlign=50&descSize=22" alt="Header Banner" />
 </div>
 
 <br/>
@@ -136,8 +133,5 @@
 <br/>
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=cylinder&color=0D1117&height=100&section=footer&text=End%20of%20Transmission&fontSize=30&fontAlignY=50&animation=twinkling&fontColor=00FFCD" />
-    <img src="https://capsule-render.vercel.app/api?type=cylinder&color=0D1117&height=100&section=footer&text=End%20of%20Transmission&fontSize=30&fontAlignY=50&animation=twinkling&fontColor=00FFCD" width="100%" alt="Footer Banner"/>
-  </picture>
+  <img src="https://capsule-render.vercel.app/api?type=cylinder&color=gradient&height=100&section=footer&text=End%20of%20Transmission&fontSize=30&fontAlignY=50&fontColor=ffffff" width="100%" alt="Footer Banner"/>
 </div>
