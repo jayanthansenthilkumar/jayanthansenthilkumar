@@ -55,15 +55,15 @@ const Experience = () => {
             <div className="flex h-full overflow-y-auto custom-scrollbar font-mono text-sm md:text-base">
                 <CodeLineNumbers lines={25} />
                 <motion.div
-                    className="p-4 pt-6 md:pt-8 pb-20 text-gruvbox-fg w-full font-mono"
+                    className="p-4 pt-6 md:pt-8 pb-20 text-gruvbox-fg w-full font-mono overflow-x-hidden"
                     variants={container}
                     initial="hidden"
                     animate="show"
                 >
                     {experiences.map((exp, index) => (
                         <motion.div key={index} className="mb-8" variants={item}>
-                            <div className="mb-2">
-                                <span className="text-gruvbox-gray">[{new Date().toISOString().split('T')[0]} 10:00:{String(index * 15).padStart(2, '0')}] </span>
+                            <div className="mb-2 break-words">
+                                <span className="text-gruvbox-gray text-xs md:text-sm">[{new Date().toISOString().split('T')[0]}] </span>
                                 <span className={`${exp.status === 'INFO' ? 'text-gruvbox-blue' :
                                     exp.status === 'WARN' ? 'text-gruvbox-yellow' : 'text-gruvbox-green'
                                     } font-bold`}>
@@ -93,8 +93,8 @@ const Experience = () => {
                             </div>
                         </motion.div>
                     ))}
-                    <motion.div className="mt-4" variants={item}>
-                        <span className="text-gruvbox-gray">[{new Date().toISOString().split('T')[0]} 10:45:00] </span>
+                    <motion.div className="mt-4 break-words" variants={item}>
+                        <span className="text-gruvbox-gray text-xs md:text-sm">[{new Date().toISOString().split('T')[0]}] </span>
                         <span className="text-gruvbox-red font-bold">[CRITICAL]</span>
                         <span className="text-gruvbox-fg"> Waiting for next challenge...</span>
                         <span className="animate-pulse">_</span>

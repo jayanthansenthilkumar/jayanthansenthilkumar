@@ -234,9 +234,9 @@ return (
                     variants={container}
                     initial="hidden"
                     animate="show"
-                    className="text-gruvbox-fg flex-1 pt-4 pr-4 md:pr-6"
+                    className="text-gruvbox-fg flex-1 pt-4 px-3 pr-4 md:pr-6 overflow-x-hidden"
                 >
-                    <div className="space-y-1">
+                    <div className="space-y-1 break-words">
                         <p className="text-gruvbox-gray"># Contact Information</p>
                         <p className="text-gruvbox-gray"># Feel free to reach out through any of the following channels:</p>
                         <p>&nbsp;</p>
@@ -295,29 +295,29 @@ return (
             >
                 {/* Terminal Header */}
                 <div className="flex items-center justify-between bg-gruvbox-bgSoft border-b border-gruvbox-bgHard px-2 py-1">
-                    <div className="flex items-center gap-4">
-                        <span className="text-gruvbox-gray text-xs uppercase tracking-wide">Problems</span>
-                        <span className="text-gruvbox-gray text-xs uppercase tracking-wide">Output</span>
-                        <span className="text-gruvbox-gray text-xs uppercase tracking-wide">Debug Console</span>
-                        <span className="text-gruvbox-fg text-xs uppercase tracking-wide border-b-2 border-gruvbox-blue pb-1">Terminal</span>
+                    <div className="flex items-center gap-2 md:gap-4 overflow-x-auto scrollbar-hide">
+                        <span className="text-gruvbox-gray text-xs uppercase tracking-wide hidden md:inline">Problems</span>
+                        <span className="text-gruvbox-gray text-xs uppercase tracking-wide hidden md:inline">Output</span>
+                        <span className="text-gruvbox-gray text-xs uppercase tracking-wide hidden md:inline">Debug Console</span>
+                        <span className="text-gruvbox-fg text-xs uppercase tracking-wide border-b-2 border-gruvbox-blue pb-1 whitespace-nowrap">Terminal</span>
                     </div>
-                    <div className="flex items-center gap-1">
-                        <button className="p-1 hover:bg-gruvbox-bgHard rounded text-gruvbox-gray hover:text-gruvbox-fg">
+                    <div className="flex items-center gap-1 flex-shrink-0">
+                        <button className="p-1 hover:bg-gruvbox-bgHard rounded text-gruvbox-gray hover:text-gruvbox-fg hidden md:block">
                             <Plus size={14} />
                         </button>
-                        <button className="p-1 hover:bg-gruvbox-bgHard rounded text-gruvbox-gray hover:text-gruvbox-fg">
+                        <button className="p-1 hover:bg-gruvbox-bgHard rounded text-gruvbox-gray hover:text-gruvbox-fg hidden md:block">
                             <Split size={14} />
                         </button>
-                        <button className="p-1 hover:bg-gruvbox-bgHard rounded text-gruvbox-gray hover:text-gruvbox-fg">
+                        <button className="p-1 hover:bg-gruvbox-bgHard rounded text-gruvbox-gray hover:text-gruvbox-fg hidden md:block">
                             <Trash2 size={14} />
                         </button>
-                        <button className="p-1 hover:bg-gruvbox-bgHard rounded text-gruvbox-gray hover:text-gruvbox-fg">
+                        <button className="p-1 hover:bg-gruvbox-bgHard rounded text-gruvbox-gray hover:text-gruvbox-fg hidden md:block">
                             <MoreHorizontal size={14} />
                         </button>
-                        <button className="p-1 hover:bg-gruvbox-bgHard rounded text-gruvbox-gray hover:text-gruvbox-fg">
+                        <button className="p-1 hover:bg-gruvbox-bgHard rounded text-gruvbox-gray hover:text-gruvbox-fg hidden md:block">
                             <ChevronDown size={14} />
                         </button>
-                        <button className="p-1 hover:bg-gruvbox-bgHard rounded text-gruvbox-gray hover:text-gruvbox-fg">
+                        <button className="p-1 hover:bg-gruvbox-bgHard rounded text-gruvbox-gray hover:text-gruvbox-fg hidden md:block">
                             <X size={14} />
                         </button>
                     </div>
@@ -329,11 +329,11 @@ return (
                         <span className="text-gruvbox-fg">pwsh</span>
                         <ChevronDown size={12} className="text-gruvbox-gray" />
                     </div>
-                    <span className="text-gruvbox-gray text-xs">contact-form</span>
+                    <span className="text-gruvbox-gray text-xs hidden sm:inline">contact-form</span>
                 </div>
 
                 {/* Terminal Content */}
-                <div className="h-48 md:h-56 overflow-y-auto custom-scrollbar p-3 text-gruvbox-fg">
+                <div className="h-40 md:h-56 overflow-y-auto custom-scrollbar p-3 text-gruvbox-fg">
                     {/* Initial prompt */}
                     <div className="mb-2">
                         <span className="text-gruvbox-green">PS C:\portfolio&gt;</span>
@@ -457,17 +457,17 @@ return (
                         onClick={(e) => e.stopPropagation()}
                     >
                         {/* Modal Header */}
-                        <div className="flex items-center justify-between bg-gruvbox-bgSoft px-4 py-3 border-b border-gruvbox-bgHard">
-                            <div className="flex items-center gap-3">
-                                <span className="text-gruvbox-yellow font-mono text-sm">resume.pdf</span>
-                                <span className="text-gruvbox-gray text-xs">— Jayanthan Senthilkumar</span>
+                        <div className="flex items-center justify-between bg-gruvbox-bgSoft px-3 md:px-4 py-2 md:py-3 border-b border-gruvbox-bgHard">
+                            <div className="flex items-center gap-2 md:gap-3 min-w-0">
+                                <span className="text-gruvbox-yellow font-mono text-sm truncate">resume.pdf</span>
+                                <span className="text-gruvbox-gray text-xs hidden sm:inline">— Jayanthan</span>
                             </div>
-                            <div className="flex items-center gap-2">
+                            <div className="flex items-center gap-1 md:gap-2 flex-shrink-0">
                                 <a
                                     href="/resume.pdf"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 px-3 py-1.5 bg-gruvbox-bgHard hover:bg-gruvbox-bg text-gruvbox-fg text-xs rounded transition-colors"
+                                    className="hidden sm:flex items-center gap-2 px-3 py-1.5 bg-gruvbox-bgHard hover:bg-gruvbox-bg text-gruvbox-fg text-xs rounded transition-colors"
                                 >
                                     <ExternalLink size={14} />
                                     Open in New Tab

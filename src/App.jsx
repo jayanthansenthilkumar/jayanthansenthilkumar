@@ -57,6 +57,8 @@ function App() {
   const [showSettingsMenu, setShowSettingsMenu] = useState(false);
   const [showThemeDropdown, setShowThemeDropdown] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
+  const [showMobileSettings, setShowMobileSettings] = useState(false);
+  const [showMobileAI, setShowMobileAI] = useState(false);
 
   const [theme, setTheme] = useState(() => {
     // Load theme from localStorage on initial render
@@ -595,13 +597,13 @@ function App() {
             </div>
           )}
 
-          {/* Mobile Toggle */}
+          {/* Mobile Toggle - moved to top of sidebar area */}
           {isMobile && (
             <button
               onClick={() => setIsTreeOpen(!isTreeOpen)}
-              className="absolute top-4 right-4 z-50 p-2 bg-gruvbox-bgSoft rounded-md border border-gruvbox-gray text-gruvbox-fg"
+              className="absolute top-2 right-2 z-50 p-2 bg-gruvbox-bgSoft rounded-md border border-gruvbox-bgSoft text-gruvbox-fg"
             >
-              <Menu size={20} />
+              {isTreeOpen ? <X size={18} /> : <Menu size={18} />}
             </button>
           )}
 
@@ -849,7 +851,7 @@ function App() {
           {/* Editor Area */}
           <div className="flex-1 flex flex-col bg-gruvbox-bg overflow-hidden">
             {/* Tab Bar - VS Code Style */}
-            <div className="flex bg-gruvbox-bgHard border-b border-gruvbox-bgSoft overflow-x-auto scrollbar-hide">
+            <div className="flex bg-gruvbox-bgHard border-b border-gruvbox-bgSoft overflow-x-auto scrollbar-hide min-h-[36px]">
               {openTabs.map((tabId) => {
                 const file = files.find((f) => f.id === tabId);
                 if (!file) return null;
@@ -859,7 +861,7 @@ function App() {
                   <button
                     key={tabId}
                     onClick={() => setActiveFile(tabId)}
-                    className={`group flex items-center gap-2 px-3 py-2 text-[13px] border-r border-gruvbox-bgSoft cursor-pointer transition-colors min-w-fit ${
+                    className={`group flex items-center gap-1.5 md:gap-2 px-2 md:px-3 py-2 text-[12px] md:text-[13px] border-r border-gruvbox-bgSoft cursor-pointer transition-colors whitespace-nowrap flex-shrink-0 ${
                       isActive
                         ? "bg-gruvbox-bg text-gruvbox-fg border-t-2 border-t-gruvbox-blue -mt-[2px]"
                         : "text-gruvbox-gray hover:bg-gruvbox-bgSoft"
@@ -886,14 +888,14 @@ function App() {
             </div>
 
             {/* Breadcrumbs */}
-            <div className="px-4 py-1 text-[12px] text-gruvbox-gray bg-gruvbox-bg border-b border-gruvbox-bgSoft flex items-center gap-1">
-              <span className="hover:text-gruvbox-fg cursor-pointer">
+            <div className="px-2 md:px-4 py-1 text-[11px] md:text-[12px] text-gruvbox-gray bg-gruvbox-bg border-b border-gruvbox-bgSoft flex items-center gap-1 overflow-hidden">
+              <span className="hover:text-gruvbox-fg cursor-pointer hidden sm:inline">
                 portfolio
               </span>
-              <ChevronRight size={14} />
-              <span className="hover:text-gruvbox-fg cursor-pointer">src</span>
-              <ChevronRight size={14} />
-              <span className="text-gruvbox-fg">{activeFileData?.name}</span>
+              <ChevronRight size={14} className="hidden sm:inline flex-shrink-0" />
+              <span className="hover:text-gruvbox-fg cursor-pointer hidden sm:inline">src</span>
+              <ChevronRight size={14} className="hidden sm:inline flex-shrink-0" />
+              <span className="text-gruvbox-fg truncate">{activeFileData?.name}</span>
             </div>
 
             {/* Editor Content */}
@@ -907,9 +909,114 @@ function App() {
           </div>
         </div>
 
+        {/* Mobile Bottom Navigation Bar */}
+        {isMobile && (
+          <div className="flex items-center justify-around bg-gruvbox-bgHard border-t border-gruvbox-bgSoft py-1.5 relative z-20">
+            {files.map((file) => {
+              const FileIcon = file.icon;
+              const isActive = activeFile === file.id;
+              return (
+                <button
+                  key={file.id}
+                  onClick={() => handleFileSelect(file.id)}
+                  className={`flex flex-col items-center gap-0.5 px-2 py-1 rounded transition-colors ${
+                    isActive
+                      ? "text-gruvbox-fg"
+                      : "text-gruvbox-gray"
+                  }`}
+                >
+                  <FileIcon size={18} className={isActive ? file.color : ""} />
+                  <span className="text-[9px] leading-tight">{file.name.split('.')[0]}</span>
+                </button>
+              );
+            })}
+            <button
+              onClick={() => setShowMobileSettings(!showMobileSettings)}
+              className="flex flex-col items-center gap-0.5 px-2 py-1 rounded text-gruvbox-gray"
+            >
+              <Settings size={18} />
+              <span className="text-[9px] leading-tight">Settings</span>
+            </button>
+          </div>
+        )}
+
+        {/* Mobile Settings Panel */}
+        <AnimatePresence>
+          {isMobile && showMobileSettings && (
+            <>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="fixed inset-0 bg-black/60 z-40"
+                onClick={() => setShowMobileSettings(false)}
+              />
+              <motion.div
+                initial={{ y: "100%" }}
+                animate={{ y: 0 }}
+                exit={{ y: "100%" }}
+                transition={{ type: "spring", damping: 25, stiffness: 300 }}
+                className="fixed bottom-0 left-0 right-0 z-50 bg-gruvbox-bgHard border-t border-gruvbox-bgSoft rounded-t-2xl max-h-[70vh] overflow-y-auto"
+              >
+                <div className="w-10 h-1 bg-gruvbox-gray rounded-full mx-auto mt-3 mb-2" />
+                <div className="p-4">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-gruvbox-blue to-gruvbox-purple flex items-center justify-center text-white font-bold">
+                      J
+                    </div>
+                    <div>
+                      <div className="text-sm text-gruvbox-fg font-semibold">Jayanthan Senthilkumar</div>
+                      <div className="text-xs text-gruvbox-gray">hii@itsjayanthan.me</div>
+                    </div>
+                  </div>
+                  <div className="mb-4">
+                    <p className="text-xs text-gruvbox-gray uppercase tracking-wider mb-2">Color Theme</p>
+                    <div className="grid grid-cols-2 gap-2">
+                      {themes.map((t) => (
+                        <button
+                          key={t.id}
+                          onClick={() => setTheme(t.id)}
+                          className={`flex items-center gap-2 px-3 py-2 rounded text-sm transition-colors ${
+                            theme === t.id
+                              ? "bg-gruvbox-bgSoft text-gruvbox-fg border border-gruvbox-blue"
+                              : "text-gruvbox-gray bg-gruvbox-bg border border-gruvbox-bgSoft"
+                          }`}
+                        >
+                          <div
+                            className="w-4 h-4 rounded-full border border-gruvbox-bgSoft flex-shrink-0"
+                            style={{ backgroundColor: t.color }}
+                          />
+                          <span className="text-xs truncate">{t.name}</span>
+                          {theme === t.id && <Check size={12} className="text-gruvbox-green flex-shrink-0 ml-auto" />}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="space-y-1">
+                    <a
+                      href="https://github.com/jayanthansenthilkumar"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full flex items-center gap-2 px-3 py-2.5 rounded text-sm text-gruvbox-gray hover:bg-gruvbox-bgSoft hover:text-gruvbox-fg transition-colors"
+                    >
+                      <ExternalLink size={16} />
+                      <span>GitHub Profile</span>
+                    </a>
+                  </div>
+                </div>
+              </motion.div>
+            </>
+          )}
+        </AnimatePresence>
+
+        {/* Mobile SupriAI Button */}
+        {isMobile && (
+          <SupriAI onNavigate={handleFileSelect} currentPage={activeFile} isMobile={true} />
+        )}
+
         {/* Status Bar - VS Code Style */}
         <div
-          className="h-6 text-[12px] flex justify-between items-center select-none relative z-10 border-t transition-colors duration-300"
+          className={`text-[11px] flex justify-between items-center select-none relative z-10 border-t transition-colors duration-300 ${isMobile ? 'h-5' : 'h-6'}`}
           style={{
             backgroundColor: currentTheme.statusBg,
             borderColor: currentTheme.color,
@@ -920,17 +1027,17 @@ function App() {
               className="px-2 h-full flex items-center cursor-pointer text-white transition-colors"
               style={{ backgroundColor: currentTheme.accent }}
             >
-              <GitBranch size={14} className="mr-1" />
-              <span className="hidden sm:inline">itsjayanthan.me</span>
+              <GitBranch size={12} className="mr-1" />
+              <span className="hidden sm:inline text-[11px]">itsjayanthan.me</span>
             </div>
-            <div className="px-2 h-full flex items-center hover:bg-gruvbox-bgSoft cursor-pointer text-gruvbox-fg">
+            <div className="px-2 h-full flex items-center hover:bg-gruvbox-bgSoft cursor-pointer text-gruvbox-fg hidden sm:flex">
               <span>0 ⚠️</span>
               <span className="ml-2">0 ✕</span>
             </div>
           </div>
 
           <div className="flex items-center h-full text-gruvbox-fg">
-            <div className="px-2 h-full flex items-center hover:bg-gruvbox-bgSoft cursor-pointer">
+            <div className="px-2 h-full flex items-center hover:bg-gruvbox-bgSoft cursor-pointer hidden sm:flex">
               <span>Ln 1, Col 1</span>
             </div>
             <div className="px-2 h-full flex items-center hover:bg-gruvbox-bgSoft cursor-pointer hidden sm:flex">
@@ -945,7 +1052,7 @@ function App() {
               </span>
             </div>
             <div className="px-2 h-full flex items-center hover:bg-gruvbox-bgSoft cursor-pointer">
-              <span>🔔</span>
+              <span className="text-[10px]">🔔</span>
             </div>
           </div>
         </div>

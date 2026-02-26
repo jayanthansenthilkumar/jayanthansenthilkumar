@@ -13,7 +13,7 @@ const CodeRow = ({ line, content, delay }) => {
             <div className="hidden md:block w-12 text-right pr-4 text-gruvbox-gray select-none group-hover:text-gruvbox-fg transition-colors">
                 {line}
             </div>
-            <div className="flex-1 font-mono whitespace-pre-wrap break-words">
+            <div className="flex-1 font-mono whitespace-pre-wrap break-all md:break-words overflow-hidden">
                 {content}
             </div>
         </motion.div>
@@ -202,7 +202,7 @@ const About = () => {
             />
             <div className="flex h-full overflow-y-auto custom-scrollbar font-mono text-sm md:text-base">
                 <motion.div
-                    className="w-full pt-4 pb-20 px-4 md:px-0"
+                    className="w-full pt-4 pb-20 px-3 md:px-0 overflow-x-hidden"
                     variants={container}
                     initial="hidden"
                     animate="show"

@@ -3,7 +3,7 @@ import { MessageCircle, X, Send, Sparkles, Bot, ArrowRight, FileCode, Cpu, FileT
 import { AnimatePresence, motion } from 'framer-motion';
 import Confetti from 'react-confetti';
 
-const SupriAI = ({ onNavigate, currentPage }) => {
+const SupriAI = ({ onNavigate, currentPage, isMobile = false }) => {
   const [showChatPanel, setShowChatPanel] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
   const [chatMessages, setChatMessages] = useState([
@@ -284,7 +284,18 @@ const SupriAI = ({ onNavigate, currentPage }) => {
         />
       )}
 
-    <div className="relative">
+    <div className={isMobile ? "" : "relative"}>
+      {/* Desktop: sidebar button / Mobile: floating button */}
+      {isMobile ? (
+        <button
+          onClick={() => setShowChatPanel(!showChatPanel)}
+          className="fixed bottom-20 right-4 z-30 w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-gruvbox-purple to-gruvbox-blue text-white shadow-lg"
+          title="SupriAI Chat"
+        >
+          <MessageCircle size={22} />
+          <div className="absolute top-0 right-0 w-3 h-3 bg-gruvbox-green rounded-full animate-pulse border-2 border-gruvbox-bgHard" />
+        </button>
+      ) : (
       <button
         onClick={() => setShowChatPanel(!showChatPanel)}
         className={`w-12 h-12 flex items-center justify-center cursor-pointer transition-colors relative group ${showChatPanel ? 'text-gruvbox-fg' : 'text-gruvbox-gray hover:text-gruvbox-fg'}`}
@@ -298,6 +309,7 @@ const SupriAI = ({ onNavigate, currentPage }) => {
           SupriAI Chat
         </div>
       </button>
+      )}
 
       {/* Chat Panel */}
       <AnimatePresence>
@@ -308,11 +320,15 @@ const SupriAI = ({ onNavigate, currentPage }) => {
               onClick={handleCloseChat}
             />
             <motion.div
-              initial={{ opacity: 0, x: -20, scale: 0.95 }}
-              animate={{ opacity: 1, x: 0, scale: 1 }}
-              exit={{ opacity: 0, x: -20, scale: 0.95 }}
+              initial={{ opacity: 0, y: 20, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 20, scale: 0.95 }}
               transition={{ duration: 0.2 }}
-              className="absolute bottom-0 left-14 w-80 h-[450px] bg-gruvbox-bgHard border border-gruvbox-bgSoft rounded-lg shadow-2xl z-50 flex flex-col overflow-hidden"
+              className={`${
+                isMobile 
+                  ? 'fixed bottom-0 left-0 right-0 w-full h-[75vh] rounded-t-2xl' 
+                  : 'absolute bottom-0 left-14 w-80 h-[450px] rounded-lg'
+              } bg-gruvbox-bgHard border border-gruvbox-bgSoft shadow-2xl z-50 flex flex-col overflow-hidden`}
             >
               {/* Chat Header */}
               <div className="p-3 border-b border-gruvbox-bgSoft bg-gradient-to-r from-gruvbox-purple/20 to-gruvbox-blue/20">

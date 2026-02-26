@@ -98,7 +98,7 @@ const Home = ({ navigateToFile }) => {
                             </picture>
                         </motion.div>
                         <div className="text-center md:text-left">
-                            <h1 className="text-4xl md:text-6xl font-bold text-gruvbox-yellow mb-2 flex justify-center md:justify-start items-center min-h-[60px]">
+                            <h1 className="text-3xl md:text-6xl font-bold text-gruvbox-yellow mb-2 flex justify-center md:justify-start items-center min-h-[40px] md:min-h-[60px]">
                                 <span>{text}</span>
                                 <motion.span
                                     animate={{ opacity: [0, 1, 0] }}
@@ -252,7 +252,7 @@ const Home = ({ navigateToFile }) => {
                             animate={{ opacity: 1, scale: 1, y: 0 }}
                             exit={{ opacity: 0, scale: 0.9, y: 20 }}
                             transition={{ duration: 0.2 }}
-                            className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-[90%] max-w-4xl h-[90vh] bg-gruvbox-bgHard border-2 border-gruvbox-blue rounded-lg shadow-2xl flex flex-col overflow-hidden"
+                            className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-[95%] max-w-4xl h-[85vh] md:h-[90vh] bg-gruvbox-bgHard border-2 border-gruvbox-blue rounded-lg shadow-2xl flex flex-col overflow-hidden"
                         >
                             {/* Modal Header */}
                             <div className="flex items-center justify-between p-4 border-b border-gruvbox-bgSoft bg-gruvbox-bgHard">
@@ -281,12 +281,12 @@ const Home = ({ navigateToFile }) => {
                             </div>
 
                             {/* Modal Footer */}
-                            <div className="flex items-center justify-end gap-3 p-4 border-t border-gruvbox-bgSoft bg-gruvbox-bgHard">
+                            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-end gap-2 sm:gap-3 p-3 md:p-4 border-t border-gruvbox-bgSoft bg-gruvbox-bgHard">
                                 <a
                                     href="/resume.pdf"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 px-4 py-2 bg-gruvbox-bgSoft hover:bg-gruvbox-bg text-gruvbox-fg rounded transition-colors text-sm border border-gruvbox-bgSoft"
+                                    className="flex items-center justify-center gap-2 px-4 py-2 bg-gruvbox-bgSoft hover:bg-gruvbox-bg text-gruvbox-fg rounded transition-colors text-sm border border-gruvbox-bgSoft"
                                 >
                                     <ExternalLink size={16} />
                                     Open in New Tab
@@ -295,7 +295,7 @@ const Home = ({ navigateToFile }) => {
                                     href="/resume.pdf"
                                     download="Jayanthan_Senthilkumar_Resume.pdf"
                                     onClick={triggerConfetti}
-                                    className="flex items-center gap-2 px-4 py-2 bg-gruvbox-blue text-white rounded hover:bg-gruvbox-blue/80 transition-colors text-sm"
+                                    className="flex items-center justify-center gap-2 px-4 py-2 bg-gruvbox-blue text-white rounded hover:bg-gruvbox-blue/80 transition-colors text-sm"
                                 >
                                     <Download size={16} />
                                     Download PDF
@@ -328,7 +328,7 @@ const Home = ({ navigateToFile }) => {
                             className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-[95%] max-w-6xl h-[90vh] bg-gruvbox-bgHard border-2 border-gruvbox-blue rounded-lg shadow-2xl flex flex-col md:flex-row overflow-hidden"
                         >
                             {/* Left Sidebar - Action Buttons */}
-                            <div className="w-full md:w-72 bg-gruvbox-bg border-b md:border-b-0 md:border-r border-gruvbox-bgSoft p-4 md:p-6 flex flex-col gap-3 overflow-y-auto custom-scrollbar">
+                            <div className="w-full md:w-72 bg-gruvbox-bg border-b md:border-b-0 md:border-r border-gruvbox-bgSoft p-3 md:p-6 flex flex-col gap-2 md:gap-3 overflow-y-auto custom-scrollbar max-h-[35vh] md:max-h-none">
                                 <div className="mb-2">
                                     <h3 className="text-base md:text-lg font-bold text-gruvbox-yellow mb-1">Jayanthan Senthilkumar</h3>
                                     <p className="text-xs md:text-sm text-gruvbox-blue mb-2 md:mb-3">Developer • Quick Learner</p>

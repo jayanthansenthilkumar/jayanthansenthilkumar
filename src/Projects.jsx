@@ -114,7 +114,7 @@ const Projects = () => {
                             initial={{ opacity: 0, x: 50 }}
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: 50 }}
-                            className="fixed bottom-10 right-10 z-50 bg-gruvbox-bgHard border border-gruvbox-gray p-3 rounded shadow-lg flex items-center gap-3"
+                            className="fixed bottom-16 md:bottom-10 right-4 md:right-10 z-50 bg-gruvbox-bgHard border border-gruvbox-gray p-3 rounded shadow-lg flex items-center gap-3 max-w-[90vw]"
                         >
                             {isBuilding ? (
                                 <>
@@ -144,14 +144,14 @@ const Projects = () => {
                             whileHover={{ y: -5, transition: { duration: 0.2 } }}
                             className="bg-gruvbox-bgSoft border border-gruvbox-bgHard rounded-lg p-5 hover:border-gruvbox-gray transition-colors group"
                         >
-                            <div className="flex justify-between items-start mb-4">
-                                <div className="flex items-center gap-3">
-                                    <Folder className="text-gruvbox-blue" size={20} />
-                                    <h3 className="text-xl font-bold text-gruvbox-yellow group-hover:text-gruvbox-orange transition-colors">
+                            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 gap-2">
+                                <div className="flex items-center gap-3 min-w-0">
+                                    <Folder className="text-gruvbox-blue flex-shrink-0" size={20} />
+                                    <h3 className="text-base md:text-xl font-bold text-gruvbox-yellow group-hover:text-gruvbox-orange transition-colors break-words">
                                         {project.name}
                                     </h3>
                                 </div>
-                                <div className="flex gap-3 text-gruvbox-gray">
+                                <div className="flex gap-3 text-gruvbox-gray flex-shrink-0 ml-8 sm:ml-0">
                                     <a href={project.github} className="hover:text-gruvbox-fg transition-colors"><Github size={18} /></a>
                                     <a href={project.link} className="hover:text-gruvbox-fg transition-colors"><ExternalLink size={18} /></a>
                                 </div>
