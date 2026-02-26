@@ -1,112 +1,102 @@
 <div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Jayanthan%20Senthilkumar&fontSize=60&fontAlignY=35&animation=twinkling&fontColor=ffffff" alt="Header Banner" />
+</div>
 
-# 👋 Hello, I'm Jayanthan Senthilkumar
+<div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=667EEA&center=true&vCenter=true&width=600&lines=Full+Stack+Developer+%F0%9F%92%BB;AI+%26+Machine+Learning+Engineer+%F0%9F%A4%96;Building+Innovative+Solutions+%F0%9F%9A%80;Open+Source+Enthusiast+%E2%9C%A8" alt="Typing SVG" />
+### 🚀 Full Stack Developer & AI/ML Engineer | Innovator | Open Source Enthusiast
+
+<a href="https://github.com/jayanthansenthilkumar">
+  <img src="https://komarev.com/ghpvc/?username=jayanthansenthilkumar&color=blueviolet&style=for-the-badge&label=Profile+Views" alt="Profile Views" />
+</a>
+<a href="https://github.com/jayanthansenthilkumar?tab=followers">
+  <img src="https://img.shields.io/github/followers/jayanthansenthilkumar?label=Followers&style=for-the-badge&color=8a2be2" alt="Followers" />
+</a>
+<a href="https://www.linkedin.com/in/jayanthan18">
+  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
+</a>
 
 <br/>
 
-[![Profile Views](https://komarev.com/ghpvc/?username=jayanthansenthilkumar&color=667eea&style=flat-square&label=Profile+Views)](https://github.com/jayanthansenthilkumar)
-[![Followers](https://img.shields.io/github/followers/jayanthansenthilkumar?label=Followers&style=flat-square&color=764ba2)](https://github.com/jayanthansenthilkumar?tab=followers)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/jayanthan18)
-
-</div>
----
-## 🚀 About Me
-
-I'm a passionate **Full Stack Developer** and **AI Engineer** from India, currently pursuing **B.Tech in Artificial Intelligence & Machine Learning**. I love building scalable web applications and exploring cutting-edge AI technologies.
-
-- 🔭 Currently working on **AI-powered web applications**
-- 🌱 Learning **Large Language Models (LLMs)** and **System Design**
-- 💼 Open to collaborating on **innovative projects**
-- 🎯 Goal: Building solutions that make a real-world impact
-
----
-
-## 💻 Tech Stack
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-
----
-
-## 📊 GitHub Statistics
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=jayanthansenthilkumar&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=667eea&icon_color=764ba2&text_color=C9D1D9" alt="GitHub Stats"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs?username=jayanthansenthilkumar&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=667eea&text_color=C9D1D9" alt="Top Languages"/>
-
-<br/><br/>
-
-<img src="https://streak-stats.demolab.com?user=jayanthansenthilkumar&theme=tokyonight&hide_border=true&background=0D1117&ring=667eea&fire=764ba2&currStreakLabel=667eea&sideLabels=C9D1D9&dates=8B949E" alt="GitHub Streak"/>
-
-<br/><br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=jayanthansenthilkumar&bg_color=0D1117&color=667eea&line=764ba2&point=FFFFFF&area=true&area_color=667eea&hide_border=true" width="95%" alt="Contribution Graph"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=8A2BE2&center=true&vCenter=true&width=600&lines=Crafting+Next-Gen+Web+Applications;Advancing+AI+%26+Machine+Learning;Innovating+for+2026+and+Beyond+%F0%9F%9A%80" alt="Typing SVG" />
 
 </div>
 
 ---
 
-## 🏆 GitHub Trophies
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=jayanthansenthilkumar&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=10" width="100%" alt="GitHub Trophies"/>
-
-</div>
-
----
-
-## 🎯 Current Focus
-
-<table>
-<tr>
-<td width="50%">
-
-### 🔭 What I'm Working On
-- Building **AI-powered applications** with modern frameworks
-- Exploring **cloud architecture** and **microservices**
-- Contributing to **open-source projects**
-- Learning **advanced system design patterns**
-
-</td>
-<td width="50%">
-
-### 🌱 Currently Learning
-- **DevOps & Cloud Computing**
-  - CI/CD Pipelines
-  - Kubernetes & Docker
-  - AWS Infrastructure
-- **AI/ML Advanced Topics**
-  - Large Language Models (LLMs)
-  - Computer Vision
-  - Natural Language Processing
-- **System Architecture**
-  - Microservices Design
-  - Scalability Patterns
-  - Data Engineering
-
-</td>
-</tr>
+<table align="center" width="100%" style="border: none;">
+  <tr>
+    <td width="55%">
+      <h2>🌌 About Me</h2>
+      Hello there! I'm <b>Jayanthan</b>, a passionate technologist from India. As we navigate the tech landscape of 2026, my focus bridges <b>cutting-edge AI</b> and <b>scalable web architectures</b>.<br/><br/>
+      🌱 <b>Currently Exploring:</b> Next-gen LLMs, Agentic AI, and distributed system architectures.<br/>
+      � <b>Building:</b> High-performance, AI-driven applications that solve real-world problems.<br/>
+      🤝 <b>Collaborating:</b> Always open to innovative open-source projects and tech ventures.<br/>
+      🎯 <b>Vision:</b> Shaping the future of human-AI collaboration and building tools that empower tomorrow.
+    </td>
+    <td width="45%" align="center">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs?username=jayanthansenthilkumar&layout=donut&langs_count=6&theme=aura&hide_border=true&bg_color=0D1117" alt="Top Languages"/>
+    </td>
+  </tr>
 </table>
 
 ---
 
-## 📫 Let's Connect
+<h2 align="center">�️ Core Technology Stack</h2>
+
+<div align="center">
+
+### 🧠 AI & Machine Learning
+
+<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+<img src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white" />
+
+### 💻 Full Stack Development
+
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+<img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+<img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
+
+### 🗄️ Database & Infrastructure
+
+<img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
+<img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+<img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" />
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+
+</div>
+
+---
+
+<h2 align="center">� GitHub & Code Analytics</h2>
+
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=jayanthansenthilkumar&show_icons=true&theme=aura&hide_border=true&bg_color=0D1117" alt="GitHub Stats"/>
+  <img height="180em" src="https://streak-stats.demolab.com?user=jayanthansenthilkumar&theme=aura&hide_border=true&background=0D1117" alt="GitHub Streak"/>
+</div>
+<br/>
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=jayanthansenthilkumar&bg_color=0D1117&color=667eea&line=8A2BE2&point=FFFFFF&area=true&area_color=667eea&hide_border=true" width="95%" alt="Contribution Graph"/>
+</div>
+
+---
+
+<h2 align="center">🏆 Milestones & Achievements</h2>
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=jayanthansenthilkumar&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=10" width="100%" alt="GitHub Trophies"/>
+</div>
+
+---
+
+<h2 align="center">� Connect & Collaborate</h2>
 
 <div align="center">
 
@@ -117,12 +107,16 @@ I'm a passionate **Full Stack Developer** and **AI Engineer** from India, curren
 
 </div>
 
----
+<br/>
 
 <div align="center">
 
-### ⭐ If you find my work helpful, consider giving it a star!
+### ⭐ "The secret of getting ahead is getting started."
 
-**Made with 💜 by Jayanthan Senthilkumar**
+_Modernized for 2026 | Made with 💜 by Jayanthan Senthilkumar_
 
+</div>
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer" width="100%" alt="Footer Banner"/>
 </div>
