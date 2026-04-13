@@ -1,0 +1,206 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "title": "NEO BANKING",
+      "description": "A brutalist approach to modern banking interfaces. Disruptive finance solutions with aggressive styling.",
+      "techStack": ["React", "Node.js", "GraphQL"],
+      "liveLink": "#",
+      "githubLink": "#",
+      "image": "https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&q=80&w=800",
+      "problem": "Traditional banking apps are boring and safe. They lack personality.",
+      "solution": "Built a high-contrast, zero-apology interface that challenges the status quo.",
+      "result": "Increased user engagement by 300% due to sheer shock value."
+    },
+    {
+      "id": "2",
+      "title": "CYBER PUNK CMS",
+      "description": "Content Management System that screams back at you. Dark mode by default, blinding green accents.",
+      "techStack": ["Vite", "Rust", "PostgreSQL"],
+      "liveLink": "#",
+      "githubLink": "#",
+      "image": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=800",
+      "problem": "CMS platforms look like Microsoft Word from 1998.",
+      "solution": "Injected raw terminal energy into a web interface.",
+      "result": "Developers forced non-tech users to use the terminal."
+    },
+    {
+      "id": "3",
+      "title": "CONCRETE E-COMMERCE",
+      "description": "Selling digital air with a tangible brutalist storefront.",
+      "techStack": ["Next.js", "Stripe", "Framer Motion"],
+      "liveLink": "#",
+      "githubLink": "#",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800",
+      "problem": "Everything looks like Shopify.",
+      "solution": "Removed all rounded corners and added 4px solid black borders.",
+      "result": "Users feel intimidated into purchasing."
+    },
+    {
+      "id": "4",
+      "title": "RAW DATA VIZ",
+      "description": "Data visualization that doesn't hold your hand. Just the raw, unadulterated numbers.",
+      "techStack": ["D3.js", "React", "Python", "FastAPI"],
+      "liveLink": "#",
+      "githubLink": "#",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+      "problem": "Charts are too soft.",
+      "solution": "Bar charts with razor-sharp edges and glitch animations.",
+      "result": "Data analysts wear sunglasses while working."
+    },
+    {
+      "id": "5",
+      "title": "NO SIGNAL SOCIAL",
+      "description": "An anti-social network where messages delete themselves.",
+      "techStack": ["Vue", "Firebase", "WebRTC"],
+      "liveLink": "#",
+      "githubLink": "#",
+      "image": "https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?auto=format&fit=crop&q=80&w=800",
+      "problem": "Too much history on social media.",
+      "solution": "Every post is fleeting, visually aggressive, and noisy.",
+      "result": "People finally logged off."
+    },
+    {
+      "id": "6",
+      "title": "GLITCH MEDIA",
+      "description": "A video streaming service where buffering is a feature, not a bug.",
+      "techStack": ["React", "Express", "MongoDB", "FFmpeg"],
+      "liveLink": "#",
+      "githubLink": "#",
+      "image": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800",
+      "problem": "Perfect streaming is boring.",
+      "solution": "Intentional VHS artifacts and glitch effects.",
+      "result": "Nostalgia loop generated."
+    },
+    {
+      "id": "7",
+      "title": "TERMINAL PORTFOLIO",
+      "description": "My old portfolio which was literally just a pseudo-terminal.",
+      "techStack": ["Vanilla JS", "CSS"],
+      "liveLink": "#",
+      "githubLink": "#",
+      "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800",
+      "problem": "Websites are too graphical.",
+      "solution": "Command line interface on the web.",
+      "result": "Recruiters were too confused to hire me."
+    },
+    {
+      "id": "8",
+      "title": "AUDIO BRUTE",
+      "description": "A music player for industrial noise and harsh frequencies.",
+      "techStack": ["Web Audio API", "React", "Zustand"],
+      "liveLink": "#",
+      "githubLink": "#",
+      "image": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&q=80&w=800",
+      "problem": "Music players look too gentle.",
+      "solution": "High contrast, jagged waveforms.",
+      "result": "Tinnitus."
+    },
+    {
+      "id": "9",
+      "title": "GRID LOCK",
+      "description": "A puzzle game built entirely on CSS Grids crossing streams.",
+      "techStack": ["React", "CSS Grid"],
+      "liveLink": "#",
+      "githubLink": "#",
+      "image": "https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&q=80&w=800",
+      "problem": "Games need graphics.",
+      "solution": "No images, just raw CSS borders.",
+      "result": "Addictive frustration."
+    },
+    {
+      "id": "10",
+      "title": "VOID ANALYTICS",
+      "description": "Analytics dashboard that highlights what you're doing wrong.",
+      "techStack": ["Svelte", "Node.js", "Redis"],
+      "liveLink": "#",
+      "githubLink": "#",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+      "problem": "Analytics dashboards are too optimistic.",
+      "solution": "Only shows drop-off rates and lost revenue in bold red.",
+      "result": "Increased anxiety among PMs."
+    }
+  ],
+  "skills": {
+    "Frontend": ["React", "JavaScript", "HTML/CSS", "Framer Motion", "Vite", "Zustand"],
+    "Backend": ["Node.js", "Express", "REST APIs", "PostgreSQL", "MongoDB", "Python"],
+    "Tools": ["Git", "Docker", "Figma", "Linux", "Webpack", "Vercel"]
+  },
+  "experience": [
+    {
+      "id": 1,
+      "company": "CYBER DYNAMICS",
+      "role": "SENIOR FRONTEND ENGINEER",
+      "duration": "2022 - PRESENT",
+      "description": "Spearheaded the brutalist redesign of their core SaaS product. Removed 4000 lines of CSS rounding corners."
+    },
+    {
+      "id": 2,
+      "company": "NEO TEK CORP",
+      "role": "FULL STACK DEVELOPER",
+      "duration": "2019 - 2022",
+      "description": "Built aggressive APIs that responded under 10ms. Implemented the 'No Apologies' error handler."
+    },
+    {
+      "id": 3,
+      "company": "VOID STUDIO",
+      "role": "JUNIOR DEVELOPER",
+      "duration": "2017 - 2019",
+      "description": "Maintained legacy spaghetti code and learned the true meaning of pain."
+    }
+  ],
+  "blogs": [
+    {
+      "id": "1",
+      "title": "DEATH TO THE BORDER RADIUS",
+      "date": "OCTOBER 10, 2023",
+      "excerpt": "Why softness in web design is a symptom of a weak society.",
+      "content": "Look around you. Everything is soft. Rounded corners, drop shadows, gentle gradients. But life isn't soft. Life is sharp, jagged, and unforgiving. So why should our digital experiences be any different? In this manifesto, I argue for the complete annihilation of `border-radius` from all CSS files."
+    },
+    {
+      "id": "2",
+      "title": "WHY I USE CAPS LOCK EXCLUSIVELY",
+      "date": "SEPTEMBER 05, 2023",
+      "excerpt": "LOWERCASE LETTERS LACK AUTHORITY.",
+      "content": "WHEN YOU WRITE IN LOWERCASE, IT FEELS LIKE YOU'RE WHISPERING. I DON'T WANT TO WHISPER ON THE INTERNET. I WANT TO SHOUT. I WANT EVERY WORD I TYPE TO FEEL LIKE A BRICK THROWN THROUGH A VIRTUAL WINDOW. CAPS LOCK IS NOT JUST A KEY; IT'S A LIFESTYLE STATEMENT."
+    },
+    {
+      "id": "3",
+      "title": "THE BEAUTY OF UGLY WEBSITES",
+      "date": "AUGUST 15, 2023",
+      "excerpt": "Aesthetics are a lie designed to sell you templates.",
+      "content": "Beautiful sites are forgotten. Ugly sites are remembered. The friction, the cognitive load, the sheer audacity of an interface that refuses to pander to your sensibilities - this is where true digital art is born. Stop making things pretty. Start making things memorable."
+    },
+    {
+      "id": "4",
+      "title": "EMBRACING THE RAW HTML",
+      "date": "JULY 01, 2023",
+      "excerpt": "CSS was a mistake.",
+      "content": "Sometimes I wonder if we should all just go back to plain HTML documents. Black text on a white background. Blue links. Active links turn red. Visited links turn purple. Why overcomplicate it?"
+    },
+    {
+      "id": "5",
+      "title": "MY HATRED FOR TAILWIND",
+      "date": "JUNE 12, 2023",
+      "excerpt": "Utility classes are ruining our minds.",
+      "content": "Writing 40 classes on a single div is not web development; it's masochism. Write plain CSS. Own your styles. Stop copying and pasting strings of gibberish. Be bold. Write your own aggressive global styles."
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "quote": "THE MOST INTENSE INTERFACE I'VE EVER USED. I FEEL LIKE I'M HACKING THE MAINFRAME ENROLLING IN HEALTHCARE.",
+      "author": "JOHN DOE, CEO OF TECH"
+    },
+    {
+      "id": 2,
+      "quote": "HE REMOVED ALL THE ROUNDED CORNERS FROM OUR APP AND OUR CONVERSION RATE DOUBLED OUT OF PURE FEAR.",
+      "author": "JANE SMITH, PRODUCT MANAGER"
+    },
+    {
+      "id": 3,
+      "quote": "IT'S UGLY. IT'S LOUD. IT WORKS PERFECTLY.",
+      "author": "ALICE ALICE, DESIGNER"
+    }
+  ]
+}

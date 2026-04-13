@@ -1,213 +1,111 @@
-@import "tailwindcss";
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-@theme {
-  /* Base theme colors - will be overridden by data-theme */
-  --color-gruvbox-bg: #1e1e1e;
-  --color-gruvbox-fg: #d4d4d4;
-  --color-gruvbox-red: #f14c4c;
-  --color-gruvbox-green: #6a9955;
-  --color-gruvbox-yellow: #dcdcaa;
-  --color-gruvbox-blue: #569cd6;
-  --color-gruvbox-purple: #c586c0;
-  --color-gruvbox-aqua: #4ec9b0;
-  --color-gruvbox-orange: #ce9178;
-  --color-gruvbox-gray: #858585;
-  --color-gruvbox-bgHard: #181818;
-  --color-gruvbox-bgSoft: #252526;
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
 
-  --font-mono: monospace, ui-monospace, SFMono-Regular;
-}
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-/* Gruvbox Dark Theme (Default) */
-[data-theme="gruvbox"] {
-  --color-gruvbox-bg: #282828;
-  --color-gruvbox-fg: #ebdbb2;
-  --color-gruvbox-red: #fb4934;
-  --color-gruvbox-green: #b8bb26;
-  --color-gruvbox-yellow: #fabd2f;
-  --color-gruvbox-blue: #83a598;
-  --color-gruvbox-purple: #d3869b;
-  --color-gruvbox-aqua: #8ec07c;
-  --color-gruvbox-orange: #fe8019;
-  --color-gruvbox-gray: #928374;
-  --color-gruvbox-bgHard: #1d2021;
-  --color-gruvbox-bgSoft: #32302f;
-}
-
-/* Dracula Theme */
-[data-theme="dracula"] {
-  --color-gruvbox-bg: #282a36;
-  --color-gruvbox-fg: #f8f8f2;
-  --color-gruvbox-red: #ff5555;
-  --color-gruvbox-green: #50fa7b;
-  --color-gruvbox-yellow: #f1fa8c;
-  --color-gruvbox-blue: #6272a4;
-  --color-gruvbox-purple: #bd93f9;
-  --color-gruvbox-aqua: #8be9fd;
-  --color-gruvbox-orange: #ffb86c;
-  --color-gruvbox-gray: #6272a4;
-  --color-gruvbox-bgHard: #21222c;
-  --color-gruvbox-bgSoft: #44475a;
-}
-
-/* Monokai Theme */
-[data-theme="monokai"] {
-  --color-gruvbox-bg: #272822;
-  --color-gruvbox-fg: #f8f8f2;
-  --color-gruvbox-red: #f92672;
-  --color-gruvbox-green: #a6e22e;
-  --color-gruvbox-yellow: #e6db74;
-  --color-gruvbox-blue: #66d9ef;
-  --color-gruvbox-purple: #ae81ff;
-  --color-gruvbox-aqua: #66d9ef;
-  --color-gruvbox-orange: #fd971f;
-  --color-gruvbox-gray: #75715e;
-  --color-gruvbox-bgHard: #1e1f1a;
-  --color-gruvbox-bgSoft: #3e3d32;
-}
-
-/* Nord Theme */
-[data-theme="nord"] {
-  --color-gruvbox-bg: #2e3440;
-  --color-gruvbox-fg: #eceff4;
-  --color-gruvbox-red: #bf616a;
-  --color-gruvbox-green: #a3be8c;
-  --color-gruvbox-yellow: #ebcb8b;
-  --color-gruvbox-blue: #81a1c1;
-  --color-gruvbox-purple: #b48ead;
-  --color-gruvbox-aqua: #88c0d0;
-  --color-gruvbox-orange: #d08770;
-  --color-gruvbox-gray: #4c566a;
-  --color-gruvbox-bgHard: #242933;
-  --color-gruvbox-bgSoft: #3b4252;
-}
-
-/* One Dark Theme */
-[data-theme="onedark"] {
-  --color-gruvbox-bg: #282c34;
-  --color-gruvbox-fg: #abb2bf;
-  --color-gruvbox-red: #e06c75;
-  --color-gruvbox-green: #98c379;
-  --color-gruvbox-yellow: #e5c07b;
-  --color-gruvbox-blue: #61afef;
-  --color-gruvbox-purple: #c678dd;
-  --color-gruvbox-aqua: #56b6c2;
-  --color-gruvbox-orange: #d19a66;
-  --color-gruvbox-gray: #5c6370;
-  --color-gruvbox-bgHard: #21252b;
-  --color-gruvbox-bgSoft: #3e4451;
-}
-
-/* GitHub Dark Theme */
-[data-theme="github"] {
-  --color-gruvbox-bg: #0d1117;
-  --color-gruvbox-fg: #c9d1d9;
-  --color-gruvbox-red: #f85149;
-  --color-gruvbox-green: #238636;
-  --color-gruvbox-yellow: #e3b341;
-  --color-gruvbox-blue: #58a6ff;
-  --color-gruvbox-purple: #bc8cff;
-  --color-gruvbox-aqua: #39c5cf;
-  --color-gruvbox-orange: #d29922;
-  --color-gruvbox-gray: #8b949e;
-  --color-gruvbox-bgHard: #010409;
-  --color-gruvbox-bgSoft: #161b22;
-}
-
-/* VS Code Light Theme */
-[data-theme="vscode-light"] {
-  --color-gruvbox-bg: #ffffff;
-  --color-gruvbox-fg: #24292f;
-  --color-gruvbox-red: #d73a49;
-  --color-gruvbox-green: #22863a;
-  --color-gruvbox-yellow: #b08800;
-  --color-gruvbox-blue: #005cc5;
-  --color-gruvbox-purple: #6f42c1;
-  --color-gruvbox-aqua: #0086b3;
-  --color-gruvbox-orange: #e36209;
-  --color-gruvbox-gray: #6a737d;
-  --color-gruvbox-bgHard: #f3f3f3;
-  --color-gruvbox-bgSoft: #e8e8e8;
-}
-
-/* GitHub Light Theme */
-[data-theme="github-light"] {
-  --color-gruvbox-bg: #ffffff;
-  --color-gruvbox-fg: #24292f;
-  --color-gruvbox-red: #cf222e;
-  --color-gruvbox-green: #116329;
-  --color-gruvbox-yellow: #4d2d00;
-  --color-gruvbox-blue: #0969da;
-  --color-gruvbox-purple: #8250df;
-  --color-gruvbox-aqua: #1b7c83;
-  --color-gruvbox-orange: #bc4c00;
-  --color-gruvbox-gray: #57606a;
-  --color-gruvbox-bgHard: #f6f8fa;
-  --color-gruvbox-bgSoft: #eaeef2;
-}
-
-@layer base {
-  html,
-  body {
-    height: 100%;
-    overflow: hidden;
-    background-color: var(--color-gruvbox-bg);
-    color: var(--color-gruvbox-fg);
-    transition:
-      background-color 0.3s ease,
-      color 0.3s ease;
-  }
-
-  /* Smooth theme transitions for all elements */
-  *,
-  *::before,
-  *::after {
-    transition:
-      background-color 0.3s ease,
-      border-color 0.3s ease,
-      color 0.15s ease;
+  @media (max-width: 1024px) {
+    font-size: 16px;
   }
 }
 
-@layer utilities {
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #16171d;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
   }
 
-  .scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  #social .button-icon {
+    filter: invert(1) brightness(2);
   }
+}
 
-  .custom-scrollbar::-webkit-scrollbar {
-    width: 0px;
-    height: 8px;
-  }
+body {
+  margin: 0;
+}
 
-  .custom-scrollbar::-webkit-scrollbar-track {
-    background: var(--color-gruvbox-bg);
-  }
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
 
-  .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: var(--color-gruvbox-bgSoft);
-    border-radius: 4px;
-  }
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
 
-  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: var(--color-gruvbox-gray);
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
   }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
 
-  /* Spin animation for settings gear */
-  .animate-spin-slow {
-    animation: spin 2s linear infinite;
-  }
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
 
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
 }
