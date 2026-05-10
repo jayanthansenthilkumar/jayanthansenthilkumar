@@ -55,6 +55,37 @@ const Blog = () => {
               </Link>
             ))}
           </div>
+          </div>
+
+          {/* NEWSLETTER SECTION */}
+          <div className="neo-block" style={{
+            marginTop: '80px',
+            backgroundColor: 'var(--color-green)',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            textAlign: 'center',
+            padding: '50px 20px',
+            borderRadius: 'var(--radius-lg)'
+          }}>
+            <h2 style={{ fontSize: '3rem', margin: '0 0 10px 0', textShadow: '2px 2px 0 var(--border-color)' }}>Stay Updated</h2>
+            <p style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '30px' }}>Join the newsletter for the latest articles and design resources.</p>
+            
+            <form style={{ display: 'flex', gap: '10px', width: '100%', maxWidth: '500px' }} onSubmit={e => e.preventDefault()}>
+              <input type="email" placeholder="Email Address" style={{
+                flexGrow: 1,
+                padding: '15px',
+                fontSize: '1rem',
+                border: 'var(--border-width) solid var(--border-color)',
+                borderRadius: 'var(--radius-pill)',
+                outline: 'none',
+                fontFamily: "'Inter', sans-serif",
+                fontWeight: 'bold'
+              }} />
+              <button type="submit" className="btn" style={{ backgroundColor: 'var(--color-orange)', color: '#fff' }}>SUBSCRIBE</button>
+            </form>
+          </div>
+
         </div>
       </section>
     </motion.div>

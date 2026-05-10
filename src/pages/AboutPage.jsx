@@ -48,6 +48,19 @@ const AboutPage = () => {
         </div>
       </section>
 
+      {/* MISSION STATEMENT SECTION */}
+      <section className="section" style={{ backgroundColor: 'var(--color-yellow)', borderBottom: 'var(--border-width) solid #000' }}>
+        <div className="container" style={{ position: 'relative' }}>
+          <div className="shape-star" style={{ top: '-30px', left: '10%', transform: 'scale(1.2)', backgroundColor: 'var(--color-pink)' }}></div>
+          <div className="neo-block" style={{ backgroundColor: '#fff', borderRadius: 'var(--radius-lg)', padding: '50px', textAlign: 'center' }}>
+            <h2 style={{ fontSize: '3rem', marginBottom: '20px' }}>MISSION PARAMETERS</h2>
+            <p style={{ fontSize: '1.5rem', fontWeight: 'bold', maxWidth: '800px', margin: '0 auto', lineHeight: '1.5' }}>
+              To eradicate boring design from the internet. I build interfaces that refuse to be ignored, combining aggressive aesthetics with buttery-smooth user experiences.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* REUSING THE COMPONENTS */}
       <About />
       <Skills />

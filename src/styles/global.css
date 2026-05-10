@@ -1,48 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;700&family=Inter:wght@400;700;900&display=swap');
 
 :root {
-  /* LIGHT MODE (Premium Brutalism) */
-  --bg-color: #e9e8e4; /* Architectural concrete off-white */
-  --text-color: #0f0f0f;
-  
-  --color-lime: #d5ff00; /* Sharp, high-contrast accents */
-  --color-purple: #6a0dad;
-  --color-pink: #ff3366;
-  --color-yellow: #ffb703;
-  --color-blue: #0033cc;
+  /* PLAYFUL NEO-BRUTALISM (Based on app references) */
+  --bg-color: #fdfaf6;
+  --text-color: #000000;
 
-  --accent-color: var(--color-lime); 
-  --accent-secondary: var(--color-purple);
-  --accent-alert: var(--color-pink); 
-  
-  --border-width: 2px; /* Slightly refined border */
-  --border-color: #0f0f0f;
-  --grid-color: rgba(15, 15, 15, 0.08);
-  --selection-bg: var(--text-color);
-  --selection-text: var(--bg-color);
-}
+  /* Neat Pastel App Colors */
+  --color-yellow: #fde047;
+  --color-blue: #7dd3fc;
+  --color-pink: #f9a8d4;
+  --color-green: #86efac;
+  --color-purple: #c084fc;
+  --color-orange: #fdba74;
 
-[data-theme="dark"] {
-  /* DARK MODE */
-  --bg-color: #0d0d0d;
-  --text-color: #f2f2f2;
-  
-  --color-lime: #d5ff00;
-  --color-purple: #9d4edd;
-  --color-pink: #ff006e;
-  --color-yellow: #ffbe0b;
-  --color-blue: #3a0ca3;
-
-  --accent-color: var(--color-lime);
-  --accent-secondary: var(--color-purple);
+  --accent-color: var(--color-yellow);
+  --accent-secondary: var(--color-blue);
   --accent-alert: var(--color-pink);
+
+  --border-width: 3px;
+  --border-color: #000000;
+  --grid-color: rgba(0, 0, 0, 0.05);
+  --selection-bg: var(--color-blue);
+  --selection-text: #ffffff;
   
-  --border-width: 2px;
-  --border-color: #f2f2f2;
-  --grid-color: rgba(242, 242, 242, 0.08);
-  --selection-bg: var(--text-color);
-  --selection-text: var(--bg-color);
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 50px;
+  
+  --shadow-sm: 4px 4px 0px var(--border-color);
+  --shadow-md: 6px 6px 0px var(--border-color);
+  --shadow-lg: 8px 8px 0px var(--border-color);
 }
+
 
 * {
   margin: 0;
@@ -60,14 +50,20 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   overflow-x: hidden;
-  transition: none; /* Instant switch */
-  background-image: 
+  transition: none;
+  /* Instant switch */
+  background-image:
     linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
     linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
   background-size: 50px 50px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Inter', sans-serif;
   font-weight: 900;
   letter-spacing: -1px;
@@ -110,41 +106,36 @@ img {
 }
 
 /* CARDS AND NEO-BRUTALIST BLOCKS */
-.brutal-card, .neo-block {
+.brutal-card,
+.neo-block {
   border: var(--border-width) solid var(--border-color);
-  border-radius: 0; /* Sharp corners */
+  border-radius: var(--radius-md);
   padding: 24px;
-  background-color: var(--bg-color);
+  background-color: #ffffff;
   color: var(--text-color);
-  box-shadow: 4px 4px 0px var(--border-color);
+  box-shadow: var(--shadow-sm);
   position: relative;
   transition: all 0.2s ease;
 }
 
-[data-theme="dark"] .brutal-card, [data-theme="dark"] .neo-block {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-
 .brutal-card:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0px var(--border-color);
+  box-shadow: var(--shadow-md);
 }
 
 /* BUTTONS */
 .btn {
   display: inline-block;
-  background-color: var(--bg-color);
+  background-color: #ffffff;
   color: var(--text-color);
-  padding: 12px 24px;
+  padding: 12px 28px;
   font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 0.95rem;
+  font-weight: 800;
+  font-size: 1rem;
   letter-spacing: 0.5px;
-  text-transform: uppercase;
   border: var(--border-width) solid var(--border-color);
-  border-radius: 0; /* Sharp corners for premium look */
-  box-shadow: 4px 4px 0px var(--border-color);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-sm);
   cursor: pointer;
   transition: all 0.2s ease;
   position: relative;
@@ -152,14 +143,9 @@ img {
   white-space: nowrap;
 }
 
-[data-theme="dark"] .btn:not(.btn-primary) {
-  background-color: #000;
-  color: #fff;
-} /* primary stays same or forced colors */
-
 .btn:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0px var(--border-color);
+  box-shadow: var(--shadow-md);
 }
 
 .btn:active {
@@ -169,11 +155,11 @@ img {
 
 .btn-primary {
   background-color: var(--color-purple);
-  color: #000;
+  color: #ffffff;
 }
 
 .btn-primary:hover {
-  background-color: var(--color-lime);
+  background-color: var(--color-blue);
 }
 
 /* TEXT HIGHLIGHT (from reference) */
@@ -204,9 +190,33 @@ img {
   height: 60px;
   background-color: var(--color-yellow);
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  /* clip-path hides borders, so we rely on SVG or drop shadows */
+}
+
+.shape-circle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   border: var(--border-width) solid var(--border-color);
-  /* clip-path hides borders, so we use an SVG or trick. Simple CSS version doesn't perfectly border clip paths.
-     We will keep it as an effect or we rely on SVG in components. */
+  background-color: var(--color-pink);
+}
+
+.shape-pill {
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  border-radius: var(--radius-pill);
+  border: var(--border-width) solid var(--border-color);
+  background-color: var(--color-green);
+}
+
+.zigzag {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, transparent 25%, transparent 25%, var(--border-color) 25%, var(--border-color) 50%, transparent 50%, transparent 75%, var(--border-color) 75%, var(--border-color) 100%);
+  background-size: 20px 20px;
 }
 
 /* CONTAINERS */
@@ -253,8 +263,13 @@ img {
 }
 
 @keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* BARCODE STRIPS */
@@ -273,7 +288,9 @@ img {
 }
 
 @media (max-width: 900px) {
-  .grid-2, .grid-3 {
+
+  .grid-2,
+  .grid-3 {
     grid-template-columns: 1fr;
   }
 }

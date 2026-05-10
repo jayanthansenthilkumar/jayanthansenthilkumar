@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const Testimonials = () => {
   const { testimonials } = dummyData;
-  const colors = ['var(--color-yellow)', 'var(--color-lime)', '#ffffff'];
+  const colors = ['var(--color-yellow)', 'var(--color-green)', '#ffffff'];
 
   return (
     <section className="section" style={{ position: 'relative', overflow: 'hidden' }}>
@@ -17,47 +17,47 @@ const Testimonials = () => {
         height: '300px',
         backgroundColor: 'var(--color-purple)',
         border: 'var(--border-width) solid var(--border-color)',
-        borderRadius: '0',
+        borderRadius: '50%',
         zIndex: -1
       }}></div>
 
       <div className="container">
         <h2 style={{ borderBottom: 'none' }}>
-          <span className="highlight-text" style={{ backgroundColor: 'var(--color-pink)', color: 'var(--bg-color)' }}>
+          <span className="highlight-text" style={{ backgroundColor: 'var(--color-yellow)', color: 'var(--text-color)' }}>
             WHAT THEY SAY
           </span>
         </h2>
-        
+
         <div className="grid-3" style={{ marginTop: '50px' }}>
           {testimonials.map((test, index) => (
-            <motion.div 
-              key={test.id} 
+            <motion.div
+              key={test.id}
               className="neo-block"
               initial={{ scale: 0.9, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              style={{ 
+              style={{
                 backgroundColor: colors[index % colors.length],
                 display: 'flex',
                 flexDirection: 'column'
               }}
             >
-              <h3 style={{ fontSize: '4rem', margin: 0, lineHeight: 0.5, color: 'var(--color-blue)', textShadow: '2px 2px 0 var(--border-color)' }}>"</h3>
+              <h3 style={{ fontSize: '4rem', margin: 0, lineHeight: 0.5, color: 'var(--text-color)', textShadow: '2px 2px 0 var(--color-pink)' }}>"</h3>
               <p style={{ fontWeight: '700', fontSize: '1rem', margin: '20px 0', flexGrow: 1, color: '#000' }}>{test.quote}</p>
-              
-              <div style={{ 
+
+              <div style={{
                 display: 'inline-block',
                 alignSelf: 'flex-start',
-                backgroundColor: 'var(--border-color)',
-                color: 'var(--bg-color)',
-                padding: '4px 12px',
-                borderRadius: '0',
+                backgroundColor: 'var(--color-blue)',
+                color: '#fff',
+                padding: '6px 16px',
+                borderRadius: 'var(--radius-pill)',
                 fontFamily: "'Space Grotesk', sans-serif",
                 fontWeight: 'bold',
                 fontSize: '0.85rem',
                 marginTop: '20px',
-                textTransform: 'uppercase'
+                border: 'var(--border-width) solid var(--border-color)'
               }}>
                 {test.author}
               </div>

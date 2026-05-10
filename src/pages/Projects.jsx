@@ -48,6 +48,30 @@ const Projects = () => {
               <ProjectCard key={project.id} project={project} index={index} />
             ))}
           </div>
+
+          {/* PROJECT CTA SECTION */}
+          <div className="neo-block" style={{
+            marginTop: '80px',
+            backgroundColor: 'var(--color-blue)',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            textAlign: 'center',
+            padding: '60px 20px',
+            position: 'relative',
+            overflow: 'hidden',
+            borderRadius: 'var(--radius-lg)'
+          }}>
+            <div className="shape-circle" style={{ top: '-10px', left: '-10px', backgroundColor: 'var(--color-pink)', transform: 'scale(1.5)' }}></div>
+            <div className="shape-star" style={{ bottom: '10%', right: '5%', backgroundColor: 'var(--color-yellow)' }}></div>
+            
+            <h2 style={{ fontSize: 'clamp(2rem, 5vw, 4rem)', color: '#fff', marginBottom: '20px', textShadow: '3px 3px 0 #000' }}>Have a project in mind?</h2>
+            <p style={{ fontSize: '1.2rem', fontWeight: 'bold', maxWidth: '600px', margin: '0 auto 40px auto' }}>Let's turn your vision into a digital reality with uncompromising aesthetics and robust performance.</p>
+            <a href="/contact" className="btn" style={{ backgroundColor: 'var(--color-yellow)', color: '#000', fontSize: '1.2rem', padding: '15px 40px' }}>
+              LET'S TALK
+            </a>
+          </div>
+
         </div>
       </section>
     </motion.div>

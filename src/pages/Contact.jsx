@@ -93,6 +93,23 @@ const Contact = () => {
               EXECUTE TRANSMISSION ↗
             </button>
           </form>
+
+          {/* FAQ SECTION */}
+          <div style={{ marginTop: '80px' }}>
+            <h2 style={{ fontSize: '3rem', marginBottom: '40px', borderBottom: 'var(--border-width) solid #000', paddingBottom: '10px' }}>FREQUENT QUERIES</h2>
+            
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+              <div className="neo-block" style={{ backgroundColor: 'var(--color-yellow)', borderRadius: 'var(--radius-md)' }}>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '10px' }}>What is your typical timeline?</h3>
+                <p style={{ fontWeight: 'bold' }}>Most projects take between 2 to 6 weeks depending on scope, but I work fast when fueled by coffee and good music.</p>
+              </div>
+              <div className="neo-block" style={{ backgroundColor: 'var(--color-pink)', borderRadius: 'var(--radius-md)' }}>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '10px' }}>Do you do hourly or project rates?</h3>
+                <p style={{ fontWeight: 'bold' }}>I primarily do project-based pricing to ensure we are aligned on value, not just time spent. However, I offer hourly rates for ongoing consultation.</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
     </motion.div>
