@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <footer style={{
       borderTop: 'var(--border-width) solid var(--border-color)',
-      backgroundColor: '#000',
-      color: '#fff',
+      backgroundColor: 'var(--text-color)',
+      color: 'var(--bg-color)',
       position: 'relative',
       overflow: 'hidden'
     }}>
@@ -13,12 +13,14 @@ const Footer = () => {
       <div style={{
         backgroundColor: 'var(--color-pink)',
         color: '#000',
-        padding: '10px 0',
+        padding: '8px 0',
         borderBottom: 'var(--border-width) solid var(--border-color)',
         whiteSpace: 'nowrap',
         overflow: 'hidden',
         fontWeight: 'bold',
-        fontFamily: "'Space Grotesk', sans-serif"
+        fontSize: '0.9rem',
+        fontFamily: "'Space Grotesk', sans-serif",
+        textTransform: 'uppercase'
       }}>
         AVAILABLE FOR FREELANCE • LET's TALK • AVAILABLE FOR FREELANCE • LET's TALK • AVAILABLE FOR FREELANCE • LET's TALK • 
       </div>
@@ -29,26 +31,26 @@ const Footer = () => {
         alignItems: 'center',
         flexWrap: 'wrap',
         gap: '20px',
-        padding: '60px 20px',
+        padding: '40px 20px',
       }}>
-        <h2 style={{ margin: 0, borderBottom: 'none', fontSize: 'clamp(2rem, 5vw, 3rem)', color: '#fff', WebkitTextStroke: '1px #000' }}>
+        <h2 style={{ margin: 0, borderBottom: 'none', fontSize: 'clamp(1.5rem, 4vw, 2.5rem)', color: 'var(--bg-color)' }}>
           <span style={{ color: 'var(--color-yellow)' }}>OLIVIA</span>.UI
         </h2>
         
         <div style={{ display: 'flex', gap: '15px' }}>
-           <a href="#" className="btn" aria-label="GitHub" style={{ padding: '10px 20px', fontSize: '1.2rem' }}>
+           <a href="#" className="btn" aria-label="GitHub" style={{ padding: '8px 16px', fontSize: '0.9rem' }}>
             GH
           </a>
-          <a href="#" className="btn" aria-label="LinkedIn" style={{ padding: '10px 20px', fontSize: '1.2rem' }}>
+          <a href="#" className="btn" aria-label="LinkedIn" style={{ padding: '8px 16px', fontSize: '0.9rem' }}>
             LI
           </a>
-          <a href="#" className="btn" aria-label="Twitter" style={{ padding: '10px 20px', fontSize: '1.2rem' }}>
+          <a href="#" className="btn" aria-label="Twitter" style={{ padding: '8px 16px', fontSize: '0.9rem' }}>
             TW
           </a>
         </div>
       </div>
       
-      <div style={{ borderTop: 'var(--border-width) solid #fff', padding: '20px', textAlign: 'center', fontFamily: "'Space Grotesk', sans-serif" }}>
+      <div style={{ borderTop: 'var(--border-width) solid var(--bg-color)', padding: '15px', textAlign: 'center', fontSize: '0.85rem', fontFamily: "'Space Grotesk', sans-serif" }}>
         © {new Date().getFullYear()} OLIVIA PORTFOLIO. ALL RIGHTS RESERVED.
       </div>
     </footer>

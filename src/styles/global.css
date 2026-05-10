@@ -1,47 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;700&family=Inter:wght@400;700;900&display=swap');
 
 :root {
-  /* LIGHT MODE (Neo Brutalism Colors) */
-  --bg-color: #faf8f0; /* Soft cream/beige as seen in neo-brutalism */
-  --text-color: #000000;
+  /* LIGHT MODE (Premium Brutalism) */
+  --bg-color: #e9e8e4; /* Architectural concrete off-white */
+  --text-color: #0f0f0f;
   
-  --color-lime: #c5f042;
-  --color-purple: #c39afd;
-  --color-pink: #ff70e9;
-  --color-yellow: #f8e559;
-  --color-blue: #3a22fe;
+  --color-lime: #d5ff00; /* Sharp, high-contrast accents */
+  --color-purple: #6a0dad;
+  --color-pink: #ff3366;
+  --color-yellow: #ffb703;
+  --color-blue: #0033cc;
 
   --accent-color: var(--color-lime); 
   --accent-secondary: var(--color-purple);
   --accent-alert: var(--color-pink); 
   
-  --border-width: 3px;
-  --border-color: #000000;
-  --grid-color: rgba(0, 0, 0, 0.05);
-  --selection-bg: var(--color-pink);
-  --selection-text: #000000;
+  --border-width: 2px; /* Slightly refined border */
+  --border-color: #0f0f0f;
+  --grid-color: rgba(15, 15, 15, 0.08);
+  --selection-bg: var(--text-color);
+  --selection-text: var(--bg-color);
 }
 
 [data-theme="dark"] {
   /* DARK MODE */
-  --bg-color: #1a1a1a;
-  --text-color: #ffffff;
+  --bg-color: #0d0d0d;
+  --text-color: #f2f2f2;
   
-  --color-lime: #c5f042;
-  --color-purple: #c39afd;
-  --color-pink: #ff70e9;
-  --color-yellow: #f8e559;
-  --color-blue: #3a22fe;
+  --color-lime: #d5ff00;
+  --color-purple: #9d4edd;
+  --color-pink: #ff006e;
+  --color-yellow: #ffbe0b;
+  --color-blue: #3a0ca3;
 
   --accent-color: var(--color-lime);
   --accent-secondary: var(--color-purple);
   --accent-alert: var(--color-pink);
   
-  --border-width: 3px;
-  --border-color: #ffffff;
-  --grid-color: rgba(255, 255, 255, 0.05);
-  --selection-bg: var(--color-yellow);
-  --selection-text: #000000;
+  --border-width: 2px;
+  --border-color: #f2f2f2;
+  --grid-color: rgba(242, 242, 242, 0.08);
+  --selection-bg: var(--text-color);
+  --selection-text: var(--bg-color);
 }
 
 * {
@@ -76,18 +76,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: clamp(3rem, 8vw, 6rem);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
 }
 
 h2 {
-  font-size: clamp(2rem, 5vw, 4rem);
-  padding-bottom: 10px;
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  padding-bottom: 8px;
   display: inline-block;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 a {
@@ -96,9 +96,9 @@ a {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   font-family: 'Space Grotesk', sans-serif;
 }
 
@@ -112,39 +112,41 @@ img {
 /* CARDS AND NEO-BRUTALIST BLOCKS */
 .brutal-card, .neo-block {
   border: var(--border-width) solid var(--border-color);
-  border-radius: 8px; /* Slight rounded corners as seen in some neo-brutalism */
-  padding: 30px;
-  background-color: #fff;
-  color: #000;
-  box-shadow: 6px 6px 0px var(--border-color);
+  border-radius: 0; /* Sharp corners */
+  padding: 24px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  box-shadow: 4px 4px 0px var(--border-color);
   position: relative;
   transition: all 0.2s ease;
 }
 
 [data-theme="dark"] .brutal-card, [data-theme="dark"] .neo-block {
-  background-color: #2a2a2a;
-  color: #fff;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .brutal-card:hover {
-  transform: translate(-4px, -4px);
-  box-shadow: 10px 10px 0px var(--border-color);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--border-color);
 }
 
 /* BUTTONS */
 .btn {
   display: inline-block;
-  background-color: #fff;
-  color: #000;
-  padding: 15px 30px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 12px 24px;
   font-family: 'Inter', sans-serif;
-  font-weight: 800;
-  font-size: 1.1rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
   border: var(--border-width) solid var(--border-color);
-  border-radius: 4px;
+  border-radius: 0; /* Sharp corners for premium look */
   box-shadow: 4px 4px 0px var(--border-color);
   cursor: pointer;
-  transition: all 0.1s ease;
+  transition: all 0.2s ease;
   position: relative;
   text-decoration: none;
   white-space: nowrap;

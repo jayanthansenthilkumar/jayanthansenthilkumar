@@ -16,14 +16,14 @@ const Testimonials = () => {
         width: '300px',
         height: '300px',
         backgroundColor: 'var(--color-purple)',
-        border: 'var(--border-width) solid #000',
-        borderRadius: '50%',
+        border: 'var(--border-width) solid var(--border-color)',
+        borderRadius: '0',
         zIndex: -1
       }}></div>
 
       <div className="container">
         <h2 style={{ borderBottom: 'none' }}>
-          <span className="highlight-text" style={{ backgroundColor: 'var(--color-pink)', color: '#fff', WebkitTextStroke: '1px #000' }}>
+          <span className="highlight-text" style={{ backgroundColor: 'var(--color-pink)', color: 'var(--bg-color)' }}>
             WHAT THEY SAY
           </span>
         </h2>
@@ -43,19 +43,21 @@ const Testimonials = () => {
                 flexDirection: 'column'
               }}
             >
-              <h3 style={{ fontSize: '5rem', margin: 0, lineHeight: 0.5, color: 'var(--color-blue)', WebkitTextStroke: '2px #000' }}>"</h3>
-              <p style={{ fontWeight: '900', fontSize: '1.2rem', margin: '20px 0', flexGrow: 1 }}>{test.quote}</p>
+              <h3 style={{ fontSize: '4rem', margin: 0, lineHeight: 0.5, color: 'var(--color-blue)', textShadow: '2px 2px 0 var(--border-color)' }}>"</h3>
+              <p style={{ fontWeight: '700', fontSize: '1rem', margin: '20px 0', flexGrow: 1, color: '#000' }}>{test.quote}</p>
               
               <div style={{ 
                 display: 'inline-block',
                 alignSelf: 'flex-start',
-                backgroundColor: '#000',
-                color: '#fff',
-                padding: '5px 15px',
-                borderRadius: '20px',
+                backgroundColor: 'var(--border-color)',
+                color: 'var(--bg-color)',
+                padding: '4px 12px',
+                borderRadius: '0',
                 fontFamily: "'Space Grotesk', sans-serif",
                 fontWeight: 'bold',
-                marginTop: '20px'
+                fontSize: '0.85rem',
+                marginTop: '20px',
+                textTransform: 'uppercase'
               }}>
                 {test.author}
               </div>

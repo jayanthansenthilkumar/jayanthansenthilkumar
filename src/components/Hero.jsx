@@ -20,12 +20,12 @@ const Hero = () => {
             Into <span className="highlight-text">Realities.</span>
           </h1>
           
-          <p style={{ maxWidth: '600px', fontSize: '1.2rem', marginBottom: '40px', color: '#555' }}>
+          <p style={{ maxWidth: '600px', fontSize: '1.05rem', marginBottom: '40px', color: 'var(--text-color)' }}>
             I am a UI/UX designer with a passion for crafting performant, scalable, and user-friendly interfaces. Always looking for new challenges and opportunities to grow my skills.
           </p>
           
           <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
-            <Link to="/contact" className="btn btn-primary" style={{ padding: '15px 30px', fontSize: '1.2rem', backgroundColor: 'var(--color-purple)' }}>
+            <Link to="/contact" className="btn btn-primary" style={{ padding: '12px 24px', fontSize: '0.95rem' }}>
               Get In Touch ↗
             </Link>
           </div>
@@ -47,7 +47,7 @@ const Hero = () => {
              height: '80%',
              backgroundColor: 'var(--color-pink)',
              border: 'var(--border-width) solid var(--border-color)',
-             borderRadius: '60px 20px 60px 40px',
+             borderRadius: '0', /* Sharp edges */
              zIndex: 1
           }}></div>
 
@@ -71,12 +71,12 @@ const Hero = () => {
             top: '20%',
             left: '-10%',
             backgroundColor: 'var(--color-lime)',
-            padding: '15px 30px',
-            fontSize: '2rem',
+            padding: '12px 24px',
+            fontSize: '1.5rem',
             fontWeight: 'bold',
             zIndex: 3,
-            transform: 'rotate(-10deg)',
-            borderRadius: '10px'
+            transform: 'rotate(-5deg)',
+            borderRadius: '0'
           }}>
             &lt;/&gt;
           </div>
@@ -100,11 +100,13 @@ const Hero = () => {
             top: '45%',
             right: '-15%',
             backgroundColor: 'var(--color-purple)',
-            padding: '10px 20px',
-            fontSize: '1rem',
+            padding: '8px 16px',
+            fontSize: '0.9rem',
             fontWeight: 'bold',
             zIndex: 3,
-            borderRadius: '20px'
+            borderRadius: '0',
+            textTransform: 'uppercase',
+            letterSpacing: '1px'
           }}>
             Available for freelance
           </div>

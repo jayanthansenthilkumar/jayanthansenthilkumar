@@ -14,7 +14,7 @@ const Navbar = ({ theme, toggleTheme }) => {
       padding: '5px 0',
       textAlign: 'center',
       fontWeight: 'bold',
-      fontSize: '0.9rem',
+      fontSize: '0.8rem',
       overflow: 'hidden',
       color: '#000'
     }}>
@@ -32,20 +32,20 @@ const Navbar = ({ theme, toggleTheme }) => {
     
     <nav style={{
       position: 'fixed',
-      top: '30px', /* Below the top bar */
+      top: '28px', /* Below the top bar */
       width: '100%',
-      backgroundColor: 'white',
+      backgroundColor: 'var(--bg-color)',
       borderBottom: 'var(--border-width) solid var(--border-color)',
       zIndex: 999,
       display: 'flex',
       alignItems: 'center',
-      color: '#000'
+      color: 'var(--text-color)'
     }}>
       <div style={{
         padding: '20px 40px',
         borderRight: 'var(--border-width) solid var(--border-color)',
         fontWeight: '900',
-        fontSize: '1.5rem',
+        fontSize: '1.25rem',
         fontFamily: "'Inter', sans-serif"
       }}>
         <NavLink to="/">Olivia</NavLink>
@@ -57,6 +57,7 @@ const Navbar = ({ theme, toggleTheme }) => {
         justifyContent: 'center',
         gap: '40px',
         fontWeight: '700',
+        fontSize: '0.95rem',
         fontFamily: "'Space Grotesk', sans-serif"
       }}>
         <NavLink to="/projects">My work</NavLink>
@@ -74,10 +75,12 @@ const Navbar = ({ theme, toggleTheme }) => {
           <NavLink to="/contact" style={{
             padding: '20px 30px',
             fontWeight: '700',
+            fontSize: '0.95rem',
             fontFamily: "'Space Grotesk', sans-serif",
-            backgroundColor: '#fff',
+            backgroundColor: 'var(--bg-color)',
             display: 'flex',
-            alignItems: 'center'
+            alignItems: 'center',
+            color: 'var(--text-color)'
           }}>
             Hire Me
           </NavLink>
