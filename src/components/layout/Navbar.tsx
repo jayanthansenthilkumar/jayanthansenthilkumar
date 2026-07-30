@@ -33,13 +33,6 @@ export function Navbar() {
           <Link to="/" className="flex items-center text-gray-900 hover:text-gray-600 transition-colors shrink-0">
             <span className="text-lg font-bold font-serif italic">Jayanthan Senthilkumar</span>
           </Link>
-
-          <nav className="hidden md:flex items-center gap-6 text-[13px] font-mono text-gray-700">
-            <Link to="/" className={cn("transition-colors", isActive('/') ? "text-blue-600 font-bold" : "hover:text-gray-900")}>Home</Link>
-          </nav>
-        </div>
-        
-        <div className="hidden md:flex items-center gap-4">
         </div>
 
       </div>
