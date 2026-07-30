@@ -23,7 +23,7 @@ export default function RootLayout() {
 
       <div className="relative z-10 flex flex-col min-h-screen">
         <Navbar />
-        <main className="flex-grow pt-14">
+        <main className="pt-14">
           <Outlet />
         </main>
         <Footer />

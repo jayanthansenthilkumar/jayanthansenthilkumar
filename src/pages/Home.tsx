@@ -3,13 +3,13 @@ import { ArrowRight, User, BookOpen } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-[100dvh] justify-between">
+    <div className="flex flex-col">
       <Helmet>
         <title>Jayanthan Senthilkumar | Portal</title>
         <meta name="description" content="Welcome to the portal of Jayanthan Senthilkumar. Choose between Portfolio and Blog." />
       </Helmet>
       
-      <section className="relative pt-4 md:pt-32 pb-0 overflow-hidden bg-transparent flex-grow flex flex-col justify-center">
+      <section className="relative pt-4 md:pt-24 pb-0 overflow-hidden bg-transparent">
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center mb-4 md:mb-16">
           <h1 className="text-3xl md:text-[4.5rem] lg:text-[5rem] text-blue-600 mb-2 md:mb-6 leading-tight tracking-tight font-serif italic">
