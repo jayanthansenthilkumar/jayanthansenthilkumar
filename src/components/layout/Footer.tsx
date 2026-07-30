@@ -19,9 +19,9 @@ export function Footer() {
       <footer className="bg-white border-t border-gray-200 pt-4 md:pt-16 pb-4 md:pb-8">
         <div className="w-full max-w-7xl 2xl:max-w-screen-2xl 3xl:max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-center mb-4 md:mb-12 text-center">
-            <div className="flex items-center text-gray-900 mb-2 md:mb-4">
+            {/* <div className="flex items-center text-gray-900 mb-2 md:mb-4">
               <span className="text-base md:text-lg font-bold font-serif italic">Jayanthan Senthilkumar</span>
-            </div>
+            </div> */}
             <p className="text-gray-600 text-xs md:text-sm leading-relaxed mb-4 md:mb-6 max-w-md font-mono">
               Product-focused Software Engineer crafting data-driven experiences grounded in proven engineering traditions.
             </p>

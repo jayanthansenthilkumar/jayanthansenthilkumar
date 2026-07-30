@@ -23,10 +23,12 @@ export default function RootLayout() {
 
       <div className="relative z-10 flex flex-col min-h-screen">
         <Navbar />
-        <main className="pt-14">
-          <Outlet />
-        </main>
-        <Footer />
+        <div className="flex-grow flex flex-col justify-center pt-14">
+          <main>
+            <Outlet />
+          </main>
+          <Footer />
+        </div>
         <ScrollToTop />
         {/* <AIAssistantWidget /> */}
       </div>
