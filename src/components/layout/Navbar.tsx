@@ -42,22 +42,7 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-4">
         </div>
 
-        <div className="md:hidden flex items-center">
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="text-gray-600 hover:text-gray-900 p-2"
-          >
-            {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </button>
-        </div>
       </div>
-
-      {/* Mobile Menu */}
-      {mobileMenuOpen && (
-        <div className="md:hidden bg-white border-b border-gray-200 px-4 py-4 space-y-4 font-mono text-sm absolute top-14 left-0 w-full z-40 max-h-[calc(100vh-3.5rem)] overflow-y-auto shadow-xl">
-          <Link to="/" onClick={() => setMobileMenuOpen(false)} className={cn("block w-full text-left", isActive('/') ? "text-blue-600 font-bold" : "text-gray-600 hover:text-gray-900")}>Home</Link>
-        </div>
-      )}
     </header>
   );
 }
