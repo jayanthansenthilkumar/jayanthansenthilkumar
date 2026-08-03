@@ -1,5 +1,4 @@
 <div align="center">
-  <!-- Minimalist Premium Banner -->
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117&height=250&section=header&text=Jayanthan%20Senthilkumar&fontSize=50&fontAlignY=40&fontColor=ffffff&desc=AI%20%26%20ML%20Engineer%20%7C%20MLOps%20%7C%20LLMOps&descAlignY=60&descAlign=50&descSize=20" alt="Header Banner" />
 </div>
 
@@ -7,66 +6,68 @@
 
 <div align="center">
   <h2 style="font-weight: 300;"><i>Engineering Intelligence. Architecting Scalability.</i></h2>
-  <p>Open to full-time engineering opportunities globally <b>(Australia, USA, India)</b>.</p>
+  <p style="color: #8b949e;">Open to full-time engineering opportunities globally <b>(Australia, USA, India)</b>.</p>
+</div>
+
+<div align="center">
+  <a href="https://hilo.jayanthan.fyi">
+    <img src="https://img.shields.io/badge/Portfolio-hilo.jayanthan.fyi-ffffff?style=for-the-badge&logo=google-chrome&logoColor=black" alt="Portfolio" />
+  </a>
+  <a href="https://github.com/jayanthansenthilkumar?tab=followers">
+    <img src="https://img.shields.io/github/followers/jayanthansenthilkumar?label=Followers&style=for-the-badge&color=0D1117&logoColor=white" alt="Followers" />
+  </a>
 </div>
 
 <br/>
 
-<table width="100%" style="border-collapse: collapse; border: none; background: transparent;">
-  <tr style="border: none; background: transparent;">
-    <td width="55%" style="border: none; background: transparent; padding-right: 20px;" valign="top">
-      <h2 align="left">About Me 🚀</h2>
-      <p>I am an <b>AI & ML Engineer</b> bridging the gap between sophisticated Artificial Intelligence and robust, scalable web architectures. From training deep neural networks to deploying resilient MLOps and LLMOps pipelines, my focus is on delivering high-impact technological solutions.</p>
-      
-      <p><b>🎓 Education:</b> M.Kumarasamy College of Engineering (MKCE), Karur, India</p>
-      
-      <br>
-      <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=15&duration=3000&pause=1000&color=FFFFFF&lines=Architecting+MLOps+Pipelines...;Deploying+LLMs+in+Production...;Building+Full-Stack+Web+Applications...;Writing+Python+%26+ASGI+Microservices..." alt="Typing SVG" />
-      <br><br>
-      
-      <div align="left">
-        <a href="https://hilo.jayanthan.fyi">
-          <img src="https://img.shields.io/badge/Portfolio-hilo.jayanthan.fyi-ffffff?style=for-the-badge&logo=google-chrome&logoColor=black" alt="Portfolio" />
-        </a>
-        <a href="https://github.com/jayanthansenthilkumar?tab=followers">
-          <img src="https://img.shields.io/github/followers/jayanthansenthilkumar?label=Followers&style=for-the-badge&color=0D1117&logoColor=white" alt="Followers" />
-        </a>
-      </div>
-    </td>
-    <td width="45%" align="center" style="border: none; background: transparent;" valign="top">
-      <a href="https://hilo.jayanthan.fyi">
-        <img src="https://github.githubassets.com/images/modules/site/home-campaign/hero-drone.webp" width="100%" alt="3D Drone Hero" style="max-width: 350px; filter: drop-shadow(0px 10px 20px rgba(255, 255, 255, 0.2));" />
-      </a>
-    </td>
-  </tr>
-</table>
+---
+
+<div align="center">
+  <h2>🚀 About Me</h2>
+  <br/>
+  <a href="https://hilo.jayanthan.fyi">
+    <img src="https://github.githubassets.com/images/modules/site/home-campaign/hero-drone.webp" width="300" alt="3D Drone Hero" style="filter: drop-shadow(0px 10px 20px rgba(255, 255, 255, 0.15)); margin-bottom: 20px;" />
+  </a>
+  <br/><br/>
+  <p>I am an <b>AI & ML Engineer</b> bridging the gap between sophisticated Artificial Intelligence and robust, scalable web architectures. From training deep neural networks to deploying resilient MLOps and LLMOps pipelines, my focus is on delivering high-impact technological solutions.</p>
+  <br/>
+  <p>🎓 <b>Education:</b> M.Kumarasamy College of Engineering (MKCE), Karur, India</p>
+  <br/>
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=16&duration=3000&pause=1000&color=58a6ff&center=true&vCenter=true&lines=Architecting+MLOps+Pipelines...;Deploying+LLMs+in+Production...;Building+Full-Stack+Web+Applications...;Writing+Python+%26+ASGI+Microservices..." alt="Typing SVG" />
+</div>
 
 <br/>
 
 ---
 
 <h2 align="center">⚙️ Core Competencies & Tech Stack</h2>
-
 <p align="center">
   <i>Technologies that power my engineering systems.</i>
 </p>
 
-<table align="center" width="100%" style="border:none; border-collapse: collapse; background: transparent;">
-  <tr style="border:none; background: transparent;">
-    <td width="33%" align="center" style="border:none; background: transparent; padding: 10px;">
-      <h3>🧠 AI & ML / MLOps</h3>
-      <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,docker,aws,gcp&perline=3" alt="AI Tools" /></a>
-    </td>
-    <td width="33%" align="center" style="border:none; background: transparent; padding: 10px;">
-      <h3>💻 Full-Stack & UI/UX</h3>
-      <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,tailwind,figma&perline=3" alt="Web Tools" /></a>
-    </td>
-    <td width="33%" align="center" style="border:none; background: transparent; padding: 10px;">
-      <h3>🛠 Backend & Systems</h3>
-      <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,mongodb,postgres,linux,bash,git&perline=3" alt="Backend Tools" /></a>
-    </td>
-  </tr>
-</table>
+<br/>
+
+<div align="center">
+  <h3>🧠 AI & ML / MLOps</h3>
+  <br/>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,docker,aws,gcp&perline=6" alt="AI Tools" /></a>
+</div>
+
+<br/>
+
+<div align="center">
+  <h3>💻 Full-Stack & UI/UX</h3>
+  <br/>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,tailwind,figma&perline=6" alt="Web Tools" /></a>
+</div>
+
+<br/>
+
+<div align="center">
+  <h3>🛠 Backend & Systems</h3>
+  <br/>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,mongodb,postgres,linux,bash,git&perline=6" alt="Backend Tools" /></a>
+</div>
 
 <br/>
 
