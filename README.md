@@ -2,8 +2,6 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117&height=250&section=header&text=Jayanthan%20Senthilkumar&fontSize=50&fontAlignY=40&fontColor=ffffff&desc=AI%20%26%20ML%20Engineer%20%7C%20MLOps%20%7C%20LLMOps&descAlignY=60&descAlign=50&descSize=20" alt="Header Banner" />
 </div>
 
-<br/>
-
 <div align="center">
   <h2 style="font-weight: 300;"><i>Engineering Intelligence. Architecting Scalability.</i></h2>
   <p style="color: #8b949e;">Open to full-time engineering opportunities globally <b>(Australia, USA, India)</b>.</p>
@@ -22,17 +20,22 @@
 
 ---
 
+### 🚀 The Engineering Brief
+
+<img align="right" src="https://github.githubassets.com/images/modules/site/home-campaign/hero-drone.webp" width="220" alt="3D Drone Hero" style="filter: drop-shadow(0px 10px 20px rgba(255, 255, 255, 0.15)); margin-left: 20px; margin-bottom: 20px;" />
+
+I am an **AI & ML Engineer** specializing in bridging the gap between sophisticated Artificial Intelligence research and robust, scalable web architectures. 
+
+My engineering philosophy centers on delivering high-impact technological solutions—from training deep neural networks to deploying resilient MLOps and LLMOps pipelines. I build systems that don't just function, but scale elegantly.
+
+- 🎓 **Education:** M.Kumarasamy College of Engineering (MKCE), Karur, India
+- 🔭 **Currently Building:** Enterprise-grade LLM applications and scalable microservices
+- 🌱 **Currently Learning:** Advanced Agentic Workflows & Multi-Modal architectures
+- 🤝 **Open to Collaborate on:** Open-source AI tooling, MLOps infrastructure, and Web3 integrations
+
+<br/>
+
 <div align="center">
-  <h2>🚀 About Me</h2>
-  <br/>
-  <a href="https://hilo.jayanthan.fyi">
-    <img src="https://github.githubassets.com/images/modules/site/home-campaign/hero-drone.webp" width="300" alt="3D Drone Hero" style="filter: drop-shadow(0px 10px 20px rgba(255, 255, 255, 0.15)); margin-bottom: 20px;" />
-  </a>
-  <br/><br/>
-  <p>I am an <b>AI & ML Engineer</b> bridging the gap between sophisticated Artificial Intelligence and robust, scalable web architectures. From training deep neural networks to deploying resilient MLOps and LLMOps pipelines, my focus is on delivering high-impact technological solutions.</p>
-  <br/>
-  <p>🎓 <b>Education:</b> M.Kumarasamy College of Engineering (MKCE), Karur, India</p>
-  <br/>
   <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=16&duration=3000&pause=1000&color=58a6ff&center=true&vCenter=true&lines=Architecting+MLOps+Pipelines...;Deploying+LLMs+in+Production...;Building+Full-Stack+Web+Applications...;Writing+Python+%26+ASGI+Microservices..." alt="Typing SVG" />
 </div>
 
@@ -40,40 +43,57 @@
 
 ---
 
-<h2 align="center">⚙️ Core Competencies & Tech Stack</h2>
-<p align="center">
-  <i>Technologies that power my engineering systems.</i>
-</p>
+### 💻 System Architecture & Core Stack
 
+> *"Good architecture is about designing systems that are easily understandable and highly adaptable."*
+
+#### 🧠 Intelligence & MLOps
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,scikitlearn,opencv,pandas&perline=10" alt="AI Tools" /></a>
 <br/>
+*Core focus on LLM orchestration, Computer Vision, and automated training pipelines.*
 
-<div align="center">
-  <h3>🧠 AI & ML / MLOps</h3>
-  <br/>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,docker,aws,gcp&perline=6" alt="AI Tools" /></a>
-</div>
-
+#### ⚡ Scalable Full-Stack
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,tailwind,html,css,figma&perline=10" alt="Web Tools" /></a>
 <br/>
+*Crafting responsive, high-performance user interfaces with modern React ecosystems.*
 
-<div align="center">
-  <h3>💻 Full-Stack & UI/UX</h3>
-  <br/>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,tailwind,figma&perline=6" alt="Web Tools" /></a>
-</div>
-
+#### 🛠 Infrastructure & Backend
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,postgres,docker,aws,gcp,linux,bash,git&perline=10" alt="Backend Tools" /></a>
 <br/>
-
-<div align="center">
-  <h3>🛠 Backend & Systems</h3>
-  <br/>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,mongodb,postgres,linux,bash,git&perline=6" alt="Backend Tools" /></a>
-</div>
+*Designing serverless architectures, ASGI microservices, and containerized deployments.*
 
 <br/>
 
 ---
 
-<h2 align="center">📊 Isomorphic Analytics & 3D Footprint</h2>
+### 🔬 Featured Initiatives
+
+<details>
+  <summary><b>🤖 Agentic AI Workflows & LLMOps</b></summary>
+  <blockquote>
+    Building robust evaluation and deployment pipelines for Large Language Models. Exploring LangChain, LlamaIndex, and custom retrieval-augmented generation (RAG) architectures to solve complex enterprise search problems.
+  </blockquote>
+</details>
+
+<details>
+  <summary><b>🌐 Full-Stack Cloud Platforms</b></summary>
+  <blockquote>
+    Architecting end-to-end web platforms using Next.js, Node.js, and MongoDB. Focusing on zero-downtime deployments via Docker and AWS infrastructure to ensure global scalability.
+  </blockquote>
+</details>
+
+<details>
+  <summary><b>⚡ High-Performance Computing (Python/ASGI)</b></summary>
+  <blockquote>
+    Writing asynchronous, highly concurrent backend systems in Python. Utilizing FastAPI and ASGI servers to drastically reduce latency for machine learning inference endpoints.
+  </blockquote>
+</details>
+
+<br/>
+
+---
+
+### 📈 Isomorphic Analytics
 
 <div align="center">
   <a href="https://github.com/jayanthansenthilkumar">
@@ -88,11 +108,7 @@
     <img src="https://github-readme-activity-graph.vercel.app/graph?username=jayanthansenthilkumar&bg_color=0D1117&color=ffffff&line=58a6ff&point=FFFFFF&area=true&area_color=0D1117&hide_border=true" width="98%" alt="Contribution Graph" style="border-radius: 10px;" />
 </div>
 
-<br/>
-
----
-
-<h2 align="center">🔥 Gamified Streak</h2>
+<br>
 
 <div align="center">
   <a href="https://github.com/jayanthansenthilkumar">
@@ -104,7 +120,7 @@
 
 ---
 
-<h2 align="center">🔗 Let's Connect</h2>
+### 📡 Establish Connection
 
 <div align="center">
   <a href="https://www.linkedin.com/in/jayanthan18">
@@ -121,7 +137,7 @@
   </a>
 </div>
 
-<br/><br/>
+<br><br>
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=cylinder&color=0D1117&height=100&section=footer&text=End%20of%20Transmission&fontSize=20&fontAlignY=50&fontColor=ffffff" width="100%" alt="Footer Banner"/>
