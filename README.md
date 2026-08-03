@@ -1,31 +1,34 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=280&section=header&text=Jayanthan%20Senthilkumar&fontSize=60&fontAlignY=35&fontColor=ffffff&desc=2026%20Edition%20%7C%20AI%20%26%20Engineering%20Nexus&descAlignY=55&descAlign=50&descSize=22" alt="Header Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00FFCD:8A2BE2&height=280&section=header&text=Jayanthan%20Senthilkumar&fontSize=60&fontAlignY=35&fontColor=ffffff&desc=2026%20Edition%20%7C%20AI%20%26%20Full-Stack%20Engineering&descAlignY=55&descAlign=50&descSize=22" alt="Header Banner" />
 </div>
 
 <br/>
 
-<table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border: none; background: transparent;">
+<div align="center">
+  <i>Designing the future through deep technology, scalable architectures, and beautiful user experiences.</i>
+</div>
+
+<br/>
+
+<table width="100%" style="border-collapse: collapse; border: none; background: transparent;">
   <tr style="border: none; background: transparent;">
-    <td width="60%" style="border: none; background: transparent; padding-right: 20px;">
-      <h1 align="left">Initialize System: Jayanthan <code>[v2026.1]</code></h1>
-      <p>System Online. Initiating core protocols for AI Engineering and Full Stack Web Innovation.</p>
-      As we navigate the deep tech stack of 2026, my primary directive is to architect scalable, 3D-integrated, and heavily optimized solutions bridging Artificial Intelligence and native web experiences.
+    <td width="55%" style="border: none; background: transparent; padding-right: 20px;" valign="top">
+      <h2 align="left">Initialize System: Jayanthan <code>[v2026.1]</code></h2>
+      <p>I am a Software Engineer bridging the gap between Artificial Intelligence and native web ecosystems. My core directive is to build intelligent, optimized, and visually stunning digital realities.</p>
+      <br>
+      <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=16&duration=3000&pause=1000&color=00FFCD&lines=Architecting+Cloud+Infrastructures...;Training+Deep+Neural+Networks...;Building+Next-Gen+Web+Applications...;Deploying+Scalable+Microservices..." alt="Typing SVG" />
       <br><br>
-      <b>Current Directive:</b> "<i>Build solutions that shape tomorrow's digital realities.</i>" 
-      <br><br>
-      <img src="https://img.shields.io/badge/System_Status-Operational-brightgreen?style=plastic&logo=github&logoColor=white" alt="System Status"/>
-      <img src="https://img.shields.io/badge/AI_Engine-Deployed-blueviolet?style=plastic&logo=openai&logoColor=white" alt="AI Engine"/>
-      <br><br>
-      <a href="https://github.com/jayanthansenthilkumar">
-        <img src="https://komarev.com/ghpvc/?username=jayanthansenthilkumar&color=00FFCD&style=plastic&label=Profile+Views" alt="Profile Views" />
-      </a>
-      <a href="https://github.com/jayanthansenthilkumar?tab=followers">
-        <img src="https://img.shields.io/github/followers/jayanthansenthilkumar?label=Followers&style=plastic&color=8a2be2" alt="Followers" />
-      </a>
+      <div align="left">
+        <a href="https://github.com/jayanthansenthilkumar">
+          <img src="https://komarev.com/ghpvc/?username=jayanthansenthilkumar&color=8A2BE2&style=for-the-badge&label=Profile+Views" alt="Profile Views" />
+        </a>
+        <a href="https://github.com/jayanthansenthilkumar?tab=followers">
+          <img src="https://img.shields.io/github/followers/jayanthansenthilkumar?label=Followers&style=for-the-badge&color=00FFCD&logoColor=black" alt="Followers" />
+        </a>
+      </div>
     </td>
-    <td width="40%" align="center" style="border: none; background: transparent;">
-      <!-- 3D Drone Component from GitHub Assets -->
-      <img src="https://github.githubassets.com/images/modules/site/home-campaign/hero-drone.webp" width="350" alt="3D Drone Hero" style="filter: drop-shadow(0px 0px 15px rgba(0, 255, 205, 0.5));" />
+    <td width="45%" align="center" style="border: none; background: transparent;" valign="top">
+      <img src="https://github.githubassets.com/images/modules/site/home-campaign/hero-drone.webp" width="100%" alt="3D Drone Hero" style="max-width: 350px; filter: drop-shadow(0px 10px 20px rgba(138, 43, 226, 0.4));" />
     </td>
   </tr>
 </table>
@@ -34,53 +37,46 @@
 
 ---
 
-<h2 align="center">📦 3D Tech Arsenal & Infrastructure</h2>
+<h2 align="center">⚡ Tech Arsenal & Ecosystem</h2>
 
 <p align="center">
-  <i>Core technologies engineered into my developer ecosystem.</i><br/>
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=00FFCD&center=true&vCenter=true&width=600&lines=Initializing+JavaScript+Modules...;Compiling+Machine+Learning+Models...;Orchestrating+Docker+Containers...;Awaiting+Next+Command..." alt="Typing SVG" />
+  <i>Core technologies engineered into my daily workflows.</i>
 </p>
 
-<!-- 3D style badges using "plastic" -->
-<div align="center">
-  <img height="35" src="https://img.shields.io/badge/TensorFlow-FF6F00?style=plastic&logo=tensorflow&logoColor=white" />
-  <img height="35" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=plastic&logo=pytorch&logoColor=white" />
-  <img height="35" src="https://img.shields.io/badge/Python-3776AB?style=plastic&logo=python&logoColor=white" />
-  <img height="35" src="https://img.shields.io/badge/React-61DAFB?style=plastic&logo=react&logoColor=black" />
-  <img height="35" src="https://img.shields.io/badge/Next.js-000000?style=plastic&logo=nextdotjs&logoColor=white" />
-  <img height="35" src="https://img.shields.io/badge/Node.js-339933?style=plastic&logo=nodedotjs&logoColor=white" />
-  <br/>
-  <img height="35" src="https://img.shields.io/badge/TypeScript-3178C6?style=plastic&logo=typescript&logoColor=white" />
-  <img height="35" src="https://img.shields.io/badge/MongoDB-47A248?style=plastic&logo=mongodb&logoColor=white" />
-  <img height="35" src="https://img.shields.io/badge/Docker-2496ED?style=plastic&logo=docker&logoColor=white" />
-  <img height="35" src="https://img.shields.io/badge/AWS-232F3E?style=plastic&logo=amazon-aws&logoColor=white" />
-  <img height="35" src="https://img.shields.io/badge/Git-F05032?style=plastic&logo=git&logoColor=white" />
-</div>
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,tailwind,nodejs,python,mongodb,postgres,docker,aws,gcp&perline=6" alt="Tech Stack Core" />
+  </a>
+</p>
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,linux,bash,nginx,vscode,figma,git&perline=8" alt="Tech Stack Tools" />
+  </a>
+</p>
 
-<br><br>
+<br/>
 
 <table width="100%" style="border:none; border-collapse: collapse; background: transparent;">
-    <tr style="border:none; background: transparent;">
-        <td width="33%" align="center" style="border:none; background: transparent;">
-            <!-- A 3D Animated Robot / Gear for AI/ML -->
-            <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" width="100" alt="3D Robot" />
-            <h3>AI/ML Sandbox</h3>
-            <p align="center">Agentic Systems, Computer Vision, & Deep Learning architectures.</p>
-        </td>
-        <td width="33%" align="center" style="border:none; background: transparent;">
-            <!-- A 3D Web App laptop / Code element -->
-            <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png" width="100" alt="3D Laptop" />
-            <h3>Cyber Nexus</h3>
-            <p align="center">Full-Stack Cloud Architecture, Serverless endpoints, and scalable microservices.</p>
-        </td>
-        <td width="33%" align="center" style="border:none; background: transparent;">
-            <!-- 3D Rocket for deployment/performance -->
-            <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="100" alt="3D Rocket" />
-            <h3>Global Deployment</h3>
-            <p align="center">Optimized CI/CD pipelines bridging edge networks ensuring planetary scale capabilities.</p>
-        </td>
-    </tr>
+  <tr style="border:none; background: transparent;">
+    <td width="33%" align="center" style="border:none; background: transparent; padding: 10px;">
+      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" width="80" alt="3D Robot" style="margin-bottom: 10px;" />
+      <h3 style="margin: 0;">AI & Machine Learning</h3>
+      <p style="font-size: 14px; color: #888;">Computer Vision, NLP, & Agentic Architectures</p>
+    </td>
+    <td width="33%" align="center" style="border:none; background: transparent; padding: 10px;">
+      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png" width="80" alt="3D Laptop" style="margin-bottom: 10px;" />
+      <h3 style="margin: 0;">Full-Stack Development</h3>
+      <p style="font-size: 14px; color: #888;">Scalable Web Apps & Modern UI/UX</p>
+    </td>
+    <td width="33%" align="center" style="border:none; background: transparent; padding: 10px;">
+      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="80" alt="3D Rocket" style="margin-bottom: 10px;" />
+      <h3 style="margin: 0;">Cloud & DevOps</h3>
+      <p style="font-size: 14px; color: #888;">CI/CD Pipelines & Serverless Deployments</p>
+    </td>
+  </tr>
 </table>
+
+<br/>
 
 ---
 
@@ -88,50 +84,52 @@
 
 <div align="center">
   <a href="https://github.com/jayanthansenthilkumar">
-    <img height="200" src="https://github-readme-stats.vercel.app/api?username=jayanthansenthilkumar&show_icons=true&theme=omni&hide_border=true&bg_color=0D1117&icon_color=00FFCD&title_color=00FFCD" alt="GitHub Stats"/>
-    <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=jayanthansenthilkumar&layout=donut&langs_count=6&theme=omni&hide_border=true&bg_color=0D1117&title_color=00FFCD" alt="Top Languages 3D Donut"/>
+    <img src="https://github-readme-stats.vercel.app/api?username=jayanthansenthilkumar&show_icons=true&theme=omni&hide_border=true&bg_color=0D1117&icon_color=00FFCD&title_color=ffffff&text_color=9f9f9f" alt="GitHub Stats" width="48%" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=jayanthansenthilkumar&layout=donut&langs_count=6&theme=omni&hide_border=true&bg_color=0D1117&title_color=ffffff&text_color=9f9f9f" alt="Top Languages 3D Donut" width="48%" />
   </a>
 </div>
 
 <br>
 
 <div align="center">
-    <h3>Isomorphic Contribution Visualizer</h3>
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=jayanthansenthilkumar&bg_color=0D1117&color=00FFCD&line=8A2BE2&point=FFFFFF&area=true&area_color=0D1117&hide_border=true" width="95%" alt="Contribution Graph" style="border-radius: 10px; box-shadow: 0px 10px 30px rgba(0, 255, 205, 0.2);" />
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=jayanthansenthilkumar&bg_color=0D1117&color=00FFCD&line=8A2BE2&point=FFFFFF&area=true&area_color=0D1117&hide_border=true" width="98%" alt="Contribution Graph" style="border-radius: 10px;" />
 </div>
+
+<br/>
 
 ---
 
-<h2 align="center">🔥 Gamified Streak & Milestones</h2>
+<h2 align="center">🔥 Gamified Streak</h2>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=jayanthansenthilkumar&theme=omni&hide_border=true&background=0D1117&ring=00FFCD&fire=8A2BE2&currStreakLabel=00FFCD&sideLabels=FFFFFF&dates=8A2BE2" alt="GitHub Streak" />
+  <a href="https://github.com/jayanthansenthilkumar">
+    <img src="https://streak-stats.demolab.com?user=jayanthansenthilkumar&theme=omni&hide_border=true&background=0D1117&ring=00FFCD&fire=8A2BE2&currStreakLabel=00FFCD&sideLabels=FFFFFF&dates=8A2BE2" alt="GitHub Streak" />
+  </a>
 </div>
+
+<br/>
 
 ---
 
 <h2 align="center">🔗 Synchronize Protocols (Connect)</h2>
 
 <div align="center">
-
-<a href="https://www.linkedin.com/in/jayanthan18">
-  <img src="https://img.shields.io/badge/LinkedIn-Jayanthan_Senthilkumar-0A66C2?style=plastic&logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-<a href="mailto:jayanthansenthilkumar18@gmail.com">
-  <img src="https://img.shields.io/badge/Gmail-jayanthansenthilkumar18-EA4335?style=plastic&logo=gmail&logoColor=white" alt="Gmail" />
-</a>
-<a href="https://ceo.prisoltech.com">
-  <img src="https://img.shields.io/badge/Portfolio-Global_Platform-00FFCD?style=plastic&logo=Google-Chrome&logoColor=black" alt="Portfolio" />
-</a>
-<br/><br/>
-<a href="https://instagram.com/jayanthansenthilkumar">
-  <img src="https://img.shields.io/badge/Instagram-jayanthansenthilkumar-E4405F?style=plastic&logo=instagram&logoColor=white" alt="Instagram" />
-</a>
-
+  <a href="https://www.linkedin.com/in/jayanthan18">
+    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="mailto:jayanthansenthilkumar18@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://ceo.prisoltech.com">
+    <img src="https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio" />
+  </a>
+  <a href="https://instagram.com/jayanthansenthilkumar">
+    <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" alt="Instagram" />
+  </a>
 </div>
 
-<br/>
+<br/><br/>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=cylinder&color=gradient&height=100&section=footer&text=End%20of%20Transmission&fontSize=30&fontAlignY=50&fontColor=ffffff" width="100%" alt="Footer Banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=cylinder&color=00FFCD:8A2BE2&height=100&section=footer&text=End%20of%20Transmission&fontSize=30&fontAlignY=50&fontColor=ffffff" width="100%" alt="Footer Banner"/>
 </div>
