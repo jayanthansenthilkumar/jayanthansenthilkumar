@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
-import { ArrowRight, User, BookOpen } from "lucide-react";
+import { Link } from "react-router-dom";
+import { ArrowRight, User, BookOpen, Calendar } from "lucide-react";
 
 export default function Home() {
   return (
@@ -51,6 +52,23 @@ export default function Home() {
               Read my articles, tutorials, and thoughts on software engineering.
             </p>
           </a>
+
+          {/* Events Link */}
+          <Link to="/events" className="group block col-span-2 p-6 md:p-10 border-t border-gray-200 hover:bg-gray-50 transition-colors text-center">
+            <div className="flex flex-col items-center justify-center">
+              <div className="flex items-center gap-2 md:gap-3 text-gray-900 mb-2">
+                <Calendar className="w-5 h-5 md:w-6 md:h-6 text-blue-600" />
+                <h3 className="text-lg md:text-2xl font-bold font-serif">Events</h3>
+              </div>
+              <p className="text-xs md:text-sm text-gray-600 font-mono leading-relaxed mb-4 max-w-md mx-auto">
+                Explore AustralAI events, verify certification credentials, and access admin portals.
+              </p>
+              <div className="flex items-center gap-1.5 text-blue-600 font-mono text-xs md:text-sm font-semibold">
+                <span>Open Events Hub</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </div>
+          </Link>
           
         </div>
       </section>
