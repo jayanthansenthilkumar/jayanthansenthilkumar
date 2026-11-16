@@ -32,13 +32,16 @@ export const Footer: FC = () => {
     >
       <div className="flex flex-row items-center justify-between gap-2 sm:gap-3 pt-1.5 sm:pt-2 border-t border-[#E6E2D8] text-[#71717A] font-['Manrope',sans-serif] text-[10px] sm:text-xs md:text-sm">
         {/* Left: Copyright & Editorial Credits */}
-        <div className="flex items-center gap-1.5 sm:gap-2.5 truncate">
+        <div className="flex items-center gap-1.5 sm:gap-2.5 min-w-0">
           <span className="font-['Manrope',sans-serif] font-bold text-[#18181B] text-xs sm:text-sm md:text-base tracking-tight shrink-0">
             {branding.siteName}
           </span>
           <span className="text-[#D0C9BA]">•</span>
-          <span className="truncate text-[#52525B]">
-            &copy; {currentYear} Jayanthan SenthilKumar.
+          <span className="text-[#52525B] text-[9px] sm:text-xs shrink-0 sm:hidden">
+            &copy; {currentYear}
+          </span>
+          <span className="truncate text-[#52525B] text-xs hidden sm:inline">
+            &copy; {currentYear} Jayanthan Senthilkumar.
           </span>
           <span className="text-[#D0C9BA] hidden lg:inline">•</span>
           <span className="hidden lg:inline text-[#71717A]">

@@ -60,19 +60,19 @@ export const Hero: FC = () => {
           className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none select-none z-0"
           aria-hidden="true"
         >
-          <div className="text-center w-full px-1">
+          <div className="w-full text-center flex flex-col items-center justify-center px-1">
             <div
-              className="editorial-name-layer leading-[0.80] text-[#18181B] tracking-[0.05em]"
+              className="editorial-name-layer leading-[0.80] text-[#18181B] tracking-[0.04em] text-center w-full"
               style={{
-                fontSize: "clamp(2.4rem, min(13.5vw, 15vh), 12.5rem)",
+                fontSize: "clamp(1.8rem, min(10vw, 12vh), 12rem)",
               }}
             >
               {person.firstName}
             </div>
             <div
-              className="editorial-name-layer leading-[0.80] text-[#18181B] tracking-[0.025em]"
+              className="editorial-name-layer leading-[0.80] text-[#18181B] tracking-[0.02em] text-center w-full"
               style={{
-                fontSize: "clamp(2.4rem, min(13.5vw, 15vh), 12.5rem)",
+                fontSize: "clamp(1.4rem, min(8.2vw, 9.8vh), 10rem)",
               }}
             >
               {person.lastName}
@@ -82,7 +82,7 @@ export const Hero: FC = () => {
 
         {/* LAYER 2 (FOREGROUND): Centered Cutout Portrait (hero.png) */}
         <div className="relative z-10 flex justify-center items-end h-full">
-          <div className="relative h-full flex items-end">
+          <div className="relative h-full flex items-end justify-center">
             <img
               src="/hero.png"
               alt="Jayanthan Senthilkumar - SAP Backend Engineer"
@@ -95,10 +95,10 @@ export const Hero: FC = () => {
           </div>
         </div>
 
-        {/* Floating Specialization Pill Floating across the portrait base */}
-        <div className="absolute bottom-0 z-20 flex items-center justify-center gap-1.5 px-3 py-0.5 sm:px-4 sm:py-1 rounded-none bg-[#FFFFFF]/95 backdrop-blur-md border border-[#E4DFD3] shadow-xs max-w-[94%] truncate">
+        {/* Floating Specialization Pill Centered across the portrait base */}
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 flex items-center justify-center gap-1.5 px-3 py-0.5 sm:px-4 sm:py-1 rounded-none bg-[#FFFFFF]/95 backdrop-blur-md border border-[#E4DFD3] shadow-xs max-w-[92%] sm:max-w-[85%] whitespace-nowrap text-center">
           <Terminal className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#18181B] shrink-0" />
-          <span className="font-mono text-[9px] sm:text-xs md:text-sm text-[#3F3F46] font-medium tracking-wide truncate">
+          <span className="font-mono text-[9px] sm:text-xs md:text-sm text-[#3F3F46] font-medium tracking-wide truncate text-center">
             {person.specialization}
           </span>
         </div>
@@ -110,8 +110,8 @@ export const Hero: FC = () => {
       <div className="shrink-0 w-full mb-0.5 sm:mb-1.5">
         <div className="curved-editorial-panel rounded-none p-2 sm:p-3.5 md:p-4.5 max-w-[98vw] 2xl:max-w-[1760px] mx-auto w-full relative">
           {/* Eyebrow Header inside Squared Layout */}
-          <div className="relative z-10 flex items-center justify-between gap-3 mb-1.5 sm:mb-2.5 pb-1 sm:pb-2 border-b border-[#E6E2D8] font-mono text-[10px] sm:text-xs">
-            <div className="flex items-center gap-1.5 text-[#18181B] font-bold uppercase tracking-wider shrink-0">
+          <div className="relative z-10 flex items-center justify-center sm:justify-between gap-3 mb-1.5 sm:mb-2.5 pb-1 sm:pb-2 border-b border-[#E6E2D8] font-mono text-[10px] sm:text-xs text-center">
+            <div className="flex items-center justify-center gap-1.5 text-[#18181B] font-bold uppercase tracking-wider shrink-0 mx-auto sm:mx-0">
               <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-none bg-[#18181B]" />
               <span>DIRECT DESTINATIONS</span>
             </div>
