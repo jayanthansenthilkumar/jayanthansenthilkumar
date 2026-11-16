@@ -10,7 +10,10 @@ export const PORTAL_CONFIG = {
     fullName: "JAYANTHAN SENTHILKUMAR",
     role: "SAP Backend Engineer",
     specialization: "SAP Backend Architecture · Enterprise Integrations · Distributed Systems",
+    specializationMid: "SAP Backend Architecture · Enterprise Systems",
+    specializationNarrow: "SAP Backend Architecture",
     status: "Available for High-Impact Projects",
+    statusCompact: "Available",
     location: "Bengaluru, India / Global Remote",
     statement:
       "Engineering resilient enterprise backend architectures, robust SAP integrations, and scalable business systems.",
@@ -23,6 +26,7 @@ export const PORTAL_CONFIG = {
       cta: "Explore Portfolio",
       url: "https://hilo.jayanthan.fyi",
       badge: "ENTERPRISE SYSTEMS & CODE",
+      badgeShort: "PORTFOLIO",
     },
     blogs: {
       index: "02",
@@ -31,6 +35,7 @@ export const PORTAL_CONFIG = {
       cta: "Read My Blogs",
       url: "https://blogs.jayanthan.fyi",
       badge: "TECHNICAL ARTICLES & NOTES",
+      badgeShort: "BLOGS",
     },
   },
   social: [

@@ -1,0 +1,737 @@
+[
+  {
+    "name": "01_mobile_small_320x568",
+    "width": 320,
+    "height": 568,
+    "docWidth": 320,
+    "winWidth": 320,
+    "docHeight": 568,
+    "winHeight": 568,
+    "hasHorizontalScroll": false,
+    "hasVerticalScroll": false,
+    "isFooterInViewport": true,
+    "heroRect": {
+      "width": 181.75,
+      "height": 181.75,
+      "top": 102.125,
+      "bottom": 283.875
+    },
+    "nameElements": [
+      {
+        "text": "JAYANTHAN",
+        "width": 288,
+        "height": 32.796875,
+        "fontSize": "40px"
+      },
+      {
+        "text": "SENTHILKUMAR",
+        "width": 288,
+        "height": 25.703125,
+        "fontSize": "31.36px"
+      }
+    ],
+    "overflowingElements": [],
+    "errors": [],
+    "screenshot": "D:\\Projects\\Portfolio\\jayanthansenthilkumar\\screenshots\\verify\\01_mobile_small_320x568.png"
+  },
+  {
+    "name": "02_mobile_std_360x800",
+    "width": 360,
+    "height": 800,
+    "docWidth": 360,
+    "winWidth": 360,
+    "docHeight": 800,
+    "winHeight": 800,
+    "hasHorizontalScroll": false,
+    "hasVerticalScroll": false,
+    "isFooterInViewport": true,
+    "heroRect": {
+      "width": 256,
+      "height": 256,
+      "top": 181,
+      "bottom": 437
+    },
+    "nameElements": [
+      {
+        "text": "JAYANTHAN",
+        "width": 328,
+        "height": 36.890625,
+        "fontSize": "45px"
+      },
+      {
+        "text": "SENTHILKUMAR",
+        "width": 328,
+        "height": 28.921875,
+        "fontSize": "35.28px"
+      }
+    ],
+    "overflowingElements": [],
+    "errors": [],
+    "screenshot": "D:\\Projects\\Portfolio\\jayanthansenthilkumar\\screenshots\\verify\\02_mobile_std_360x800.png"
+  },
+  {
+    "name": "03_mobile_iphone_375x812",
+    "width": 375,
+    "height": 812,
+    "docWidth": 375,
+    "winWidth": 375,
+    "docHeight": 812,
+    "winHeight": 812,
+    "hasHorizontalScroll": false,
+    "hasVerticalScroll": false,
+    "isFooterInViewport": true,
+    "heroRect": {
+      "width": 259.828125,
+      "height": 259.828125,
+      "top": 185.078125,
+      "bottom": 444.90625
+    },
+    "nameElements": [
+      {
+        "text": "JAYANTHAN",
+        "width": 343,
+        "height": 38.4375,
+        "fontSize": "46.875px"
+      },
+      {
+        "text": "SENTHILKUMAR",
+        "width": 343,
+        "height": 30.125,
+        "fontSize": "36.75px"
+      }
+    ],
+    "overflowingElements": [],
+    "errors": [],
+    "screenshot": "D:\\Projects\\Portfolio\\jayanthansenthilkumar\\screenshots\\verify\\03_mobile_iphone_375x812.png"
+  },
+  {
+    "name": "04_mobile_390x844",
+    "width": 390,
+    "height": 844,
+    "docWidth": 390,
+    "winWidth": 390,
+    "docHeight": 844,
+    "winHeight": 844,
+    "hasHorizontalScroll": false,
+    "hasVerticalScroll": false,
+    "isFooterInViewport": true,
+    "heroRect": {
+      "width": 270.078125,
+      "height": 270.078125,
+      "top": 195.953125,
+      "bottom": 466.03125
+    },
+    "nameElements": [
+      {
+        "text": "JAYANTHAN",
+        "width": 358,
+        "height": 39.96875,
+        "fontSize": "48.75px"
+      },
+      {
+        "text": "SENTHILKUMAR",
+        "width": 358,
+        "height": 31.328125,
+        "fontSize": "38.22px"
+      }
+    ],
+    "overflowingElements": [],
+    "errors": [],
+    "screenshot": "D:\\Projects\\Portfolio\\jayanthansenthilkumar\\screenshots\\verify\\04_mobile_390x844.png"
+  },
+  {
+    "name": "05_mobile_393x873",
+    "width": 393,
+    "height": 873,
+    "docWidth": 393,
+    "winWidth": 393,
+    "docHeight": 873,
+    "winHeight": 873,
+    "hasHorizontalScroll": false,
+    "hasVerticalScroll": false,
+    "isFooterInViewport": true,
+    "heroRect": {
+      "width": 279.359375,
+      "height": 279.359375,
+      "top": 205.8125,
+      "bottom": 485.171875
+    },
+    "nameElements": [
+      {
+        "text": "JAYANTHAN",
+        "width": 361,
+        "height": 40.28125,
+        "fontSize": "49.125px"
+      },
+      {
+        "text": "SENTHILKUMAR",
+        "width": 361,
+        "height": 31.578125,
+        "fontSize": "38.514px"
+      }
+    ],
+    "overflowingElements": [],
+    "errors": [],
+    "screenshot": "D:\\Projects\\Portfolio\\jayanthansenthilkumar\\screenshots\\verify\\05_mobile_393x873.png"
+  },
+  {
+    "name": "06_mobile_414x896",
+    "width": 414,
+    "height": 896,
+    "docWidth": 414,
+    "winWidth": 414,
+    "docHeight": 896,
+    "winHeight": 896,
+    "hasHorizontalScroll": false,
+    "hasVerticalScroll": false,
+    "isFooterInViewport": true,
+    "heroRect": {
+      "width": 286.71875,
+      "height": 286.71875,
+      "top": 213.640625,
+      "bottom": 500.359375
+    },
+    "nameElements": [
+      {
+        "text": "JAYANTHAN",
+        "width": 382,
+        "height": 42.421875,
+        "fontSize": "51.75px"
+      },
+      {
+        "text": "SENTHILKUMAR",
+        "width": 382,
+        "height": 33.265625,
+        "fontSize": "40.572px"
+      }
+    ],
+    "overflowingElements": [],
+    "errors": [],
+    "screenshot": "D:\\Projects\\Portfolio\\jayanthansenthilkumar\\screenshots\\verify\\06_mobile_414x896.png"
+  },
+  {
+    "name": "07_mobile_large_430x932",
+    "width": 430,
+    "height": 932,
+    "docWidth": 430,
+    "winWidth": 430,
+    "docHeight": 932,
+    "winHeight": 932,
+    "hasHorizontalScroll": false,
+    "hasVerticalScroll": false,
+    "isFooterInViewport": true,
+    "heroRect": {
+      "width": 298.234375,
+      "height": 298.234375,
+      "top": 218.625,
+      "bottom": 516.859375
+    },
+    "nameElements": [
+      {
+        "text": "JAYANTHAN",
+        "width": 390,
+        "height": 44.0625,
+        "fontSize": "53.75px"
+      },
+      {
+        "text": "SENTHILKUMAR",
+        "width": 390,
+        "height": 34.546875,
+        "fontSize": "42.14px"
+      }
+    ],
+    "overflowingElements": [],
+    "errors": [],
+    "screenshot": "D:\\Projects\\Portfolio\\jayanthansenthilkumar\\screenshots\\verify\\07_mobile_large_430x932.png"
+  },
+  {
+    "name": "08_foldable_compact_600x800",
+    "width": 600,
+    "height": 800,
+    "docWidth": 600,
+    "winWidth": 600,
+    "docHeight": 800,
+    "winHeight": 800,
+    "hasHorizontalScroll": false,
+    "hasVerticalScroll": false,
+    "isFooterInViewport": true,
+    "heroRect": {
+      "width": 256,
+      "height": 256,
+      "top": 173.75,
+      "bottom": 429.75
+    },
+    "nameElements": [
+      {
+        "text": "JAYANTHAN",
+        "width": 560,
+        "height": 61.5,
+        "fontSize": "75px"
+      },
+      {
+        "text": "SENTHILKUMAR",
+        "width": 560,
+        "height": 48.203125,
+        "fontSize": "58.8px"
+      }
+    ],
+    "overflowingElements": [],
+    "errors": [],
+    "screenshot": "D:\\Projects\\Portfolio\\jayanthansenthilkumar\\screenshots\\verify\\08_foldable_compact_600x800.png"
+  },
+  {
+    "name": "09_foldable_expanded_768x1024",
+    "width": 768,
+    "height": 1024,
+    "docWidth": 768,
+    "winWidth": 768,
+    "docHeight": 1024,
+    "winHeight": 1024,
+    "hasHorizontalScroll": false,
+    "hasVerticalScroll": false,
+    "isFooterInViewport": true,
+    "heroRect": {
+      "width": 327.671875,
+      "height": 327.671875,
+      "top": 252.90625,
+      "bottom": 580.578125
+    },
+    "nameElements": [
+      {
+        "text": "JAYANTHAN",
+        "width": 712,
+        "height": 78.71875,
+        "fontSize": "96px"
+      },
+      {
+        "text": "SENTHILKUMAR",
+        "width": 712,
+        "height": 61.703125,
+        "fontSize": "75.264px"
+      }
+    ],
+    "overflowingElements": [],
+    "errors": [],
+    "screenshot": "D:\\Projects\\Portfolio\\jayanthansenthilkumar\\screenshots\\verify\\09_foldable_expanded_768x1024.png"
+  },
+  {
+    "name": "10_tablet_820x1180",
+    "width": 820,
+    "height": 1180,
+    "docWidth": 820,
+    "winWidth": 820,
+    "docHeight": 1180,
+    "winHeight": 1180,
+    "hasHorizontalScroll": false,
+    "hasVerticalScroll": false,
+    "isFooterInViewport": true,
+    "heroRect": {
+      "width": 377.59375,
+      "height": 377.59375,
+      "top": 305.953125,
+      "bottom": 683.546875
+    },
+    "nameElements": [
+      {
+        "text": "JAYANTHAN",
+        "width": 764,
+        "height": 84.046875,
+        "fontSize": "102.5px"
+      },
+      {
+        "text": "SENTHILKUMAR",
+        "width": 764,
+        "height": 65.890625,
+        "fontSize": "80.36px"
+      }
+    ],
+    "overflowingElements": [],
+    "errors": [],
+    "screenshot": "D:\\Projects\\Portfolio\\jayanthansenthilkumar\\screenshots\\verify\\10_tablet_820x1180.png"
+  },
+  {
+    "name": "11_tablet_1024x1366",
+    "width": 1024,
+    "height": 1366,
+    "docWidth": 1024,
+    "winWidth": 1024,
+    "docHeight": 1366,
+    "winHeight": 1366,
+    "hasHorizontalScroll": false,
+    "hasVerticalScroll": false,
+    "isFooterInViewport": true,
+    "heroRect": {
+      "width": 437.109375,
+      "height": 437.109375,
+      "top": 367.1875,
+      "bottom": 804.296875
+    },
+    "nameElements": [
+      {
+        "text": "JAYANTHAN",
+        "width": 936,
+        "height": 104.953125,
+        "fontSize": "128px"
+      },
+      {
+        "text": "SENTHILKUMAR",
+        "width": 936,
+        "height": 82.28125,
+        "fontSize": "100.352px"
+      }
+    ],
+    "overflowingElements": [],
+    "errors": [],
+    "screenshot": "D:\\Projects\\Portfolio\\jayanthansenthilkumar\\screenshots\\verify\\11_tablet_1024x1366.png"
+  },
+  {
+    "name": "12_laptop_short_1280x720",
+    "width": 1280,
+    "height": 720,
+    "docWidth": 1280,
+    "winWidth": 1280,
+    "docHeight": 720,
+    "winHeight": 720,
+    "hasHorizontalScroll": false,
+    "hasVerticalScroll": false,
+    "isFooterInViewport": true,
+    "heroRect": {
+      "width": 230.390625,
+      "height": 230.390625,
+      "top": 126.671875,
+      "bottom": 357.0625
+    },
+    "nameElements": [
+      {
+        "text": "JAYANTHAN",
+        "width": 1192,
+        "height": 85.609375,
+        "fontSize": "104.4px"
+      },
+      {
+        "text": "SENTHILKUMAR",
+        "width": 1192,
+        "height": 67.890625,
+        "fontSize": "82.8px"
+      }
+    ],
+    "overflowingElements": [],
+    "errors": [],
+    "screenshot": "D:\\Projects\\Portfolio\\jayanthansenthilkumar\\screenshots\\verify\\12_laptop_short_1280x720.png"
+  },
+  {
+    "name": "13_laptop_std_1366x768",
+    "width": 1366,
+    "height": 768,
+    "docWidth": 1366,
+    "winWidth": 1366,
+    "docHeight": 768,
+    "winHeight": 768,
+    "hasHorizontalScroll": false,
+    "hasVerticalScroll": false,
+    "isFooterInViewport": true,
+    "heroRect": {
+      "width": 245.75,
+      "height": 245.75,
+      "top": 143,
+      "bottom": 388.75
+    },
+    "nameElements": [
+      {
+        "text": "JAYANTHAN",
+        "width": 1192,
+        "height": 91.3125,
+        "fontSize": "111.36px"
+      },
+      {
+        "text": "SENTHILKUMAR",
+        "width": 1192,
+        "height": 72.40625,
+        "fontSize": "88.32px"
+      }
+    ],
+    "overflowingElements": [],
+    "errors": [],
+    "screenshot": "D:\\Projects\\Portfolio\\jayanthansenthilkumar\\screenshots\\verify\\13_laptop_std_1366x768.png"
+  },
+  {
+    "name": "14_laptop_mac_1440x900",
+    "width": 1440,
+    "height": 900,
+    "docWidth": 1440,
+    "winWidth": 1440,
+    "docHeight": 900,
+    "winHeight": 900,
+    "hasHorizontalScroll": false,
+    "hasVerticalScroll": false,
+    "isFooterInViewport": true,
+    "heroRect": {
+      "width": 288,
+      "height": 288,
+      "top": 187.875,
+      "bottom": 475.875
+    },
+    "nameElements": [
+      {
+        "text": "JAYANTHAN",
+        "width": 1192,
+        "height": 107,
+        "fontSize": "130.5px"
+      },
+      {
+        "text": "SENTHILKUMAR",
+        "width": 1192,
+        "height": 84.859375,
+        "fontSize": "103.5px"
+      }
+    ],
+    "overflowingElements": [],
+    "errors": [],
+    "screenshot": "D:\\Projects\\Portfolio\\jayanthansenthilkumar\\screenshots\\verify\\14_laptop_mac_1440x900.png"
+  },
+  {
+    "name": "15_desktop_1600x900",
+    "width": 1600,
+    "height": 900,
+    "docWidth": 1600,
+    "winWidth": 1600,
+    "docHeight": 900,
+    "winHeight": 900,
+    "hasHorizontalScroll": false,
+    "hasVerticalScroll": false,
+    "isFooterInViewport": true,
+    "heroRect": {
+      "width": 288,
+      "height": 288,
+      "top": 196.8125,
+      "bottom": 484.8125
+    },
+    "nameElements": [
+      {
+        "text": "JAYANTHAN",
+        "width": 1472,
+        "height": 107,
+        "fontSize": "130.5px"
+      },
+      {
+        "text": "SENTHILKUMAR",
+        "width": 1472,
+        "height": 84.859375,
+        "fontSize": "103.5px"
+      }
+    ],
+    "overflowingElements": [],
+    "errors": [],
+    "screenshot": "D:\\Projects\\Portfolio\\jayanthansenthilkumar\\screenshots\\verify\\15_desktop_1600x900.png"
+  },
+  {
+    "name": "16_desktop_fhd_1920x1080",
+    "width": 1920,
+    "height": 1080,
+    "docWidth": 1920,
+    "winWidth": 1920,
+    "docHeight": 1080,
+    "winHeight": 1080,
+    "hasHorizontalScroll": false,
+    "hasVerticalScroll": false,
+    "isFooterInViewport": true,
+    "heroRect": {
+      "width": 345.59375,
+      "height": 345.59375,
+      "top": 258.015625,
+      "bottom": 603.609375
+    },
+    "nameElements": [
+      {
+        "text": "JAYANTHAN",
+        "width": 1472,
+        "height": 128.40625,
+        "fontSize": "156.6px"
+      },
+      {
+        "text": "SENTHILKUMAR",
+        "width": 1472,
+        "height": 101.84375,
+        "fontSize": "124.2px"
+      }
+    ],
+    "overflowingElements": [],
+    "errors": [],
+    "screenshot": "D:\\Projects\\Portfolio\\jayanthansenthilkumar\\screenshots\\verify\\16_desktop_fhd_1920x1080.png"
+  },
+  {
+    "name": "17_qhd_2560x1440",
+    "width": 2560,
+    "height": 1440,
+    "docWidth": 2560,
+    "winWidth": 2560,
+    "docHeight": 1440,
+    "winHeight": 1440,
+    "hasHorizontalScroll": false,
+    "hasVerticalScroll": false,
+    "isFooterInViewport": true,
+    "heroRect": {
+      "width": 440,
+      "height": 440,
+      "top": 390.8125,
+      "bottom": 830.8125
+    },
+    "nameElements": [
+      {
+        "text": "JAYANTHAN",
+        "width": 1472,
+        "height": 144.3125,
+        "fontSize": "176px"
+      },
+      {
+        "text": "SENTHILKUMAR",
+        "width": 1472,
+        "height": 115.453125,
+        "fontSize": "140.8px"
+      }
+    ],
+    "overflowingElements": [],
+    "errors": [],
+    "screenshot": "D:\\Projects\\Portfolio\\jayanthansenthilkumar\\screenshots\\verify\\17_qhd_2560x1440.png"
+  },
+  {
+    "name": "18_ultrawide_3440x1440",
+    "width": 3440,
+    "height": 1440,
+    "docWidth": 3440,
+    "winWidth": 3440,
+    "docHeight": 1440,
+    "winHeight": 1440,
+    "hasHorizontalScroll": false,
+    "hasVerticalScroll": false,
+    "isFooterInViewport": true,
+    "heroRect": {
+      "width": 440,
+      "height": 440,
+      "top": 390.8125,
+      "bottom": 830.8125
+    },
+    "nameElements": [
+      {
+        "text": "JAYANTHAN",
+        "width": 1472,
+        "height": 144.3125,
+        "fontSize": "176px"
+      },
+      {
+        "text": "SENTHILKUMAR",
+        "width": 1472,
+        "height": 115.453125,
+        "fontSize": "140.8px"
+      }
+    ],
+    "overflowingElements": [],
+    "errors": [],
+    "screenshot": "D:\\Projects\\Portfolio\\jayanthansenthilkumar\\screenshots\\verify\\18_ultrawide_3440x1440.png"
+  },
+  {
+    "name": "19_super_ultrawide_5120x1440",
+    "width": 5120,
+    "height": 1440,
+    "docWidth": 5120,
+    "winWidth": 5120,
+    "docHeight": 1440,
+    "winHeight": 1440,
+    "hasHorizontalScroll": false,
+    "hasVerticalScroll": false,
+    "isFooterInViewport": true,
+    "heroRect": {
+      "width": 440,
+      "height": 440,
+      "top": 390.8125,
+      "bottom": 830.8125
+    },
+    "nameElements": [
+      {
+        "text": "JAYANTHAN",
+        "width": 1472,
+        "height": 144.3125,
+        "fontSize": "176px"
+      },
+      {
+        "text": "SENTHILKUMAR",
+        "width": 1472,
+        "height": 115.453125,
+        "fontSize": "140.8px"
+      }
+    ],
+    "overflowingElements": [],
+    "errors": [],
+    "screenshot": "D:\\Projects\\Portfolio\\jayanthansenthilkumar\\screenshots\\verify\\19_super_ultrawide_5120x1440.png"
+  },
+  {
+    "name": "20_mobile_landscape_844x390",
+    "width": 844,
+    "height": 390,
+    "docWidth": 844,
+    "winWidth": 844,
+    "docHeight": 589,
+    "winHeight": 390,
+    "hasHorizontalScroll": false,
+    "hasVerticalScroll": true,
+    "isFooterInViewport": false,
+    "heroRect": {
+      "width": 132.59375,
+      "height": 132.59375,
+      "top": 132.703125,
+      "bottom": 265.296875
+    },
+    "nameElements": [
+      {
+        "text": "JAYANTHAN",
+        "width": 788,
+        "height": 46.359375,
+        "fontSize": "56.55px"
+      },
+      {
+        "text": "SENTHILKUMAR",
+        "width": 788,
+        "height": 36.765625,
+        "fontSize": "44.85px"
+      }
+    ],
+    "overflowingElements": [],
+    "errors": [],
+    "screenshot": "D:\\Projects\\Portfolio\\jayanthansenthilkumar\\screenshots\\verify\\20_mobile_landscape_844x390.png"
+  },
+  {
+    "name": "21_tablet_landscape_1024x768",
+    "width": 1024,
+    "height": 768,
+    "docWidth": 1024,
+    "winWidth": 1024,
+    "docHeight": 768,
+    "winHeight": 768,
+    "hasHorizontalScroll": false,
+    "hasVerticalScroll": false,
+    "isFooterInViewport": true,
+    "heroRect": {
+      "width": 245.75,
+      "height": 245.75,
+      "top": 163.875,
+      "bottom": 409.625
+    },
+    "nameElements": [
+      {
+        "text": "JAYANTHAN",
+        "width": 936,
+        "height": 91.3125,
+        "fontSize": "111.36px"
+      },
+      {
+        "text": "SENTHILKUMAR",
+        "width": 936,
+        "height": 72.40625,
+        "fontSize": "88.32px"
+      }
+    ],
+    "overflowingElements": [],
+    "errors": [],
+    "screenshot": "D:\\Projects\\Portfolio\\jayanthansenthilkumar\\screenshots\\verify\\21_tablet_landscape_1024x768.png"
+  }
+]

@@ -8,7 +8,7 @@ export const App: FC = () => {
   const { meta } = PORTAL_CONFIG;
 
   return (
-    <div className="min-h-screen min-h-dvh sm:h-screen sm:h-dvh sm:max-h-screen sm:max-h-dvh w-full flex flex-col justify-between bg-[#FAF8F5] text-[#18181B] relative font-['Manrope',sans-serif] overflow-x-hidden overflow-y-auto sm:overflow-hidden">
+    <div className="min-h-screen min-h-svh w-full flex flex-col justify-between bg-[#FAF8F5] text-[#18181B] relative font-['Manrope',sans-serif] overflow-x-hidden pt-[max(0.25rem,env(safe-area-inset-top))]">
       <Helmet>
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
@@ -20,19 +20,15 @@ export const App: FC = () => {
       </Helmet>
 
       {/* Subtle Architectural Micro-Texture & Top Ambient Warm Lighting */}
-      <div className="fixed inset-0 calm-subtle-grid opacity-35 pointer-events-none" />
-      <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-gradient-to-b from-[#ECE6DA]/50 to-transparent blur-3xl pointer-events-none" />
+      <div className="fixed inset-0 calm-subtle-grid opacity-35 pointer-events-none -z-10" aria-hidden="true" />
+      <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[min(600px,90vw)] h-[180px] bg-gradient-to-b from-[#ECE6DA]/50 to-transparent blur-3xl pointer-events-none -z-10" aria-hidden="true" />
 
-      {/* Bilateral Edge Vignettes for Ultrawide 21:9 and Super Ultrawide 32:9 Displays */}
-      <div className="fixed inset-y-0 left-0 w-20 lg:w-40 bg-gradient-to-r from-[#FAF8F5] to-transparent pointer-events-none hidden xl:block z-20" />
-      <div className="fixed inset-y-0 right-0 w-20 lg:w-40 bg-gradient-to-l from-[#FAF8F5] to-transparent pointer-events-none hidden xl:block z-20" />
-
-      {/* MAIN CONTENT AREA: SCROLLABLE ON MOBILE, SINGLE VIEWPORT ON DESKTOP */}
-      <main className="flex-1 flex flex-col justify-between w-full relative z-10 overflow-visible sm:overflow-hidden">
+      {/* MAIN VIEWPORT COMPOSITION */}
+      <main className="flex-1 flex flex-col justify-between w-full relative z-10 min-h-0">
         <Hero />
       </main>
 
-      {/* INTEGRATED SINGLE-VIEWPORT FOOTER */}
+      {/* INTEGRATED FOOTER */}
       <Footer />
     </div>
   );

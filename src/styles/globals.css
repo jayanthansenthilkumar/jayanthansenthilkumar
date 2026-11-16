@@ -22,76 +22,95 @@
   --text-primary: #18181B;
   --text-secondary: #52525B;
   --border-subtle: #E6E2D8;
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
 }
 
 /* Delicate micro-dot grid for tactile architectural texture */
 .calm-subtle-grid {
-  background-image: radial-gradient(rgba(24, 24, 27, 0.09) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(24, 24, 27, 0.08) 1px, transparent 1px);
   background-size: 32px 32px;
 }
 
 /* Soft ambient paper glow behind the portrait */
 .calm-ambient-glow {
-  background: radial-gradient(circle at 50% 45%, rgba(225, 215, 198, 0.6) 0%, rgba(250, 248, 245, 0) 70%);
+  background: radial-gradient(circle at 50% 50%, rgba(225, 215, 198, 0.65) 0%, rgba(250, 248, 245, 0) 72%);
 }
 
 /* Sophisticated Editorial Typography behind portrait: Commanding, large, prominent */
 .editorial-name-layer {
   font-family: var(--font-serif);
   font-weight: 700;
-  line-height: 0.81;
+  line-height: 0.82;
   text-transform: uppercase;
   user-select: none;
   color: #18181B;
-  opacity: 0.26;
+  opacity: 0.28;
+  white-space: nowrap;
+  pointer-events: none;
 }
 
-/* Architectural Squared Dock: Sharp 90-degree squared border */
+/* Architectural Dock: Refined curved borders and glassmorphism */
 .curved-editorial-panel {
   background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border: 1px solid #E2DDD2;
-  border-radius: 0px !important;
-  box-shadow: 0 14px 40px -8px rgba(24, 24, 27, 0.06), 0 2px 6px rgba(24, 24, 27, 0.02);
+  border-radius: 1.25rem;
+  box-shadow: 0 12px 36px -8px rgba(24, 24, 27, 0.06), 0 2px 6px rgba(24, 24, 27, 0.02);
 }
 
-/* Navigation Interactive Cards: Squared border */
+@media (min-width: 640px) {
+  .curved-editorial-panel {
+    border-radius: 1.5rem;
+  }
+}
+
+/* Navigation Interactive Cards: Elegant subtle curve and calm hover */
 .editorial-card-interactive {
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
   border: 1px solid #E4DFD3;
-  border-radius: 0px !important;
+  border-radius: 0.875rem;
   background-color: #FAF8F5;
 }
 
-.editorial-card-interactive:hover {
-  background-color: #F2ECE0;
-  border-color: #C8C0AF;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 28px -5px rgba(24, 24, 27, 0.07);
+@media (min-width: 640px) {
+  .editorial-card-interactive {
+    border-radius: 1rem;
+  }
 }
 
-/* Subtle pulse ripple for availability badge */
+.editorial-card-interactive:hover {
+  background-color: #F3ECE1;
+  border-color: #C8C0AF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px -4px rgba(24, 24, 27, 0.07);
+}
+
+/* Subtle circular pulse ripple for availability badge */
 .status-indicator-dot {
   position: relative;
+  border-radius: 9999px;
 }
 
 .status-indicator-dot::after {
   content: "";
   position: absolute;
-  top: -2.5px;
-  right: -2.5px;
-  bottom: -2.5px;
-  left: -2.5px;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
   border: 1.5px solid #10B981;
-  border-radius: 0px;
-  animation: pulse-ripple 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  border-radius: 9999px;
+  animation: pulse-ripple 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 @keyframes pulse-ripple {
   0% {
     transform: scale(0.9);
-    opacity: 0.8;
+    opacity: 0.85;
   }
   100% {
     transform: scale(2.2);
