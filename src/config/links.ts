@@ -1,41 +1,22 @@
 export const PORTAL_CONFIG = {
-  branding: {
-    siteName: "JAYANTHAN.FYI",
-    monogram: "JS",
-    domain: "jayanthan.fyi",
-  },
-  hero: {
-    introLabel: "HEY, I'M",
-    name: "JAYANTHAN!",
-    headline: "SOFTWARE ENGINEER · CREATIVE THINKER · TECHNOLOGY EXPLORER",
-    supportingLine: "Turning ideas into experiences, one build at a time.",
-    statusBadge: "AVAILABLE FOR WORK",
-  },
-  stickers: [
-    { text: "THINK DIFFERENT.", color: "#EF79A9", rotation: -6 },
-    { text: "KEEP BUILDING.", color: "#F2ED37", rotation: 4 },
-    { text: "GOOD VIBES ONLY.", color: "#46D9BC", rotation: -3 },
-  ],
+  name: "Jayanthan Senthilkumar",
+  tagline: "Software Engineer · Creator · Innovator",
+  supportingText: "Turning ideas into experiences, one build at a time.",
+  statusLabel: "Available for Collaboration",
   destinations: {
     portfolio: {
-      id: "portfolio",
-      number: "01",
-      title: "MY PORTFOLIO",
+      index: "01",
+      title: "My Portfolio",
       description: "Explore my professional journey and work.",
-      cta: "EXPLORE PORTFOLIO ↗",
+      cta: "Explore Portfolio ↗",
       url: "https://hilo.jayanthan.fyi",
-      accentColor: "#FF713D", // Signal Orange
-      tag: "CODE & PRODUCTION",
     },
     blogs: {
-      id: "blogs",
-      number: "02",
-      title: "MY BLOGS",
+      index: "02",
+      title: "My Blogs",
       description: "Discover my thoughts, articles and technical insights.",
-      cta: "READ MY BLOGS ↗",
+      cta: "Read My Blogs ↗",
       url: "https://blogs.jayanthan.fyi",
-      accentColor: "#46D9BC", // Mint Green
-      tag: "NOTES & ESSAYS",
     },
   },
   social: [
@@ -56,8 +37,8 @@ export const PORTAL_CONFIG = {
     },
   ],
   meta: {
-    title: "JAYANTHAN.FYI // Software Engineer & Creator",
+    title: "Jayanthan Senthilkumar // Central Portal",
     description:
-      "Single-screen personal identity gateway for Jayanthan Senthilkumar — Software Engineer, Creative Thinker, Technology Explorer. Direct routing to Portfolio and Blogs.",
+      "Central personal portal for Jayanthan Senthilkumar — Software Engineer, Creator, Innovator. Gateway to Personal Portfolio and Technical Blogs.",
   },
 } as const;
