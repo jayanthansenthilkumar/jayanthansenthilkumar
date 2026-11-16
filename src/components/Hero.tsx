@@ -8,7 +8,7 @@ import { SawtoothDivider } from "@/components/ui/SawtoothDivider";
 import { PlusSticker, SquiggleSticker, TiltedSquare, SparkleBadge } from "@/components/ui/Stickers";
 
 export const Hero: FC = () => {
-  const { hero, destinations } = PORTAL_CONFIG;
+  const { branding, hero, destinations } = PORTAL_CONFIG;
 
   return (
     <section
@@ -28,16 +28,32 @@ export const Hero: FC = () => {
       </div>
 
       {/* =========================================================================
-          HERO TOP ROW: Introductory Label & Professional Badges
+          HERO TOP ROW: Branding Header & Introductory Badges
           ========================================================================= */}
-      <div className="flex flex-wrap items-center justify-between gap-4 mb-6 sm:mb-8">
-        {/* Small Introductory Label (Exact Prompt Requirement) */}
-        <div className="inline-flex items-center gap-2 bg-[#FF713D] border-2 border-[#171717] px-3.5 py-1.5 rounded-xl brutal-shadow-sm font-mono text-xs sm:text-sm font-bold tracking-widest text-[#FFFDF7] uppercase">
-          <span>✦</span>
-          <span>{hero.introLabel}</span>
+      <div className="flex flex-wrap items-center justify-between gap-4 mb-8 sm:mb-12 pb-6 border-b-2 border-[#171717]/20">
+        {/* Left: Monogram, Site Name & Introductory Label */}
+        <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+          <div className="flex items-center gap-2.5">
+            <div className="w-10 h-10 rounded-xl bg-[#FF713D] border-2 border-[#171717] flex items-center justify-center font-['Archivo_Black',sans-serif] text-sm text-[#171717] brutal-shadow-sm select-none">
+              {branding.monogram}
+            </div>
+            <div className="flex flex-col">
+              <span className="font-['Archivo_Black',sans-serif] text-lg sm:text-xl tracking-tight text-[#171717]">
+                {branding.siteName}
+              </span>
+              <span className="font-mono text-[10px] text-[#171717]/70 font-bold uppercase tracking-wider">
+                CENTRAL DIGITAL GATEWAY
+              </span>
+            </div>
+          </div>
+
+          <div className="inline-flex items-center gap-2 bg-[#FF713D] border-2 border-[#171717] px-3.5 py-1.5 rounded-xl brutal-shadow-sm font-mono text-xs sm:text-sm font-bold tracking-widest text-[#FFFDF7] uppercase ml-1 sm:ml-4">
+            <span>✦</span>
+            <span>{hero.introLabel}</span>
+          </div>
         </div>
 
-        {/* Professional Identity Badge (Exact Prompt Requirement) */}
+        {/* Right: Professional Identity Badge */}
         <div className="inline-flex items-center gap-2 bg-[#80B5EB] border-2 border-[#171717] px-3.5 py-1.5 rounded-xl brutal-shadow-sm font-mono text-xs sm:text-sm font-bold tracking-wider text-[#171717] uppercase">
           <span className="w-2.5 h-2.5 rounded-full bg-[#46D9BC] border border-[#171717] animate-pulse" />
           <span>{hero.identityBadge}</span>

@@ -1,6 +1,5 @@
 import { FC } from "react";
 import { Helmet } from "react-helmet-async";
-import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Footer } from "@/components/Footer";
 import { PORTAL_CONFIG } from "@/config/links";
@@ -20,15 +19,12 @@ export const App: FC = () => {
         <meta name="theme-color" content="#F4E4CC" />
       </Helmet>
 
-      {/* 1. NAVIGATION BAR */}
-      <Navbar />
-
-      {/* 2. HERO SECTION — THE MAIN FOCUS */}
+      {/* HERO SECTION — MAIN CONTENT & GATEWAYS */}
       <main className="flex-1 flex flex-col justify-center">
         <Hero />
       </main>
 
-      {/* 3. FOOTER */}
+      {/* FOOTER */}
       <Footer />
     </div>
   );
