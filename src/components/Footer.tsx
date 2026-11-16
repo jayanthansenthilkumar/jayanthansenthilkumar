@@ -27,18 +27,19 @@ export const Footer: FC = () => {
 
   return (
     <footer className="relative z-10 w-full bg-[#080A09] border-t-2 border-[#172019] py-6 px-4 sm:px-6 lg:px-12 mt-auto">
-      {/* Honeycomb-Inspired Repeating Geometric Border Accent */}
+      
+      {/* Repeating Honeycomb Geometric Separator Bar (Ref 02 & Ref 03) */}
       <div className="absolute top-0 inset-x-0 -translate-y-1/2 flex justify-center pointer-events-none overflow-hidden select-none">
-        <div className="flex items-center gap-2 font-mono text-[9px] text-[#C6FF00] bg-[#080A09] px-3 border border-[#172019]">
+        <div className="flex items-center gap-2 font-mono text-[9px] text-[#C6FF00] bg-[#080A09] px-4 py-0.5 border border-[#172019]">
           <span className="w-1.5 h-1.5 bg-[#C6FF00] inline-block"></span>
-          <span>HEX-LINE // ENCRYPTED</span>
+          <span className="tracking-widest">HONEYCOMB-SYS // END_OF_TRANSMISSION</span>
           <span className="w-1.5 h-1.5 bg-[#C6FF00] inline-block"></span>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 font-mono text-xs">
         
-        {/* Copyright & Purpose Statement */}
+        {/* Copyright & Purpose Statement (Exact Prompt Requirement) */}
         <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
           <span className="font-bold text-[#F4F4ED] tracking-wider">
             &copy; {currentYear} Jayanthan SenthilKumar.
