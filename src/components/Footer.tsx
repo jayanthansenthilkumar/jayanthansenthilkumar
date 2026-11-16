@@ -67,7 +67,7 @@ export const Footer: FC = () => {
           ))}
 
           {/* Quick Back to Top */}
-          <button
+          {/* <button
             type="button"
             onClick={scrollToTop}
             aria-label="Scroll back to top"
@@ -75,7 +75,7 @@ export const Footer: FC = () => {
           >
             <span>TOP</span>
             <ArrowUp className="w-3 h-3" />
-          </button>
+          </button> */}
         </div>
       </div>
     </footer>

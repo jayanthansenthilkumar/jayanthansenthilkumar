@@ -59,7 +59,7 @@ export const PORTAL_CONFIG = {
     },
   ],
   meta: {
-    title: "Jayanthan Senthilkumar // SAP Backend Engineer",
+    title: "Jayanthan Senthilkumar",
     description:
       "Official central gateway for Jayanthan Senthilkumar — SAP Backend Engineer. Direct access to Personal Portfolio and Technical Engineering Blogs.",
   },
