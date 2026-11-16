@@ -3,8 +3,8 @@ import { FC, SVGProps } from "react";
 export const GithubIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
   <svg
     viewBox="0 0 24 24"
-    width="24"
-    height="24"
+    width="20"
+    height="20"
     stroke="currentColor"
     strokeWidth="2"
     fill="none"
@@ -20,8 +20,8 @@ export const GithubIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
 export const LinkedinIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
   <svg
     viewBox="0 0 24 24"
-    width="24"
-    height="24"
+    width="20"
+    height="20"
     stroke="currentColor"
     strokeWidth="2"
     fill="none"
@@ -35,3 +35,37 @@ export const LinkedinIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
   </svg>
 );
 
+export const MediumIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
+  <svg
+    viewBox="0 0 24 24"
+    width="20"
+    height="20"
+    stroke="currentColor"
+    strokeWidth="2"
+    fill="none"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <circle cx="7" cy="12" r="5" />
+    <ellipse cx="16" cy="12" rx="3.5" ry="5" />
+    <ellipse cx="21" cy="12" rx="1" ry="4.5" />
+  </svg>
+);
+
+export const MailIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
+  <svg
+    viewBox="0 0 24 24"
+    width="20"
+    height="20"
+    stroke="currentColor"
+    strokeWidth="2"
+    fill="none"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <rect width="20" height="16" x="2" y="4" rx="0" />
+    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+  </svg>
+);
