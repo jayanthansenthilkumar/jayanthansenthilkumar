@@ -85,7 +85,7 @@ export const Hero: FC = () => {
           <div className="relative h-full flex items-end">
             <img
               src="/hero.png"
-              alt="Jayanthan Senthilkumar - Senior Software Engineer & IT Professional"
+              alt="Jayanthan Senthilkumar - SAP Backend Engineer & IT Professional"
               className="relative z-10 w-auto object-contain object-bottom drop-shadow-[0_18px_40px_rgba(24,24,27,0.13)] transition-transform duration-300 hover:scale-[1.01]"
               style={{
                 height: "min(50vh, 580px)",
