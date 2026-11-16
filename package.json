@@ -34,6 +34,7 @@
     "@types/react-dom": "^19",
     "@vitejs/plugin-react": "^6.0.4",
     "eslint": "^9",
+    "playwright": "^1.65.1",
     "tailwindcss": "^4",
     "typescript": "^5",
     "vite": "^8.1.5"
