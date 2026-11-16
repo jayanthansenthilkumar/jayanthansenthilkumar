@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme inline {
+  --breakpoint-xs: 420px;
   --color-slate-base: #090D16;
   --color-slate-card: #0F172A;
   --color-accent-sky: #38BDF8;
