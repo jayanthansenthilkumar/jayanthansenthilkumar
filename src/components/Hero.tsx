@@ -121,7 +121,13 @@ export const Hero: FC = () => {
           </div>
 
           {/* TWO DESTINATION BUTTONS IN A SINGLE ROW ACROSS ALL DEVICES */}
-          <div className="relative z-10 grid grid-cols-2 gap-2 sm:gap-3.5 md:gap-4.5">
+          <div
+            className="relative z-10 grid grid-cols-2 gap-2 sm:gap-3.5 md:gap-4.5 w-full items-stretch"
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+            }}
+          >
             {/* Destination 01: MY PORTFOLIO */}
             <DestinationCard
               index={destinations.portfolio.index}
@@ -129,6 +135,7 @@ export const Hero: FC = () => {
               subtitle={destinations.portfolio.subtitle}
               cta={destinations.portfolio.cta}
               url={destinations.portfolio.url}
+              badge={destinations.portfolio.badge}
               ariaLabel="Navigate to Jayanthan Senthilkumar's Personal Portfolio"
             />
 
@@ -139,6 +146,7 @@ export const Hero: FC = () => {
               subtitle={destinations.blogs.subtitle}
               cta={destinations.blogs.cta}
               url={destinations.blogs.url}
+              badge={destinations.blogs.badge}
               ariaLabel="Navigate to Jayanthan Senthilkumar's Engineering Blogs"
             />
           </div>
