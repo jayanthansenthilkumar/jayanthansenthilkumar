@@ -41,11 +41,11 @@ export const DestinationCard: FC<DestinationCardProps> = ({
         </div>
 
         <div className="min-w-0">
-          <div className="flex items-center gap-2 mb-1">
+          {/* <div className="flex items-center gap-2 mb-1">
             <span className="font-mono text-[11px] sm:text-xs md:text-[13px] font-semibold text-[#71717A] tracking-wider uppercase">
               {index} / {badge}
             </span>
-          </div>
+          </div> */}
           <h2 className="font-['Manrope',sans-serif] text-lg sm:text-xl md:text-2xl font-bold tracking-tight text-[#18181B] group-hover:text-black transition-colors leading-tight">
             {title}
           </h2>

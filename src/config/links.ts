@@ -8,12 +8,12 @@ export const PORTAL_CONFIG = {
     firstName: "JAYANTHAN",
     lastName: "SENTHILKUMAR",
     fullName: "JAYANTHAN SENTHILKUMAR",
-    role: "Senior Software Engineer & IT Professional",
-    specialization: "Full-Stack Architecture · Cloud Computing · Scalable Distributed Systems",
+    role: "SAP Backend Engineer",
+    specialization: "SAP Backend Architecture · Enterprise Integrations · Distributed Systems",
     status: "Available for High-Impact Projects",
-    location: "Chennai, India / Global Remote",
+    location: "Bengaluru, India / Global Remote",
     statement:
-      "Engineering resilient software architectures, high-concurrency systems, and transformative digital experiences for enterprise scale.",
+      "Engineering resilient enterprise backend architectures, robust SAP integrations, and scalable business systems.",
   },
   destinations: {
     portfolio: {
@@ -54,8 +54,8 @@ export const PORTAL_CONFIG = {
     },
   ],
   meta: {
-    title: "Jayanthan Senthilkumar // Senior Software Engineer & IT Professional",
+    title: "Jayanthan Senthilkumar // SAP Backend Engineer",
     description:
-      "Official central gateway for Jayanthan Senthilkumar — Senior Software Engineer & IT Professional. Direct access to Personal Portfolio and Technical Engineering Blogs.",
+      "Official central gateway for Jayanthan Senthilkumar — SAP Backend Engineer. Direct access to Personal Portfolio and Technical Engineering Blogs.",
   },
 } as const;

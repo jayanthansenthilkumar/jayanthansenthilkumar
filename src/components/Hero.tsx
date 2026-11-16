@@ -26,7 +26,7 @@ export const Hero: FC = () => {
                 {branding.siteName}
               </span>
               <span className="text-[10px] sm:text-[11px] px-2.5 py-0.5 rounded-none bg-[#EFECE5] text-[#52525B] border border-[#DDD7C9] font-mono font-medium hidden xs:inline">
-                IT PRO
+                SAP PRO
               </span>
             </div>
             <span className="font-mono text-xs sm:text-sm text-[#52525B] font-medium truncate">
@@ -85,7 +85,7 @@ export const Hero: FC = () => {
           <div className="relative h-full flex items-end">
             <img
               src="/hero.png"
-              alt="Jayanthan Senthilkumar - SAP Backend Engineer & IT Professional"
+              alt="Jayanthan Senthilkumar - SAP Backend Engineer"
               className="relative z-10 w-auto object-contain object-bottom drop-shadow-[0_18px_40px_rgba(24,24,27,0.13)] transition-transform duration-300 hover:scale-[1.01]"
               style={{
                 height: "min(50vh, 580px)",
