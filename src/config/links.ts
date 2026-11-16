@@ -1,21 +1,3 @@
-export interface DestinationItem {
-  readonly id: string;
-  readonly number: string;
-  readonly title: string;
-  readonly subtitle: string;
-  readonly cta: string;
-  readonly url: string;
-  readonly accentColor: string;
-  readonly tag: string;
-}
-
-export interface SocialLink {
-  readonly name: string;
-  readonly url: string;
-  readonly label: string;
-  readonly handle: string;
-}
-
 export const PORTAL_CONFIG = {
   branding: {
     siteName: "JAYANTHAN.FYI",
@@ -23,39 +5,37 @@ export const PORTAL_CONFIG = {
     domain: "jayanthan.fyi",
   },
   hero: {
-    introLabel: "HELLO, WORLD! I'M",
-    firstName: "JAYANTHAN",
-    lastName: "SENTHILKUMAR.",
-    fullName: "JAYANTHAN SENTHILKUMAR.",
-    supportingHeadline: "SOFTWARE ENGINEER. CREATOR. INNOVATOR.",
-    introduction:
-      "Passionate about engineering meaningful digital experiences, exploring emerging technologies and transforming ambitious ideas into reality.",
-    identityBadge: "SOFTWARE ENGINEER | TECHNOLOGY ENTHUSIAST",
-    statusBadge: "AVAILABLE FOR COLLABORATION",
-    locationBadge: "CHENNAI, INDIA / REMOTE",
+    introLabel: "HEY, I'M",
+    name: "JAYANTHAN!",
+    headline: "SOFTWARE ENGINEER · CREATIVE THINKER · TECHNOLOGY EXPLORER",
+    supportingLine: "Turning ideas into experiences, one build at a time.",
+    statusBadge: "AVAILABLE FOR WORK",
   },
+  stickers: [
+    { text: "THINK DIFFERENT.", color: "#EF79A9", rotation: -6 },
+    { text: "KEEP BUILDING.", color: "#F2ED37", rotation: 4 },
+    { text: "GOOD VIBES ONLY.", color: "#46D9BC", rotation: -3 },
+  ],
   destinations: {
     portfolio: {
       id: "portfolio",
       number: "01",
       title: "MY PORTFOLIO",
-      subtitle:
-        "Discover my professional journey, technical expertise, achievements and work.",
+      description: "Explore my professional journey and work.",
       cta: "EXPLORE PORTFOLIO ↗",
       url: "https://hilo.jayanthan.fyi",
       accentColor: "#FF713D", // Signal Orange
-      tag: "WORK & PRODUCTION CODE",
+      tag: "CODE & PRODUCTION",
     },
     blogs: {
       id: "blogs",
       number: "02",
       title: "MY BLOGS",
-      subtitle:
-        "Explore my technical articles, thoughts, development insights and experiments.",
+      description: "Discover my thoughts, articles and technical insights.",
       cta: "READ MY BLOGS ↗",
       url: "https://blogs.jayanthan.fyi",
       accentColor: "#46D9BC", // Mint Green
-      tag: "WRITING & RESEARCH NOTES",
+      tag: "NOTES & ESSAYS",
     },
   },
   social: [
@@ -63,28 +43,21 @@ export const PORTAL_CONFIG = {
       name: "GitHub",
       url: "https://github.com/jayanthansenthilkumar",
       label: "GitHub Profile",
-      handle: "@jayanthansenthilkumar",
     },
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/jayanthan18",
       label: "LinkedIn Profile",
-      handle: "/in/jayanthan18",
     },
     {
       name: "Email",
       url: "mailto:jayanthansenthilkumar18@gmail.com",
       label: "Send Email",
-      handle: "jayanthansenthilkumar18@gmail.com",
     },
   ],
-  footer: {
-    motto: "Building ideas. Creating impact.",
-    copyrightNotice: "All rights reserved. Designed with Neo-Brutalist precision.",
-  },
   meta: {
-    title: "Jayanthan Senthilkumar // Central Personal Portal",
+    title: "JAYANTHAN.FYI // Software Engineer & Creator",
     description:
-      "Central personal portal for Jayanthan Senthilkumar — Software Engineer, Creator, Innovator. Gateway to Personal Portfolio and Technical Blogs.",
+      "Single-screen personal identity gateway for Jayanthan Senthilkumar — Software Engineer, Creative Thinker, Technology Explorer. Direct routing to Portfolio and Blogs.",
   },
 } as const;

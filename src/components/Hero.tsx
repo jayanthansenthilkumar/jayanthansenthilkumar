@@ -1,175 +1,152 @@
 import { FC } from "react";
 import { PORTAL_CONFIG } from "@/config/links";
 import { DestinationCard } from "@/components/DestinationCard";
-import { WorkstationIllustration } from "@/components/illustrations/WorkstationIllustration";
-import { PortfolioIllustration } from "@/components/illustrations/PortfolioIllustration";
-import { BlogIllustration } from "@/components/illustrations/BlogIllustration";
-import { SawtoothDivider } from "@/components/ui/SawtoothDivider";
-import { PlusSticker, SquiggleSticker, TiltedSquare, SparkleBadge } from "@/components/ui/Stickers";
+import { VeoCharacterMascot } from "@/components/illustrations/VeoCharacterMascot";
+import { SparkleBadge, SquiggleSticker } from "@/components/ui/Stickers";
 
 export const Hero: FC = () => {
-  const { branding, hero, destinations } = PORTAL_CONFIG;
+  const { branding, hero, stickers, destinations } = PORTAL_CONFIG;
 
   return (
     <section
-      id="home"
-      aria-label="Hero Introduction and Gateway"
-      className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pt-8 sm:pt-12 pb-16"
+      aria-label="Single-Screen Personal Identity Gateway"
+      className="flex-1 min-h-0 flex flex-col justify-between max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-12 py-2 sm:py-3 z-10"
     >
-      {/* Decorative Playful Floating Accents (from Reference 01 & 02) */}
-      <div className="absolute top-4 left-6 hidden lg:block" aria-hidden="true">
-        <PlusSticker color="#EF79A9" size={32} />
-      </div>
-      <div className="absolute top-10 right-16 hidden lg:block" aria-hidden="true">
-        <SquiggleSticker color="#171717" />
-      </div>
-      <div className="absolute top-24 right-32 hidden xl:block" aria-hidden="true">
-        <TiltedSquare color="#F2ED37" size={24} rotation={12} />
-      </div>
-
       {/* =========================================================================
-          HERO TOP ROW: Branding Header & Introductory Badges
+          TOP BRANDING ROW (Minimal, Clean & Balanced)
           ========================================================================= */}
-      <div className="flex flex-wrap items-center justify-between gap-4 mb-8 sm:mb-12 pb-6 border-b-2 border-[#171717]/20">
-        {/* Left: Monogram, Site Name & Introductory Label */}
-        <div className="flex flex-wrap items-center gap-3 sm:gap-4">
-          <div className="flex items-center gap-2.5">
-            <div className="w-10 h-10 rounded-xl bg-[#FF713D] border-2 border-[#171717] flex items-center justify-center font-['Archivo_Black',sans-serif] text-sm text-[#171717] brutal-shadow-sm select-none">
-              {branding.monogram}
-            </div>
-            <div className="flex flex-col">
-              <span className="font-['Archivo_Black',sans-serif] text-lg sm:text-xl tracking-tight text-[#171717]">
-                {branding.siteName}
-              </span>
-              <span className="font-mono text-[10px] text-[#171717]/70 font-bold uppercase tracking-wider">
-                CENTRAL DIGITAL GATEWAY
-              </span>
-            </div>
+      <header className="flex items-center justify-between gap-3 shrink-0 pt-1 pb-2 border-b-2 border-[#171717]/15">
+        {/* Left: Monogram & Site Name */}
+        <div className="flex items-center gap-2.5">
+          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-[#FF713D] border-2 border-[#171717] flex items-center justify-center font-['Archivo_Black',sans-serif] text-xs sm:text-sm text-[#171717] brutal-shadow-sm select-none">
+            {branding.monogram}
           </div>
-
-          <div className="inline-flex items-center gap-2 bg-[#FF713D] border-2 border-[#171717] px-3.5 py-1.5 rounded-xl brutal-shadow-sm font-mono text-xs sm:text-sm font-bold tracking-widest text-[#FFFDF7] uppercase ml-1 sm:ml-4">
-            <span>✦</span>
-            <span>{hero.introLabel}</span>
-          </div>
-        </div>
-
-        {/* Right: Professional Identity Badge */}
-        <div className="inline-flex items-center gap-2 bg-[#80B5EB] border-2 border-[#171717] px-3.5 py-1.5 rounded-xl brutal-shadow-sm font-mono text-xs sm:text-sm font-bold tracking-wider text-[#171717] uppercase">
-          <span className="w-2.5 h-2.5 rounded-full bg-[#46D9BC] border border-[#171717] animate-pulse" />
-          <span>{hero.identityBadge}</span>
-        </div>
-      </div>
-
-      {/* =========================================================================
-          EDITORIAL HERO BODY: Massive Neo-Brutalist Typography + Illustration
-          ========================================================================= */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-12 sm:mb-16">
-        {/* Left Column: Headlines & Editorial Copy (lg:col-span-7) */}
-        <div className="lg:col-span-7 space-y-6 sm:space-y-7">
-          {/* Main Headline (Exact Prompt Requirement) */}
-          <h1 className="font-['Archivo_Black',sans-serif] text-5xl sm:text-7xl md:text-8xl xl:text-[6.8rem] leading-[0.92] tracking-tighter text-[#171717] uppercase select-none">
-            {hero.firstName}
-            <br />
-            <span className="text-[#171717] inline-block relative">
-              {hero.lastName}
-              {/* Retro highlight bar */}
-              <span
-                className="absolute bottom-2 left-0 w-full h-4 sm:h-6 bg-[#F2ED37] -z-10 -rotate-1 border-t-2 border-b-2 border-[#171717]/30"
-                aria-hidden="true"
-              />
+          <div className="flex flex-col">
+            <span className="font-['Archivo_Black',sans-serif] text-base sm:text-lg tracking-tight text-[#171717]">
+              {branding.siteName}
             </span>
-          </h1>
+            <span className="font-mono text-[9px] text-[#171717]/70 font-bold uppercase tracking-wider hidden xs:block">
+              PERSONAL IDENTITY GATEWAY
+            </span>
+          </div>
+        </div>
 
-          {/* Supporting Headline (Exact Prompt Requirement) */}
-          <div className="inline-block bg-[#F2ED37] border-[3px] border-[#171717] px-4 sm:px-6 py-2.5 rounded-2xl brutal-shadow-sm">
-            <h2 className="font-['Space_Grotesk',sans-serif] text-base sm:text-xl md:text-2xl font-black tracking-tight text-[#171717] uppercase">
-              {hero.supportingHeadline}
-            </h2>
+        {/* Right: Status Badge & Good Vibes Sticker */}
+        <div className="flex items-center gap-2 sm:gap-3">
+          {/* GOOD VIBES ONLY Sticker */}
+          <div
+            className="hidden sm:inline-flex items-center px-2.5 py-1 border-2 border-[#171717] rounded-lg font-mono text-[10px] font-bold text-[#171717] brutal-shadow-sm -rotate-3"
+            style={{ backgroundColor: stickers[2].color }}
+          >
+            <span>✦</span>
+            <span className="ml-1">{stickers[2].text}</span>
           </div>
 
-          {/* Introduction Statement (Exact Prompt Requirement) */}
-          <div className="relative bg-[#FFFDF7] border-[3px] border-[#171717] rounded-2xl p-5 sm:p-7 brutal-shadow-md max-w-2xl">
-            {/* Corner Decorative Square */}
-            <div
-              className="absolute -top-3 -right-3 w-7 h-7 bg-[#EF79A9] border-2 border-[#171717] rounded-md rotate-12 brutal-shadow-sm hidden sm:block"
-              aria-hidden="true"
-            />
-            <p className="font-sans text-base sm:text-lg lg:text-xl text-[#171717] leading-relaxed font-semibold">
-              &ldquo;{hero.introduction}&rdquo;
-            </p>
+          {/* Status Badge */}
+          <div className="inline-flex items-center gap-1.5 bg-[#46D9BC] border-2 border-[#171717] px-2.5 py-1 rounded-xl brutal-shadow-sm font-mono text-[10px] sm:text-xs font-bold text-[#171717] uppercase">
+            <span className="w-2 h-2 rounded-full bg-[#171717] animate-pulse" />
+            <span>{hero.statusBadge}</span>
+          </div>
+        </div>
+      </header>
 
-            {/* Micro Badge Row inside card */}
-            <div className="mt-4 pt-4 border-t-2 border-[#171717]/15 flex flex-wrap items-center gap-3 font-mono text-xs text-[#171717]/80">
-              <span className="flex items-center gap-1.5 font-bold">
-                <span className="text-[#FF713D]">●</span> {hero.locationBadge}
+      {/* =========================================================================
+          CENTER HERO COMPOSITION: Giant Typography + 3D Funny Character Mascot
+          ========================================================================= */}
+      <div className="flex-1 min-h-0 flex items-center my-1 sm:my-2">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-3 sm:gap-6 lg:gap-8 items-center w-full">
+          {/* Left Column: Name & Editorial Copy (md:col-span-7) */}
+          <div className="md:col-span-7 space-y-2 sm:space-y-3 lg:space-y-4">
+            {/* Introductory Label Pill */}
+            <div className="flex items-center gap-2">
+              <span className="inline-flex items-center gap-1.5 bg-[#F2ED37] border-2 border-[#171717] px-3 py-1 rounded-lg brutal-shadow-sm font-mono text-xs sm:text-sm font-black tracking-wider text-[#171717] uppercase">
+                <span>👋</span>
+                <span>{hero.introLabel}</span>
               </span>
-              <span className="hidden sm:inline">•</span>
-              <span className="font-bold text-[#171717]">{hero.statusBadge}</span>
+              <SquiggleSticker color="#171717" className="hidden sm:inline-block scale-90" />
             </div>
-          </div>
-        </div>
 
-        {/* Right Column: Original SVG Workstation Illustration (lg:col-span-5) */}
-        <div className="lg:col-span-5 relative">
-          <div className="relative">
-            {/* Sparkle badge accent */}
-            <div className="absolute -bottom-5 -left-4 z-20 hidden sm:block">
-              <SparkleBadge color="#F2ED37" size={36} />
+            {/* Giant Dominant Name Typography */}
+            <h1
+              className="font-['Archivo_Black',sans-serif] tracking-tighter text-[#171717] uppercase leading-[0.88] select-none text-balance"
+              style={{
+                fontSize: "clamp(2.6rem, 7.2vw, 6.2rem)",
+              }}
+            >
+              {hero.name}
+            </h1>
+
+            {/* Decorative Playful Stickers Row */}
+            <div className="flex flex-wrap items-center gap-2 pt-0.5">
+              <span
+                className="inline-flex items-center px-2.5 py-0.5 border-2 border-[#171717] rounded-md font-mono text-[10px] sm:text-xs font-bold text-[#171717] brutal-shadow-sm"
+                style={{
+                  backgroundColor: stickers[0].color,
+                  transform: `rotate(${stickers[0].rotation}deg)`,
+                }}
+              >
+                {stickers[0].text}
+              </span>
+              <span
+                className="inline-flex items-center px-2.5 py-0.5 border-2 border-[#171717] rounded-md font-mono text-[10px] sm:text-xs font-bold text-[#171717] brutal-shadow-sm"
+                style={{
+                  backgroundColor: stickers[1].color,
+                  transform: `rotate(${stickers[1].rotation}deg)`,
+                }}
+              >
+                {stickers[1].text}
+              </span>
+              <SparkleBadge color="#FF713D" size={20} className="hidden sm:inline-block ml-1" />
             </div>
-            <WorkstationIllustration />
+
+            {/* Supporting Headline */}
+            <div className="pt-0.5">
+              <p className="font-['Space_Grotesk',sans-serif] text-xs sm:text-sm md:text-base font-black tracking-tight text-[#171717] uppercase">
+                {hero.headline}
+              </p>
+            </div>
+
+            {/* Supporting Line Compact Quote */}
+            <p className="font-sans text-xs sm:text-sm text-[#171717]/85 font-semibold italic border-l-3 border-[#FF713D] pl-2.5 py-0.5">
+              &ldquo;{hero.supportingLine}&rdquo;
+            </p>
+          </div>
+
+          {/* Right Column: Original Funny 3D Cartoon Character Mascot (md:col-span-5) */}
+          <div className="md:col-span-5 flex justify-center items-center py-1 max-h-[220px] sm:max-h-[280px] md:max-h-[340px]">
+            <div className="w-full max-w-[210px] sm:max-w-[260px] md:max-w-[320px]">
+              <VeoCharacterMascot />
+            </div>
           </div>
         </div>
       </div>
 
       {/* =========================================================================
-          REFERENCE 01 & 02: Sawtooth Divider Ribbon
+          BOTTOM ROW: Two Primary Destination Links
           ========================================================================= */}
-      <div className="my-10 sm:my-14 relative select-none">
-        <SawtoothDivider height={18} color="#171717" />
-        <div className="flex items-center justify-between px-2 pt-3 font-mono text-xs font-bold text-[#171717] uppercase tracking-wider">
-          <span>// SELECT DESTINATION GATEWAY</span>
-          <span className="hidden sm:inline">[ PORTAL ROUTING // 01 • 02 ]</span>
-        </div>
-      </div>
-
-      {/* =========================================================================
-          PRIMARY DESTINATIONS: Two Prominent Clickable Destination Cards
-          ========================================================================= */}
-      <div className="space-y-4">
-        <div className="flex items-center justify-between">
-          <h3 className="font-['Space_Grotesk',sans-serif] text-xl sm:text-2xl font-bold uppercase tracking-tight text-[#171717] flex items-center gap-2">
-            <span className="w-3 h-3 bg-[#FF713D] border-2 border-[#171717] inline-block" />
-            <span>PRIMARY DESTINATIONS</span>
-          </h3>
-          <span className="font-mono text-xs font-bold text-[#171717]/70">
-            DIRECT GATEWAYS
-          </span>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 pt-2">
-          {/* CARD 01 — MY PORTFOLIO */}
+      <div className="shrink-0 pt-1 pb-1">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-4 lg:gap-6">
+          {/* CARD 01: MY PORTFOLIO */}
           <DestinationCard
             number={destinations.portfolio.number}
             title={destinations.portfolio.title}
-            subtitle={destinations.portfolio.subtitle}
+            description={destinations.portfolio.description}
             cta={destinations.portfolio.cta}
             url={destinations.portfolio.url}
             accentColor={destinations.portfolio.accentColor}
             tag={destinations.portfolio.tag}
-            illustration={<PortfolioIllustration />}
             ariaLabel="Navigate to Jayanthan Senthilkumar's Personal Portfolio"
           />
 
-          {/* CARD 02 — MY BLOGS */}
+          {/* CARD 02: MY BLOGS */}
           <DestinationCard
             number={destinations.blogs.number}
             title={destinations.blogs.title}
-            subtitle={destinations.blogs.subtitle}
+            description={destinations.blogs.description}
             cta={destinations.blogs.cta}
             url={destinations.blogs.url}
             accentColor={destinations.blogs.accentColor}
             tag={destinations.blogs.tag}
-            illustration={<BlogIllustration />}
             ariaLabel="Navigate to Jayanthan Senthilkumar's Technical Blogs"
           />
         </div>

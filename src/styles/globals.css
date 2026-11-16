@@ -61,29 +61,29 @@
 
 .brutal-card {
   transition: transform 0.2s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.2s cubic-bezier(0.2, 0, 0, 1);
-  box-shadow: 6px 6px 0px #171717;
+  box-shadow: 5px 5px 0px #171717;
 }
 
 @media (min-width: 640px) {
   .brutal-card {
-    box-shadow: 8px 8px 0px #171717;
+    box-shadow: 7px 7px 0px #171717;
   }
 }
 
 .brutal-card:hover {
   transform: translate(-3px, -3px);
-  box-shadow: 10px 10px 0px #171717;
+  box-shadow: 9px 9px 0px #171717;
 }
 
 @media (min-width: 640px) {
   .brutal-card:hover {
-    box-shadow: 14px 14px 0px #171717;
+    box-shadow: 12px 12px 0px #171717;
   }
 }
 
 .brutal-card:active {
   transform: translate(2px, 2px);
-  box-shadow: 4px 4px 0px #171717;
+  box-shadow: 3px 3px 0px #171717;
 }
 
 /* Halftone / Dot Matrix Background Texture from Reference */
@@ -135,10 +135,137 @@
   animation: brutal-float-alt 6s ease-in-out infinite;
 }
 
+/* =========================================================================
+   MASCOT ANIMATION SYSTEM: Lively Character Animations
+   ========================================================================= */
+
+/* 1. Character Rhythmic Idle Breathing & Bobbing */
+@keyframes mascot-bob {
+  0%, 100% {
+    transform: translateY(0px) scale(1, 1);
+  }
+  50% {
+    transform: translateY(-7px) scale(0.99, 1.015);
+  }
+}
+
+.animate-mascot-bob {
+  animation: mascot-bob 3.6s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+/* 2. Peace Sign Waving Gesture */
+@keyframes hand-wave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-7deg);
+  }
+  75% {
+    transform: rotate(9deg);
+  }
+}
+
+.animate-hand-wave {
+  animation: hand-wave 2.2s ease-in-out infinite;
+  transform-origin: 290px 200px;
+}
+
+/* 3. Natural Eye Blinking */
+@keyframes eye-blink {
+  0%, 92%, 100% {
+    transform: scaleY(1);
+  }
+  95% {
+    transform: scaleY(0.08);
+  }
+}
+
+.animate-eye-blink {
+  animation: eye-blink 3.8s ease-in-out infinite;
+  transform-origin: 190px 142px;
+}
+
+/* 4. Glasses Specular Glare Scan Sweep */
+@keyframes glare-sweep {
+  0%, 75% {
+    opacity: 0.15;
+    transform: translateX(-15px) rotate(-5deg);
+  }
+  85% {
+    opacity: 0.95;
+    transform: translateX(20px) rotate(5deg);
+  }
+  95%, 100% {
+    opacity: 0.15;
+    transform: translateX(-15px) rotate(-5deg);
+  }
+}
+
+.animate-glare-sweep {
+  animation: glare-sweep 4.5s ease-in-out infinite;
+}
+
+/* 5. Blinking Terminal Cursor */
+@keyframes cursor-blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+.animate-cursor-blink {
+  animation: cursor-blink 1s step-end infinite;
+}
+
+/* 6. Laptop Screen Ambient Glow */
+@keyframes screen-pulse {
+  0%, 100% {
+    opacity: 0.85;
+    filter: drop-shadow(0 0 4px rgba(70, 217, 188, 0.4));
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px rgba(70, 217, 188, 0.8));
+  }
+}
+
+.animate-screen-pulse {
+  animation: screen-pulse 2.8s ease-in-out infinite;
+}
+
+/* 7. Sparkle Star Spin */
+@keyframes sparkle-spin {
+  0% {
+    transform: rotate(0deg) scale(0.9);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.15);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.9);
+  }
+}
+
+.animate-sparkle-spin {
+  animation: sparkle-spin 6s linear infinite;
+  transform-origin: center;
+}
+
 /* Reduced Motion Support */
 @media (prefers-reduced-motion: reduce) {
   .animate-brutal-float,
   .animate-brutal-float-alt,
+  .animate-mascot-bob,
+  .animate-hand-wave,
+  .animate-eye-blink,
+  .animate-glare-sweep,
+  .animate-cursor-blink,
+  .animate-screen-pulse,
+  .animate-sparkle-spin,
   .brutal-btn,
   .brutal-card {
     animation: none !important;
