@@ -28,7 +28,7 @@ export const DestinationCard: FC<DestinationCardProps> = ({
       target="_blank"
       rel="noopener noreferrer"
       aria-label={ariaLabel}
-      className="group relative flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-4 bg-slate-900/80 hover:bg-slate-800/90 backdrop-blur-xl border border-white/10 hover:border-sky-400/50 rounded-xl sm:rounded-2xl p-3 sm:p-4 curved-card-interactive overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 cursor-pointer shadow-lg transition-all duration-200"
+      className="group relative flex flex-col xs:flex-row xs:items-center justify-between gap-2 xs:gap-3 sm:gap-4 bg-slate-900/80 hover:bg-slate-800/90 backdrop-blur-xl border border-white/10 hover:border-sky-400/50 rounded-xl sm:rounded-2xl p-2.5 sm:p-3.5 md:p-4 curved-card-interactive overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 cursor-pointer shadow-lg transition-all duration-200"
     >
       {/* Ambient background hover glow */}
       <div
@@ -38,7 +38,7 @@ export const DestinationCard: FC<DestinationCardProps> = ({
       />
 
       {/* Left icon & content */}
-      <div className="flex items-center gap-2.5 sm:gap-3.5 min-w-0">
+      <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
         <div
           className={`p-2 sm:p-2.5 rounded-xl border border-white/10 shrink-0 ${
             isPortfolio
@@ -69,8 +69,11 @@ export const DestinationCard: FC<DestinationCardProps> = ({
       </div>
 
       {/* Right Action CTA Pill */}
-      <div className="shrink-0 flex items-center justify-end sm:self-center">
-        <span className="inline-flex items-center gap-1 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-lg bg-white/5 group-hover:bg-sky-400 group-hover:text-slate-950 border border-white/10 group-hover:border-sky-400 text-slate-300 font-['Plus_Jakarta_Sans',sans-serif] text-[11px] sm:text-xs font-semibold transition-all duration-200">
+      <div className="shrink-0 flex items-center justify-between xs:justify-end w-full xs:w-auto pt-1 xs:pt-0 border-t border-white/5 xs:border-0">
+        <span className="font-mono text-[9px] text-slate-500 uppercase tracking-widest xs:hidden">
+          {index === "01" ? "PORTFOLIO" : "BLOGS"}
+        </span>
+        <span className="inline-flex items-center gap-1 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg bg-white/5 group-hover:bg-sky-400 group-hover:text-slate-950 border border-white/10 group-hover:border-sky-400 text-slate-300 font-['Plus_Jakarta_Sans',sans-serif] text-[11px] sm:text-xs font-semibold transition-all duration-200">
           <span>{cta}</span>
           <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
         </span>
