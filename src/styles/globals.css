@@ -7,67 +7,68 @@
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
 
-  --color-paper: #F4F0EA;
-  --color-paper-light: #FAF8F5;
-  --color-paper-dark: #E8E3D9;
-  --color-ink: #0A0A0A;
-  --color-lime: #CCFF00;
-  --color-cobalt: #0038FF;
+  --color-obsidian: #080A09;
+  --color-charcoal: #111512;
+  --color-cyber-lime: #C6FF00;
+  --color-neon-lime: #B6F500;
+  --color-off-white: #F4F4ED;
+  --color-muted-grey: #858B83;
+  --color-dark-green: #172019;
 
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
+  --color-background: #080A09;
+  --color-foreground: #F4F4ED;
+  --color-card: #111512;
+  --color-card-foreground: #F4F4ED;
+  --color-popover: #111512;
+  --color-popover-foreground: #F4F4ED;
+  --color-primary: #C6FF00;
+  --color-primary-foreground: #080A09;
+  --color-secondary: #172019;
+  --color-secondary-foreground: #F4F4ED;
+  --color-muted: #172019;
+  --color-muted-foreground: #858B83;
+  --color-accent: #C6FF00;
+  --color-accent-foreground: #080A09;
+  --color-destructive: #E11D48;
+  --color-destructive-foreground: #F4F4ED;
+  --color-border: #172019;
+  --color-input: #172019;
+  --color-ring: #C6FF00;
 
   --radius: 0px;
 }
 
 :root {
-  --background: #F4F0EA;
-  --foreground: #0A0A0A;
-  --card: #FFFFFF;
-  --card-foreground: #0A0A0A;
-  --popover: #FFFFFF;
-  --popover-foreground: #0A0A0A;
-  --primary: #0A0A0A;
-  --primary-foreground: #FFFFFF;
-  --secondary: #E8E3D9;
-  --secondary-foreground: #0A0A0A;
-  --muted: #E8E3D9;
-  --muted-foreground: #555555;
-  --accent: #CCFF00;
-  --accent-foreground: #0A0A0A;
+  --background: #080A09;
+  --foreground: #F4F4ED;
+  --card: #111512;
+  --card-foreground: #F4F4ED;
+  --popover: #111512;
+  --popover-foreground: #F4F4ED;
+  --primary: #C6FF00;
+  --primary-foreground: #080A09;
+  --secondary: #172019;
+  --secondary-foreground: #F4F4ED;
+  --muted: #172019;
+  --muted-foreground: #858B83;
+  --accent: #C6FF00;
+  --accent-foreground: #080A09;
   --destructive: #E11D48;
-  --destructive-foreground: #FFFFFF;
-  --border: #0A0A0A;
-  --input: #0A0A0A;
-  --ring: #CCFF00;
+  --destructive-foreground: #F4F4ED;
+  --border: #172019;
+  --input: #172019;
+  --ring: #C6FF00;
   --radius: 0px;
 }
 
 @layer base {
   * {
-    border-color: #0A0A0A;
+    border-color: #172019;
   }
 
   body {
-    background-color: #F4F0EA;
-    color: #0A0A0A;
+    background-color: #080A09;
+    color: #F4F4ED;
     font-family: var(--font-sans);
     overflow-x: hidden;
   }
@@ -82,110 +83,72 @@
   }
 }
 
-/* Neo-Brutalist Hard Shadows */
-.shadow-brutal-sm {
-  box-shadow: 2px 2px 0px #0A0A0A;
-}
-
-.shadow-brutal {
-  box-shadow: 4px 4px 0px #0A0A0A;
-}
-
-.shadow-brutal-lg {
-  box-shadow: 6px 6px 0px #0A0A0A;
-}
-
-.shadow-brutal-xl {
-  box-shadow: 8px 8px 0px #0A0A0A;
-}
-
+/* Cyber Brutalist Hard Shadows & Accents */
 .shadow-brutal-lime {
-  box-shadow: 4px 4px 0px #CCFF00;
+  box-shadow: 4px 4px 0px #C6FF00;
 }
 
-.shadow-brutal-blue {
-  box-shadow: 4px 4px 0px #0038FF;
+.shadow-brutal-charcoal {
+  box-shadow: 6px 6px 0px #172019;
 }
 
-/* Neo-Brutalist Interactive Button */
-.btn-brutal {
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
+.shadow-brutal-dark {
+  box-shadow: 8px 8px 0px #080A09;
 }
 
-.btn-brutal:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0px #0A0A0A;
-}
-
-.btn-brutal:active {
-  transform: translate(0px, 0px);
-  box-shadow: 2px 2px 0px #0A0A0A;
-}
-
-/* Marquee Animations */
-@keyframes marquee-scroll {
-  0% {
-    transform: translateX(0%);
+/* Honeycomb Pulse Animations */
+@keyframes hex-pulse-subtle {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
   }
-  100% {
-    transform: translateX(-50%);
+  50% {
+    opacity: 0.65;
+    transform: scale(1.02);
   }
 }
 
-@keyframes marquee-scroll-reverse {
-  0% {
-    transform: translateX(-50%);
+@keyframes hex-drift {
+  0%, 100% {
+    transform: translateY(0px);
   }
-  100% {
-    transform: translateX(0%);
+  50% {
+    transform: translateY(-8px);
   }
 }
 
-.animate-marquee-infinite {
-  display: flex;
-  width: max-content;
-  animation: marquee-scroll 32s linear infinite;
+.animate-hex-pulse {
+  animation: hex-pulse-subtle 4s ease-in-out infinite;
 }
 
-.animate-marquee-infinite:hover {
-  animation-play-state: paused;
-}
-
-.animate-marquee-infinite-reverse {
-  display: flex;
-  width: max-content;
-  animation: marquee-scroll-reverse 32s linear infinite;
-}
-
-.animate-marquee-infinite-reverse:hover {
-  animation-play-state: paused;
+.animate-hex-drift {
+  animation: hex-drift 6s ease-in-out infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-marquee-infinite,
-  .animate-marquee-infinite-reverse,
-  .btn-brutal {
+  .animate-hex-pulse,
+  .animate-hex-drift {
     animation: none !important;
-    transition: none !important;
+    transform: none !important;
   }
 }
 
-/* Custom Neo-Brutalist Scrollbar */
+/* Custom Scrollbar for Cyber Brutalism */
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #F4F0EA;
-  border-left: 2px solid #0A0A0A;
+  background: #080A09;
+  border-left: 1px solid #172019;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0A0A0A;
-  border: 1px solid #0A0A0A;
+  background: #172019;
+  border: 1px solid #C6FF00;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #CCFF00;
+  background: #C6FF00;
 }
