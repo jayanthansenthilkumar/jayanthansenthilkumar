@@ -9,7 +9,7 @@ export const Hero: FC = () => {
   return (
     <section
       aria-label="Executive IT Portfolio Gateway"
-      className="flex-1 min-h-0 flex flex-col justify-between w-full max-w-[98vw] 2xl:max-w-[1760px] mx-auto px-2.5 sm:px-6 lg:px-10 py-1 sm:py-2.5 z-10 overflow-hidden"
+      className="flex-1 flex flex-col justify-between w-full max-w-[98vw] 2xl:max-w-[1760px] mx-auto px-2.5 sm:px-6 lg:px-10 py-2 sm:py-2.5 z-10 overflow-visible sm:overflow-hidden gap-3 sm:gap-2"
     >
       {/* =========================================================================
           1. TOP IDENTITY & STATUS BAR (Responsive & Overflow-Guarded)
@@ -46,9 +46,9 @@ export const Hero: FC = () => {
       </header>
 
       {/* =========================================================================
-          2. CENTER HERO: FULL SPACE UTILIZATION WITH ZERO-SCROLL GUARANTEE
+          2. CENTER HERO: FULL SPACE UTILIZATION (SCROLLABLE ON MOBILE)
           ========================================================================= */}
-      <div className="flex-1 relative flex items-center justify-center min-h-0 my-0.5 sm:my-1 overflow-visible">
+      <div className="flex-1 relative flex items-center justify-center min-h-[300px] xs:min-h-[340px] sm:min-h-0 my-2 sm:my-1 overflow-visible">
         {/* Soft Ambient Warm Paper Glow directly behind portrait */}
         <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] sm:w-[500px] md:w-[760px] h-[280px] sm:h-[500px] md:h-[760px] rounded-full calm-ambient-glow pointer-events-none -z-10"
@@ -107,7 +107,7 @@ export const Hero: FC = () => {
       {/* =========================================================================
           3. SQUARED NAVIGATION DOCK: TWO BUTTONS IN SINGLE ROW (grid-cols-2)
           ========================================================================= */}
-      <div className="shrink-0 w-full mb-0.5 sm:mb-1.5">
+      <div className="shrink-0 w-full mb-2 sm:mb-1.5">
         <div className="curved-editorial-panel rounded-none p-2 sm:p-3.5 md:p-4.5 max-w-[98vw] 2xl:max-w-[1760px] mx-auto w-full relative">
           {/* Eyebrow Header inside Squared Layout */}
           <div className="relative z-10 flex items-center justify-center sm:justify-between gap-3 mb-1.5 sm:mb-2.5 pb-1 sm:pb-2 border-b border-[#E6E2D8] font-mono text-[10px] sm:text-xs text-center">

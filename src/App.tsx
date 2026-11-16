@@ -8,7 +8,7 @@ export const App: FC = () => {
   const { meta } = PORTAL_CONFIG;
 
   return (
-    <div className="h-screen h-dvh max-h-screen max-h-dvh w-screen w-full flex flex-col justify-between bg-[#FAF8F5] text-[#18181B] relative select-none font-['Manrope',sans-serif] overflow-hidden">
+    <div className="min-h-screen min-h-dvh sm:h-screen sm:h-dvh sm:max-h-screen sm:max-h-dvh w-full flex flex-col justify-between bg-[#FAF8F5] text-[#18181B] relative font-['Manrope',sans-serif] overflow-x-hidden overflow-y-auto sm:overflow-hidden">
       <Helmet>
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
@@ -27,8 +27,8 @@ export const App: FC = () => {
       <div className="fixed inset-y-0 left-0 w-20 lg:w-40 bg-gradient-to-r from-[#FAF8F5] to-transparent pointer-events-none hidden xl:block z-20" />
       <div className="fixed inset-y-0 right-0 w-20 lg:w-40 bg-gradient-to-l from-[#FAF8F5] to-transparent pointer-events-none hidden xl:block z-20" />
 
-      {/* SINGLE VIEWPORT: HERO SECTION (ZERO SCROLLING) */}
-      <main className="flex-1 min-h-0 flex flex-col justify-between w-full relative z-10 overflow-hidden">
+      {/* MAIN CONTENT AREA: SCROLLABLE ON MOBILE, SINGLE VIEWPORT ON DESKTOP */}
+      <main className="flex-1 flex flex-col justify-between w-full relative z-10 overflow-visible sm:overflow-hidden">
         <Hero />
       </main>
 

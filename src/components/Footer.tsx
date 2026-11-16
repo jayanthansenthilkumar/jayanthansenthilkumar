@@ -28,7 +28,7 @@ export const Footer: FC = () => {
     <footer
       role="contentinfo"
       aria-label="Portal Footer"
-      className="w-full max-w-[98vw] 2xl:max-w-[1760px] mx-auto px-2.5 sm:px-6 lg:px-10 py-1 sm:py-2 shrink-0 z-20"
+      className="w-full max-w-[98vw] 2xl:max-w-[1760px] mx-auto px-2.5 sm:px-6 lg:px-10 py-2 sm:py-2 pb-4 sm:pb-2 shrink-0 z-20"
     >
       <div className="flex flex-row items-center justify-between gap-2 sm:gap-3 pt-1.5 sm:pt-2 border-t border-[#E6E2D8] text-[#71717A] font-['Manrope',sans-serif] text-[10px] sm:text-xs md:text-sm">
         {/* Left: Copyright & Editorial Credits */}
