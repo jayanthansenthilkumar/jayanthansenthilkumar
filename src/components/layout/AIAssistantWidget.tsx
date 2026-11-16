@@ -1,176 +1,213 @@
-
-import { useState, useRef, useEffect } from "react";
-import { MessageSquare, X, Send, Terminal, Sparkles } from "lucide-react";
+import { useState, useRef, useEffect, FC } from "react";
+import { Terminal, X, Send, Sparkles, ChevronRight, CornerDownLeft } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
 interface Message {
   role: "bot" | "user";
   text: string;
+  timestamp: string;
 }
 
-export function AIAssistantWidget() {
+const PRESET_COMMANDS = [
+  { label: "/about", query: "Tell me about Jayanthan's engineering background and philosophy." },
+  { label: "/projects", query: "What are Jayanthan's featured production projects and initiatives?" },
+  { label: "/skills", query: "Which AI, MLOps, and full-stack technologies does Jayanthan specialize in?" },
+  { label: "/contact", query: "How can I contact Jayanthan for full-time engineering roles?" },
+  { label: "/hilo", query: "What is the Hilo portfolio platform?" },
+];
+
+export const AIAssistantWidget: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [message, setMessage] = useState("");
-  const [isHovered, setIsHovered] = useState(false);
+  const [inputVal, setInputVal] = useState("");
+  const [isTyping, setIsTyping] = useState(false);
   
   const [messages, setMessages] = useState<Message[]>([
-    { role: "bot", text: "Hello! I'm the Austral AI technical assistant. How can I help you architect your intelligence infrastructure today?" }
+    {
+      role: "bot",
+      text: "SYS_INIT // AUSTRAL-AI CLI ASSISTANT READY.\nI am an interactive technical agent designed to answer inquiries regarding Jayanthan Senthilkumar's AI/ML architecture, projects, and systems engineering experience. Enter a query or select a preset command below.",
+      timestamp: "SYSTEM",
+    },
   ]);
-  const [isTyping, setIsTyping] = useState(false);
+
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const handleToggle = () => setIsOpen(!isOpen);
 
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
   useEffect(() => {
     if (isOpen) {
-      scrollToBottom();
+      messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
     }
   }, [messages, isTyping, isOpen]);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!message.trim()) return;
+  const getAssistantResponse = (query: string): string => {
+    const q = query.toLowerCase();
 
-    const userMsg = message.trim();
-    setMessages((prev) => [...prev, { role: "user", text: userMsg }]);
-    setMessage("");
+    if (q.includes("about") || q.includes("who is") || q.includes("philosophy") || q.includes("background")) {
+      return "Jayanthan Senthilkumar is an AI & ML Engineer specializing in bridging deep neural network research with high-concurrency, resilient production architectures. He graduated in Computer Science from M.Kumarasamy College of Engineering (MKCE), Karur, India, and is actively open to engineering roles across Australia, the USA, and India.";
+    }
+
+    if (q.includes("project") || q.includes("initiative") || q.includes("built") || q.includes("work")) {
+      return "Featured production platforms:\n• 01. Hilo Portfolio & Telemetry (hilo.jayanthan.fyi) - Interactive flagship portfolio with real-time GitHub velocity analytics.\n• 02. AustralAI Events & Credentialing Suite (events.syraa.app & certify.syraa.app) - End-to-end registration and cryptographic credential verification.\n• 03. Enterprise LLMOps & Agentic RAG - Multi-modal retrieval pipeline with hallucination guardrails.\n• 04. Async ASGI Microservices - Low-latency Python FastAPI model inference endpoints.\n• 05. Hiii AustralAI Admin Engine (hii.syraa.app) - Real-time administrative operations center.";
+    }
+
+    if (q.includes("skill") || q.includes("stack") || q.includes("technolog") || q.includes("python") || q.includes("mlops")) {
+      return "Technical Specializations:\n• Intelligence & MLOps: Python, PyTorch, TensorFlow, Scikit-Learn, LangChain, LlamaIndex, OpenCV, Hugging Face, LLMOps pipelines.\n• Scalable Frontend: React 19, TypeScript, Next.js, Vite, Tailwind CSS v4, Framer Motion, GSAP.\n• Concurrency & Backend: Python ASGI, FastAPI, Node.js, Express, PostgreSQL, MongoDB, Redis, WebSockets.\n• DevOps & Infrastructure: Docker, AWS, GCP, Linux / Unix CLI, Git CI/CD.";
+    }
+
+    if (q.includes("contact") || q.includes("hire") || q.includes("email") || q.includes("reach") || q.includes("opportunity")) {
+      return "Direct Contact Channels:\n• Email: jayanthansenthilkumar18@gmail.com\n• LinkedIn: linkedin.com/in/jayanthan18\n• GitHub: github.com/jayanthansenthilkumar\n• Availability: Open to full-time engineering opportunities globally (Australia, USA, India). Response latency is under 24 hours.";
+    }
+
+    if (q.includes("hilo")) {
+      return "Hilo (hilo.jayanthan.fyi) is Jayanthan's flagship data-driven digital portfolio experience. It incorporates real-time developer activity telemetry, interactive technical visualizations, and high-performance UI systems.";
+    }
+
+    return `Telemetry processed for: "${query}". As an architectural assistant for Jayanthan's platform, I can confirm his technical infrastructure spans production MLOps, ASGI concurrency, and scalable React systems. Feel free to reach out directly at jayanthansenthilkumar18@gmail.com.`;
+  };
+
+  const handleSend = (text: string) => {
+    if (!text.trim()) return;
+
+    const userText = text.trim();
+    const now = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+
+    setMessages((prev) => [
+      ...prev,
+      { role: "user", text: userText, timestamp: now },
+    ]);
+    setInputVal("");
     setIsTyping(true);
 
-    // Mock an AI response
     setTimeout(() => {
+      const botResponse = getAssistantResponse(userText);
       setMessages((prev) => [
         ...prev,
-        { 
-          role: "bot", 
-          text: `I've analyzed your request regarding "${userMsg}". As a mock AI assistant for this enterprise platform, I can confirm our infrastructure is designed to handle this at scale.` 
-        }
+        { role: "bot", text: botResponse, timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) },
       ]);
       setIsTyping(false);
-    }, 1500);
+    }, 700);
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    handleSend(inputVal);
   };
 
   return (
-    <div className="fixed bottom-8 right-8 z-50 flex flex-col items-end">
+    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
       
-      {/* Chat Window */}
-      <div 
-        className={cn(
-          "mb-4 w-[350px] bg-white border border-gray-200 shadow-xl rounded-sm overflow-hidden transition-all duration-300 origin-bottom-right",
-          isOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"
-        )}
-      >
-        {/* Header */}
-        <div className="flex items-center justify-between px-4 py-3 bg-gray-50 border-b border-gray-200">
-          <div className="flex items-center gap-2">
-            <Terminal className="w-4 h-4 text-gray-500" />
-            <span className="text-xs font-mono text-gray-700 font-semibold">austral-assistant</span>
-          </div>
-          <button 
-            onClick={handleToggle}
-            className="text-gray-400 hover:text-gray-700 transition-colors"
-          >
-            <X className="w-4 h-4" />
-          </button>
-        </div>
-        
-        {/* Messages Area */}
-        <div className="h-[350px] p-4 overflow-y-auto bg-[#fcfcfc] flex flex-col gap-4">
-          {messages.map((msg, idx) => (
-            <div key={idx} className={cn("flex items-start gap-3 max-w-[90%]", msg.role === "user" ? "ml-auto flex-row-reverse" : "")}>
-              {msg.role === "bot" ? (
-                <div className="w-8 h-8 rounded-sm bg-gray-100 border border-gray-200 flex items-center justify-center shrink-0">
-                  <Sparkles className="w-4 h-4 text-blue-600" />
-                </div>
-              ) : (
-                <div className="w-8 h-8 rounded-sm bg-blue-100 border border-blue-200 flex items-center justify-center shrink-0">
-                  <span className="text-xs font-bold text-blue-700 font-mono">U</span>
-                </div>
-              )}
-              
-              <div className={cn(
-                "border p-3 rounded-sm shadow-sm text-sm font-mono leading-relaxed",
-                msg.role === "bot" 
-                  ? "bg-white border-gray-200 rounded-tl-none text-gray-700" 
-                  : "bg-blue-600 border-blue-700 text-white rounded-tr-none"
-              )}>
-                {msg.text}
-              </div>
-            </div>
-          ))}
+      {/* CLI Chat Window */}
+      {isOpen && (
+        <div className="mb-3 w-[92vw] sm:w-[420px] max-w-[440px] bg-[#FFFFFF] border-2 border-[#0A0A0A] shadow-[8px_8px_0px_#0A0A0A] overflow-hidden flex flex-col animate-in fade-in zoom-in-95 duration-150">
           
-          {isTyping && (
-            <div className="flex items-start gap-3 max-w-[85%]">
-              <div className="w-8 h-8 rounded-sm bg-gray-100 border border-gray-200 flex items-center justify-center shrink-0">
-                <Sparkles className="w-4 h-4 text-blue-600" />
-              </div>
-              <div className="bg-white border border-gray-200 p-3 rounded-sm rounded-tl-none shadow-sm flex gap-1 items-center h-10">
-                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
-                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
-                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
-              </div>
+          {/* Terminal Title Bar */}
+          <div className="flex items-center justify-between px-4 py-3 bg-[#0A0A0A] text-[#CCFF00] border-b-2 border-[#0A0A0A] select-none">
+            <div className="flex items-center gap-2">
+              <Terminal className="w-4 h-4 text-[#CCFF00]" />
+              <span className="font-mono text-xs font-bold uppercase tracking-wider">
+                SYS.CLI // AUSTRAL-AI
+              </span>
             </div>
-          )}
-          <div ref={messagesEndRef} />
-        </div>
-        
-        {/* Input Area */}
-        <div className="p-3 bg-white border-t border-gray-200">
-          <form 
-            className="flex items-center gap-2"
-            onSubmit={handleSubmit}
-          >
-            <input
-              type="text"
-              placeholder="Query austral-assistant..."
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              className="flex-1 bg-gray-50 border border-gray-200 rounded-sm px-3 py-2 text-sm font-mono focus:outline-none focus:border-blue-500 transition-colors"
-            />
-            <Button 
-              type="submit" 
-              size="icon" 
-              className="w-9 h-9 bg-blue-600 hover:bg-blue-700 text-white rounded-sm shrink-0"
-              disabled={!message.trim() || isTyping}
+            <button
+              onClick={handleToggle}
+              className="text-[#888888] hover:text-[#CCFF00] transition-colors p-1"
+              aria-label="Close terminal"
             >
-              <Send className="w-4 h-4" />
-            </Button>
-          </form>
-        </div>
-      </div>
+              <X className="w-4 h-4" />
+            </button>
+          </div>
 
-      {/* Floating Action Button */}
+          {/* Messages Area */}
+          <div className="h-[340px] sm:h-[380px] p-4 overflow-y-auto bg-[#FAF8F5] flex flex-col gap-3 font-mono text-xs">
+            {messages.map((msg, idx) => (
+              <div
+                key={idx}
+                className={cn(
+                  "p-3 border-2 border-[#0A0A0A] max-w-[95%] leading-relaxed whitespace-pre-line",
+                  msg.role === "bot"
+                    ? "bg-[#FFFFFF] text-[#0A0A0A] shadow-[3px_3px_0px_#0A0A0A] self-start"
+                    : "bg-[#0A0A0A] text-[#CCFF00] shadow-[3px_3px_0px_#CCFF00] self-end"
+                )}
+              >
+                <div className="text-[10px] font-bold opacity-60 mb-1 uppercase flex items-center justify-between gap-4">
+                  <span>{msg.role === "bot" ? "AGENT // AUSTRAL" : "YOU // USER"}</span>
+                  <span>{msg.timestamp}</span>
+                </div>
+                <div>{msg.text}</div>
+              </div>
+            ))}
+
+            {isTyping && (
+              <div className="p-3 bg-[#FFFFFF] border-2 border-[#0A0A0A] shadow-[3px_3px_0px_#0A0A0A] self-start font-mono text-xs flex items-center gap-2 text-[#0038FF]">
+                <span className="w-2 h-2 bg-[#0038FF] animate-pulse"></span>
+                <span>PROCESSING COMPUTATIONAL RESPONSE...</span>
+              </div>
+            )}
+            <div ref={messagesEndRef} />
+          </div>
+
+          {/* Preset Command Buttons */}
+          <div className="p-2.5 bg-[#FFFFFF] border-t-2 border-[#0A0A0A] flex flex-wrap gap-1.5">
+            {PRESET_COMMANDS.map((cmd) => (
+              <button
+                key={cmd.label}
+                onClick={() => handleSend(cmd.query)}
+                className="font-mono text-[10px] font-bold uppercase px-2 py-1 bg-[#FAF8F5] border border-[#0A0A0A] text-[#0A0A0A] hover:bg-[#CCFF00] transition-colors"
+              >
+                {cmd.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Input Form */}
+          <div className="p-3 bg-[#FFFFFF] border-t-2 border-[#0A0A0A]">
+            <form onSubmit={handleSubmit} className="flex items-center gap-2">
+              <span className="font-mono text-xs font-bold text-[#0A0A0A] select-none pl-1">
+                &gt;
+              </span>
+              <input
+                type="text"
+                placeholder="Query AI assistant or type /..."
+                value={inputVal}
+                onChange={(e) => setInputVal(e.target.value)}
+                className="flex-1 bg-[#FAF8F5] border-2 border-[#0A0A0A] px-3 py-2 text-xs font-mono text-[#0A0A0A] focus:outline-none focus:bg-[#FFFFFF] focus:border-[#0038FF] transition-colors"
+              />
+              <Button
+                type="submit"
+                variant="lime"
+                size="sm"
+                className="h-9 px-3 shrink-0"
+                disabled={!inputVal.trim() || isTyping}
+              >
+                <CornerDownLeft className="w-4 h-4" />
+              </Button>
+            </form>
+          </div>
+
+        </div>
+      )}
+
+      {/* Launcher Button */}
       <button
         onClick={handleToggle}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
         className={cn(
-          "p-4 rounded-sm shadow-sm transition-all duration-300 relative flex items-center justify-center overflow-hidden border group",
-          isOpen ? "bg-gray-800 text-white border-gray-800 hover:bg-gray-900" : "bg-white text-blue-600 border-gray-200 hover:border-blue-500"
+          "p-3.5 border-2 border-[#0A0A0A] font-mono text-xs font-bold uppercase tracking-wider flex items-center gap-2.5 transition-all select-none cursor-pointer",
+          isOpen
+            ? "bg-[#0A0A0A] text-white shadow-[4px_4px_0px_#0A0A0A]"
+            : "bg-[#CCFF00] text-[#0A0A0A] shadow-[4px_4px_0px_#0A0A0A] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[6px_6px_0px_#0A0A0A]"
         )}
+        aria-label="Open AI Terminal Assistant"
       >
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000005_1px,transparent_1px),linear-gradient(to_bottom,#00000005_1px,transparent_1px)] bg-[size:0.5rem_0.5rem]" />
-        
-        <div className="relative z-10 transition-transform duration-300 group-hover:scale-110">
-          {isOpen ? (
-            <X className="w-6 h-6" />
-          ) : (
-            <MessageSquare className="w-6 h-6" />
-          )}
-        </div>
-        
+        <Terminal className="w-4 h-4" />
+        <span className="hidden sm:inline">
+          {isOpen ? "CLOSE CLI" : "SYS.CLI ASSISTANT"}
+        </span>
         {!isOpen && (
-          <span className="absolute -top-1 -right-1 flex h-3 w-3">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-600"></span>
-          </span>
+          <span className="w-2 h-2 bg-[#0038FF] inline-block animate-ping"></span>
         )}
       </button>
 
     </div>
   );
-}
+};

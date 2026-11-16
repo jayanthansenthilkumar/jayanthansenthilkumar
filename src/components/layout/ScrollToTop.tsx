@@ -1,14 +1,12 @@
-
-import { useEffect, useState } from "react";
+import { useEffect, useState, FC } from "react";
 import { useLocation } from "react-router-dom";
 import { ArrowUp } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export function ScrollToTop() {
+export const ScrollToTop: FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const { pathname } = useLocation();
 
-  // Scroll to top on route change
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -16,14 +14,9 @@ export function ScrollToTop() {
     });
   }, [pathname]);
 
-  // Show button when page is scrolled down
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.scrollY > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+      setIsVisible(window.scrollY > 400);
     };
 
     window.addEventListener("scroll", toggleVisibility);
@@ -41,13 +34,14 @@ export function ScrollToTop() {
     <button
       onClick={scrollToTop}
       className={cn(
-        "fixed bottom-8 left-8 p-4 rounded-sm bg-white border border-gray-200 text-blue-600 shadow-sm hover:border-blue-500 transition-all duration-300 z-50 flex items-center justify-center overflow-hidden group",
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
+        "fixed bottom-6 left-6 p-3 bg-[#FFFFFF] border-2 border-[#0A0A0A] text-[#0A0A0A] shadow-[4px_4px_0px_#0A0A0A] hover:bg-[#CCFF00] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[6px_6px_0px_#0A0A0A] transition-all duration-150 z-40 flex items-center justify-center cursor-pointer",
+        isVisible
+          ? "opacity-100 translate-y-0 pointer-events-auto"
+          : "opacity-0 translate-y-4 pointer-events-none"
       )}
-      aria-label="Go to top"
+      aria-label="Scroll to top"
     >
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000005_1px,transparent_1px),linear-gradient(to_bottom,#00000005_1px,transparent_1px)] bg-[size:0.5rem_0.5rem]" />
-      <ArrowUp className="w-6 h-6 relative z-10 group-hover:-translate-y-1 transition-transform duration-300" />
+      <ArrowUp className="w-5 h-5" />
     </button>
   );
-}
+};
