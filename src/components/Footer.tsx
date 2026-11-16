@@ -28,22 +28,26 @@ export const Footer: FC = () => {
     <footer
       role="contentinfo"
       aria-label="Portal Footer"
-      className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-2 sm:py-2.5 shrink-0 z-20"
+      className="w-full max-w-5xl mx-auto px-3 sm:px-6 py-2 sm:py-2.5 shrink-0 z-20"
     >
-      <div className="flex flex-row items-center justify-between gap-3 pt-2 sm:pt-3 border-t border-white/10 text-slate-400 font-sans text-[11px] sm:text-xs">
-        {/* Left: Branding & Copyright */}
-        <div className="flex items-center gap-2 truncate">
-          <span className="font-['Outfit',sans-serif] font-bold text-white tracking-tight">
+      <div className="flex flex-row items-center justify-between gap-3 pt-2 sm:pt-2.5 border-t border-[#E6E2D8] text-[#71717A] font-['Manrope',sans-serif] text-[11px] sm:text-xs">
+        {/* Left: Copyright & Editorial Credits */}
+        <div className="flex items-center gap-1.5 sm:gap-2 truncate">
+          <span className="font-['Manrope',sans-serif] font-bold text-[#18181B] tracking-tight">
             {branding.siteName}
           </span>
-          <span className="text-white/20 hidden sm:inline">•</span>
-          <span className="text-slate-400 truncate">
-            &copy; {currentYear} Jayanthan Senthilkumar.
+          <span className="text-[#D0C9BA] hidden xs:inline">•</span>
+          <span className="truncate">
+            &copy; {currentYear} Jayanthan SenthilKumar.
+          </span>
+          <span className="text-[#D0C9BA] hidden md:inline">•</span>
+          <span className="hidden md:inline text-[#8E887E]">
+            Designed &amp; Developed by Jayanthan.
           </span>
         </div>
 
         {/* Right: Social Destinations & Top Action */}
-        <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
+        <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
           {social.map((s) => (
             <a
               key={s.name}
@@ -51,11 +55,11 @@ export const Footer: FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={s.label}
-              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-slate-900/80 hover:bg-slate-800 text-slate-300 hover:text-white border border-white/10 hover:border-sky-400/50 transition-all duration-150"
+              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#F4F1EA] hover:bg-[#EAE5D9] text-[#18181B] border border-[#E6E2D8] hover:border-[#D0C9BA] transition-all duration-150"
             >
               {getSocialIcon(s.name)}
-              <span className="hidden md:inline font-medium text-[11px]">{s.name}</span>
-              <ArrowUpRight className="w-3 h-3 text-slate-500 hidden md:inline" />
+              <span className="hidden sm:inline font-medium text-[11px]">{s.name}</span>
+              <ArrowUpRight className="w-3 h-3 text-[#71717A] hidden sm:inline" />
             </a>
           ))}
 
@@ -64,7 +68,7 @@ export const Footer: FC = () => {
             type="button"
             onClick={scrollToTop}
             aria-label="Scroll to top"
-            className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-400/30 transition-all duration-150 cursor-pointer"
+            className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#EAE5D9] hover:bg-[#18181B] text-[#18181B] hover:text-[#FAF8F5] border border-[#DDD7C9] transition-all duration-150 cursor-pointer"
           >
             <span className="text-[10px] font-bold">TOP</span>
             <ArrowUp className="w-3 h-3" />
