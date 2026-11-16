@@ -25,9 +25,6 @@ export const Hero: FC = () => {
               <span className="font-['Manrope',sans-serif] text-xs xs:text-sm sm:text-base md:text-lg font-bold tracking-tight text-[#18181B] whitespace-nowrap">
                 {branding.siteName}
               </span>
-              <span className="text-[8px] xs:text-[9px] sm:text-[10px] px-1.5 py-0.5 rounded-full bg-[#EFECE5] text-[#52525B] border border-[#DDD7C9] font-mono font-semibold shrink-0 select-none">
-                SAP PRO
-              </span>
             </div>
             <span className="font-mono text-[9px] xs:text-[10px] sm:text-xs text-[#52525B] font-medium truncate">
               {person.role}
