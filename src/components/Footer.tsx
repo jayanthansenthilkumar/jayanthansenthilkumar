@@ -14,11 +14,11 @@ export const Footer: FC = () => {
   const getSocialIcon = (name: string) => {
     switch (name.toUpperCase()) {
       case "GITHUB":
-        return <GithubIcon className="w-3.5 h-3.5" aria-hidden="true" />;
+        return <GithubIcon className="w-4 h-4" aria-hidden="true" />;
       case "LINKEDIN":
-        return <LinkedinIcon className="w-3.5 h-3.5" aria-hidden="true" />;
+        return <LinkedinIcon className="w-4 h-4" aria-hidden="true" />;
       case "EMAIL":
-        return <MailIcon className="w-3.5 h-3.5" aria-hidden="true" />;
+        return <MailIcon className="w-4 h-4" aria-hidden="true" />;
       default:
         return null;
     }
@@ -28,26 +28,26 @@ export const Footer: FC = () => {
     <footer
       role="contentinfo"
       aria-label="Portal Footer"
-      className="w-full max-w-5xl mx-auto px-3 sm:px-6 py-2 sm:py-2.5 shrink-0 z-20"
+      className="w-full max-w-6xl xl:max-w-7xl 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-2 sm:py-3 shrink-0 z-20"
     >
-      <div className="flex flex-row items-center justify-between gap-3 pt-2 sm:pt-2.5 border-t border-[#E6E2D8] text-[#71717A] font-['Manrope',sans-serif] text-[11px] sm:text-xs">
+      <div className="flex flex-row items-center justify-between gap-3 pt-2 sm:pt-2.5 border-t border-[#E6E2D8] text-[#71717A] font-['Manrope',sans-serif] text-xs sm:text-[13px]">
         {/* Left: Copyright & Editorial Credits */}
-        <div className="flex items-center gap-1.5 sm:gap-2 truncate">
-          <span className="font-['Manrope',sans-serif] font-bold text-[#18181B] tracking-tight">
+        <div className="flex items-center gap-2 sm:gap-2.5 truncate">
+          <span className="font-['Manrope',sans-serif] font-bold text-[#18181B] text-xs sm:text-sm tracking-tight">
             {branding.siteName}
           </span>
           <span className="text-[#D0C9BA] hidden xs:inline">•</span>
-          <span className="truncate">
+          <span className="truncate text-[#52525B]">
             &copy; {currentYear} Jayanthan SenthilKumar.
           </span>
           <span className="text-[#D0C9BA] hidden md:inline">•</span>
-          <span className="hidden md:inline text-[#8E887E]">
+          <span className="hidden md:inline text-[#71717A]">
             Designed &amp; Developed by Jayanthan.
           </span>
         </div>
 
-        {/* Right: Social Destinations & Top Action */}
-        <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+        {/* Right: Social Destinations & Top Action (Squared) */}
+        <div className="flex items-center gap-2 shrink-0">
           {social.map((s) => (
             <a
               key={s.name}
@@ -55,23 +55,23 @@ export const Footer: FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={s.label}
-              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#F4F1EA] hover:bg-[#EAE5D9] text-[#18181B] border border-[#E6E2D8] hover:border-[#D0C9BA] transition-all duration-150"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-none bg-[#F4F1EA] hover:bg-[#EAE5D9] text-[#18181B] border border-[#E6E2D8] hover:border-[#D0C9BA] text-xs sm:text-[13px] font-medium transition-all duration-150"
             >
               {getSocialIcon(s.name)}
-              <span className="hidden sm:inline font-medium text-[11px]">{s.name}</span>
-              <ArrowUpRight className="w-3 h-3 text-[#71717A] hidden sm:inline" />
+              <span className="hidden sm:inline font-semibold">{s.name}</span>
+              <ArrowUpRight className="w-3.5 h-3.5 text-[#71717A] hidden sm:inline" />
             </a>
           ))}
 
-          {/* Quick Back to Top */}
+          {/* Quick Back to Top (Squared) */}
           <button
             type="button"
             onClick={scrollToTop}
             aria-label="Scroll to top"
-            className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#EAE5D9] hover:bg-[#18181B] text-[#18181B] hover:text-[#FAF8F5] border border-[#DDD7C9] transition-all duration-150 cursor-pointer"
+            className="inline-flex items-center gap-1 px-3 py-1.5 rounded-none bg-[#EAE5D9] hover:bg-[#18181B] text-[#18181B] hover:text-[#FAF8F5] border border-[#DDD7C9] text-xs font-bold transition-all duration-150 cursor-pointer"
           >
-            <span className="text-[10px] font-bold">TOP</span>
-            <ArrowUp className="w-3 h-3" />
+            <span>TOP</span>
+            <ArrowUp className="w-3.5 h-3.5" />
           </button>
         </div>
       </div>

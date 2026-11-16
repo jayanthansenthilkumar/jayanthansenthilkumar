@@ -9,27 +9,27 @@ export const Hero: FC = () => {
   return (
     <section
       aria-label="Executive IT Portfolio Gateway"
-      className="flex-1 min-h-0 flex flex-col justify-between w-full max-w-5xl mx-auto px-3 sm:px-6 py-1.5 sm:py-2.5 z-10"
+      className="flex-1 min-h-0 flex flex-col justify-between w-full max-w-6xl xl:max-w-7xl 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-2 sm:py-3 z-10"
     >
       {/* =========================================================================
-          1. TOP IDENTITY & STATUS BAR (Minimal Editorial Header)
+          1. TOP IDENTITY & STATUS BAR (Refined Editorial Header)
           ========================================================================= */}
-      <header className="flex items-center justify-between gap-3 shrink-0 pb-1.5 sm:pb-2 border-b border-[#E6E2D8]">
+      <header className="flex items-center justify-between gap-3 shrink-0 pb-2 sm:pb-3 border-b border-[#E6E2D8]">
         {/* Left: Monogram & Professional Branding */}
-        <div className="flex items-center gap-2 sm:gap-2.5">
-          <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-[#18181B] text-[#FAF8F5] flex items-center justify-center font-['Manrope',sans-serif] font-bold text-xs sm:text-sm shadow-sm shrink-0">
+        <div className="flex items-center gap-2.5 sm:gap-3.5">
+          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-none bg-[#18181B] text-[#FAF8F5] flex items-center justify-center font-['Manrope',sans-serif] font-bold text-sm sm:text-base shadow-xs shrink-0">
             {branding.monogram}
           </div>
           <div className="flex flex-col min-w-0">
-            <div className="flex items-center gap-1.5">
-              <span className="font-['Manrope',sans-serif] text-sm sm:text-base font-bold tracking-tight text-[#18181B] truncate">
+            <div className="flex items-center gap-2">
+              <span className="font-['Manrope',sans-serif] text-base sm:text-lg font-bold tracking-tight text-[#18181B] truncate">
                 {branding.siteName}
               </span>
-              <span className="text-[8px] sm:text-[9px] px-1.5 py-0.2 rounded-full bg-[#EFECE5] text-[#52525B] border border-[#DDD7C9] font-mono font-medium hidden xs:inline">
+              <span className="text-[9px] sm:text-[10px] px-2 py-0.5 rounded-none bg-[#EFECE5] text-[#52525B] border border-[#DDD7C9] font-mono font-medium hidden xs:inline">
                 IT PRO
               </span>
             </div>
-            <span className="font-mono text-[9px] sm:text-[10px] text-[#71717A] font-medium truncate">
+            <span className="font-mono text-[11px] sm:text-xs text-[#52525B] font-medium truncate">
               {person.role}
             </span>
           </div>
@@ -37,21 +37,21 @@ export const Hero: FC = () => {
 
         {/* Right: Availability Badge */}
         <div className="flex items-center gap-2 shrink-0">
-          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 sm:py-1 rounded-full bg-[#FFFFFF] border border-[#E4DFD3] font-mono text-[9px] sm:text-[10px] text-[#18181B] shadow-xs">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 status-indicator-dot" />
-            <span className="font-medium whitespace-nowrap">{person.status}</span>
+          <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1 sm:py-1.5 rounded-none bg-[#FFFFFF] border border-[#E4DFD3] font-mono text-[11px] sm:text-xs md:text-[13px] text-[#18181B] shadow-2xs">
+            <span className="w-2 h-2 rounded-none bg-emerald-500 status-indicator-dot" />
+            <span className="font-semibold whitespace-nowrap">{person.status}</span>
           </div>
         </div>
       </header>
 
       {/* =========================================================================
           2. CENTER HERO: DOUBLE-LINE NAME BEHIND HERO.PNG CUTOUT
-          Scale-calibrated for all standard phone, laptop, and monitor sizes
+          Enhanced Presence & Responsive Proportions
           ========================================================================= */}
-      <div className="flex-1 relative flex items-center justify-center min-h-0 my-1 sm:my-1.5 overflow-visible">
-        {/* Soft Ambient Paper Backlight directly behind portrait */}
+      <div className="flex-1 relative flex items-center justify-center min-h-0 my-1 sm:my-2 overflow-visible">
+        {/* Soft Ambient Warm Paper Glow directly behind portrait */}
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[240px] sm:w-[340px] md:w-[440px] h-[240px] sm:h-[340px] md:h-[440px] rounded-full calm-ambient-glow pointer-events-none -z-10"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[460px] md:w-[620px] h-[300px] sm:h-[460px] md:h-[620px] rounded-full calm-ambient-glow pointer-events-none -z-10"
           aria-hidden="true"
         />
 
@@ -60,19 +60,19 @@ export const Hero: FC = () => {
           className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none select-none z-0"
           aria-hidden="true"
         >
-          <div className="text-center w-full px-1">
+          <div className="text-center w-full px-2">
             <div
-              className="editorial-name-layer leading-[0.84] text-[#18181B] tracking-tight transition-opacity duration-300"
+              className="editorial-name-layer leading-[0.83] text-[#18181B] tracking-tight"
               style={{
-                fontSize: "clamp(2.2rem, min(8.5vw, 11.5vh), 7.2rem)",
+                fontSize: "clamp(2.8rem, min(10.5vw, 14vh), 9.2rem)",
               }}
             >
               {person.firstName}
             </div>
             <div
-              className="editorial-name-layer leading-[0.84] text-[#18181B] tracking-tight transition-opacity duration-300"
+              className="editorial-name-layer leading-[0.83] text-[#18181B] tracking-tight"
               style={{
-                fontSize: "clamp(2.2rem, min(8.5vw, 11.5vh), 7.2rem)",
+                fontSize: "clamp(2.8rem, min(10.5vw, 14vh), 9.2rem)",
               }}
             >
               {person.lastName}
@@ -86,10 +86,10 @@ export const Hero: FC = () => {
             <img
               src="/hero.png"
               alt="Jayanthan Senthilkumar - Senior Software Engineer & IT Professional"
-              className="relative z-10 w-auto object-contain object-bottom drop-shadow-[0_10px_22px_rgba(24,24,27,0.08)] transition-transform duration-300 hover:scale-[1.01]"
+              className="relative z-10 w-auto object-contain object-bottom drop-shadow-[0_14px_30px_rgba(24,24,27,0.11)] transition-transform duration-300 hover:scale-[1.01]"
               style={{
-                height: "min(36vh, 400px)",
-                maxHeight: "min(36vh, 400px)",
+                height: "min(42vh, 480px)",
+                maxHeight: "min(42vh, 480px)",
               }}
               loading="eager"
             />
@@ -97,33 +97,33 @@ export const Hero: FC = () => {
         </div>
 
         {/* Floating Specialization Pill Floating across the portrait base */}
-        <div className="absolute bottom-0 z-20 hidden xs:flex items-center justify-center gap-1.5 px-3 py-0.5 rounded-full bg-[#FFFFFF]/95 backdrop-blur-md border border-[#E4DFD3] shadow-xs">
-          <Terminal className="w-3 h-3 text-[#18181B]" />
-          <span className="font-mono text-[9px] sm:text-[10px] text-[#52525B] font-medium">
+        <div className="absolute bottom-0 z-20 hidden xs:flex items-center justify-center gap-2 px-4 py-1 sm:py-1.5 rounded-none bg-[#FFFFFF]/95 backdrop-blur-md border border-[#E4DFD3] shadow-xs">
+          <Terminal className="w-3.5 h-3.5 text-[#18181B]" />
+          <span className="font-mono text-[10px] sm:text-xs md:text-[13px] text-[#3F3F46] font-medium tracking-wide">
             {person.specialization}
           </span>
         </div>
       </div>
 
       {/* =========================================================================
-          3. CURVED NAVIGATION COMPOSITION: ARCHITECTURAL CURVED PANEL
-          Houses MY PORTFOLIO & MY BLOGS
+          3. SQUARED NAVIGATION DOCK: ARCHITECTURAL SQUARED PANEL
+          Increased Length & Crisp 90-degree Squared Borders
           ========================================================================= */}
-      <div className="shrink-0 w-full mb-0.5 sm:mb-1">
-        <div className="curved-editorial-panel rounded-xl sm:rounded-2xl lg:rounded-[24px] p-2 sm:p-3 max-w-4xl mx-auto w-full relative">
-          {/* Eyebrow Header inside Curved Layout */}
-          <div className="relative z-10 flex items-center justify-between gap-2 mb-1.5 pb-1 border-b border-[#E6E2D8] font-mono text-[9px] sm:text-[10px]">
-            <div className="flex items-center gap-1.5 text-[#18181B] font-bold uppercase tracking-wider">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#18181B]" />
+      <div className="shrink-0 w-full mb-1 sm:mb-2">
+        <div className="curved-editorial-panel rounded-none p-3 sm:p-4 md:p-5 max-w-6xl xl:max-w-7xl 2xl:max-w-[1440px] mx-auto w-full relative">
+          {/* Eyebrow Header inside Squared Layout */}
+          <div className="relative z-10 flex items-center justify-between gap-4 mb-2.5 pb-2 border-b border-[#E6E2D8] font-mono text-[10px] sm:text-xs">
+            <div className="flex items-center gap-2 text-[#18181B] font-bold uppercase tracking-wider shrink-0">
+              <span className="w-2 h-2 rounded-none bg-[#18181B]" />
               <span>DIRECT DESTINATIONS</span>
             </div>
-            <span className="text-[#71717A] hidden sm:inline font-['Cormorant_Garamond',serif] italic text-xs sm:text-sm font-medium truncate max-w-md">
+            <span className="text-[#52525B] hidden sm:inline font-['Cormorant_Garamond',serif] italic text-sm sm:text-base font-semibold truncate">
               &ldquo;{person.statement}&rdquo;
             </span>
           </div>
 
-          {/* Two Destination Cards: MY PORTFOLIO & MY BLOGS */}
-          <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-1.5 sm:gap-2.5">
+          {/* Two Destination Cards: MY PORTFOLIO & MY BLOGS (Extended Length) */}
+          <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-5">
             {/* Destination 01: MY PORTFOLIO */}
             <DestinationCard
               index={destinations.portfolio.index}

@@ -26,48 +26,49 @@
 
 /* Delicate micro-dot grid for tactile architectural texture */
 .calm-subtle-grid {
-  background-image: radial-gradient(rgba(24, 24, 27, 0.08) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(24, 24, 27, 0.09) 1px, transparent 1px);
   background-size: 32px 32px;
 }
 
 /* Soft ambient paper glow behind the portrait */
 .calm-ambient-glow {
-  background: radial-gradient(circle at 50% 45%, rgba(230, 222, 208, 0.5) 0%, rgba(250, 248, 245, 0) 70%);
+  background: radial-gradient(circle at 50% 45%, rgba(225, 215, 198, 0.6) 0%, rgba(250, 248, 245, 0) 70%);
 }
 
-/* Sophisticated Editorial Typography behind portrait */
+/* Sophisticated Editorial Typography behind portrait: Commanding, large, prominent */
 .editorial-name-layer {
   font-family: var(--font-serif);
   font-weight: 700;
-  letter-spacing: -0.015em;
-  line-height: 0.85;
+  line-height: 0.81;
   text-transform: uppercase;
   user-select: none;
   color: #18181B;
-  opacity: 0.13;
+  opacity: 0.26;
 }
 
-/* Architectural Curved Dock */
+/* Architectural Squared Dock: Sharp 90-degree squared border */
 .curved-editorial-panel {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid #E6E2D8;
-  box-shadow: 0 10px 30px -5px rgba(24, 24, 27, 0.04), 0 1px 3px rgba(24, 24, 27, 0.02);
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid #E2DDD2;
+  border-radius: 0px !important;
+  box-shadow: 0 14px 40px -8px rgba(24, 24, 27, 0.06), 0 2px 6px rgba(24, 24, 27, 0.02);
 }
 
-/* Navigation Interactive Cards */
+/* Navigation Interactive Cards: Squared border */
 .editorial-card-interactive {
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  border: 1px solid #E8E4DA;
+  border: 1px solid #E4DFD3;
+  border-radius: 0px !important;
   background-color: #FAF8F5;
 }
 
 .editorial-card-interactive:hover {
-  background-color: #F3EFE7;
-  border-color: #D2CBC0;
+  background-color: #F2ECE0;
+  border-color: #C8C0AF;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px -4px rgba(24, 24, 27, 0.06);
+  box-shadow: 0 10px 28px -5px rgba(24, 24, 27, 0.07);
 }
 
 /* Subtle pulse ripple for availability badge */
@@ -78,12 +79,12 @@
 .status-indicator-dot::after {
   content: "";
   position: absolute;
-  top: -2px;
-  right: -2px;
-  bottom: -2px;
-  left: -2px;
+  top: -2.5px;
+  right: -2.5px;
+  bottom: -2.5px;
+  left: -2.5px;
   border: 1.5px solid #10B981;
-  border-radius: 9999px;
+  border-radius: 0px;
   animation: pulse-ripple 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
